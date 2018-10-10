@@ -11,7 +11,7 @@ cd Neural_DRS
 
 ### Prerequisites
 
-You will need the Torch version of [OpenNMT](https://github.com/OpenNMT/OpenNMT) with all its dependencies. My results are with [this version](https://github.com/OpenNMT/OpenNMT/tree/2d9bc10a459bf4bd1e7ce1848e4575755c11b31c) of OpenNMT, I cannot guarantee that it works for newer versions.
+You will need the Torch version of [OpenNMT](https://github.com/OpenNMT/OpenNMT) **with all its dependencies**. My results are with [this version](https://github.com/OpenNMT/OpenNMT/tree/2d9bc10a459bf4bd1e7ce1848e4575755c11b31c) of OpenNMT, I cannot guarantee that it works for newer versions.
 
 ```
 git clone https://github.com/OpenNMT/OpenNMT/
@@ -44,7 +44,7 @@ If you do not have access to GPU, you'll have to change the gpuid setting as wel
 
 ### Running from OpenNMT
 
-**IMPORTANT:** You have to run the training and parsing scripts with the OpenNMT directory as your working folder. We will assume that the OpenNMT folder is located in this Github folder when giving instructions on how to run. If you put the OpenNMT folder somewhere else, you'll have to change where preprocessing.sh, train.sh and parse.sh read default_config.sh from.
+**IMPORTANT:** You have to run the training and parsing scripts with the OpenNMT directory as your working folder. We will assume that the OpenNMT folder is located in this Github folder when giving instructions on how to run. If you put the OpenNMT folder somewhere else, you'll have to change where preprocessing.sh, train.sh and parse.sh read default_config.sh from!
 
 ## Parsing
 
@@ -58,7 +58,7 @@ For all the models there, SENT_FILE should not be tokenized, and then put in cha
 python src/preprocess.py -s SENT_FILE -c feature -v rel -r char --sents_only
 ```
 
-Then do the parsing. If you specify multiple models, it will automatically be an ensemble, **but this easily gets out of memory for longer, non-PMB input**. The config file to use for both the models is config/parse_best_config.sh. Note that this config-file can only be used for parsing, not training. 
+Then do the parsing. If you specify multiple models, it will automatically be an ensemble, **but this easily gets out of GPU memory for longer, non-PMB input**. The config file to use for both the models is config/parse_best_config.sh. Note that this config-file can only be used for parsing, not training. 
 
 You need to open the config file and also default_config.sh to enter the specific settings of your own computer. Then, run the parser like this:
 
@@ -76,13 +76,13 @@ For training, you can apply our pre- and postprocessing scripts. Note that you a
 
 ### Getting data ###
 
-If you cloned the [DRS_parsing repository](https://github.com/RikVN/DRS_parsing), you'll have the train and dev set for PMB release 2.1.0 available. Otherwise, download a [PMB release](http://pmb.let.rug.nl/data.php) and construct the training data yourself, or use some other data set.
+If you cloned the [DRS_parsing repository](https://github.com/RikVN/DRS_parsing), you'll have the train and dev set for PMB release 2.1.0 available. Otherwise, download a [PMB release](http://pmb.let.rug.nl/data.php) and construct the training data yourself, or use some other data set. Our scripts expect the train and dev data to be in the same folder.
 
 ### Config files ###
 
-You already set up config/default_config.sh. That contains all our default settings for experiments. However, if you want to run your own experiments you have to set your own parameters. The config/ folder already contains an example for our baseline model you can finish.
+You already set up config/default_config.sh. That contains all our default settings for experiments. However, if you want to run your own experiments you have to set your own parameters. The config folder already contains an example for our baseline model you can finish (config/baseline.sh).
 
-Make sure that you specify a folder for the experiment (will be created) where all information (models, input, output, vocab) is saved. Also, specify where the train and dev data is located.
+Make sure that you specify a folder for the experiment (will be created) where all information (models, input, output, vocab, logs) is saved. Also, specify where the train and dev data is located.
 
 ### Running the system ###
 
@@ -105,7 +105,7 @@ This will most likely take some time. If training is finished, you can parse new
 ../src/parse.sh ../config/baseline.sh INPUT_FILE OUTPUT_FILE MODEL1 [MODEL2] [MODEL3] ...
 ```
 
-The output will be automatically postprocessed. You can only use multiple models if you obtained the ensemble branch of OpenNMT (see above).
+Noe that the input file should be in the correct character-level format (src/preprocess.py). The output will be automatically postprocessed. You can only use multiple models if you are using the ensemble branch of OpenNMT (see above).
 
 If you parsed the PMB 2.1.0 development set, you can calculate an F-score by using Counter:
 
@@ -117,7 +117,7 @@ The baseline model should score somewhere between 72 and 74 in F-score. You can 
 
 ## Output ##
 
-If you're only interested in the output of our parser(s), please check the **output/** folder. We have added parser on the PMB 2.1.0 development set for the following parsers:
+If you're only interested in the output of our parser(s), please check the **output/** folder. We have added parser output on the PMB 2.1.0 development set for the following parsers:
 
 | Parser				           | F-score	| Info |
 | ------- | ------- | ------- | 
