@@ -117,17 +117,18 @@ The baseline model should score somewhere between 72 and 74 in F-score. You can 
 
 ## Output ##
 
-If you're only interested in the output of our parser(s), please check the output/ folder. We have added parser on the PMB 2.1.0 development set for the following parsers:
-| **Parser**				  | **F-score**	| **Info** |
-|-----------------------------|------|---------------------------------------------------------------------|
-| seq2seq best char model     | 83.6 | our best character-level model trained on gold + silver (PMB 2.1.0) |
-| seq2seq best word model     | 83.1 | our best word-level model trained on gold + silver data (PMB 2.1.0) |
-| seq2seq best char gold only | 77.9 | our best character-level model trained only on gold data (PMB 2.1.0) |
-|  seq2seq best word gold only | 75.1 | our best word-level model trained only on gold data (PMB 2.1.0)
-|  Boxer                       | 74.3 | output of the semantic parser Boxer |
-|  amr2drs                     | 41.8 | output of a rule-based parser that converts AMRs to DRSs |
-|  SIM-SPAR                    | 56.8 | baseline parser that outputs the DRS most similar DRS in the training set (word embedding based) |
-|  SPAR                        | 39.7 | baseline parser that outputs a fixed DRSs for each sentence |
+If you're only interested in the output of our parser(s), please check the **output/** folder. We have added parser on the PMB 2.1.0 development set for the following parsers:
+
+| Parser				           | F-score	| Info |
+| ------- | ------- | ------- | 
+| seq2seq best char model      | 83.6         | our best character-level model (gold + silver) |
+| seq2seq best word model      | 83.1         | our best word-level model (gold + silver)  |
+| seq2seq best char gold only  | 77.9         | our best character-level model (gold-only)  |
+| seq2seq best word gold only | 75.1         | our best word-level model (gold-only)
+| Boxer                       | 74.3         | output of the semantic parser Boxer |
+| amr2drs                     | 41.8         | output of a rule-based parser that converts AMRs to DRSs |
+| SIM-SPAR                    | 56.8         | baseline - outputs the DRS most similar DRS in the train set |
+| SPAR                        | 39.7         | baseline parser that outputs a fixed DRSs for each sentence |
 
 The baseline parsers SPAR and amr2drs are available in the [DRS_parsing repository](https://github.com/RikVN/DRS_parsing).
 
