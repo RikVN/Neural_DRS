@@ -48,17 +48,17 @@ If you do not have access to GPU, you'll have to change the gpuid setting as wel
 
 ## Parsing
 
-When parsing, please download (one of) our pre-trained models available [here](http://www.let.rug.nl/rikvannoord/DRS/models/). Please select the GPU or CPU models depending on what your setup is. You can choose between our best gold-only models, or our best model in general, that is also trained on the silver data released in PMB 2.1.0.
+If you only want to do parsing, please download (one of) our [pre-trained models](http://www.let.rug.nl/rikvannoord/DRS/models/). Please select the GPU or CPU models depending on what your setup is. You can choose between our best gold-only models, or our best model in general, that is also trained on the silver data released in PMB 2.1.0.
 
 When using one of those models, you will have to preprocess the input to the input structure the model expects.
 
-For all the models there, you have to format using char-level input, relative naming of the variables and a feature indicating casing:
+For all the models there, SENT_FILE should not be tokenized, and then put in char-level format, with relative naming of the variables and a feature indicating casing:
 
 ```
 python src/preprocess.py -s SENT_FILE -c feature -v rel -r char --sents_only
 ```
 
-Then do the parsing. Note that using multiple models (ensemble) might improve the score, but it also easily gets out of memory for non-PMB input. The config file to use for both the models is config/parse_best_config.sh. Note that this config-file can only be used for parsing, not training. 
+Then do the parsing. If you specify multiple models, it will automatically be an ensemble, **but this easily gets out of memory for longer, non-PMB input**. The config file to use for both the models is config/parse_best_config.sh. Note that this config-file can only be used for parsing, not training. 
 
 You need to open the config file and also default_config.sh to enter the specific settings of your own computer. Then, run the parser like this:
 
@@ -83,6 +83,8 @@ If you cloned the [DRS_parsing repository](https://github.com/RikVN/DRS_parsing)
 You already set up config/default_config.sh. That contains all our default settings for experiments. However, if you want to run your own experiments you have to set your own parameters. The config/ folder already contains an example for our baseline model you can finish.
 
 Make sure that you specify a folder for the experiment (will be created) where all information (models, input, output, vocab) is saved. Also, specify where the train and dev data is located.
+
+### Running the system ###
 
 Then, preprocess the data:
 
