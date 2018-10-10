@@ -127,7 +127,7 @@ If you're only interested in the output of our parser(s), please check the **out
 | seq2seq best word gold only | 75.1         | our best word-level model (gold-only)
 | Boxer                       | 74.3         | output of the semantic parser Boxer |
 | amr2drs                     | 41.8         | output of a rule-based parser that converts AMRs to DRSs |
-| SIM-SPAR                    | 56.8         | baseline - outputs the DRS most similar DRS in the train set |
+| SIM-SPAR                    | 56.8         | baseline - outputs the DRS in the train set most similar to current DRS |
 | SPAR                        | 39.7         | baseline parser that outputs a fixed DRSs for each sentence |
 
 The baseline parsers SPAR and amr2drs are available in the [DRS_parsing repository](https://github.com/RikVN/DRS_parsing).
