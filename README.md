@@ -1,6 +1,6 @@
 # Neural DRS parsing
 
-This folder contains scripts to use our neural sequence-to-sequence model to produce DRSs. Also, new models can be trained.
+This folder contains scripts to use our neural seq2seq model to produce DRSs. Also, new models can be trained.
 
 ## Getting Started
 
@@ -21,7 +21,7 @@ git checkout 2d9bc10
 
 If you want to an ensemble during parsing, you will have to checkout the ensemble branch. Instructions on how to do that are [here](http://forum.opennmt.net/t/ensemble-decoding/115/11). Note that you have to specify ONMT_HOME in config/default_config.sh to the correct location of this branch. 
 
-For evaluation and format checking we will use Counter and clf_referee.py:
+For evaluation and format checking we will use Counter and clf_referee.py from the [DRS_parsing respository](https://github.com/RikVN/DRS_parsing):
 
 ```
 cd ../
@@ -38,13 +38,13 @@ All script are written in Python 2.7. Make sure to install [psutil](https://pypi
 
 ### Configuration
 
-In config/default_config.sh we store the default settings for preprocessing, training and parsing. All shell scripts read from there. You will have to set the correct paths in config/default_config.sh. The scripts need to know where your OpenNMT folder is and where this Github folder is located.
+In config/default_config.sh we store the default settings for preprocessing, training and parsing. All shell scripts read from there. **You will have to set the correct paths in config/default_config.sh.** The scripts need to know where your OpenNMT folder is and where this repository is located.
 
 If you do not have access to GPU, you'll have to change the gpuid setting as well.
 
 ### Running from OpenNMT
 
-IMPORTANT: You have to run the training and parsing scripts with the OpenNMT directory as your working folder. We will assume that the OpenNMT folder is located in this Github folder when giving instructions on how to run. If you put the OpenNMT folder somewhere else, you'll have to change where preprocessing.sh, train.sh and parse.sh read default_config.sh from.
+**IMPORTANT:** You have to run the training and parsing scripts with the OpenNMT directory as your working folder. We will assume that the OpenNMT folder is located in this Github folder when giving instructions on how to run. If you put the OpenNMT folder somewhere else, you'll have to change where preprocessing.sh, train.sh and parse.sh read default_config.sh from.
 
 ## Parsing
 
@@ -58,12 +58,12 @@ For all the models there, you have to format using char-level input, relative na
 python src/preprocess.py -s SENT_FILE -c feature -v rel -r char --sents_only
 ```
 
-Then do the parsing. Note that using multiple models (ensemble) might improve the score, but it also easily gets out of memory for non-PMB input. The best model and best gold-only model both have a config file in config/. 
+Then do the parsing. Note that using multiple models (ensemble) might improve the score, but it also easily gets out of memory for non-PMB input. The config file to use for both the models is config/parse_best_config.sh. Note that this config-file can only be used for parsing, not training. 
 
 You need to open the config file and also default_config.sh to enter the specific settings of your own computer. Then, run the parser like this:
 
 ```
-../src/parse.sh CONFIG_FILE INPUT_FILE OUTPUT_FILE MODEL1 [MODEL2] [MODEL3] ...
+../src/parse.sh ../config/parse_best_config.sh INPUT_FILE OUTPUT_FILE MODEL1 [MODEL2] [MODEL3] ...
 ```
 
 The output will be automatically postprocessed to a valid CLF format. Invalid DRSs will be replaced by dummy (but valid) ones.
@@ -121,9 +121,7 @@ The baseline model should score somewhere between 72 and 74 in F-score. You can 
 
 We are currently publishing a paper regarding our models and the CLF referee, when published the link will be here.
 
-If you use Counter, please cite:
-
-[LREC paper](http://www.let.rug.nl/rob/doc/lrec2018.pdf):
+If you use Counter, please cite our [LREC paper](http://www.let.rug.nl/rob/doc/lrec2018.pdf):
 
 Rik van Noord, Lasha Abzianidze, Hessel Haagsma, and Johan Bos, 2018. **Evaluating scoped meaning representations**. In Proceedings of the Eleventh International Conference on Language Resources and Evaluation (LREC 2018), Miyazaki, Japan
 
