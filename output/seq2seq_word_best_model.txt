@@ -1,0 +1,8344 @@
+% Sentence: 0
+% Raw sent: Tom can't speak French. Tom can't speak Spanish either.
+b1 REF x1
+b1 alwayswrongconcept "n.01" x1
+
+% Sentence: 1
+% Raw sent: He stole money from me.
+b1 REF x1
+b1 male "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 steal "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 money "n.01" x4
+b2 Source x2 "speaker"
+
+% Sentence: 2
+% Raw sent: I phoned.
+b1 REF x1
+b1 Agent x1 "speaker"
+b1 Time x1 x2
+b1 phone "v.01" x1
+b2 REF x2
+b2 TPR x2 "now"
+b2 time "n.08" x2
+
+% Sentence: 3
+% Raw sent: Tom suffered from a collapsed lung.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 Experiencer x2 x1
+b2 Time x2 x3
+b2 suffer "v.02" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b2 Stimulus x2 x4
+b2 REF x4
+b2 server "n.01" x4
+
+% Sentence: 4
+% Raw sent: I cannot swim at all.
+b1 POS b2
+b3 NOT b1
+b2 REF x1
+b2 Theme x1 "speaker"
+b2 swim "v.01" x1
+
+% Sentence: 5
+% Raw sent: We captured cicadas with a net.
+b1 REF x1
+b1 Agent x1 "speaker"
+b1 Theme x1 x3
+b1 Time x1 x2
+b1 capture "v.05" x1
+b2 REF x2
+b2 TPR x2 "now"
+b2 time "n.08" x2
+b1 REF x3
+b1 cicadas "n.02" x3
+b1 Instrument x1 x4
+b1 REF x4
+b1 net "n.02" x4
+
+% Sentence: 6
+% Raw sent: Lalita called.
+b1 REF x1
+b1 Name x1 x1
+b1 female "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Time x2 x3
+b2 call "v.03" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+
+% Sentence: 7
+% Raw sent: He was sent by his company to Kazakhstan.
+b1 REF x1
+b1 male "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 TPR x2 "now"
+b3 time "n.08" x2
+b2 Theme x3 x1
+b2 ostracize "v.02" x3
+b2 REF x3
+b2 Owner x3 x1
+b2 company "n.01" x3
+b2 Destination x3 x4
+b4 REF x4
+b4 Name x4 "kazakhstan"
+b4 team "n.01" x4
+
+% Sentence: 8
+% Raw sent: Tom laid his racket on the ground.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 lay "v.03" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b4 REF x4
+b4 User x4 x1
+b4 racket "n.02" x4
+b2 Destination x2 x5
+b5 REF x5
+b5 ground "n.01" x5
+
+% Sentence: 9
+% Raw sent: Tom suspected that his father was dyslexic.
+b1 Name x1 "tom"
+b1 REF x1
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 PRP x3 b3
+b2 Theme x2 x3
+b2 Time x2 x4
+b2 suspect "v.01" x2
+b4 REF x4
+b4 TPR x4 "now"
+b4 time "n.08" x4
+b5 REF x5
+b5 Of x6 x1
+b5 REF x6
+b5 Role x5 x6
+b5 father "n.01" x6
+b5 person "n.01" x5
+b3 Time x7 x4
+b3 REF x7
+b3 Theme x7 x5
+b3 male "a.01" x7
+
+% Sentence: 10
+% Raw sent: Mr. Smith is an acquaintance of hers.
+b1 REF x1
+b1 REF x2
+b1 Title x1 x2
+b1 mr "n.01" x2
+b1 Name x1 "smith"
+b1 male "n.02" x1
+b2 REF x3
+b2 Co-Theme x3 x5
+b2 Theme x3 x1
+b2 Time x3 x4
+b2 be "v.01" x3
+b3 REF x4
+b3 EQU x4 "now"
+b3 time "n.08" x4
+b2 REF x5
+b2 REF x6
+b2 Role x5 x6
+b2 acquaintance "n.01" x6
+b2 person "n.01" x5
+b2 Of x6 x7
+b4 REF x7
+b4 female "n.02" x7
+
+% Sentence: 11
+% Raw sent: I'm a foreigner.
+b1 REF x1
+b1 EQU "speaker" x2
+b1 EQU x1 "now"
+b1 Time x2 x1
+b1 time "n.08" x1
+b1 REF x2
+b1 foreigner "n.01" x2
+
+% Sentence: 12
+% Raw sent: Tom doesn't know me.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b4 NOT b2
+b2 REF x3
+b2 Experiencer x3 x1
+b2 Stimulus x3 "speaker"
+b2 know "v.01" x3
+
+% Sentence: 13
+% Raw sent: He lies.
+b1 REF x1
+b1 male "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Time x2 x3
+b2 lie "v.01" x2
+b3 REF x3
+b3 EQU x3 "now"
+b3 time "n.08" x3
+
+% Sentence: 14
+% Raw sent: The news spread fast.
+b1 REF x1
+b1 news "n.01" x1
+b2 REF x2
+b2 Theme x2 x1
+b2 Time x2 x3
+b2 spread "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 Manner x2 x4
+b2 fast "r.01" x4
+
+% Sentence: 15
+% Raw sent: The telephone rang repeatedly.
+b1 REF x1
+b1 telephone "n.01" x1
+b2 REF x2
+b2 Theme x2 x1
+b2 Time x2 x3
+b2 ring "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 Manner x2 x4
+b2 otherwise "r.02" x4
+
+% Sentence: 16
+% Raw sent: She is the Prime Minister of Finland.
+b1 REF x1
+b1 female "n.02" x1
+b2 REF x2
+b2 Co-Theme x2 x4
+b2 Theme x2 x1
+b2 Time x2 x3
+b2 be "v.02" x2
+b3 REF x3
+b3 EQU x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 REF x5
+b2 Role x4 x5
+b2 person "n.01" x4
+b2 male "n.01" x5
+b2 PartOf x5 x6
+b4 REF x6
+b4 Name x6 "finland"
+b4 country "n.02" x6
+
+% Sentence: 17
+% Raw sent: Everyone except Tom was wearing a tie.
+b1 IMP b2 b3
+b2 REF x1
+b2 person "n.01" x1
+b2 NEQ x1 x2
+b4 REF x2
+b4 Name x2 "tom"
+b4 male "n.02" x2
+b3 Time x4 x3
+b5 REF x3
+b5 TPR x3 "now"
+b5 time "n.08" x3
+b3 REF x4
+b3 Agent x4 x1
+b3 Theme x4 x5
+b3 wear "v.02" x4
+b3 REF x5
+b3 tie "n.01" x5
+
+% Sentence: 18
+% Raw sent: Tom is angry now.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 angry "a.01" x3
+
+% Sentence: 19
+% Raw sent: We rented a canoe.
+b1 REF x1
+b1 Agent x1 "speaker"
+b1 Theme x1 x3
+b1 Time x1 x2
+b1 rent "v.03" x1
+b2 REF x2
+b2 TPR x2 "now"
+b2 time "n.08" x2
+b1 REF x3
+b1 male "n.01" x3
+
+% Sentence: 20
+% Raw sent: She's brushing her hair.
+b1 REF x1
+b1 female "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Agent x3 x1
+b2 Patient x3 x4
+b2 brush "v.01" x3
+b4 REF x4
+b4 PartOf x4 x1
+b4 hair "n.01" x4
+
+% Sentence: 21
+% Raw sent: Fish surface for air.
+b1 REF x1
+b1 fish "n.01" x1
+b1 Theme x1 x2
+b1 REF x2
+b1 air "n.01" x2
+
+% Sentence: 22
+% Raw sent: One cannot not communicate.
+b1 IMP b2 b3
+b2 REF x1
+b2 person "n.01" x1
+b4 POS b5
+b3 NOT b4
+b5 REF x2
+b5 Agent x2 x1
+b5 communicate "v.01" x2
+
+% Sentence: 23
+% Raw sent: Tom is ready.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 ready "a.01" x3
+
+% Sentence: 24
+% Raw sent: My plan worked.
+b1 REF x1
+b1 Of x1 "speaker"
+b1 plan "n.01" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Time x2 x3
+b2 work "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+
+% Sentence: 25
+% Raw sent: I'm drunk.
+b1 Time x2 x1
+b2 REF x1
+b2 EQU x1 "now"
+b2 time "n.08" x1
+b1 REF x2
+b1 Theme x2 "speaker"
+b1 drunk "a.01" x2
+
+% Sentence: 26
+% Raw sent: But nobody believed her.
+b1 NOT b2
+b2 REF x1
+b2 person "n.01" x1
+b2 REF x2
+b2 Experiencer x2 x1
+b2 Stimulus x2 x4
+b2 Time x2 x3
+b2 believe "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b4 REF x4
+b4 female "n.02" x4
+
+% Sentence: 27
+% Raw sent: His dog ran in the yard.
+b1 REF x1
+b1 male "n.02" x1
+b2 REF x2
+b2 Owner x2 x1
+b2 dog "n.01" x2
+b3 REF x3
+b3 Theme x3 x2
+b3 Time x3 x4
+b3 run "v.01" x3
+b4 REF x4
+b4 TPR x4 "now"
+b4 time "n.08" x4
+b3 Location x3 x5
+b5 REF x5
+b5 yard "n.02" x5
+
+% Sentence: 28
+% Raw sent: Tom cleaned the toilet.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Source x2 x4
+b2 Time x2 x3
+b2 clean "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b4 REF x4
+b4 toilet "n.01" x4
+
+% Sentence: 29
+% Raw sent: He is poor.
+b1 REF x1
+b1 male "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 poor "a.01" x3
+
+% Sentence: 30
+% Raw sent: Tom is extremely gullible.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 Time x4 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Attribute x3 x4
+b2 extremely "r.02" x3
+b2 REF x4
+b2 Theme x4 x1
+b2 gullible "a.02" x4
+
+% Sentence: 31
+% Raw sent: I deserve an explanation.
+b1 REF x1
+b1 Agent x1 "speaker"
+b1 Theme x1 x3
+b1 Time x1 x2
+b1 deserve "v.01" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 time "n.08" x2
+b1 REF x3
+b1 explanation "n.01" x3
+
+% Sentence: 32
+% Raw sent: A hare raced with a tortoise.
+b1 REF x1
+b1 hare "n.01" x1
+b1 REF x2
+b1 Agent x2 x1
+b1 Time x2 x3
+b1 male "v.01" x2
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+b1 Instrument x2 x4
+b1 REF x4
+b1 tortoise "n.01" x4
+
+% Sentence: 33
+% Raw sent: I have to hurry!
+b1 NEC b2
+b2 REF x1
+b2 Theme x1 "speaker"
+b2 hurry "v.01" x1
+
+% Sentence: 34
+% Raw sent: The cat is watching the fish.
+b1 REF x1
+b1 cat "n.01" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Agent x3 x1
+b2 Theme x3 x4
+b2 watch "v.03" x3
+b4 REF x4
+b4 fish "n.01" x4
+
+% Sentence: 35
+% Raw sent: Some people might assume that.
+b1 REF x1
+b1 person "n.01" x1
+b1 POS b2
+b2 REF x2
+b2 Agent x2 x1
+b2 Theme x2 x3
+b2 assume "v.01" x2
+b3 REF x3
+b3 that "n.01" x3
+
+% Sentence: 36
+% Raw sent: You lied to me!
+b1 REF x1
+b1 Agent x1 "hearer"
+b1 Time x1 x2
+b1 lie "v.05" x1
+b2 REF x2
+b2 TPR x2 "now"
+b2 time "n.08" x2
+b1 Recipient x1 "speaker"
+
+% Sentence: 37
+% Raw sent: The girls reveled in dancing.
+b1 REF x1
+b1 girl "n.01" x1
+b2 REF x2
+b2 Patient x2 x1
+b2 Time x2 x3
+b2 male "v.02" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 Theme x2 x5
+b2 REF x5
+b2 Agent x5 x4
+b2 dance "v.02" x5
+
+% Sentence: 38
+% Raw sent: That's humiliating.
+b1 REF x1
+b1 that "n.01" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 male "a.01" x3
+
+% Sentence: 39
+% Raw sent: She handed him the money that she owed him.
+b1 REF x1
+b1 female "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Recipient x2 x4
+b2 Theme x2 x5
+b2 Time x2 x3
+b2 hand "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b4 REF x4
+b4 male "n.02" x4
+b2 REF x5
+b2 money "n.01" x5
+b2 REF x6
+b2 Agent x6 x2
+b2 Beneficiary x6 x5
+b2 Theme x6 x4
+b2 Time x6 x3
+b2 owe "v.03" x6
+
+% Sentence: 40
+% Raw sent: The door is opening now.
+b1 REF x1
+b1 door "n.01" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 open "a.01" x3
+
+% Sentence: 41
+% Raw sent: She is listening to him.
+b1 REF x1
+b1 female "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Agent x3 x1
+b2 listen "v.01" x3
+b2 Theme x3 x4
+b4 REF x4
+b4 male "n.02" x4
+
+% Sentence: 42
+% Raw sent: Will Tom die?
+b1 Time x3 x1
+b2 REF x1
+b2 TPR "now" x1
+b2 time "n.08" x1
+b3 REF x2
+b3 Name x2 "tom"
+b3 male "n.02" x2
+b1 REF x3
+b1 Patient x3 x2
+b1 die "v.01" x3
+
+% Sentence: 43
+% Raw sent: I ate.
+b1 REF x1
+b1 Agent x1 "speaker"
+b1 Time x1 x2
+b1 eat "v.01" x1
+b2 REF x2
+b2 TPR x2 "now"
+b2 time "n.08" x2
+
+% Sentence: 44
+% Raw sent: She is not a good sailor.
+b1 REF x1
+b1 female "n.02" x1
+b2 REF x2
+b2 Co-Theme x2 x4
+b2 Theme x2 x1
+b2 Time x2 x3
+b2 be "v.08" x2
+b3 REF x3
+b3 EQU x3 "now"
+b3 time "n.08" x3
+b4 NOT b2
+b2 REF x4
+b2 REF x5
+b2 Theme x5 x6
+b2 good "a.08" x5
+b2 REF x6
+b2 Role x4 x6
+b2 sailor "n.01" x6
+b2 person "n.01" x4
+
+% Sentence: 45
+% Raw sent: A smell of lilies filled the room.
+b1 REF x1
+b1 smell "n.01" x1
+b1 PartOf x1 x2
+b1 REF x2
+b1 male "n.01" x2
+b1 REF x3
+b1 Co-Theme x3 x5
+b1 Theme x3 x1
+b1 Time x3 x4
+b1 fill "v.01" x3
+b2 REF x4
+b2 TPR x4 "now"
+b2 time "n.08" x4
+b3 REF x5
+b3 room "n.01" x5
+
+% Sentence: 46
+% Raw sent: I'm nervous now.
+b1 Time x2 x1
+b2 REF x1
+b2 EQU x1 "now"
+b2 time "n.08" x1
+b1 REF x2
+b1 Theme x2 "speaker"
+b1 nervous "a.01" x2
+
+% Sentence: 47
+% Raw sent: Tom loves chocolate cake.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 Experiencer x2 x1
+b2 Stimulus x2 x4
+b2 Time x2 x3
+b2 love "v.01" x2
+b3 REF x3
+b3 EQU x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 chocolate_ice_cream "n.01" x4
+
+% Sentence: 48
+% Raw sent: Tom's smiling.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Agent x3 x1
+b2 smile "v.01" x3
+
+% Sentence: 49
+% Raw sent: Wait!
+b1 REF x1
+b1 Theme x1 "hearer"
+b1 wait "v.01" x1
+
+% Sentence: 50
+% Raw sent: Did Tom try?
+b1 Time x3 x1
+b2 REF x1
+b2 TPR x1 "now"
+b2 time "n.08" x1
+b3 REF x2
+b3 Name x2 "tom"
+b3 male "n.02" x2
+b1 REF x3
+b1 Experiencer x3 x2
+b1 try "v.01" x3
+
+% Sentence: 51
+% Raw sent: She grew roses.
+b1 REF x1
+b1 female "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Patient x2 x4
+b2 Time x2 x3
+b2 grill "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 rose "n.01" x4
+
+% Sentence: 52
+% Raw sent: Yunus founded the Grameen Bank 30 years ago.
+b1 REF x1
+b1 Name x1 "yunus"
+b1 male "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 TPR x3 "now"
+b2 Theme x2 x4
+b2 found "v.01" x2
+b2 REF x3
+b2 Time x2 x3
+b2 time "n.08" x3
+b3 REF x4
+b3 grameen "n.01" x4
+b2 REF x5
+b2 Quantity x5 "30"
+b2 Unit x5 "year"
+b2 measure "n.02" x5
+b2 TAB x3 x5
+b2 TAB x5 "now"
+
+% Sentence: 53
+% Raw sent: They have drunk two bottles of wine.
+b1 REF x1
+b1 person "n.01" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Patient x2 x5
+b2 Time x2 x3
+b2 drink "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 Quantity x4 "2"
+b2 bottle "n.02" x4
+b2 Quantity x5 x4
+b2 REF x5
+b2 wine "n.01" x5
+
+% Sentence: 54
+% Raw sent: Who won?
+b1 REF x1
+b1 Name x1 "?"
+b1 person "n.01" x1
+b1 REF x2
+b1 Agent x2 x1
+b1 Time x2 x3
+b1 win "v.01" x2
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+
+% Sentence: 55
+% Raw sent: Ah!
+b1 REF x1
+b1 REF x2
+b1 Agent x1 "speaker"
+b1 Theme x1 x2
+b1 hi "n.01" x2
+b1 say "v.01" x1
+
+% Sentence: 56
+% Raw sent: My father was an engineer.
+b1 REF x1
+b1 Of x2 "speaker"
+b1 REF x2
+b1 Role x1 x2
+b1 father "n.01" x2
+b1 person "n.01" x1
+b2 REF x3
+b2 Co-Theme x3 x5
+b2 Theme x3 x1
+b2 Time x3 x4
+b2 be "v.01" x3
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b2 REF x5
+b2 REF x6
+b2 Role x5 x6
+b2 engineer "n.01" x6
+b2 person "n.01" x5
+
+% Sentence: 57
+% Raw sent: She wrinkled her brows.
+b1 REF x1
+b1 female "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Patient x2 x4
+b2 Time x2 x3
+b2 unbuckle "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b4 REF x4
+b4 Owner x4 x1
+b4 brows "n.01" x4
+
+% Sentence: 58
+% Raw sent: He is out now.
+b1 REF x1
+b1 male "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 out "a.02" x3
+
+% Sentence: 59
+% Raw sent: No comment.
+b1 NOT b2
+b2 REF x1
+b2 comment "n.01" x1
+
+% Sentence: 60
+% Raw sent: She dialed the wrong number.
+b1 REF x1
+b1 female "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 dial "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b4 REF x4
+b4 REF x5
+b4 Theme x5 x4
+b4 wrong "a.01" x5
+b4 number "n.04" x4
+
+% Sentence: 61
+% Raw sent: Nobody called.
+b1 NOT b2
+b2 REF x1
+b2 person "n.01" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Time x2 x3
+b2 call "v.03" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+
+% Sentence: 62
+% Raw sent: That doesn't regard you at all.
+b1 REF x1
+b1 entity "n.01" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b4 NOT b2
+b2 REF x3
+b2 Agent x3 x1
+b2 Theme x3 "hearer"
+b2 regard "v.01" x3
+
+% Sentence: 63
+% Raw sent: I told him everything.
+b1 REF x1
+b1 Agent x1 "speaker"
+b1 Recipient x1 x3
+b1 Time x1 x2
+b1 Topic x1 x4
+b1 tell "v.02" x1
+b2 REF x2
+b2 TPR x2 "now"
+b2 time "n.08" x2
+b3 REF x3
+b3 male "n.02" x3
+b4 IMP b5 b1
+b5 REF x4
+b5 entity "n.01" x4
+
+% Sentence: 64
+% Raw sent: I went fishing.
+b1 Time x2 x1
+b2 REF x1
+b2 TPR x1 "now"
+b2 time "n.08" x1
+b1 REF x2
+b1 Agent x2 "speaker"
+b1 fish "v.02" x2
+
+% Sentence: 65
+% Raw sent: There are a lot of breweries in Bavaria.
+b1 REF x1
+b1 Theme x1 x3
+b1 Time x1 x2
+b1 be "v.03" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 time "n.08" x2
+b1 REF x3
+b1 Quantity x3 "+"
+b1 factory "n.01" x3
+b1 Location x1 x4
+b3 REF x4
+b3 Name x4 x4
+b3 city "n.01" x4
+
+% Sentence: 66
+% Raw sent: Everyone wants that.
+b1 IMP b2 b3
+b2 REF x1
+b2 person "n.01" x1
+b3 REF x2
+b3 Pivot x2 x1
+b3 Theme x2 x4
+b3 Time x2 x3
+b3 want "v.01" x2
+b4 REF x3
+b4 EQU x3 "now"
+b4 time "n.08" x3
+b5 REF x4
+b5 entity "n.01" x4
+
+% Sentence: 67
+% Raw sent: He needs assistants.
+b1 REF x1
+b1 male "n.02" x1
+b2 REF x2
+b2 Pivot x2 x1
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 need "v.01" x2
+b3 REF x3
+b3 EQU x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 REF x5
+b2 Role x4 x5
+b2 assistant "n.01" x5
+b2 person "n.01" x4
+
+% Sentence: 68
+% Raw sent: I am baffled.
+b1 Time x2 x1
+b2 REF x1
+b2 EQU x1 "now"
+b2 time "n.08" x1
+b1 REF x2
+b1 Experiencer x2 "speaker"
+b1 male "a.01" x2
+
+% Sentence: 69
+% Raw sent: The pie is fresh.
+b1 REF x1
+b1 pie "n.01" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 fresh "a.01" x3
+
+% Sentence: 70
+% Raw sent: The insulin was making her fat.
+b1 REF x1
+b1 insulin "n.01" x1
+b2 Time x3 x2
+b3 REF x2
+b3 TPR x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 REF x4
+b2 Agent x3 x1
+b2 PRP x4 b4
+b2 Recipient x3 x5
+b2 Topic x3 x4
+b2 make "v.01" x3
+b5 REF x5
+b5 female "n.02" x5
+b4 REF x6
+b4 Theme x6 x5
+b4 fat "a.01" x6
+
+% Sentence: 71
+% Raw sent: I skipped breakfast.
+b1 REF x1
+b1 Agent x1 "speaker"
+b1 Agent x1 x3
+b1 Time x1 x2
+b1 skip "v.01" x1
+b2 REF x2
+b2 TPR x2 "now"
+b2 time "n.08" x2
+b1 REF x3
+b1 breakfast "n.01" x3
+
+% Sentence: 72
+% Raw sent: The sun is rising.
+b1 REF x1
+b1 sun "n.01" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 rise "v.01" x3
+
+% Sentence: 73
+% Raw sent: I caught a fish!
+b1 REF x1
+b1 Agent x1 "speaker"
+b1 Theme x1 x3
+b1 Time x1 x2
+b1 catch "v.08" x1
+b2 REF x2
+b2 TPR x2 "now"
+b2 time "n.08" x2
+b1 REF x3
+b1 fish "n.01" x3
+
+% Sentence: 74
+% Raw sent: Nice suit.
+b1 REF x1
+b1 REF x2
+b1 Theme x1 x2
+b1 nice "a.01" x1
+b1 suit "n.01" x2
+
+% Sentence: 75
+% Raw sent: Tom's cellphone rang and he answered it.
+b1 DRS b2
+b1 DRS b3
+b4 Name x1 "tom"
+b4 REF x1
+b4 male "n.02" x1
+b5 REF x2
+b5 User x2 x1
+b5 cellphone "n.01" x2
+b2 REF x3
+b2 Theme x3 x2
+b2 Time x3 x4
+b2 ring "v.01" x3
+b6 REF x4
+b6 TPR x4 "now"
+b6 time "n.08" x4
+b1 CONTINUATION b2 b3
+b3 REF x5
+b3 Agent x5 x2
+b3 Theme x5 x4
+b3 Time x5 x3
+b3 answer "v.02" x5
+b6 entity "n.01" x4
+
+% Sentence: 76
+% Raw sent: He bowed to the Queen.
+b1 REF x1
+b1 male "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Time x2 x3
+b2 bow "v.03" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b2 Recipient x2 x4
+b4 REF x4
+b4 queen "n.02" x4
+
+% Sentence: 77
+% Raw sent: This hospital has a lot of new equipment.
+b1 REF x1
+b1 hospital "n.01" x1
+b2 REF x2
+b2 Pivot x2 x1
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 have "v.04" x2
+b3 REF x3
+b3 EQU x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 Quantity x4 "+"
+b2 REF x5
+b2 Theme x5 x4
+b2 new "a.01" x5
+b2 equipment "n.01" x4
+
+% Sentence: 78
+% Raw sent: Is tapwater drinkable in Australia?
+b1 Time x3 x1
+b2 REF x1
+b2 EQU x1 "now"
+b2 time "n.08" x1
+b3 REF x2
+b3 Name x2 x2
+b3 male "n.02" x2
+b1 REF x3
+b1 Theme x3 x2
+b1 station "v.01" x3
+b1 Location x3 x4
+b4 REF x4
+b4 Name x4 "australia"
+b4 country "n.02" x4
+
+% Sentence: 79
+% Raw sent: There are many fish in this lake.
+b1 REF x1
+b1 Theme x1 x3
+b1 Time x1 x2
+b1 be "v.03" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 time "n.08" x2
+b1 REF x3
+b1 Quantity x3 "+"
+b1 fish "n.01" x3
+b1 Location x1 x4
+b3 REF x4
+b3 lake "n.01" x4
+
+% Sentence: 80
+% Raw sent: Ann swam across the river.
+b1 REF x1
+b1 Name x1 "ann"
+b1 female "n.02" x1
+b2 REF x2
+b2 Theme x2 x1
+b2 Time x2 x3
+b2 swim "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b2 Path x2 x4
+b4 REF x4
+b4 river "n.01" x4
+
+% Sentence: 81
+% Raw sent: The tiger cub looked like a large kitten.
+b1 REF x1
+b1 tiger "n.02" x1
+b2 REF x2
+b2 Theme x2 x1
+b2 Time x2 x3
+b2 look "v.02" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b2 Attribute x2 x4
+b2 REF x4
+b2 REF x5
+b2 Theme x5 x4
+b2 large "a.01" x5
+b2 kitten "n.01" x4
+
+% Sentence: 82
+% Raw sent: Tom isn't winning.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b4 NOT b2
+b2 REF x3
+b2 Agent x3 x1
+b2 win "v.01" x3
+
+% Sentence: 83
+% Raw sent: Tom is not dead.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b4 NOT b2
+b2 REF x3
+b2 Theme x3 x1
+b2 dead "a.01" x3
+
+% Sentence: 84
+% Raw sent: I have got into Hyogo University.
+b1 REF x1
+b1 Patient x1 "speaker"
+b1 Time x1 x2
+b1 get "v.03" x1
+b2 REF x2
+b2 TPR x2 "now"
+b2 time "n.08" x2
+b1 Result x1 x3
+b1 REF x3
+b1 Name x3 x3
+b1 university "n.03" x3
+
+% Sentence: 85
+% Raw sent: He jumped into the train.
+b1 REF x1
+b1 male "n.02" x1
+b2 REF x2
+b2 Theme x2 x1
+b2 Time x2 x3
+b2 jump "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b2 Destination x2 x4
+b4 REF x4
+b4 train "n.01" x4
+
+% Sentence: 86
+% Raw sent: We found one.
+b1 REF x1
+b1 Agent x1 "speaker"
+b1 Theme x1 x3
+b1 Time x1 x2
+b1 find "v.01" x1
+b2 REF x2
+b2 TPR x2 "now"
+b2 time "n.08" x2
+b1 REF x3
+b1 one "n.02" x3
+
+% Sentence: 87
+% Raw sent: We expect that he will pass the examination.
+b1 REF x1
+b1 REF x2
+b1 Agent x1 "speaker"
+b1 PRP x2 b2
+b1 Time x1 x3
+b1 Topic x1 x2
+b1 expect "v.01" x1
+b3 EQU x3 "now"
+b3 REF x3
+b3 time "n.08" x3
+b4 REF x4
+b4 male "n.02" x4
+b3 TPR "now" x3
+b2 Time x5 x3
+b2 REF x5
+b2 Path x5 x6
+b2 Theme x5 x4
+b2 pass "v.01" x5
+b5 REF x6
+b5 examination "n.01" x6
+
+% Sentence: 88
+% Raw sent: He can swim.
+b1 REF x1
+b1 male "n.02" x1
+b2 POS b3
+b3 REF x2
+b3 Theme x2 x1
+b3 swim "v.01" x2
+
+% Sentence: 89
+% Raw sent: Warn Tom.
+b1 REF x1
+b1 Agent x1 "hearer"
+b1 Recipient x1 x2
+b1 warn "v.01" x1
+b2 REF x2
+b2 Name x2 "tom"
+b2 male "n.02" x2
+
+% Sentence: 90
+% Raw sent: Tom and Mary detest each other.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 Part x2 x1
+b2 Part x2 x3
+b2 group "n.01" x2
+b3 REF x3
+b3 Name x3 "mary"
+b3 female "n.02" x3
+b2 REF x4
+b2 Agent x4 x2
+b2 Theme x4 x6
+b2 Time x4 x5
+b2 male "v.01" x4
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b2 REF x6
+
+% Sentence: 91
+% Raw sent: She loves to cook.
+b1 Time x3 x1
+b2 REF x1
+b2 EQU x1 "now"
+b2 time "n.08" x1
+b3 REF x2
+b3 female "n.02" x2
+b1 REF x3
+b1 REF x4
+b1 Experiencer x3 x2
+b1 PRP x4 b4
+b1 Stimulus x3 x4
+b1 love "v.02" x3
+b4 REF x5
+b4 Agent x5 x2
+b4 cook "v.01" x5
+
+% Sentence: 92
+% Raw sent: She fled Australia.
+b1 REF x1
+b1 female "n.02" x1
+b2 REF x2
+b2 Source x2 x4
+b2 Theme x2 x1
+b2 Time x2 x3
+b2 abandon "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b4 REF x4
+b4 Name x4 "australia"
+b4 country "n.02" x4
+
+% Sentence: 93
+% Raw sent: He is working in the field of biology.
+b1 REF x1
+b1 male "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Agent x3 x1
+b2 work "v.02" x3
+b2 Location x3 x4
+b4 REF x4
+b4 field "n.02" x4
+b4 Creator x4 x5
+b4 REF x5
+b4 biology "n.01" x5
+
+% Sentence: 94
+% Raw sent: I love hamburgers.
+b1 REF x1
+b1 Experiencer x1 "speaker"
+b1 Stimulus x1 x3
+b1 Time x1 x2
+b1 love "v.01" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 time "n.08" x2
+b1 REF x3
+b1 hamburger "n.01" x3
+
+% Sentence: 95
+% Raw sent: We remember.
+b1 REF x1
+b1 Agent x1 "speaker"
+b1 Time x1 x2
+b1 remember "v.01" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 time "n.08" x2
+
+% Sentence: 96
+% Raw sent: He was brave.
+b1 REF x1
+b1 male "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 TPR x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 brave "a.01" x3
+
+% Sentence: 97
+% Raw sent: It's 3:30.
+b1 REF x1
+b1 EQU x1 "now"
+b1 EQU x1 x2
+b2 REF x2
+b2 ClockTime x2 x2
+b2 time "n.08" x2
+
+% Sentence: 98
+% Raw sent: Tom extinguished the fire.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Patient x2 x4
+b2 Time x2 x3
+b2 extinguish "v.02" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b4 REF x4
+b4 fire "n.04" x4
+
+% Sentence: 99
+% Raw sent: Where did you put my umbrella?
+b1 REF x1
+b1 Location x4 x1
+b1 Name x1 "?"
+b1 location "n.01" x1
+b1 Time x3 x2
+b2 REF x2
+b2 TPR x2 "now"
+b2 time "n.08" x2
+b1 REF x3
+b1 Agent x3 "hearer"
+b1 Theme x3 x4
+b1 put "v.01" x3
+b3 REF x4
+b3 User x4 "speaker"
+b3 umbrella "n.01" x4
+
+% Sentence: 100
+% Raw sent: Yesterday I was ill.
+b1 REF x1
+b1 EQU x1 "now"
+b1 TAB x2 x1
+b1 day "n.03" x2
+b1 day "n.03" x1
+b1 Time x3 x2
+b1 REF x2
+b1 REF x3
+b1 Theme x3 "speaker"
+b1 ill "a.01" x3
+
+% Sentence: 101
+% Raw sent: You're a workaholic.
+b1 REF x1
+b1 EQU "hearer" x2
+b1 EQU x1 "now"
+b1 Time x3 x1
+b1 time "n.08" x1
+b1 REF x2
+b1 REF x3
+b1 Role x2 x3
+b1 person "n.01" x2
+b1 workaholic "n.01" x3
+
+% Sentence: 102
+% Raw sent: Tom failed because he didn't study.
+b1 DRS b2
+b1 DRS b3
+b4 Name x1 "tom"
+b4 REF x1
+b4 male "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Time x2 x3
+b2 fail "v.05" x2
+b5 REF x3
+b5 TPR x3 "now"
+b5 time "n.08" x3
+b1 EXPLANATION b2 b3
+b6 Time x4 x3
+b3 NOT b6
+b6 REF x4
+b6 Agent x4 x1
+b6 study "v.05" x4
+
+% Sentence: 103
+% Raw sent: It works.
+b1 REF x1
+b1 entity "n.01" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Time x2 x3
+b2 work "v.01" x2
+b3 REF x3
+b3 EQU x3 "now"
+b3 time "n.08" x3
+
+% Sentence: 104
+% Raw sent: We concurred.
+b1 REF x1
+b1 Agent x1 "speaker"
+b1 Time x1 x2
+b1 male "v.01" x1
+b2 REF x2
+b2 TPR x2 "now"
+b2 time "n.08" x2
+
+% Sentence: 105
+% Raw sent: Somebody called.
+b1 REF x1
+b1 person "n.01" x1
+b1 REF x2
+b1 Agent x2 x1
+b1 Time x2 x3
+b1 call "v.03" x2
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+
+% Sentence: 106
+% Raw sent: Maybe Tom killed himself.
+b1 POS b2
+b3 REF x1
+b3 Name x1 "tom"
+b3 male "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Patient x2 x1
+b2 Time x2 x3
+b2 kill "v.01" x2
+b4 REF x3
+b4 TPR x3 "now"
+b4 time "n.08" x3
+
+% Sentence: 107
+% Raw sent: Something's burning.
+b1 REF x1
+b1 entity "n.01" x1
+b1 Time x3 x2
+b2 REF x2
+b2 EQU x2 "now"
+b2 time "n.08" x2
+b1 REF x3
+b1 Patient x3 x1
+b1 burn "v.01" x3
+
+% Sentence: 108
+% Raw sent: That politician is an old fox.
+b1 REF x1
+b1 REF x2
+b1 Role x1 x2
+b1 person "n.01" x1
+b1 politician "n.02" x2
+b2 REF x3
+b2 Co-Theme x3 x5
+b2 Theme x3 x1
+b2 Time x3 x4
+b2 be "v.08" x3
+b3 REF x4
+b3 EQU x4 "now"
+b3 time "n.08" x4
+b2 REF x5
+b2 REF x6
+b2 Theme x6 x7
+b2 old "a.02" x6
+b2 REF x7
+b2 Role x5 x7
+b2 fox "n.01" x7
+b2 person "n.01" x5
+
+% Sentence: 109
+% Raw sent: This disturbs him.
+b1 REF x1
+b1 entity "n.01" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Patient x2 x4
+b2 Time x2 x3
+b2 male "v.01" x2
+b3 REF x3
+b3 EQU x3 "now"
+b3 time "n.08" x3
+b4 REF x4
+b4 male "n.02" x4
+
+% Sentence: 110
+% Raw sent: She idolized him.
+b1 REF x1
+b1 female "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Patient x2 x4
+b2 Time x2 x3
+b2 male "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b4 REF x4
+b4 male "n.02" x4
+
+% Sentence: 111
+% Raw sent: We should break up.
+b1 NEC b2
+b2 REF x1
+b2 Theme x1 "speaker"
+b2 break "v.01" x1
+
+% Sentence: 112
+% Raw sent: The submarine hid in the depths of the ocean.
+b1 REF x1
+b1 submarine "n.01" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Time x2 x3
+b2 hide "v.02" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b2 Location x2 x4
+b2 REF x4
+b2 depths "n.01" x4
+b2 PartOf x4 x5
+b4 REF x5
+b4 ocean "n.01" x5
+
+% Sentence: 113
+% Raw sent: I abhor spiders.
+b1 REF x1
+b1 Experiencer x1 "speaker"
+b1 Stimulus x1 x3
+b1 Time x1 x2
+b1 abhor "v.01" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 time "n.08" x2
+b1 REF x3
+b1 spider "n.01" x3
+
+% Sentence: 114
+% Raw sent: Tom was unarmed.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 TPR x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 unarmed "a.01" x3
+
+% Sentence: 115
+% Raw sent: Tom is swimming in the river.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 swim "v.01" x3
+b2 Location x3 x4
+b4 REF x4
+b4 river "n.01" x4
+
+% Sentence: 116
+% Raw sent: You mustn't throw litter in the street.
+b1 NEC b2
+b2 NOT b3
+b3 REF x1
+b3 Experiencer x1 x2
+b3 Stimulus x1 "hearer"
+b3 throw "v.01" x1
+b3 REF x2
+b3 male "n.01" x2
+b3 Location x1 x3
+b4 REF x3
+b4 street "n.01" x3
+
+% Sentence: 117
+% Raw sent: Tom sold his house.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 sell "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b4 REF x4
+b4 Owner x4 x1
+b4 house "n.01" x4
+
+% Sentence: 118
+% Raw sent: The tower is fifteen metres high.
+b1 REF x1
+b1 tower "n.01" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 Quantity x4 "15"
+b2 Unit x4 x4
+b2 measure "n.02" x4
+b2 REF x3
+b2 REF x4
+b2 Theme x3 x1
+b2 Value x3 x4
+b2 height "n.01" x3
+
+% Sentence: 119
+% Raw sent: The submarines sank a lot of ships.
+b1 REF x1
+b1 submarines "n.01" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Patient x2 x4
+b2 Time x2 x3
+b2 sink "v.04" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 Quantity x4 "+"
+b2 ship "n.01" x4
+
+% Sentence: 120
+% Raw sent: Mary is snoring.
+b1 REF x1
+b1 Name x1 "mary"
+b1 female "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Agent x3 x1
+b2 snore "v.01" x3
+
+% Sentence: 121
+% Raw sent: I'm exhausted.
+b1 Time x2 x1
+b2 REF x1
+b2 EQU x1 "now"
+b2 time "n.08" x1
+b1 REF x2
+b1 Experiencer x2 "speaker"
+b1 exhaust "a.01" x2
+
+% Sentence: 122
+% Raw sent: You're terrible.
+b1 Time x2 x1
+b2 REF x1
+b2 EQU x1 "now"
+b2 time "n.08" x1
+b1 REF x2
+b1 Theme x2 "hearer"
+b1 terrible "a.01" x2
+
+% Sentence: 123
+% Raw sent: Mary is a fashion junkie.
+b1 REF x1
+b1 Name x1 "mary"
+b1 female "n.02" x1
+b2 REF x2
+b2 Co-Theme x2 x4
+b2 Theme x2 x1
+b2 Time x2 x3
+b2 be "v.02" x2
+b3 REF x3
+b3 EQU x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 REF x5
+b2 Theme x4 x5
+b2 fashion "n.01" x5
+b2 male "n.01" x4
+
+% Sentence: 124
+% Raw sent: Speak clear.
+b1 REF x1
+b1 Agent x1 "hearer"
+b1 Theme x1 x2
+b1 speak "v.03" x1
+b1 REF x2
+b1 clear "n.01" x2
+
+% Sentence: 125
+% Raw sent: We were right.
+b1 Time x2 x1
+b2 REF x1
+b2 TPR x1 "now"
+b2 time "n.08" x1
+b1 REF x2
+b1 Theme x2 "speaker"
+b1 right "a.01" x2
+
+% Sentence: 126
+% Raw sent: Bilbao is a city in the Basque Country
+b1 Name x1 "berlusconi"
+b1 REF x1
+b1 island "n.01" x1
+b2 EQU x1 x2
+b2 REF x2
+b2 city "n.01" x2
+b2 PartOf x2 x3
+b3 REF x3
+b3 Name x3 x3
+b3 country "n.02" x3
+b2 Location x3 x4
+b4 REF x4
+b4 Name x4 x4
+b4 country "n.02" x4
+b2 Location x5 x4
+b5 REF x5
+b5 Name x5 x5
+b5 country "n.02" x5
+b2 EQU x5 x6
+b6 REF x6
+b6 Name x6 x6
+b6 country "n.02" x6
+b2 EQU x6 x7
+b7 REF x7
+b7 Name x7 x7
+b7 country "n.02" x7
+b1 EQU x7 x8
+b8 REF x8
+b8 Name x8 x8
+b8 country "n.02" x8
+b2 EQU x8 x9
+b9 REF x9
+b9 Name x9 x9
+b9 country "n.02" x9
+
+% Sentence: 127
+% Raw sent: Tom honked the horn.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Patient x2 x4
+b2 Time x2 x3
+b2 male "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b4 REF x4
+b4 henhouse "n.01" x4
+
+% Sentence: 128
+% Raw sent: The storm let up.
+b1 REF x1
+b1 storm "n.01" x1
+b2 REF x2
+b2 Theme x2 x1
+b2 Time x2 x3
+b2 male "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+
+% Sentence: 129
+% Raw sent: Russia fears the system.
+b1 REF x1
+b1 Name x1 "russia"
+b1 state "n.04" x1
+b2 REF x2
+b2 Experiencer x2 x1
+b2 Stimulus x2 x4
+b2 Time x2 x3
+b2 fear "v.01" x2
+b3 REF x3
+b3 EQU x3 "now"
+b3 time "n.08" x3
+b4 REF x4
+b4 system "n.01" x4
+
+% Sentence: 130
+% Raw sent: You must be very proud.
+b1 NEC b2
+b2 Time x2 x1
+b3 REF x1
+b3 EQU x1 "now"
+b3 time "n.08" x1
+b2 REF x2
+b2 Theme x2 "hearer"
+b2 proud "a.01" x2
+
+% Sentence: 131
+% Raw sent: I cannot speak German.
+b1 POS b2
+b3 NOT b1
+b2 REF x1
+b2 Agent x1 "speaker"
+b2 Theme x1 x2
+b2 speak "v.03" x1
+b2 REF x2
+b2 german "n.02" x2
+
+% Sentence: 132
+% Raw sent: I love pizza.
+b1 REF x1
+b1 Experiencer x1 "speaker"
+b1 Stimulus x1 x3
+b1 Time x1 x2
+b1 love "v.01" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 time "n.08" x2
+b1 REF x3
+b1 pizza "n.01" x3
+
+% Sentence: 133
+% Raw sent: My mother made me a sweater.
+b1 REF x1
+b1 Of x2 "speaker"
+b1 REF x2
+b1 Role x1 x2
+b1 mother "n.01" x2
+b1 person "n.01" x1
+b2 REF x3
+b2 Agent x3 x1
+b2 Beneficiary x3 "speaker"
+b2 Product x3 x5
+b2 Time x3 x4
+b2 make "v.24" x3
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b2 REF x5
+b2 sweater "n.01" x5
+
+% Sentence: 134
+% Raw sent: Mary hates parties.
+b1 REF x1
+b1 Name x1 "mary"
+b1 female "n.02" x1
+b2 REF x2
+b2 Experiencer x2 x1
+b2 Stimulus x2 x4
+b2 Time x2 x3
+b2 hate "v.01" x2
+b3 REF x3
+b3 EQU x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 party "n.04" x4
+
+% Sentence: 135
+% Raw sent: I want to pay with a check.
+b1 Time x2 x1
+b2 REF x1
+b2 EQU x1 "now"
+b2 time "n.08" x1
+b1 REF x2
+b1 REF x3
+b1 PRP x3 b3
+b1 Pivot x2 "speaker"
+b1 Theme x2 x3
+b1 want "v.01" x2
+b3 REF x4
+b3 Agent x4 "speaker"
+b3 pay "v.01" x4
+b3 Instrument x4 x5
+b3 REF x5
+b3 check "n.01" x5
+
+% Sentence: 136
+% Raw sent: Are you lucky?
+b1 Time x2 x1
+b2 REF x1
+b2 EQU x1 "now"
+b2 time "n.08" x1
+b1 REF x2
+b1 Theme x2 "hearer"
+b1 lucky "a.01" x2
+
+% Sentence: 137
+% Raw sent: Tom ripped you off.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Patient x2 "hearer"
+b2 Time x2 x3
+b2 male "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+
+% Sentence: 138
+% Raw sent: He wants the money.
+b1 REF x1
+b1 male "n.02" x1
+b2 REF x2
+b2 Pivot x2 x1
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 want "v.01" x2
+b3 REF x3
+b3 EQU x3 "now"
+b3 time "n.08" x3
+b4 REF x4
+b4 money "n.01" x4
+
+% Sentence: 139
+% Raw sent: Tom is a fakir.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 Co-Theme x2 x4
+b2 Theme x2 x1
+b2 Time x2 x3
+b2 be "v.08" x2
+b3 REF x3
+b3 EQU x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 REF x5
+b2 Role x4 x5
+b2 male "n.01" x5
+b2 person "n.01" x4
+
+% Sentence: 140
+% Raw sent: Is the cat all right?
+b1 Time x3 x1
+b2 REF x1
+b2 EQU x1 "now"
+b2 time "n.08" x1
+b3 REF x2
+b3 cat "n.01" x2
+b1 REF x3
+b1 Theme x3 x2
+b1 all_right "a.01" x3
+
+% Sentence: 141
+% Raw sent: Tom says he's busy.
+b1 Name x1 "tom"
+b1 REF x1
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 PRP x3 b3
+b2 Time x2 x4
+b2 Topic x2 x3
+b2 say "v.01" x2
+b4 REF x4
+b4 EQU x4 "now"
+b4 time "n.08" x4
+b3 Time x5 x4
+b3 REF x5
+b3 Theme x5 x1
+b3 busy "a.01" x5
+
+% Sentence: 142
+% Raw sent: My grandmother passed away.
+b1 REF x1
+b1 Of x2 "speaker"
+b1 REF x2
+b1 Role x1 x2
+b1 grandmother "n.01" x2
+b1 person "n.01" x1
+b2 REF x3
+b2 Patient x3 x1
+b2 Time x3 x4
+b2 pass_away "v.01" x3
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+
+% Sentence: 143
+% Raw sent: Tom knew something.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 Experiencer x2 x1
+b2 Stimulus x2 x4
+b2 Time x2 x3
+b2 know "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 entity "n.01" x4
+
+% Sentence: 144
+% Raw sent: I'm pregnant.
+b1 Time x2 x1
+b2 REF x1
+b2 EQU x1 "now"
+b2 time "n.08" x1
+b1 REF x2
+b1 Theme x2 "speaker"
+b1 pregnant "a.01" x2
+
+% Sentence: 145
+% Raw sent: I don't have a bicycle.
+b1 Time x2 x1
+b2 REF x1
+b2 EQU x1 "now"
+b2 time "n.08" x1
+b3 NOT b1
+b1 REF x2
+b1 Pivot x2 "speaker"
+b1 Theme x2 x3
+b1 have "v.04" x2
+b1 REF x3
+b1 bicycle "n.01" x3
+
+% Sentence: 146
+% Raw sent: I think Tom is normal.
+b1 REF x1
+b1 REF x2
+b1 Agent x1 "speaker"
+b1 PRP x2 b2
+b1 Theme x1 x2
+b1 Time x1 x3
+b1 think "v.01" x1
+b3 REF x3
+b3 EQU x3 "now"
+b3 time "n.08" x3
+b4 REF x4
+b4 Name x4 "tom"
+b4 male "n.02" x4
+b2 Time x5 x3
+b2 REF x5
+b2 Theme x5 x4
+b2 normal "a.01" x5
+
+% Sentence: 147
+% Raw sent: I'm athletic.
+b1 Time x2 x1
+b2 REF x1
+b2 EQU x1 "now"
+b2 time "n.08" x1
+b1 REF x2
+b1 Theme x2 "speaker"
+b1 honest "a.01" x2
+
+% Sentence: 148
+% Raw sent: I was crying.
+b1 Time x2 x1
+b2 REF x1
+b2 TPR x1 "now"
+b2 time "n.08" x1
+b1 REF x2
+b1 Agent x2 "speaker"
+b1 cry "v.02" x2
+
+% Sentence: 149
+% Raw sent: Tom picked the diamond up and looked at it.
+b1 DRS b2
+b1 DRS b3
+b4 REF x1
+b4 Name x1 "tom"
+b4 male "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 pick_up "v.02" x2
+b5 REF x3
+b5 TPR x3 "now"
+b5 time "n.08" x3
+b6 REF x4
+b6 diamond "n.01" x4
+b1 CONTINUATION b2 b3
+b3 REF x5
+b3 Agent x5 x1
+b3 Time x5 x3
+b3 look "v.01" x5
+b3 Theme x5 x6
+b7 REF x6
+b7 entity "n.01" x6
+
+% Sentence: 150
+% Raw sent: I, too, am worried about Tom.
+b1 Time x2 x1
+b2 REF x1
+b2 EQU x1 "now"
+b2 time "n.08" x1
+b1 REF x2
+b1 Experiencer x2 "speaker"
+b1 worry "v.01" x2
+b1 Stimulus x2 x3
+b3 REF x3
+b3 Name x3 "tom"
+b3 male "n.02" x3
+
+% Sentence: 151
+% Raw sent: I eat a banana.
+b1 REF x1
+b1 Agent x1 "speaker"
+b1 Patient x1 x3
+b1 Time x1 x2
+b1 eat "v.01" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 time "n.08" x2
+b1 REF x3
+b1 banana "n.02" x3
+
+% Sentence: 152
+% Raw sent: Are they live?
+b1 Time x3 x1
+b2 REF x1
+b2 EQU x1 "now"
+b2 time "n.08" x1
+b3 REF x2
+b3 person "n.01" x2
+b1 REF x3
+b1 Theme x3 x2
+b1 live "v.01" x3
+
+% Sentence: 153
+% Raw sent: She forgave you.
+b1 REF x1
+b1 female "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Theme x2 "hearer"
+b2 Time x2 x3
+b2 forgive "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+
+% Sentence: 154
+% Raw sent: I'm disgusted.
+b1 Time x2 x1
+b2 REF x1
+b2 EQU x1 "now"
+b2 time "n.08" x1
+b1 REF x2
+b1 Theme x2 "speaker"
+b1 disgust "a.01" x2
+
+% Sentence: 155
+% Raw sent: They called President Roosevelt a pirate.
+b1 REF x1
+b1 person "n.01" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Result x2 x5
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 call "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b4 REF x4
+b4 REF x5
+b4 Role x4 x5
+b4 person "n.01" x4
+b4 president "n.03" x5
+b2 REF x6
+b2 REF x7
+b2 Role x6 x7
+b2 person "n.01" x6
+b2 pirate "n.02" x7
+
+% Sentence: 156
+% Raw sent: I forgot the password.
+b1 REF x1
+b1 Agent x1 "speaker"
+b1 Theme x1 x3
+b1 Time x1 x2
+b1 forget "v.02" x1
+b2 REF x2
+b2 TPR x2 "now"
+b2 time "n.08" x2
+b3 REF x3
+b3 password "n.01" x3
+
+% Sentence: 157
+% Raw sent: Yesterday I went to the opera.
+b1 REF x1
+b1 EQU x1 "now"
+b1 TAB x2 x1
+b1 day "n.03" x2
+b1 day "n.03" x1
+b1 Time x3 x2
+b1 REF x2
+b1 REF x3
+b1 Theme x3 "speaker"
+b1 Time x3 x4
+b1 go "v.01" x3
+b2 REF x4
+b2 TPR x4 "now"
+b2 time "n.08" x4
+b1 Destination x3 x5
+b3 REF x5
+b3 opera "n.01" x5
+
+% Sentence: 158
+% Raw sent: No one expected him to win.
+b1 NOT b2
+b2 REF x1
+b2 person "n.01" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 PRP x3 b3
+b2 Recipient x2 x5
+b2 Time x2 x4
+b2 Topic x2 x3
+b2 expect "v.02" x2
+b4 REF x4
+b4 TPR x4 "now"
+b4 time "n.08" x4
+b5 REF x5
+b5 male "n.02" x5
+b3 REF x6
+b3 Agent x6 x5
+b3 win "v.01" x6
+
+% Sentence: 159
+% Raw sent: Tom was thoughtful.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 TPR x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 male "a.01" x3
+
+% Sentence: 160
+% Raw sent: I love Italian food.
+b1 REF x1
+b1 Experiencer x1 "speaker"
+b1 Stimulus x1 x3
+b1 Time x1 x2
+b1 love "v.01" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 time "n.08" x2
+b1 REF x3
+b1 REF x4
+b1 Location x3 x4
+b1 Name x4 "italy"
+b1 country "n.02" x4
+b1 food "n.01" x3
+
+% Sentence: 161
+% Raw sent: Tom left at midnight.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 Theme x2 x1
+b2 leave "v.01" x2
+b3 TPR x3 "now"
+b2 Time x2 x3
+b3 REF x3
+b3 time "n.08" x3
+b3 ClockTime x3 "00:00"
+
+% Sentence: 162
+% Raw sent: He needs an umbrella.
+b1 REF x1
+b1 male "n.02" x1
+b2 REF x2
+b2 Pivot x2 x1
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 need "v.02" x2
+b3 REF x3
+b3 EQU x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 umbrella "n.01" x4
+
+% Sentence: 163
+% Raw sent: The company spends a lot of money on advertising.
+b1 REF x1
+b1 company "n.01" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Asset x2 x4
+b2 Time x2 x3
+b2 spend "v.01" x2
+b3 REF x3
+b3 EQU x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 Quantity x4 "+"
+b2 money "n.01" x4
+b2 Theme x2 x5
+b2 REF x5
+b2 advertising "n.01" x5
+
+% Sentence: 164
+% Raw sent: Who did William Wallace defeat?
+b1 REF x1
+b1 Name x1 "?"
+b1 person "n.01" x1
+b1 Time x4 x2
+b2 REF x2
+b2 TPR x2 "now"
+b2 time "n.08" x2
+b3 REF x3
+b3 Name x3 x3
+b3 male "n.02" x3
+b1 REF x4
+b1 Theme x4 x3
+b1 defeat "v.01" x4
+
+% Sentence: 165
+% Raw sent: Tom lowered the bucket into the well.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 lower "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b4 REF x4
+b4 bucket "n.01" x4
+b2 Destination x2 x5
+b5 REF x5
+
+% Sentence: 166
+% Raw sent: He gave in.
+b1 REF x1
+b1 male "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Time x2 x3
+b2 give "v.03" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+
+% Sentence: 167
+% Raw sent: There's a hidden door in the library.
+b1 REF x1
+b1 Theme x1 x3
+b1 Time x1 x2
+b1 be "v.03" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 time "n.08" x2
+b1 REF x3
+b1 REF x4
+b1 Theme x4 x3
+b1 hidden "a.01" x4
+b1 door "n.01" x3
+b1 Location x1 x5
+b3 REF x5
+b3 library "n.02" x5
+
+% Sentence: 168
+% Raw sent: I will not lie to her.
+b1 Time x2 x1
+b2 REF x1
+b2 TPR "now" x1
+b2 time "n.08" x1
+b3 NOT b1
+b1 REF x2
+b1 Agent x2 "speaker"
+b1 lie "v.02" x2
+b1 Co-Agent x2 x3
+b4 REF x3
+b4 female "n.02" x3
+
+% Sentence: 169
+% Raw sent: Klava oversimplifies everything.
+b1 REF x1
+b1 Name x1 "klava"
+b1 person "n.01" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 male "v.01" x2
+b3 REF x3
+b3 EQU x3 "now"
+b3 time "n.08" x3
+b4 IMP b5 b2
+b5 REF x4
+b5 entity "n.01" x4
+
+% Sentence: 170
+% Raw sent: She cared for her sick mother.
+b1 REF x1
+b1 female "n.02" x1
+b2 REF x2
+b2 Experiencer x2 x1
+b2 Time x2 x3
+b2 care "v.02" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b2 Co-Agent x2 x4
+b4 REF x4
+b4 Of x6 x1
+b4 REF x5
+b4 Theme x5 x4
+b4 sick "a.01" x5
+b4 REF x6
+b4 Role x4 x6
+b4 mother "n.01" x6
+b4 person "n.01" x4
+
+% Sentence: 171
+% Raw sent: I'm tired of backgammon.
+b1 Time x2 x1
+b2 REF x1
+b2 EQU x1 "now"
+b2 time "n.08" x1
+b1 REF x2
+b1 Experiencer x2 "speaker"
+b1 male "a.01" x2
+b1 Stimulus x2 x3
+b1 REF x3
+b1 male "n.01" x3
+
+% Sentence: 172
+% Raw sent: Tom is smashed.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 male "a.01" x3
+
+% Sentence: 173
+% Raw sent: Tom is manipulative.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 male "a.01" x3
+
+% Sentence: 174
+% Raw sent: They stopped.
+b1 REF x1
+b1 person "n.01" x1
+b2 REF x2
+b2 Theme x2 x1
+b2 Time x2 x3
+b2 stop "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+
+% Sentence: 175
+% Raw sent: Tom's eating.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Agent x3 x1
+b2 eat "v.01" x3
+
+% Sentence: 176
+% Raw sent: Tom insulted Mary.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 insult "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b4 REF x4
+b4 Name x4 "mary"
+b4 female "n.02" x4
+
+% Sentence: 177
+% Raw sent: The rain is letting up.
+b1 REF x1
+b1 rain "n.01" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Patient x3 x1
+b2 male "v.01" x3
+
+% Sentence: 178
+% Raw sent: Maybe he is Italian or Spanish.
+b1 POS b2
+b3 REF x1
+b3 male "n.02" x1
+b2 Time x3 x2
+b4 REF x2
+b4 EQU x2 "now"
+b4 time "n.08" x2
+b2 REF x3
+b2 REF x4
+b2 Name x4 "italy"
+b2 Source x3 x4
+b2 Theme x3 x1
+b2 be "v.03" x3
+b2 country "n.02" x4
+
+% Sentence: 179
+% Raw sent: Tom was sweating.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 TPR x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 male "a.01" x3
+
+% Sentence: 180
+% Raw sent: He substituted for his father.
+b1 REF x1
+b1 male "n.02" x1
+b2 REF x2
+b2 Theme x2 x1
+b2 Time x2 x3
+b2 substitute "v.02" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b2 Co-Theme x2 x4
+b4 REF x4
+b4 Of x5 x1
+b4 REF x5
+b4 Role x4 x5
+b4 father "n.01" x5
+b4 person "n.01" x4
+
+% Sentence: 181
+% Raw sent: Summer has ended.
+b1 REF x1
+b1 summer "n.01" x1
+b1 REF x2
+b1 Theme x2 x1
+b1 Time x2 x3
+b1 end "v.01" x2
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+
+% Sentence: 182
+% Raw sent: I grew up in a small town.
+b1 REF x1
+b1 Patient x1 "speaker"
+b1 Time x1 x2
+b1 male "v.01" x1
+b2 REF x2
+b2 TPR x2 "now"
+b2 time "n.08" x2
+b1 Location x1 x3
+b1 REF x3
+b1 REF x4
+b1 Theme x4 x3
+b1 small "a.01" x4
+b1 town "n.01" x3
+
+% Sentence: 183
+% Raw sent: I work at the post office.
+b1 REF x1
+b1 Agent x1 "speaker"
+b1 Time x1 x2
+b1 work "v.01" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 time "n.08" x2
+b1 Location x1 x3
+b3 REF x3
+b3 post_office "n.01" x3
+
+% Sentence: 184
+% Raw sent: Tom is stirring his coffee.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Agent x3 x1
+b2 Patient x3 x4
+b2 wring "v.02" x3
+b4 REF x4
+b4 User x4 x1
+b4 coffee "n.01" x4
+
+% Sentence: 185
+% Raw sent: I regret that decision.
+b1 REF x1
+b1 Experiencer x1 "speaker"
+b1 Stimulus x1 x3
+b1 Time x1 x2
+b1 regret "v.01" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 time "n.08" x2
+b3 REF x3
+b3 decision "n.02" x3
+
+% Sentence: 186
+% Raw sent: I'd better drive you home.
+b1 Time x2 x1
+b2 REF x1
+b2 TPR x1 "now"
+b2 time "n.08" x1
+b1 REF x2
+b1 Agent x2 "speaker"
+b1 Patient x2 "hearer"
+b1 drive "v.01" x2
+
+% Sentence: 187
+% Raw sent: She rinsed the dishes.
+b1 REF x1
+b1 female "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Source x2 x4
+b2 Time x2 x3
+b2 rinse "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b4 REF x4
+b4 dish "n.01" x4
+
+% Sentence: 188
+% Raw sent: Three suspects have been arrested.
+b1 REF x1
+b1 Quantity x1 "3"
+b1 suspect "n.01" x1
+b1 Time x3 x2
+b2 REF x2
+b2 TPR x2 "now"
+b2 time "n.08" x2
+b1 REF x3
+b1 Patient x3 x1
+b1 arrest "v.01" x3
+
+% Sentence: 189
+% Raw sent: He's good.
+b1 REF x1
+b1 male "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 good "a.01" x3
+
+% Sentence: 190
+% Raw sent: Grow up!
+b1 REF x1
+b1 Theme x1 "hearer"
+b1 male "v.01" x1
+
+% Sentence: 191
+% Raw sent: I hope she's all right.
+b1 REF x1
+b1 REF x2
+b1 Agent x1 "speaker"
+b1 PRP x2 b2
+b1 Time x1 x3
+b1 Topic x1 x2
+b1 hope "v.01" x1
+b3 REF x3
+b3 EQU x3 "now"
+b3 time "n.08" x3
+b4 REF x4
+b4 female "n.02" x4
+b2 Time x5 x3
+b2 REF x5
+b2 Theme x5 x4
+b2 all_right "a.01" x5
+
+% Sentence: 192
+% Raw sent: All journeys begin with a first step.
+b1 IMP b2 b3
+b2 REF x1
+b2 all "n.01" x1
+b3 REF x2
+b3 Theme x2 x1
+b3 Time x2 x3
+b3 begin "v.01" x2
+b4 REF x3
+b4 EQU x3 "now"
+b4 time "n.08" x3
+b3 Instrument x2 x4
+b3 REF x4
+b3 REF x5
+b3 Theme x5 x4
+b3 first "a.01" x5
+b3 step "n.01" x4
+
+% Sentence: 193
+% Raw sent: He inherited an old wooden chest.
+b1 REF x1
+b1 male "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 inherit "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 REF x5
+b2 Theme x5 x4
+b2 old "a.01" x5
+b2 wooden "n.01" x4
+
+% Sentence: 194
+% Raw sent: We found it.
+b1 REF x1
+b1 Agent x1 "speaker"
+b1 Theme x1 x3
+b1 Time x1 x2
+b1 find "v.01" x1
+b2 REF x2
+b2 TPR x2 "now"
+b2 time "n.08" x2
+b3 REF x3
+b3 entity "n.01" x3
+
+% Sentence: 195
+% Raw sent: Man has been writing for about 6000 years.
+b1 REF x1
+b1 man "n.01" x1
+b1 Time x3 x2
+b2 REF x2
+b2 TPR x2 "now"
+b2 time "n.08" x2
+b1 REF x3
+b1 Agent x3 x1
+b1 write "v.02" x3
+b1 Duration x3 x4
+b1 REF x4
+b1 REF x5
+b1 REF x6
+b1 APX x5 x6
+b1 Quantity x4 x5
+b1 quantity "n.01" x5
+b1 EQU x6 x6
+b1 Unit x4 "year"
+b1 measure "n.02" x4
+
+% Sentence: 196
+% Raw sent: I hope Tom agrees.
+b1 REF x1
+b1 REF x2
+b1 Agent x1 "speaker"
+b1 PRP x2 b2
+b1 Theme x1 x2
+b1 hope "v.01" x1
+b3 REF x3
+b3 Name x3 "tom"
+b3 male "n.02" x3
+b2 REF x4
+b2 Agent x4 x3
+b2 Time x4 x5
+b2 agree "v.01" x4
+b4 REF x5
+b4 EQU x5 "now"
+b4 time "n.08" x5
+
+% Sentence: 197
+% Raw sent: We're very happy with the results.
+b1 Time x3 x1
+b2 REF x1
+b2 EQU x1 "now"
+b2 time "n.08" x1
+b1 REF x2
+b1 Attribute x2 x3
+b1 very "r.01" x2
+b1 REF x3
+b1 Experiencer x3 "speaker"
+b1 happy "a.01" x3
+b1 Stimulus x3 x4
+b3 REF x4
+b3 result "n.01" x4
+
+% Sentence: 198
+% Raw sent: He is writing a letter.
+b1 REF x1
+b1 male "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Agent x3 x1
+b2 Result x3 x4
+b2 write "v.02" x3
+b2 REF x4
+b2 letter "n.01" x4
+
+% Sentence: 199
+% Raw sent: The storm abated.
+b1 REF x1
+b1 storm "n.01" x1
+b2 REF x2
+b2 Patient x2 x1
+b2 Time x2 x3
+b2 male "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+
+% Sentence: 200
+% Raw sent: Tom didn't answer all the questions.
+b1 REF x1
+b1 alwayswrongconcept "n.01" x1
+
+% Sentence: 201
+% Raw sent: I will help.
+b1 Time x2 x1
+b2 REF x1
+b2 TPR "now" x1
+b2 time "n.08" x1
+b1 REF x2
+b1 Patient x2 "speaker"
+b1 help "v.01" x2
+
+% Sentence: 202
+% Raw sent: Over three thousand people attended the concert.
+b1 REF x1
+b1 REF x2
+b1 REF x3
+b1 LES x3 x2
+b1 Quantity x1 x2
+b1 quantity "n.01" x2
+b1 EQU x3 "1000"
+b1 person "n.01" x1
+b1 REF x4
+b1 Goal x4 x6
+b1 Theme x4 x1
+b1 Time x4 x5
+b1 attend "v.01" x4
+b2 REF x5
+b2 TPR x5 "now"
+b2 time "n.08" x5
+b3 REF x6
+b3 concert "n.01" x6
+
+% Sentence: 203
+% Raw sent: Many a man has predicted it.
+b1 REF x1
+b1 Quantity x1 "+"
+b1 man "n.01" x1
+b1 REF x2
+b1 Causer x2 x1
+b1 Patient x2 x4
+b1 Time x2 x3
+b1 trigger "v.01" x2
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+b3 REF x4
+b3 entity "n.01" x4
+
+% Sentence: 204
+% Raw sent: They furnished the library with new books.
+b1 REF x1
+b1 person "n.01" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 male "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b4 REF x4
+b4 library "n.02" x4
+b2 Theme x2 x5
+b2 REF x5
+b2 REF x6
+b2 Theme x6 x5
+b2 new "a.01" x6
+b2 book "n.01" x5
+
+% Sentence: 205
+% Raw sent: Tom wore a Hawaiian shirt.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 wear "v.02" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 REF x5
+b2 MadeOf x4 x5
+b2 noodle "n.01" x5
+b2 shirt "n.01" x4
+
+% Sentence: 206
+% Raw sent: I borrowed Tom's car.
+b1 REF x1
+b1 Agent x1 "speaker"
+b1 Theme x1 x4
+b1 Time x1 x2
+b1 borrow "v.01" x1
+b2 REF x2
+b2 TPR x2 "now"
+b2 time "n.08" x2
+b3 REF x3
+b3 Name x3 "tom"
+b3 male "n.02" x3
+b4 REF x4
+b4 Owner x4 x3
+b4 car "n.01" x4
+
+% Sentence: 207
+% Raw sent: Her aunt's glasses are fashionable.
+b1 REF x1
+b1 female "n.02" x1
+b2 REF x2
+b2 Of x3 x1
+b2 REF x3
+b2 Role x2 x3
+b2 aunt "n.01" x3
+b2 person "n.01" x2
+b3 REF x4
+b3 User x4 x2
+b3 glasses "n.01" x4
+b4 Time x6 x5
+b5 REF x5
+b5 EQU x5 "now"
+b5 time "n.08" x5
+b4 REF x6
+b4 Theme x6 x4
+b4 male "a.01" x6
+
+% Sentence: 208
+% Raw sent: I have a truck.
+b1 REF x1
+b1 Pivot x1 "speaker"
+b1 Theme x1 x3
+b1 Time x1 x2
+b1 have "v.01" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 time "n.08" x2
+b1 REF x3
+b1 truck "n.01" x3
+
+% Sentence: 209
+% Raw sent: My computer has frozen.
+b1 REF x1
+b1 Owner x1 "speaker"
+b1 computer "n.01" x1
+b2 REF x2
+b2 Theme x2 x1
+b2 Time x2 x3
+b2 freeze "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+
+% Sentence: 210
+% Raw sent: A decapitated body was on the coroner's table.
+b1 REF x1
+b1 REF x2
+b1 Theme x2 x1
+b1 male "a.01" x2
+b1 person "n.01" x1
+b1 REF x3
+b1 Theme x3 x1
+b1 Time x3 x4
+b1 be "v.03" x3
+b2 REF x4
+b2 TPR x4 "now"
+b2 time "n.08" x4
+b1 Location x3 x6
+b3 REF x5
+b3 coroner "n.01" x5
+b4 REF x6
+b4 User x6 x5
+b4 table "n.02" x6
+
+% Sentence: 211
+% Raw sent: I have a big dog.
+b1 REF x1
+b1 Pivot x1 "speaker"
+b1 Theme x1 x3
+b1 Time x1 x2
+b1 have "v.04" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 time "n.08" x2
+b1 REF x3
+b1 REF x4
+b1 Theme x4 x3
+b1 big "a.01" x4
+b1 dog "n.01" x3
+
+% Sentence: 212
+% Raw sent: He is gay.
+b1 REF x1
+b1 male "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 gay "a.01" x3
+
+% Sentence: 213
+% Raw sent: He made Miss Green his secretary.
+b1 REF x1
+b1 male "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Result x2 x4
+b2 Time x2 x3
+b2 make "v.15" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b4 REF x4
+b4 Of x5 x1
+b4 REF x5
+b4 Role x4 x5
+b4 person "n.01" x4
+b4 secretary "n.02" x5
+
+% Sentence: 214
+% Raw sent: Tom knocked on the door.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Time x2 x3
+b2 knock "v.02" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b2 Patient x2 x4
+b4 REF x4
+b4 door "n.01" x4
+
+% Sentence: 215
+% Raw sent: There are over 800,000 Basque speakers in the world.
+b1 REF x1
+b1 Theme x1 x3
+b1 Time x1 x2
+b1 be "v.03" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 time "n.08" x2
+b1 REF x3
+b1 REF x4
+b1 REF x5
+b1 LES x5 x4
+b1 Quantity x3 x4
+b1 quantity "n.01" x4
+b1 EQU x5 x5
+b1 team "n.01" x3
+b1 Location x2 x6
+b3 REF x6
+b3 world "n.01" x6
+
+% Sentence: 216
+% Raw sent: I'm really fed up with this heat.
+b1 Time x3 x1
+b2 REF x1
+b2 EQU x1 "now"
+b2 time "n.08" x1
+b1 REF x2
+b1 REF x3
+b1 Experiencer x3 "speaker"
+b1 PRP x2 b3
+b1 Stimulus x3 x2
+b1 really "a.01" x3
+b3 REF x4
+b3 Experiencer x4 "speaker"
+b3 fed_up "a.01" x4
+b1 Stimulus x3 x5
+b4 REF x5
+b4 heat "n.02" x5
+
+% Sentence: 217
+% Raw sent: Mary can speak Japanese.
+b1 REF x1
+b1 Name x1 "mary"
+b1 female "n.02" x1
+b2 POS b3
+b3 REF x2
+b3 Agent x2 x1
+b3 Theme x2 x3
+b3 speak "v.03" x2
+b3 REF x3
+b3 japanese "n.02" x3
+
+% Sentence: 218
+% Raw sent: Wolves stalked the flock.
+b1 REF x1
+b1 wolf "n.01" x1
+b1 REF x2
+b1 Agent x2 x1
+b1 Patient x2 x4
+b1 Time x2 x3
+b1 male "v.01" x2
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+b3 REF x4
+b3 flock "n.01" x4
+
+% Sentence: 219
+% Raw sent: Tom arrived at 2:30.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 Theme x2 x1
+b2 arrive "v.01" x2
+b3 TPR x3 "now"
+b2 Time x2 x3
+b3 REF x3
+b3 time "n.08" x3
+b3 ClockTime x3 "14:30"
+
+% Sentence: 220
+% Raw sent: I was very selfish.
+b1 Time x3 x1
+b2 REF x1
+b2 TPR x1 "now"
+b2 time "n.08" x1
+b1 REF x2
+b1 Attribute x2 x3
+b1 very "r.01" x2
+b1 REF x3
+b1 Theme x3 "speaker"
+b1 selfish "a.01" x3
+
+% Sentence: 221
+% Raw sent: The alarm didn't wake Tom.
+b1 REF x1
+b1 alarm "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 TPR x2 "now"
+b3 time "n.08" x2
+b4 NOT b2
+b2 REF x3
+b2 Agent x3 x1
+b2 Patient x3 x4
+b2 wake "v.01" x3
+b5 REF x4
+b5 Name x4 "tom"
+b5 male "n.02" x4
+
+% Sentence: 222
+% Raw sent: The medicine didn't help at all.
+b1 REF x1
+b1 medicine "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 TPR x2 "now"
+b3 time "n.08" x2
+b4 NOT b2
+b2 REF x3
+b2 Patient x3 x1
+b2 help "v.01" x3
+
+% Sentence: 223
+% Raw sent: He dreams that everybody in China speaks Esperanto.
+b1 REF x1
+b1 male "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Theme x2 x3
+b2 dream "v.01" x2
+b3 IMP b4 b2
+b4 REF x3
+b4 person "n.01" x3
+b2 Location x2 x4
+b5 REF x4
+b5 Name x4 "china"
+b5 country "n.02" x4
+b3 REF x5
+b3 Agent x5 x1
+b3 Theme x5 x7
+b3 Time x5 x6
+b3 speak "v.03" x5
+b6 REF x6
+b6 EQU x6 "now"
+b6 time "n.08" x6
+b3 REF x7
+b3 esperanto "n.01" x7
+
+% Sentence: 224
+% Raw sent: You hugged Mary.
+b1 REF x1
+b1 Agent x1 "hearer"
+b1 Co-Agent x1 x3
+b1 Time x1 x2
+b1 hug "v.01" x1
+b2 REF x2
+b2 TPR x2 "now"
+b2 time "n.08" x2
+b3 REF x3
+b3 Name x3 "mary"
+b3 female "n.02" x3
+
+% Sentence: 225
+% Raw sent: Tom's paralyzed.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Patient x3 x1
+b2 paralyze "v.01" x3
+
+% Sentence: 226
+% Raw sent: Oil this bicycle.
+b1 REF x1
+b1 Agent x1 "hearer"
+b1 Patient x1 x2
+b1 oil "v.01" x1
+b2 REF x2
+b2 bicycle "n.01" x2
+
+% Sentence: 227
+% Raw sent: I brought wine.
+b1 REF x1
+b1 Agent x1 "speaker"
+b1 Theme x1 x3
+b1 Time x1 x2
+b1 bring "v.01" x1
+b2 REF x2
+b2 TPR x2 "now"
+b2 time "n.08" x2
+b1 REF x3
+b1 wine "n.01" x3
+
+% Sentence: 228
+% Raw sent: I was born on June 4, 1974.
+b1 TPR x1 "now"
+b2 Time x2 x1
+b1 REF x1
+b1 time "n.08" x1
+b2 REF x2
+b2 Patient x2 "speaker"
+b2 bear "v.02" x2
+b1 MonthOfYear x1 "06"
+b1 YearOfCentury x1 "1905"
+
+% Sentence: 229
+% Raw sent: She smoked a cigar.
+b1 REF x1
+b1 female "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Patient x2 x4
+b2 Time x2 x3
+b2 smoke "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 cigar "n.01" x4
+
+% Sentence: 230
+% Raw sent: Tom was excited.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 TPR x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Experiencer x3 x1
+b2 excited "a.01" x3
+
+% Sentence: 231
+% Raw sent: Nobody can surpass him.
+b1 NOT b2
+b2 REF x1
+b2 person "n.01" x1
+b2 POS b3
+b3 REF x2
+b3 Agent x2 x1
+b3 Patient x2 x3
+b3 male "v.01" x2
+b4 REF x3
+b4 male "n.02" x3
+
+% Sentence: 232
+% Raw sent: Try hard.
+b1 REF x1
+b1 Experiencer x1 "hearer"
+b1 try "v.01" x1
+b1 REF x2
+b1 Manner x1 x2
+b1 hard "a.01" x2
+
+% Sentence: 233
+% Raw sent: There are many earthquakes in Japan.
+b1 REF x1
+b1 Theme x1 x3
+b1 Time x1 x2
+b1 be "v.03" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 time "n.08" x2
+b1 REF x3
+b1 Quantity x3 "+"
+b1 earthquake "n.01" x3
+b1 Location x1 x4
+b3 REF x4
+b3 Name x4 "japan"
+b3 country "n.02" x4
+
+% Sentence: 234
+% Raw sent: I was expelled from school.
+b1 Time x2 x1
+b2 REF x1
+b2 TPR x1 "now"
+b2 time "n.08" x1
+b1 REF x2
+b1 Theme x2 "speaker"
+b1 expel "v.01" x2
+b1 Source x2 x3
+b1 REF x3
+b1 school "n.02" x3
+
+% Sentence: 235
+% Raw sent: I needed money.
+b1 REF x1
+b1 Pivot x1 "speaker"
+b1 Theme x1 x3
+b1 Time x1 x2
+b1 need "v.01" x1
+b2 REF x2
+b2 TPR x2 "now"
+b2 time "n.08" x2
+b1 REF x3
+b1 money "n.01" x3
+
+% Sentence: 236
+% Raw sent: My brother is rich.
+b1 REF x1
+b1 Of x2 "speaker"
+b1 REF x2
+b1 Role x1 x2
+b1 brother "n.01" x2
+b1 person "n.01" x1
+b2 Time x4 x3
+b3 REF x3
+b3 EQU x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 Theme x4 x1
+b2 rich "a.01" x4
+
+% Sentence: 237
+% Raw sent: I need to buy one.
+b1 Time x2 x1
+b2 REF x1
+b2 EQU x1 "now"
+b2 time "n.08" x1
+b1 REF x2
+b1 REF x3
+b1 PRP x3 b3
+b1 Pivot x2 "speaker"
+b1 Theme x2 x3
+b1 need "v.01" x2
+b3 REF x4
+b3 Agent x4 "speaker"
+b3 Theme x4 x5
+b3 buy "v.01" x4
+b3 REF x5
+b3 one "n.02" x5
+
+% Sentence: 238
+% Raw sent: She pulled down the blinds.
+b1 REF x1
+b1 female "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 pull_out "v.02" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b4 REF x4
+b4 blind "n.03" x4
+
+% Sentence: 239
+% Raw sent: No one is perfect.
+b1 NOT b2
+b2 REF x1
+b2 person "n.01" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 perfect "a.01" x3
+
+% Sentence: 240
+% Raw sent: It's clean.
+b1 REF x1
+b1 entity "n.01" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Patient x3 x1
+b2 clean "v.01" x3
+
+% Sentence: 241
+% Raw sent: My son is playing in the rain.
+b1 REF x1
+b1 Of x2 "speaker"
+b1 REF x2
+b1 Role x1 x2
+b1 person "n.01" x1
+b1 son "n.01" x2
+b2 Time x4 x3
+b3 REF x3
+b3 EQU x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 Agent x4 x1
+b2 play "v.05" x4
+b2 Location x4 x5
+b4 REF x5
+b4 rain "n.01" x5
+
+% Sentence: 242
+% Raw sent: The city walls are so beautiful!
+b1 REF x1
+b1 REF x2
+b1 Theme x1 x2
+b1 city "n.01" x2
+b1 wall "n.01" x1
+b2 Time x5 x3
+b3 REF x3
+b3 EQU x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 Attribute x4 x5
+b2 so "r.01" x4
+b2 REF x5
+b2 Theme x5 x1
+b2 beautiful "a.01" x5
+
+% Sentence: 243
+% Raw sent: I will make a note in my notebook.
+b1 Time x2 x1
+b2 REF x1
+b2 TPR "now" x1
+b2 time "n.08" x1
+b1 REF x2
+b1 Agent x2 "speaker"
+b1 Theme x2 x3
+b1 make "v.06" x2
+b1 REF x3
+b1 note "n.01" x3
+b1 Location x2 x4
+b3 REF x4
+b3 User x4 "speaker"
+b3 notebook "n.01" x4
+
+% Sentence: 244
+% Raw sent: Reform allows home schooling.
+b1 REF x1
+b1 Name x1 x1
+b1 organization "n.01" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Beneficiary x2 x4
+b2 Time x2 x3
+b2 allow "v.01" x2
+b3 REF x3
+b3 EQU x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 home "n.01" x4
+
+% Sentence: 245
+% Raw sent: She's cleaning the book.
+b1 REF x1
+b1 female "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Agent x3 x1
+b2 Source x3 x4
+b2 clean "v.01" x3
+b4 REF x4
+b4 book "n.01" x4
+
+% Sentence: 246
+% Raw sent: He needed money.
+b1 REF x1
+b1 male "n.02" x1
+b2 REF x2
+b2 Pivot x2 x1
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 need "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 money "n.01" x4
+
+% Sentence: 247
+% Raw sent: Tom is playing poker with his friends.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Agent x3 x1
+b2 Theme x3 x4
+b2 play "v.01" x3
+b2 REF x4
+b2 poker "n.01" x4
+b2 Co-Agent x3 x5
+b4 REF x5
+b4 Of x6 x1
+b4 REF x6
+b4 Role x5 x6
+b4 friend "n.01" x6
+b4 person "n.01" x5
+
+% Sentence: 248
+% Raw sent: The dog is dying.
+b1 REF x1
+b1 dog "n.01" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Patient x3 x1
+b2 die "v.01" x3
+
+% Sentence: 249
+% Raw sent: Tom is Mary's stepson.
+b1 REF x1
+b1 alwayswrongconcept "n.01" x1
+
+% Sentence: 250
+% Raw sent: I leave tomorrow.
+b1 REF x1
+b1 Theme x1 "speaker"
+b1 leave "v.01" x1
+b1 REF x2
+b1 EQU x2 "now"
+b1 TAB x1 x2
+b1 day "n.03" x1
+b1 day "n.03" x2
+
+% Sentence: 251
+% Raw sent: Mary broke up with me.
+b1 REF x1
+b1 Name x1 "mary"
+b1 female "n.02" x1
+b2 REF x2
+b2 Patient x2 x1
+b2 Time x2 x3
+b2 male "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b2 Co-Agent x2 "speaker"
+
+% Sentence: 252
+% Raw sent: Tom threw Mary a rope.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Recipient x2 x4
+b2 Theme x2 x5
+b2 Time x2 x3
+b2 throw "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b4 REF x4
+b4 Name x4 "mary"
+b4 female "n.02" x4
+b2 REF x5
+b2 rope "n.01" x5
+
+% Sentence: 253
+% Raw sent: The doctor told Tom that he should eat a lot of vegetables.
+b1 REF x1
+b1 REF x2
+b1 Role x1 x2
+b1 doctor "n.01" x2
+b1 person "n.01" x1
+b2 REF x3
+b2 REF x4
+b2 Agent x3 x1
+b2 PRP x4 b3
+b2 Recipient x3 x6
+b2 Time x3 x5
+b2 Topic x3 x4
+b2 tell "v.02" x3
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b5 Name x6 "tom"
+b5 REF x6
+b5 male "n.02" x6
+b3 NEC b6
+b6 REF x7
+b6 Agent x7 x3
+b6 Patient x7 x8
+b6 eat "v.01" x7
+b6 REF x8
+b6 Quantity x8 "+"
+b6 vegetable "n.01" x8
+
+% Sentence: 254
+% Raw sent: There is yogurt in the refrigerator.
+b1 REF x1
+b1 Theme x1 x3
+b1 Time x1 x2
+b1 be "v.03" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 time "n.08" x2
+b1 REF x3
+b1 male "n.01" x3
+b1 Location x1 x4
+b3 REF x4
+b3 refrigerator "n.01" x4
+
+% Sentence: 255
+% Raw sent: Maybe Tom was hiding something.
+b1 POS b2
+b3 REF x1
+b3 Name x1 "tom"
+b3 male "n.02" x1
+b2 Time x3 x2
+b4 REF x2
+b4 TPR x2 "now"
+b4 time "n.08" x2
+b2 REF x3
+b2 Agent x3 x1
+b2 Patient x3 x4
+b2 hide "v.01" x3
+b2 REF x4
+b2 entity "n.01" x4
+
+% Sentence: 256
+% Raw sent: I received a telegram from her.
+b1 REF x1
+b1 Agent x1 "speaker"
+b1 Theme x1 x3
+b1 Time x1 x2
+b1 receive "v.01" x1
+b2 REF x2
+b2 TPR x2 "now"
+b2 time "n.08" x2
+b1 REF x3
+b1 telegram "n.01" x3
+b1 Source x1 x4
+b3 REF x4
+b3 female "n.02" x4
+
+% Sentence: 257
+% Raw sent: Who escaped?
+b1 REF x1
+b1 Name x1 "?"
+b1 person "n.01" x1
+b1 REF x2
+b1 Theme x2 x1
+b1 Time x2 x3
+b1 escape "v.01" x2
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+
+% Sentence: 258
+% Raw sent: Call him.
+b1 REF x1
+b1 Agent x1 "hearer"
+b1 Theme x1 x2
+b1 call "v.03" x1
+b2 REF x2
+b2 male "n.02" x2
+
+% Sentence: 259
+% Raw sent: The river is also polluted.
+b1 REF x1
+b1 river "n.01" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 polluted "a.01" x3
+
+% Sentence: 260
+% Raw sent: She ate her dinner.
+b1 REF x1
+b1 female "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Patient x2 x4
+b2 Time x2 x3
+b2 eat "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b4 REF x4
+b4 Of x5 x1
+b4 REF x5
+b4 Role x4 x5
+b4 dinner "n.01" x5
+b4 person "n.01" x4
+
+% Sentence: 261
+% Raw sent: Lincoln welcomed his old political opponent.
+b1 REF x1
+b1 Name x1 "lincoln"
+b1 male "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 welcome "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b4 REF x4
+b4 Owner x4 x1
+b4 REF x5
+b4 Theme x5 x4
+b4 old "a.01" x5
+b4 REF x6
+b4 Theme x6 x4
+b4 political "a.01" x6
+b4 REF x7
+b4 Role x4 x7
+b4 opponent "n.01" x7
+b4 person "n.01" x4
+
+% Sentence: 262
+% Raw sent: His stupidity is abysmal.
+b1 REF x1
+b1 male "n.02" x1
+b2 REF x2
+b2 PartOf x2 x1
+b2 stupidity "n.01" x2
+b3 Time x4 x3
+b4 REF x3
+b4 EQU x3 "now"
+b4 time "n.08" x3
+b3 REF x4
+b3 Theme x4 x2
+b3 male "a.01" x4
+
+% Sentence: 263
+% Raw sent: He darkens the room.
+b1 REF x1
+b1 male "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Patient x2 x4
+b2 Time x2 x3
+b2 male "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b4 REF x4
+b4 room "n.01" x4
+
+% Sentence: 264
+% Raw sent: The game excited lots of people.
+b1 REF x1
+b1 game "n.02" x1
+b2 REF x2
+b2 Experiencer x2 x1
+b2 Stimulus x2 x4
+b2 Time x2 x3
+b2 excited "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 Quantity x4 "+"
+b2 person "n.01" x4
+
+% Sentence: 265
+% Raw sent: A lot of insects are chirping in the field.
+b1 REF x1
+b1 Quantity x1 "+"
+b1 insect "n.01" x1
+b1 Time x3 x2
+b2 REF x2
+b2 EQU x2 "now"
+b2 time "n.08" x2
+b1 REF x3
+b1 Theme x3 x1
+b1 male "v.01" x3
+b1 Location x3 x4
+b3 REF x4
+b3 field "n.01" x4
+
+% Sentence: 266
+% Raw sent: Mary massaged my shoulders.
+b1 REF x1
+b1 Name x1 "mary"
+b1 female "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Experiencer x2 x4
+b2 Time x2 x3
+b2 massage "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b4 REF x4
+b4 PartOf x4 "speaker"
+b4 shoulder "n.01" x4
+
+% Sentence: 267
+% Raw sent: Tom looks hesitant.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 male "a.01" x3
+
+% Sentence: 268
+% Raw sent: Many people were arrested.
+b1 REF x1
+b1 Quantity x1 "+"
+b1 person "n.01" x1
+b1 Time x3 x2
+b2 REF x2
+b2 TPR x2 "now"
+b2 time "n.08" x2
+b1 REF x3
+b1 Patient x3 x1
+b1 arrest "v.01" x3
+
+% Sentence: 269
+% Raw sent: This flag is very pretty.
+b1 REF x1
+b1 flag "n.01" x1
+b2 Time x4 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Attribute x3 x4
+b2 very "r.01" x3
+b2 REF x4
+b2 Theme x4 x1
+b2 pretty "a.01" x4
+
+% Sentence: 270
+% Raw sent: These are perfect.
+b1 REF x1
+b1 these "n.01" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 perfect "a.01" x3
+
+% Sentence: 271
+% Raw sent: She acknowledged her mistake.
+b1 REF x1
+b1 female "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 acknowledge "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b4 REF x4
+b4 Creator x4 x1
+b4 mistake "n.01" x4
+
+% Sentence: 272
+% Raw sent: Tom dug a hole in the backyard.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Result x2 x4
+b2 Time x2 x3
+b2 dig "v.02" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 hole "n.01" x4
+b2 Location x2 x5
+b4 REF x5
+b4 backyard "n.01" x5
+
+% Sentence: 273
+% Raw sent: He is spinning wool.
+b1 REF x1
+b1 male "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Agent x3 x1
+b2 Material x3 x4
+b2 spin "v.06" x3
+b2 REF x4
+b2 wool "n.02" x4
+
+% Sentence: 274
+% Raw sent: I am saving up so that I can go to Australia.
+b1 DRS b2
+b1 DRS b3
+b2 Time x2 x1
+b4 REF x1
+b4 EQU x1 "now"
+b4 time "n.08" x1
+b2 REF x2
+b2 Patient x2 "speaker"
+b2 male "v.01" x2
+b1 EXPLANATION b2 b3
+b3 POS b5
+b5 REF x3
+b5 Theme x3 "speaker"
+b5 go "v.01" x3
+b5 Destination x3 x4
+b6 REF x4
+b6 Name x4 "australia"
+b6 country "n.02" x4
+
+% Sentence: 275
+% Raw sent: We volunteered.
+b1 REF x1
+b1 Agent x1 "speaker"
+b1 Time x1 x2
+b1 male "v.01" x1
+b2 REF x2
+b2 TPR x2 "now"
+b2 time "n.08" x2
+
+% Sentence: 276
+% Raw sent: Tom intervened.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Time x2 x3
+b2 male "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+
+% Sentence: 277
+% Raw sent: I know that John is honest.
+b1 REF x1
+b1 REF x2
+b1 Experiencer x1 "speaker"
+b1 PRP x2 b2
+b1 Stimulus x1 x2
+b1 Time x1 x3
+b1 know "v.01" x1
+b3 REF x3
+b3 EQU x3 "now"
+b3 time "n.08" x3
+b4 REF x4
+b4 Name x4 "john"
+b4 male "n.02" x4
+b2 Time x5 x3
+b2 REF x5
+b2 Theme x5 x4
+b2 honest "a.01" x5
+
+% Sentence: 278
+% Raw sent: Tom drives slowly.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Time x2 x3
+b2 drive "v.01" x2
+b3 REF x3
+b3 EQU x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 Manner x2 x4
+b2 slowly "r.01" x4
+
+% Sentence: 279
+% Raw sent: The rope broke under the strain.
+b1 REF x1
+b1 rope "n.01" x1
+b2 REF x2
+b2 Patient x2 x1
+b2 Time x2 x3
+b2 break "v.04" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b2 Location x2 x4
+b4 REF x4
+b4 henhouse "n.01" x4
+
+% Sentence: 280
+% Raw sent: Your jokes aren't funny.
+b1 REF x1
+b1 Creator x1 "hearer"
+b1 joke "n.01" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b4 NOT b2
+b2 REF x3
+b2 Theme x3 x1
+b2 funny "a.01" x3
+
+% Sentence: 281
+% Raw sent: Breakfast is served at seven a.m.
+b1 REF x1
+b1 breakfast "n.01" x1
+b1 Time x3 x2
+b2 REF x2
+b2 EQU x2 "now"
+b2 time "n.08" x2
+b1 REF x3
+b1 Theme x3 x1
+b1 Value x3 x4
+b1 serve "v.02" x3
+b1 REF x4
+b1 ClockTime x4 "07:00"
+b1 time "n.08" x4
+
+% Sentence: 282
+% Raw sent: I love Hitomi.
+b1 REF x1
+b1 Experiencer x1 "speaker"
+b1 Stimulus x1 x3
+b1 Time x1 x2
+b1 love "v.01" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 time "n.08" x2
+b1 REF x3
+b1 hitomi "n.01" x3
+
+% Sentence: 283
+% Raw sent: Ken wasn't running.
+b1 REF x1
+b1 Name x1 "ken"
+b1 male "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 TPR x2 "now"
+b3 time "n.08" x2
+b4 NOT b2
+b2 REF x3
+b2 Theme x3 x1
+b2 run "v.01" x3
+
+% Sentence: 284
+% Raw sent: I accept your offer.
+b1 REF x1
+b1 Agent x1 "speaker"
+b1 Theme x1 x3
+b1 Time x1 x2
+b1 accept "v.01" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 time "n.08" x2
+b3 REF x3
+b3 User x3 "hearer"
+b3 offer "n.01" x3
+
+% Sentence: 285
+% Raw sent: The postman was bitten by that dog.
+b1 REF x1
+b1 postman "n.01" x1
+b2 Time x3 x2
+b3 REF x2
+b3 TPR x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Patient x3 x1
+b2 bite "v.01" x3
+b2 Agent x3 x4
+b4 REF x4
+b4 dog "n.01" x4
+
+% Sentence: 286
+% Raw sent: The serpent tempted Eve.
+b1 REF x1
+b1 serpent "n.01" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 male "v.01" x2
+b3 REF x3
+b3 EQU x3 "now"
+b3 time "n.08" x3
+b4 REF x4
+b4 Name x4 x4
+b4 female "n.02" x4
+
+% Sentence: 287
+% Raw sent: The car bumped the tree.
+b1 REF x1
+b1 car "n.01" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Patient x2 x4
+b2 Time x2 x3
+b2 bump_into "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b4 REF x4
+b4 tree "n.01" x4
+
+% Sentence: 288
+% Raw sent: You're wise.
+b1 Time x2 x1
+b2 REF x1
+b2 EQU x1 "now"
+b2 time "n.08" x1
+b1 REF x2
+b1 Theme x2 "hearer"
+b1 wise "a.01" x2
+
+% Sentence: 289
+% Raw sent: Is the phone ringing?
+b1 Time x3 x1
+b2 REF x1
+b2 EQU x1 "now"
+b2 time "n.08" x1
+b3 REF x2
+b3 phone "n.01" x2
+b1 REF x3
+b1 Theme x3 x2
+b1 ring "v.01" x3
+
+% Sentence: 290
+% Raw sent: Tom quit.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Time x2 x3
+b2 quit "v.05" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+
+% Sentence: 291
+% Raw sent: He had his wallet stolen.
+b1 REF x1
+b1 male "n.02" x1
+b2 Beneficiary x4 x1
+b2 Time x4 x2
+b3 REF x2
+b3 TPR x2 "now"
+b3 time "n.08" x2
+b4 REF x3
+b4 Owner x3 x1
+b4 wallet "n.01" x3
+b2 REF x4
+b2 Theme x4 x3
+b2 steal "v.01" x4
+
+% Sentence: 292
+% Raw sent: I made this chair.
+b1 REF x1
+b1 Agent x1 "speaker"
+b1 Product x1 x3
+b1 Time x1 x2
+b1 make "v.06" x1
+b2 REF x2
+b2 TPR x2 "now"
+b2 time "n.08" x2
+b3 REF x3
+b3 chair "n.01" x3
+
+% Sentence: 293
+% Raw sent: She joined us.
+b1 REF x1
+b1 female "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Patient x2 "speaker"
+b2 Time x2 x3
+b2 join "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+
+% Sentence: 294
+% Raw sent: He lives in the city.
+b1 REF x1
+b1 male "n.02" x1
+b2 REF x2
+b2 Theme x2 x1
+b2 Time x2 x3
+b2 live "v.01" x2
+b3 REF x3
+b3 EQU x3 "now"
+b3 time "n.08" x3
+b2 Location x2 x4
+b4 REF x4
+b4 city "n.01" x4
+
+% Sentence: 295
+% Raw sent: They marched two abreast.
+b1 REF x1
+b1 person "n.01" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 march "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 Quantity x4 "2"
+b2 REF x5
+b2 Role x4 x5
+b2 person "n.01" x4
+b2 abreast "n.01" x5
+
+% Sentence: 296
+% Raw sent: Tom stared at Mary suspiciously.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Time x2 x3
+b2 stare "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b2 Theme x2 x4
+b4 REF x4
+b4 Name x4 "mary"
+b4 female "n.02" x4
+b2 REF x5
+b2 Manner x2 x5
+b2 male "r.01" x5
+
+% Sentence: 297
+% Raw sent: Tom might be busy.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 POS b3
+b3 Time x3 x2
+b4 REF x2
+b4 EQU x2 "now"
+b4 time "n.08" x2
+b3 REF x3
+b3 Theme x3 x1
+b3 busy "a.01" x3
+
+% Sentence: 298
+% Raw sent: I am not Irish.
+b1 Time x2 x1
+b2 REF x1
+b2 EQU x1 "now"
+b2 time "n.08" x1
+b3 NOT b1
+b1 REF x2
+b1 Theme x2 "speaker"
+b1 male "a.01" x2
+
+% Sentence: 299
+% Raw sent: He came back at 5 o'clock.
+b1 REF x1
+b1 male "n.02" x1
+b2 REF x2
+b2 TPR x3 "now"
+b2 Theme x2 x1
+b2 come "v.02" x2
+b2 Time x2 x3
+b2 REF x3
+b2 time "n.08" x3
+b2 ClockTime x3 "17:00"
+
+% Sentence: 300
+% Raw sent: There are flying birds in the sky.
+b1 REF x1
+b1 Theme x1 x3
+b1 Time x1 x2
+b1 be "v.03" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 time "n.08" x2
+b1 REF x3
+b1 bird "n.01" x3
+b1 Location x1 x4
+b3 REF x4
+b3 sky "n.01" x4
+
+% Sentence: 301
+% Raw sent: Nice dress.
+b1 REF x1
+b1 REF x2
+b1 Theme x1 x2
+b1 nice "a.01" x1
+b1 dress "n.01" x2
+
+% Sentence: 302
+% Raw sent: You can buy stamps at any post office.
+b1 POS b2
+b2 REF x1
+b2 Agent x1 "hearer"
+b2 Theme x1 x2
+b2 buy "v.01" x1
+b2 REF x2
+b2 stamp "n.03" x2
+b2 Theme x1 x3
+b2 REF x3
+b2 post_office "n.01" x3
+
+% Sentence: 303
+% Raw sent: Tom shrugged his shoulders.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Patient x2 x4
+b2 Time x2 x3
+b2 unbutton "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b4 REF x4
+b4 PartOf x4 x1
+b4 shoulder "n.01" x4
+
+% Sentence: 304
+% Raw sent: We survived!
+b1 REF x1
+b1 Theme x1 "speaker"
+b1 Time x1 x2
+b1 survive "v.01" x1
+b2 REF x2
+b2 TPR x2 "now"
+b2 time "n.08" x2
+
+% Sentence: 305
+% Raw sent: I've seen a flying saucer.
+b1 REF x1
+b1 Experiencer x1 "speaker"
+b1 Stimulus x1 x3
+b1 Time x1 x2
+b1 see "v.01" x1
+b2 REF x2
+b2 TPR x2 "now"
+b2 time "n.08" x2
+b1 REF x3
+b1 fly "n.01" x3
+
+% Sentence: 306
+% Raw sent: I saw her a week ago.
+b1 REF x1
+b1 Experiencer x1 "speaker"
+b1 Stimulus x1 x3
+b1 TPR x2 "now"
+b1 see "v.01" x1
+b1 REF x2
+b1 Time x1 x2
+b1 time "n.08" x2
+b2 REF x3
+b2 female "n.02" x3
+b1 REF x4
+b1 week "n.01" x4
+b1 TAB x2 x4
+b1 TAB x4 "now"
+
+% Sentence: 307
+% Raw sent: I'm illiterate.
+b1 Time x2 x1
+b2 REF x1
+b2 EQU x1 "now"
+b2 time "n.08" x1
+b1 REF x2
+b1 Theme x2 "speaker"
+b1 illiterate "a.01" x2
+
+% Sentence: 308
+% Raw sent: I have lost my pencil.
+b1 REF x1
+b1 Agent x1 "speaker"
+b1 Theme x1 x3
+b1 Time x1 x2
+b1 lose "v.01" x1
+b2 REF x2
+b2 TPR x2 "now"
+b2 time "n.08" x2
+b3 REF x3
+b3 User x3 "speaker"
+b3 pencil "n.01" x3
+
+% Sentence: 309
+% Raw sent: Someone has given me the cold.
+b1 REF x1
+b1 person "n.01" x1
+b1 REF x2
+b1 Agent x2 x1
+b1 Beneficiary x2 "speaker"
+b1 Theme x2 x4
+b1 Time x2 x3
+b1 give "v.03" x2
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+b3 REF x4
+b3 cold "n.01" x4
+
+% Sentence: 310
+% Raw sent: I don't remember your name.
+b1 Time x2 x1
+b2 REF x1
+b2 EQU x1 "now"
+b2 time "n.08" x1
+b3 NOT b1
+b1 REF x2
+b1 Agent x2 "speaker"
+b1 Theme x2 x3
+b1 remember "v.01" x2
+b4 REF x3
+b4 Creator x3 "hearer"
+b4 name "n.01" x3
+
+% Sentence: 311
+% Raw sent: The college was founded by Mr Smith.
+b1 REF x1
+b1 college "n.01" x1
+b2 Time x3 x2
+b3 REF x2
+b3 TPR x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 found "v.01" x3
+b2 Agent x3 x4
+b4 REF x4
+b4 REF x5
+b4 Title x4 x5
+b4 mr "n.01" x5
+b4 Name x4 "smith"
+b4 male "n.02" x4
+
+% Sentence: 312
+% Raw sent: Tom is grinning.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 male "a.01" x3
+
+% Sentence: 313
+% Raw sent: I lost my key.
+b1 REF x1
+b1 Agent x1 "speaker"
+b1 Theme x1 x3
+b1 Time x1 x2
+b1 lose "v.05" x1
+b2 REF x2
+b2 TPR x2 "now"
+b2 time "n.08" x2
+b3 REF x3
+b3 Owner x3 "speaker"
+b3 key "n.01" x3
+
+% Sentence: 314
+% Raw sent: Abrams handed the cigarette to Browne.
+b1 REF x1
+b1 Name x1 "abrams"
+b1 male "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 hand "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b4 REF x4
+b4 cigarette "n.01" x4
+b2 Destination x2 x5
+b5 REF x5
+b5 Name x5 "browne"
+b5 male "n.02" x5
+
+% Sentence: 315
+% Raw sent: I love Natasha.
+b1 REF x1
+b1 Experiencer x1 "speaker"
+b1 Stimulus x1 x3
+b1 Time x1 x2
+b1 love "v.01" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 time "n.08" x2
+b1 REF x3
+b1 natasha "n.01" x3
+
+% Sentence: 316
+% Raw sent: Tom abhors violence.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 Experiencer x2 x1
+b2 Stimulus x2 x4
+b2 Time x2 x3
+b2 abhor "v.01" x2
+b3 REF x3
+b3 EQU x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 violence "n.01" x4
+
+% Sentence: 317
+% Raw sent: Tom has a boat.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 Pivot x2 x1
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 have "v.04" x2
+b3 REF x3
+b3 EQU x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 boat "n.01" x4
+
+% Sentence: 318
+% Raw sent: She used to play tennis every Sunday.
+b1 REF x1
+b1 female "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 TPR x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Agent x3 x1
+b2 Theme x3 x4
+b2 play "v.01" x3
+b2 REF x4
+b2 tennis "n.01" x4
+b4 IMP b5 b2
+b5 REF x5
+b2 Time x3 x5
+b5 DayOfWeek x5 "sunday"
+b5 time "n.08" x5
+
+% Sentence: 319
+% Raw sent: I'm a genius.
+b1 EQU "speaker" x1
+b1 REF x1
+b1 genius "n.01" x1
+
+% Sentence: 320
+% Raw sent: I'm game.
+b1 Time x2 x1
+b2 REF x1
+b2 EQU x1 "now"
+b2 time "n.08" x1
+b1 REF x2
+b1 Theme x2 "speaker"
+b1 game "a.01" x2
+
+% Sentence: 321
+% Raw sent: She sang a song.
+b1 REF x1
+b1 female "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 sing "v.02" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 song "n.01" x4
+
+% Sentence: 322
+% Raw sent: Tom is putting the children to bed.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Agent x3 x1
+b2 Theme x3 x4
+b2 put "v.01" x3
+b4 REF x4
+b4 child "n.01" x4
+b2 Destination x3 x5
+b2 REF x5
+b2 bed "n.01" x5
+
+% Sentence: 323
+% Raw sent: I threw up.
+b1 REF x1
+b1 Agent x1 "speaker"
+b1 Time x1 x2
+b1 throw_up "v.01" x1
+b2 REF x2
+b2 TPR x2 "now"
+b2 time "n.08" x2
+
+% Sentence: 324
+% Raw sent: She tried.
+b1 REF x1
+b1 female "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Time x2 x3
+b2 try "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+
+% Sentence: 325
+% Raw sent: There are many birds in this park.
+b1 REF x1
+b1 Theme x1 x3
+b1 Time x1 x2
+b1 be "v.03" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 time "n.08" x2
+b1 REF x3
+b1 Quantity x3 "+"
+b1 bird "n.01" x3
+b1 Location x1 x4
+b3 REF x4
+b3 park "n.02" x4
+
+% Sentence: 326
+% Raw sent: Tom loves tulips.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 Experiencer x2 x1
+b2 Stimulus x2 x4
+b2 Time x2 x3
+b2 love "v.01" x2
+b3 REF x3
+b3 EQU x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 tulips "n.01" x4
+
+% Sentence: 327
+% Raw sent: Think about it.
+b1 REF x1
+b1 Agent x1 "hearer"
+b1 Time x1 x2
+b1 think "v.01" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 time "n.08" x2
+b1 Theme x1 x3
+b3 REF x3
+b3 entity "n.01" x3
+
+% Sentence: 328
+% Raw sent: Everybody wants something.
+b1 IMP b2 b3
+b2 REF x1
+b2 person "n.01" x1
+b3 REF x2
+b3 Pivot x2 x1
+b3 Theme x2 x4
+b3 Time x2 x3
+b3 want "v.01" x2
+b4 REF x3
+b4 EQU x3 "now"
+b4 time "n.08" x3
+b3 REF x4
+b3 entity "n.01" x4
+
+% Sentence: 329
+% Raw sent: I ran out of money.
+b1 REF x1
+b1 Theme x1 "speaker"
+b1 Time x1 x2
+b1 run "v.01" x1
+b2 REF x2
+b2 TPR x2 "now"
+b2 time "n.08" x2
+b1 Source x1 x3
+b1 REF x3
+b1 money "n.01" x3
+
+% Sentence: 330
+% Raw sent: I supported him.
+b1 REF x1
+b1 Experiencer x1 "speaker"
+b1 Stimulus x1 x3
+b1 Time x1 x2
+b1 support "v.01" x1
+b2 REF x2
+b2 TPR x2 "now"
+b2 time "n.08" x2
+b3 REF x3
+b3 male "n.02" x3
+
+% Sentence: 331
+% Raw sent: I haven't touched anything.
+b1 NOT b2
+b2 REF x1
+b2 Agent x1 "speaker"
+b2 Experiencer x1 x3
+b2 Time x1 x2
+b2 touch "v.01" x1
+b3 REF x2
+b3 TPR x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 entity "n.01" x3
+
+% Sentence: 332
+% Raw sent: They were satisfied.
+b1 REF x1
+b1 person "n.01" x1
+b2 Time x3 x2
+b3 REF x2
+b3 TPR x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 satisfied "a.01" x3
+
+% Sentence: 333
+% Raw sent: I am acquainted with Mr Smith.
+b1 Time x2 x1
+b2 REF x1
+b2 EQU x1 "now"
+b2 time "n.08" x1
+b1 REF x2
+b1 Agent x2 "speaker"
+b1 acquaint "v.01" x2
+b1 Theme x2 x3
+b3 REF x3
+b3 REF x4
+b3 Title x3 x4
+b3 mr "n.01" x4
+b3 Name x3 "smith"
+b3 male "n.02" x3
+
+% Sentence: 334
+% Raw sent: I'm very lazy.
+b1 Time x3 x1
+b2 REF x1
+b2 EQU x1 "now"
+b2 time "n.08" x1
+b1 REF x2
+b1 Attribute x2 x3
+b1 very "r.01" x2
+b1 REF x3
+b1 Theme x3 "speaker"
+b1 lazy "a.02" x3
+
+% Sentence: 335
+% Raw sent: It's October the third.
+b1 REF x1
+b1 EQU x1 "now"
+b1 EQU x1 x2
+b2 REF x2
+b2 DayOfMonth x2 "10"
+b2 time "n.08" x2
+
+% Sentence: 336
+% Raw sent: He played the piano and she sang.
+b1 DRS b2
+b1 DRS b3
+b4 REF x1
+b4 male "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 play "v.03" x2
+b5 REF x3
+b5 TPR x3 "now"
+b5 time "n.08" x3
+b6 REF x4
+b6 piano "n.01" x4
+b1 CONTINUATION b2 b3
+b3 REF x5
+b3 Agent x5 x1
+b3 Time x5 x3
+b3 sing "v.02" x5
+
+% Sentence: 337
+% Raw sent: Bob's father works in a car factory.
+b1 REF x1
+b1 Name x1 "bob"
+b1 male "n.02" x1
+b2 REF x2
+b2 Of x3 x1
+b2 REF x3
+b2 Role x2 x3
+b2 father "n.01" x3
+b2 person "n.01" x2
+b3 REF x4
+b3 Agent x4 x2
+b3 Time x4 x5
+b3 work "v.02" x4
+b4 REF x5
+b4 EQU x5 "now"
+b4 time "n.08" x5
+b3 Location x4 x6
+b3 REF x6
+b3 REF x7
+b3 Theme x6 x7
+b3 car "n.01" x7
+b3 factory "n.01" x6
+
+% Sentence: 338
+% Raw sent: She crawled out of bed.
+b1 REF x1
+b1 female "n.02" x1
+b2 REF x2
+b2 Theme x2 x1
+b2 Time x2 x3
+b2 crawl "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b2 Source x2 x4
+b2 REF x4
+b2 bed "n.01" x4
+
+% Sentence: 339
+% Raw sent: I was very good.
+b1 Time x3 x1
+b2 REF x1
+b2 TPR x1 "now"
+b2 time "n.08" x1
+b1 REF x2
+b1 Attribute x2 x3
+b1 very "r.01" x2
+b1 REF x3
+b1 Theme x3 "speaker"
+b1 good "a.01" x3
+
+% Sentence: 340
+% Raw sent: I want it now!
+b1 REF x1
+b1 Pivot x1 "speaker"
+b1 Theme x1 x3
+b1 want "v.01" x1
+b1 Time x1 x2
+b2 REF x2
+b2 EQU x2 "now"
+b2 time "n.08" x2
+b3 REF x3
+b3 entity "n.01" x3
+
+% Sentence: 341
+% Raw sent: I'm not your little sister.
+b1 EQU "speaker" x1
+b2 NOT b1
+b3 REF x1
+b3 Of x2 "hearer"
+b3 REF x2
+b3 Role x1 x2
+b3 little_sister "n.01" x2
+b3 person "n.01" x1
+
+% Sentence: 342
+% Raw sent: Picasso is a famous artist.
+b1 REF x1
+b1 Name x1 x1
+b1 male "n.02" x1
+b2 REF x2
+b2 Co-Theme x2 x4
+b2 Theme x2 x1
+b2 Time x2 x3
+b2 be "v.08" x2
+b3 REF x3
+b3 EQU x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 REF x5
+b2 Theme x5 x6
+b2 famous "a.01" x5
+b2 REF x6
+b2 Role x4 x6
+b2 artist "n.01" x6
+b2 person "n.01" x4
+
+% Sentence: 343
+% Raw sent: He's sitting in the waiting room.
+b1 REF x1
+b1 male "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 sit "v.01" x3
+b2 Location x3 x4
+b4 REF x4
+b4 waiting_room "n.01" x4
+
+% Sentence: 344
+% Raw sent: My shoes are brown.
+b1 REF x1
+b1 Owner x1 "speaker"
+b1 shoe "n.01" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Colour x1 x3
+b2 brown "a.01" x3
+
+% Sentence: 345
+% Raw sent: You are not watching TV now.
+b1 Time x2 x1
+b2 REF x1
+b2 EQU x1 "now"
+b2 time "n.08" x1
+b3 NOT b1
+b1 REF x2
+b1 Agent x2 "hearer"
+b1 Theme x2 x3
+b1 watch "v.03" x2
+b1 REF x3
+b1 tv "n.01" x3
+
+% Sentence: 346
+% Raw sent: The dog is red.
+b1 REF x1
+b1 dog "n.01" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Colour x1 x3
+b2 red "a.01" x3
+
+% Sentence: 347
+% Raw sent: He loves animals.
+b1 REF x1
+b1 male "n.02" x1
+b2 REF x2
+b2 Experiencer x2 x1
+b2 Stimulus x2 x4
+b2 Time x2 x3
+b2 love "v.01" x2
+b3 REF x3
+b3 EQU x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 animal "n.01" x4
+
+% Sentence: 348
+% Raw sent: Mr Smith teaches me English.
+b1 REF x1
+b1 REF x2
+b1 Title x1 x2
+b1 mr "n.01" x2
+b1 Name x1 "smith"
+b1 male "n.02" x1
+b2 REF x3
+b2 Agent x3 x1
+b2 Recipient x3 "speaker"
+b2 Theme x3 x5
+b2 Time x3 x4
+b2 teach "v.01" x3
+b3 REF x4
+b3 EQU x4 "now"
+b3 time "n.08" x4
+b2 REF x5
+b2 english "n.01" x5
+
+% Sentence: 349
+% Raw sent: My mother told me to mow the lawn.
+b1 REF x1
+b1 Of x2 "speaker"
+b1 REF x2
+b1 Role x1 x2
+b1 mother "n.01" x2
+b1 person "n.01" x1
+b2 REF x3
+b2 REF x4
+b2 Agent x3 x1
+b2 PRP x4 b3
+b2 Recipient x3 "speaker"
+b2 Time x3 x5
+b2 Topic x3 x4
+b2 tell "v.02" x3
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b3 REF x6
+b3 Agent x6 "speaker"
+b3 Patient x6 x7
+b3 male "v.01" x6
+b5 REF x7
+b5 lawn "n.01" x7
+
+% Sentence: 350
+% Raw sent: Tom cheated.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Time x2 x3
+b2 cheat "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+
+% Sentence: 351
+% Raw sent: Push the button.
+b1 REF x1
+b1 Agent x1 "hearer"
+b1 Theme x1 x2
+b1 push "v.01" x1
+b2 REF x2
+b2 button "n.02" x2
+
+% Sentence: 352
+% Raw sent: I'm waiting for her to climb into her car.
+b1 Time x2 x1
+b2 REF x1
+b2 EQU x1 "now"
+b2 time "n.08" x1
+b1 REF x2
+b1 REF x3
+b1 Agent x2 "speaker"
+b1 PRP x3 b3
+b1 Topic x2 x3
+b1 wait "v.01" x2
+b4 REF x4
+b4 female "n.02" x4
+b3 REF x5
+b3 Theme x5 x4
+b3 climb "v.01" x5
+b3 Destination x5 x6
+b5 REF x6
+b5 User x6 x4
+b5 car "n.01" x6
+
+% Sentence: 353
+% Raw sent: Tom is eavesdropping.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 male "a.01" x3
+
+% Sentence: 354
+% Raw sent: He is opening the window.
+b1 REF x1
+b1 male "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Location x3 x4
+b2 Theme x3 x1
+b2 open "v.01" x3
+b4 REF x4
+b4 window "n.01" x4
+
+% Sentence: 355
+% Raw sent: Tom printed out the page.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 print "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b4 REF x4
+b4 page "n.01" x4
+
+% Sentence: 356
+% Raw sent: Who'll drive?
+b1 REF x1
+b1 Name x1 "?"
+b1 person "n.01" x1
+b1 Time x3 x2
+b2 REF x2
+b2 TPR "now" x2
+b2 time "n.08" x2
+b1 REF x3
+b1 Agent x3 x1
+b1 drive "v.01" x3
+
+% Sentence: 357
+% Raw sent: I like the actor.
+b1 REF x1
+b1 Experiencer x1 "speaker"
+b1 Stimulus x1 x3
+b1 Time x1 x2
+b1 like "v.02" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 time "n.08" x2
+b3 REF x3
+b3 REF x4
+b3 Role x3 x4
+b3 actor "n.01" x4
+b3 person "n.01" x3
+
+% Sentence: 358
+% Raw sent: Bob is popular at school.
+b1 REF x1
+b1 Name x1 "bob"
+b1 male "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 popular "a.01" x3
+b2 Location x3 x4
+b2 REF x4
+b2 school "n.02" x4
+
+% Sentence: 359
+% Raw sent: Tom and Mary picked up a hitchhiker.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 Part x2 x1
+b2 Part x2 x3
+b2 group "n.01" x2
+b3 REF x3
+b3 Name x3 "mary"
+b3 female "n.02" x3
+b2 REF x4
+b2 Agent x4 x2
+b2 Theme x4 x6
+b2 Time x4 x5
+b2 pick_up "v.02" x4
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b2 REF x6
+b2 hitchhiker "n.01" x6
+
+% Sentence: 360
+% Raw sent: I wasn't prepared.
+b1 Time x2 x1
+b2 REF x1
+b2 TPR x1 "now"
+b2 time "n.08" x1
+b3 NOT b1
+b1 REF x2
+b1 Theme x2 "speaker"
+b1 prepare "v.01" x2
+
+% Sentence: 361
+% Raw sent: Ten prisoners broke out of jail.
+b1 REF x1
+b1 Quantity x1 "10"
+b1 REF x2
+b1 Role x1 x2
+b1 person "n.01" x1
+b1 prisoner "n.01" x2
+b1 REF x3
+b1 Theme x3 x1
+b1 Time x3 x4
+b1 break "v.01" x3
+b2 REF x4
+b2 TPR x4 "now"
+b2 time "n.08" x4
+b1 Source x3 x5
+b1 REF x5
+b1 jail "n.01" x5
+
+% Sentence: 362
+% Raw sent: She picked up a coin.
+b1 REF x1
+b1 female "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 pick_up "v.02" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 coin "n.01" x4
+
+% Sentence: 363
+% Raw sent: Mary just left.
+b1 REF x1
+b1 Name x1 "mary"
+b1 female "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x3 x1
+b2 PRP x2 b3
+b2 Topic x3 x2
+b2 just "r.01" x3
+b3 REF x4
+b3 Theme x4 x1
+b3 Time x4 x5
+b3 leave "v.01" x4
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+
+% Sentence: 364
+% Raw sent: The skier suffered a head trauma.
+b1 REF x1
+b1 REF x2
+b1 Role x1 x2
+b1 person "n.01" x1
+b1 skier "n.01" x2
+b2 REF x3
+b2 Experiencer x3 x1
+b2 Stimulus x3 x5
+b2 Time x3 x4
+b2 suffer "v.02" x3
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b2 REF x5
+b2 head "n.01" x5
+
+% Sentence: 365
+% Raw sent: Tom is extremely strong.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 Time x4 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Attribute x3 x4
+b2 extremely "r.02" x3
+b2 REF x4
+b2 Theme x4 x1
+b2 strong "a.01" x4
+
+% Sentence: 366
+% Raw sent: This is creepy.
+b1 REF x1
+b1 entity "n.01" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 creepy "a.01" x3
+
+% Sentence: 367
+% Raw sent: Tom took part in the race.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 take "v.06" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 part "n.01" x4
+b2 Location x2 x5
+b4 REF x5
+b4 race "n.02" x5
+
+% Sentence: 368
+% Raw sent: I was not lonely.
+b1 Time x2 x1
+b2 REF x1
+b2 TPR x1 "now"
+b2 time "n.08" x1
+b3 NOT b1
+b1 REF x2
+b1 Theme x2 "speaker"
+b1 lonely "a.01" x2
+
+% Sentence: 369
+% Raw sent: The street is empty.
+b1 REF x1
+b1 street "n.01" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 empty "a.01" x3
+
+% Sentence: 370
+% Raw sent: She hugged him.
+b1 REF x1
+b1 female "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Co-Agent x2 x4
+b2 Time x2 x3
+b2 hug "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b4 REF x4
+b4 male "n.02" x4
+
+% Sentence: 371
+% Raw sent: She has kept a diary for 3 years.
+b1 REF x1
+b1 female "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 keep "v.08" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 diary "n.01" x4
+b2 Duration x2 x5
+b2 REF x5
+b2 Quantity x5 "3"
+b2 Unit x5 "year"
+b2 measure "n.02" x5
+
+% Sentence: 372
+% Raw sent: The day was exhausting.
+b1 REF x1
+b1 day "n.01" x1
+b2 Time x3 x2
+b3 REF x2
+b3 TPR x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Experiencer x3 x1
+b2 exhaust "a.01" x3
+
+% Sentence: 373
+% Raw sent: Tom rolled over in bed.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 Patient x2 x1
+b2 Time x2 x3
+b2 roll_over "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b2 Location x2 x4
+b2 REF x4
+b2 bed "n.01" x4
+
+% Sentence: 374
+% Raw sent: She found one.
+b1 REF x1
+b1 female "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 find "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 one "n.02" x4
+
+% Sentence: 375
+% Raw sent: He was heartbroken.
+b1 REF x1
+b1 male "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 TPR x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 male "a.01" x3
+
+% Sentence: 376
+% Raw sent: I am spreading mustard on a slice of bread.
+b1 Time x2 x1
+b2 REF x1
+b2 EQU x1 "now"
+b2 time "n.08" x1
+b1 REF x2
+b1 Location x2 x3
+b1 Theme x2 "speaker"
+b1 spread "v.01" x2
+b1 REF x3
+b1 tiger "n.02" x3
+b1 Location x2 x4
+b1 REF x4
+b1 slice "n.02" x4
+b1 PartOf x4 x5
+b1 REF x5
+b1 bread "n.01" x5
+
+% Sentence: 377
+% Raw sent: The poet wrote many poems.
+b1 REF x1
+b1 REF x2
+b1 Role x1 x2
+b1 person "n.01" x1
+b1 poet "n.01" x2
+b2 REF x3
+b2 Agent x3 x1
+b2 Result x3 x5
+b2 Time x3 x4
+b2 write "v.02" x3
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b2 REF x5
+b2 Quantity x5 "+"
+b2 poem "n.01" x5
+
+% Sentence: 378
+% Raw sent: He's watching the Olympics.
+b1 REF x1
+b1 male "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Agent x3 x1
+b2 Theme x3 x4
+b2 watch "v.03" x3
+b4 REF x4
+b4 olympics "n.01" x4
+
+% Sentence: 379
+% Raw sent: I love books.
+b1 REF x1
+b1 Experiencer x1 "speaker"
+b1 Stimulus x1 x3
+b1 Time x1 x2
+b1 love "v.01" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 time "n.08" x2
+b1 REF x3
+b1 book "n.01" x3
+
+% Sentence: 380
+% Raw sent: I'll miss you too.
+b1 Time x2 x1
+b2 REF x1
+b2 TPR "now" x1
+b2 time "n.08" x1
+b1 REF x2
+b1 Experiencer x2 "speaker"
+b1 Stimulus x2 "hearer"
+b1 miss "v.01" x2
+
+% Sentence: 381
+% Raw sent: She won a phone.
+b1 REF x1
+b1 female "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 win "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 phone "n.01" x4
+
+% Sentence: 382
+% Raw sent: Tom works for an oil company.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Time x2 x3
+b2 work "v.02" x2
+b3 REF x3
+b3 EQU x3 "now"
+b3 time "n.08" x3
+b2 Co-Agent x2 x4
+b2 REF x4
+b2 oil "n.01" x4
+
+% Sentence: 383
+% Raw sent: Tom offered to lend me the money.
+b1 Time x3 x1
+b2 REF x1
+b2 TPR x1 "now"
+b2 time "n.08" x1
+b3 REF x2
+b3 Name x2 "tom"
+b3 male "n.02" x2
+b1 REF x3
+b1 REF x4
+b1 Agent x3 x2
+b1 PRP x4 b4
+b1 Theme x3 x4
+b1 offer "v.01" x3
+b4 REF x5
+b4 Agent x5 x2
+b4 Recipient x5 "speaker"
+b4 Theme x5 x6
+b4 lend "v.01" x5
+b5 REF x6
+b5 money "n.01" x6
+
+% Sentence: 384
+% Raw sent: I'm sleepy!
+b1 Time x2 x1
+b2 REF x1
+b2 EQU x1 "now"
+b2 time "n.08" x1
+b1 REF x2
+b1 Theme x2 "speaker"
+b1 sleepy "a.01" x2
+
+% Sentence: 385
+% Raw sent: Tom talked.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Time x2 x3
+b2 talk "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+
+% Sentence: 386
+% Raw sent: I wanted to run away with Tom.
+b1 Time x2 x1
+b2 REF x1
+b2 TPR x1 "now"
+b2 time "n.08" x1
+b1 REF x2
+b1 REF x3
+b1 PRP x3 b3
+b1 Pivot x2 "speaker"
+b1 Theme x2 x3
+b1 want "v.01" x2
+b3 REF x4
+b3 Theme x4 "speaker"
+b3 male "v.01" x4
+b3 Co-Theme x4 x5
+b4 REF x5
+b4 Name x5 "tom"
+b4 male "n.02" x5
+
+% Sentence: 387
+% Raw sent: Tom went to the theater with Mary.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 Theme x2 x1
+b2 Time x2 x3
+b2 go "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b2 Destination x2 x4
+b4 REF x4
+b4 theater "n.01" x4
+b2 Co-Agent x2 x5
+b5 REF x5
+b5 Name x5 "mary"
+b5 female "n.02" x5
+
+% Sentence: 388
+% Raw sent: Tom was hurt.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 TPR x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Experiencer x3 x1
+b2 hurt "v.01" x3
+
+% Sentence: 389
+% Raw sent: Baena Soares was arrested by the armed forces.
+b1 REF x1
+b1 Name x1 x1
+b1 male "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 TPR x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Patient x3 x1
+b2 arrest "v.01" x3
+b2 Agent x3 x4
+b4 REF x4
+b4 REF x5
+b4 Theme x5 x4
+b4 individual "a.01" x5
+b4 force "n.01" x4
+
+% Sentence: 390
+% Raw sent: That's obvious.
+b1 REF x1
+b1 entity "n.01" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 obvious "a.01" x3
+
+% Sentence: 391
+% Raw sent: Who directed the film "Fail Safe"?
+b1 REF x1
+b1 Name x1 "?"
+b1 person "n.01" x1
+b1 REF x2
+b1 Agent x2 x1
+b1 Theme x2 x4
+b1 Time x2 x3
+b1 direct "v.01" x2
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+b3 REF x4
+b3 film "n.01" x4
+b3 REF x5
+b3 Theme x5 x4
+b3 dangerous "v.01" x5
+
+% Sentence: 392
+% Raw sent: Tom underestimated Mary.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Patient x2 x4
+b2 Time x2 x3
+b2 male "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b4 REF x4
+b4 Name x4 "mary"
+b4 female "n.02" x4
+
+% Sentence: 393
+% Raw sent: I needed it.
+b1 REF x1
+b1 Pivot x1 "speaker"
+b1 Theme x1 x3
+b1 Time x1 x2
+b1 need "v.01" x1
+b2 REF x2
+b2 TPR x2 "now"
+b2 time "n.08" x2
+b3 REF x3
+b3 entity "n.01" x3
+
+% Sentence: 394
+% Raw sent: That's cool.
+b1 REF x1
+b1 thing "n.01" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Patient x3 x1
+b2 cool "a.01" x3
+
+% Sentence: 395
+% Raw sent: I am counting on your help.
+b1 Time x2 x1
+b2 REF x1
+b2 EQU x1 "now"
+b2 time "n.08" x1
+b1 REF x2
+b1 Agent x2 "speaker"
+b1 count "v.01" x2
+b1 Theme x2 x3
+b3 REF x3
+b3 Creator x3 "hearer"
+b3 help "n.01" x3
+
+% Sentence: 396
+% Raw sent: I hate birthday parties.
+b1 REF x1
+b1 Experiencer x1 "speaker"
+b1 Stimulus x1 x3
+b1 Time x1 x2
+b1 hate "v.01" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 time "n.08" x2
+b1 REF x3
+b1 birthday_party "n.01" x3
+
+% Sentence: 397
+% Raw sent: Alfred Nobel is the inventor of dynamite.
+b1 REF x1
+b1 Name x1 "alfred~nobel"
+b1 male "n.02" x1
+b2 EQU x1 x2
+b3 REF x2
+b3 REF x3
+b3 Role x2 x3
+b3 inventor "n.01" x3
+b3 person "n.01" x2
+b2 Of x3 x4
+b2 REF x4
+b2 dynamite "n.01" x4
+
+% Sentence: 398
+% Raw sent: She has two thousand books.
+b1 REF x1
+b1 female "n.02" x1
+b2 REF x2
+b2 Pivot x2 x1
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 have "v.02" x2
+b3 REF x3
+b3 EQU x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 Quantity x4 "2000"
+b2 book "n.02" x4
+
+% Sentence: 399
+% Raw sent: Everyone's eating.
+b1 IMP b2 b3
+b2 REF x1
+b2 person "n.01" x1
+b3 Time x3 x2
+b4 REF x2
+b4 EQU x2 "now"
+b4 time "n.08" x2
+b3 REF x3
+b3 Agent x3 x1
+b3 eat "v.01" x3
+
+% Sentence: 400
+% Raw sent: Tom raises Arabian horses.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Patient x2 x4
+b2 Time x2 x3
+b2 associate "v.01" x2
+b3 REF x3
+b3 EQU x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 Quantity x4 x4
+b2 horse "n.01" x4
+
+% Sentence: 401
+% Raw sent: The doll lay on the floor.
+b1 REF x1
+b1 doll "n.01" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Time x2 x3
+b2 lie "v.02" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b2 Patient x2 x4
+b4 REF x4
+b4 floor "n.01" x4
+
+% Sentence: 402
+% Raw sent: Tom is exceptional.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 male "a.01" x3
+
+% Sentence: 403
+% Raw sent: Sumatra is an island.
+b1 REF x1
+b1 Name x1 x1
+b1 island "n.01" x1
+b2 EQU x1 x2
+b2 REF x2
+b2 island "n.01" x2
+
+% Sentence: 404
+% Raw sent: I am in Russia.
+b1 REF x1
+b1 Theme x1 "speaker"
+b1 Time x1 x2
+b1 be "v.03" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 time "n.08" x2
+b1 Location x1 x3
+b3 REF x3
+b3 Name x3 "russia"
+b3 country "n.02" x3
+
+% Sentence: 405
+% Raw sent: I bought a few eggs and a little milk.
+b1 REF x1
+b1 Agent x1 "speaker"
+b1 Theme x1 x4
+b1 Time x1 x2
+b1 buy "v.01" x1
+b2 REF x2
+b2 TPR x2 "now"
+b2 time "n.08" x2
+b1 REF x3
+b1 Quantity x3 "-"
+b1 egg "n.02" x3
+b1 REF x4
+b1 REF x5
+b1 Theme x5 x4
+b1 little "a.01" x5
+b1 milk "n.01" x4
+
+% Sentence: 406
+% Raw sent: John lives in New York.
+b1 REF x1
+b1 Name x1 "john"
+b1 male "n.02" x1
+b2 REF x2
+b2 Theme x2 x1
+b2 Time x2 x3
+b2 live "v.01" x2
+b3 REF x3
+b3 EQU x3 "now"
+b3 time "n.08" x3
+b2 Location x2 x4
+b4 REF x4
+b4 Name x4 "new~york"
+b4 city "n.01" x4
+
+% Sentence: 407
+% Raw sent: It's nice.
+b1 REF x1
+b1 entity "n.01" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 nice "a.01" x3
+
+% Sentence: 408
+% Raw sent: Tom was praying.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 TPR x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Patient x3 x1
+b2 pray "v.01" x3
+
+% Sentence: 409
+% Raw sent: I saw everything.
+b1 REF x1
+b1 Experiencer x1 "speaker"
+b1 Stimulus x1 x3
+b1 Time x1 x2
+b1 see "v.01" x1
+b2 REF x2
+b2 TPR x2 "now"
+b2 time "n.08" x2
+b3 IMP b4 b1
+b4 REF x3
+b4 entity "n.01" x3
+
+% Sentence: 410
+% Raw sent: She caused this.
+b1 REF x1
+b1 female "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 cause "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b4 REF x4
+b4 entity "n.01" x4
+
+% Sentence: 411
+% Raw sent: The book is big.
+b1 REF x1
+b1 book "n.01" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 big "a.01" x3
+
+% Sentence: 412
+% Raw sent: The young boy helped the old woman.
+b1 REF x1
+b1 REF x2
+b1 Theme x2 x1
+b1 young "a.01" x2
+b1 boy "n.01" x1
+b2 REF x3
+b2 Agent x3 x1
+b2 Theme x3 x5
+b2 Time x3 x4
+b2 help "v.01" x3
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b4 REF x5
+b4 REF x6
+b4 Theme x6 x5
+b4 old "a.01" x6
+b4 woman "n.01" x5
+
+% Sentence: 413
+% Raw sent: I do some work for Tom from time to time.
+b1 REF x1
+b1 Agent x1 "speaker"
+b1 Theme x1 x3
+b1 Time x1 x2
+b1 do "v.02" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 time "n.08" x2
+b1 REF x3
+b1 work "n.02" x3
+b1 Beneficiary x1 x4
+b3 REF x4
+b3 Name x4 "tom"
+b3 male "n.02" x4
+b1 Duration x1 x5
+b1 REF x5
+b1 time "n.03" x5
+
+% Sentence: 414
+% Raw sent: I'll attend.
+b1 Time x2 x1
+b2 REF x1
+b2 TPR "now" x1
+b2 time "n.08" x1
+b1 REF x2
+b1 Theme x2 "speaker"
+b1 attend "v.01" x2
+
+% Sentence: 415
+% Raw sent: Tom is drowning!
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Patient x3 x1
+b2 drown "v.01" x3
+
+% Sentence: 416
+% Raw sent: The Prime Minister has resigned.
+b1 REF x1
+b1 REF x2
+b1 Role x1 x2
+b1 person "n.01" x1
+b1 minister "n.01" x2
+b2 REF x3
+b2 Agent x3 x1
+b2 Time x3 x4
+b2 resign "v.01" x3
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+
+% Sentence: 417
+% Raw sent: Every author suffers from writer's block from time to time.
+b1 IMP b2 b3
+b2 REF x1
+b2 REF x2
+b2 Role x1 x2
+b2 author "n.01" x2
+b2 person "n.01" x1
+b3 REF x3
+b3 Experiencer x3 x1
+b3 Time x3 x4
+b3 suffer "v.02" x3
+b4 REF x4
+b4 EQU x4 "now"
+b4 time "n.08" x4
+b3 Stimulus x3 x5
+b3 REF x5
+b3 REF x6
+b3 Role x5 x6
+b3 person "n.01" x5
+b3 writer "n.01" x6
+b3 Of x6 x7
+b3 REF x7
+b3 time "n.01" x7
+
+% Sentence: 418
+% Raw sent: She dialled the number.
+b1 REF x1
+b1 female "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 male "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b4 REF x4
+b4 number "n.04" x4
+
+% Sentence: 419
+% Raw sent: Anna Politkovskaya was murdered.
+b1 REF x1
+b1 Name x1 x1
+b1 female "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 TPR x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Patient x3 x1
+b2 murder "v.01" x3
+
+% Sentence: 420
+% Raw sent: You're taunting me.
+b1 Time x2 x1
+b2 REF x1
+b2 EQU x1 "now"
+b2 time "n.08" x1
+b1 REF x2
+b1 Experiencer x2 "speaker"
+b1 Stimulus x2 "hearer"
+b1 tickle "v.01" x2
+
+% Sentence: 421
+% Raw sent: Tom likes his coffee black.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 Experiencer x2 x1
+b2 Stimulus x2 x4
+b2 Time x2 x3
+b2 like "v.02" x2
+b3 REF x3
+b3 EQU x3 "now"
+b3 time "n.08" x3
+b4 REF x4
+b4 Owner x4 x1
+b4 coffee "n.01" x4
+b2 REF x5
+b2 Colour x2 x5
+b2 black "a.01" x5
+
+% Sentence: 422
+% Raw sent: The Berlin Wall was torn down in 1989.
+b1 REF x1
+b1 Name x1 x1
+b1 female "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 TPR x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Patient x3 x1
+b2 male "v.02" x3
+b2 Location x3 x4
+b4 REF x4
+b4 YearOfCentury x4 "1969"
+b4 time "n.08" x4
+
+% Sentence: 423
+% Raw sent: Tom used a toothpick.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 use "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 toothpick "n.01" x4
+
+% Sentence: 424
+% Raw sent: Everything is all right now.
+b1 IMP b2 b3
+b2 REF x1
+b2 entity "n.01" x1
+b3 Time x3 x2
+b4 REF x2
+b4 EQU x2 "now"
+b4 time "n.08" x2
+b3 REF x3
+b3 Theme x3 x1
+b3 all_right "a.01" x3
+
+% Sentence: 425
+% Raw sent: Alas!
+b1 REF x1
+b1 Time x1 x2
+b2 REF x2
+b2 EQU x2 "now"
+b2 time "n.08" x2
+
+% Sentence: 426
+% Raw sent: Tom is the one we want.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 EQU x1 x2
+b3 REF x2
+b3 EQU x2 "1"
+b3 REF x3
+b3 Pivot x3 "speaker"
+b3 Theme x3 x2
+b3 Time x3 x4
+b3 want "v.01" x3
+b4 REF x4
+b4 EQU x4 "now"
+b4 time "n.08" x4
+
+% Sentence: 427
+% Raw sent: He is rich, but he is unkind.
+b1 DRS b2
+b1 DRS b3
+b4 REF x1
+b4 male "n.02" x1
+b2 Time x3 x2
+b5 REF x2
+b5 EQU x2 "now"
+b5 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 rich "a.01" x3
+b1 CONTRAST b2 b3
+b3 Time x4 x2
+b3 REF x4
+b3 Theme x4 x1
+b3 male "a.01" x4
+
+% Sentence: 428
+% Raw sent: He disappeared again.
+b1 REF x1
+b1 male "n.02" x1
+b2 REF x2
+b2 Theme x2 x1
+b2 Time x2 x3
+b2 disappear "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+
+% Sentence: 429
+% Raw sent: He was also kind to animals.
+b1 REF x1
+b1 male "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 TPR x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Agent x3 x1
+b2 kind "v.01" x3
+b2 Theme x3 x4
+b2 REF x4
+b2 animal "n.01" x4
+
+% Sentence: 430
+% Raw sent: I love Natasha.
+b1 REF x1
+b1 Experiencer x1 "speaker"
+b1 Stimulus x1 x3
+b1 Time x1 x2
+b1 love "v.01" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 time "n.08" x2
+b1 REF x3
+b1 natasha "n.01" x3
+
+% Sentence: 431
+% Raw sent: All the students study English.
+b1 IMP b2 b3
+b2 REF x1
+b2 EQU x1 x2
+b4 REF x2
+b4 REF x3
+b4 Role x2 x3
+b4 person "n.01" x2
+b4 student "n.01" x3
+b3 REF x4
+b3 Agent x4 x1
+b3 Theme x4 x6
+b3 Time x4 x5
+b3 study "v.01" x4
+b5 REF x5
+b5 EQU x5 "now"
+b5 time "n.08" x5
+b3 REF x6
+b3 english "n.01" x6
+
+% Sentence: 432
+% Raw sent: Tom and Mary went hunting for Easter eggs.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 Part x2 x1
+b2 Part x2 x3
+b2 group "n.01" x2
+b3 REF x3
+b3 Name x3 "mary"
+b3 female "n.02" x3
+b2 Time x5 x4
+b4 REF x4
+b4 TPR x4 "now"
+b4 time "n.08" x4
+b2 REF x5
+b2 Agent x5 x2
+b2 hunt "v.01" x5
+b2 Goal x5 x6
+b2 REF x6
+b2 easter_egg "n.02" x6
+
+% Sentence: 433
+% Raw sent: I have to button my jacket.
+b1 NEC b2
+b2 REF x1
+b2 Agent x1 "speaker"
+b2 Patient x1 x2
+b2 button "v.02" x1
+b3 REF x2
+b3 User x2 "speaker"
+b3 jacket "n.01" x2
+
+% Sentence: 434
+% Raw sent: I adore elephants.
+b1 REF x1
+b1 Agent x1 "speaker"
+b1 Product x1 x3
+b1 Time x1 x2
+b1 cultivate "v.01" x1
+b2 REF x2
+b2 TPR x2 "now"
+b2 time "n.08" x2
+b1 REF x3
+b1 elephant "n.01" x3
+
+% Sentence: 435
+% Raw sent: That news got around.
+b1 REF x1
+b1 news "n.01" x1
+b2 REF x2
+b2 Patient x2 x1
+b2 Time x2 x3
+b2 get_up "v.02" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+
+% Sentence: 436
+% Raw sent: Everglades National Park is located in Florida.
+b1 REF x1
+b1 Name x1 x1
+b1 park "n.01" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 located "a.01" x3
+b2 Location x3 x4
+b4 REF x4
+b4 Name x4 "florida"
+b4 state "n.01" x4
+
+% Sentence: 437
+% Raw sent: Stir the paint with a stick.
+b1 REF x1
+b1 Agent x1 "hearer"
+b1 Patient x1 x2
+b1 unbuckle "v.01" x1
+b2 REF x2
+b2 paint "n.01" x2
+b1 Instrument x1 x3
+b1 REF x3
+b1 stick "n.02" x3
+
+% Sentence: 438
+% Raw sent: I'm a volleyball player.
+b1 REF x1
+b1 EQU "speaker" x2
+b1 EQU x1 "now"
+b1 Time x3 x1
+b1 time "n.08" x1
+b1 REF x2
+b1 REF x3
+b1 Role x2 x3
+b1 person "n.01" x2
+b1 volleyball "n.01" x3
+
+% Sentence: 439
+% Raw sent: I like languages.
+b1 REF x1
+b1 Experiencer x1 "speaker"
+b1 Stimulus x1 x3
+b1 Time x1 x2
+b1 like "v.02" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 time "n.08" x2
+b1 REF x3
+b1 language "n.01" x3
+
+% Sentence: 440
+% Raw sent: Fire burns.
+b1 REF x1
+b1 fire "n.01" x1
+b1 REF x2
+b1 Patient x2 x1
+b1 Time x2 x3
+b1 burn "v.01" x2
+b2 REF x3
+b2 EQU x3 "now"
+b2 time "n.08" x3
+
+% Sentence: 441
+% Raw sent: He gave me some money.
+b1 REF x1
+b1 male "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Recipient x2 "speaker"
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 give "v.03" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 money "n.01" x4
+
+% Sentence: 442
+% Raw sent: Comfort him.
+b1 REF x1
+b1 Agent x1 "hearer"
+b1 Patient x1 x2
+b1 suck "v.01" x1
+b2 REF x2
+b2 male "n.02" x2
+
+% Sentence: 443
+% Raw sent: The Canadian chopped down the tree with an ax.
+b1 REF x1
+b1 REF x2
+b1 Role x1 x2
+b1 person "n.01" x1
+b1 surgeon "n.01" x2
+b2 REF x3
+b2 Agent x3 x1
+b2 Patient x3 x5
+b2 Time x3 x4
+b2 chop_down "v.01" x3
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b4 REF x5
+b4 tree "n.01" x5
+b2 Instrument x3 x6
+b2 REF x6
+b2 ax "n.01" x6
+
+% Sentence: 444
+% Raw sent: She graduated from Kobe University.
+b1 REF x1
+b1 female "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Time x2 x3
+b2 graduate "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b2 Source x2 x4
+b4 REF x4
+b4 Name x4 x4
+b4 university "n.03" x4
+
+% Sentence: 445
+% Raw sent: The television is not working
+b1 REF x1
+b1 alwayswrongconcept "n.01" x1
+
+% Sentence: 446
+% Raw sent: I was having dinner with Tom.
+b1 Time x2 x1
+b2 REF x1
+b2 TPR x1 "now"
+b2 time "n.08" x1
+b1 REF x2
+b1 Agent x2 "speaker"
+b1 Patient x2 x3
+b1 have "v.06" x2
+b1 REF x3
+b1 dinner "n.01" x3
+b1 Co-Agent x2 x4
+b3 REF x4
+b3 Name x4 "tom"
+b3 male "n.02" x4
+
+% Sentence: 447
+% Raw sent: Tom is majoring in architecture.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Agent x3 x1
+b2 major "v.01" x3
+b2 Theme x3 x4
+b4 REF x4
+b4 Name x4 x4
+b4 city "n.01" x4
+
+% Sentence: 448
+% Raw sent: The dog attacked the little boy.
+b1 REF x1
+b1 dog "n.01" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 attack "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b4 REF x4
+b4 REF x5
+b4 Theme x5 x4
+b4 little "a.01" x5
+b4 boy "n.01" x4
+
+% Sentence: 449
+% Raw sent: Tom's cooking breakfast.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Agent x3 x1
+b2 Patient x3 x4
+b2 cook "v.01" x3
+b2 REF x4
+b2 breakfast "n.01" x4
+
+% Sentence: 450
+% Raw sent: She waved good-bye to me.
+b1 REF x1
+b1 female "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 wave "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 goodbye "n.01" x4
+b2 Recipient x2 "speaker"
+
+% Sentence: 451
+% Raw sent: He is leaving Chicago tomorrow.
+b1 REF x1
+b1 male "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Patient x3 x1
+b2 Result x3 x4
+b2 leave "v.01" x3
+b4 REF x4
+b4 Name x4 "chicago"
+b4 city "n.01" x4
+
+% Sentence: 452
+% Raw sent: I didn't murder anyone.
+b1 Time x2 x1
+b2 REF x1
+b2 TPR x1 "now"
+b2 time "n.08" x1
+b3 NOT b1
+b1 REF x2
+b1 Agent x2 "speaker"
+b1 Patient x2 x3
+b1 murder "v.01" x2
+b1 REF x3
+b1 person "n.01" x3
+
+% Sentence: 453
+% Raw sent: Tom is bilingual.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 male "a.01" x3
+
+% Sentence: 454
+% Raw sent: The secret leaked out.
+b1 REF x1
+b1 REF x2
+b1 Theme x2 x1
+b1 secret "a.01" x2
+b1 leaked "n.01" x1
+
+% Sentence: 455
+% Raw sent: Tom got sick.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 TPR x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 sick "a.01" x3
+
+% Sentence: 456
+% Raw sent: My father died five years ago.
+b1 REF x1
+b1 Of x2 "speaker"
+b1 REF x2
+b1 Role x1 x2
+b1 father "n.01" x2
+b1 person "n.01" x1
+b2 REF x3
+b2 Patient x3 x1
+b2 TPR x4 "now"
+b2 die "v.01" x3
+b2 REF x4
+b2 Time x3 x4
+b2 time "n.08" x4
+b2 REF x5
+b2 Quantity x5 "5"
+b2 Unit x5 "year"
+b2 measure "n.02" x5
+b2 TAB x4 x5
+b2 TAB x5 "now"
+
+% Sentence: 457
+% Raw sent: I agree.
+b1 REF x1
+b1 Agent x1 "speaker"
+b1 Time x1 x2
+b1 agree "v.01" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 time "n.08" x2
+
+% Sentence: 458
+% Raw sent: I always get up at 6 o'clock in the morning.
+b1 IMP b2 b3
+b2 REF x1
+b2 time "n.08" x1
+b2 TPR x1 "now"
+b3 REF x2
+b3 Agent x2 "speaker"
+b3 get_up "v.02" x2
+b3 Time x2 x3
+b3 REF x3
+b3 ClockTime x3 "18:00"
+b3 time "n.08" x3
+b3 PartOf x3 x4
+b4 REF x4
+b4 morning "n.01" x4
+
+% Sentence: 459
+% Raw sent: He devoted his life to his company.
+b1 REF x1
+b1 male "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 devote "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b4 REF x4
+b4 Of x4 x1
+b4 life "n.02" x4
+b2 Destination x2 x5
+b5 REF x5
+b5 Of x5 x1
+b5 company "n.01" x5
+
+% Sentence: 460
+% Raw sent: I don't want pizza. I'm not hungry.
+b1 CONTINUATION b2 b3
+b1 DRS b2
+b1 DRS b3
+b4 Time x2 x1
+b5 REF x1
+b5 EQU x1 "now"
+b5 time "n.08" x1
+b2 NOT b4
+b4 REF x2
+b4 Pivot x2 "speaker"
+b4 Theme x2 x3
+b4 want "v.01" x2
+b4 REF x3
+b4 pizza "n.01" x3
+b6 Time x4 x2
+b3 NOT b6
+b6 REF x4
+b6 Experiencer x4 "speaker"
+b6 hungry "a.01" x4
+
+% Sentence: 461
+% Raw sent: Tom drank the potion.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Patient x2 x4
+b2 Time x2 x3
+b2 drink "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b4 REF x4
+b4 potion "n.01" x4
+
+% Sentence: 462
+% Raw sent: Tom is very polite.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 Time x4 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Attribute x3 x4
+b2 very "r.01" x3
+b2 REF x4
+b2 Theme x4 x1
+b2 polite "a.01" x4
+
+% Sentence: 463
+% Raw sent: My parents love me.
+b1 REF x1
+b1 Of x2 "speaker"
+b1 REF x2
+b1 Role x1 x2
+b1 parent "n.01" x2
+b1 person "n.01" x1
+b2 REF x3
+b2 Experiencer x3 x1
+b2 Stimulus x3 "speaker"
+b2 Time x3 x4
+b2 love "v.01" x3
+b3 REF x4
+b3 EQU x4 "now"
+b3 time "n.08" x4
+
+% Sentence: 464
+% Raw sent: Tom works at a supermarket.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Time x2 x3
+b2 work "v.02" x2
+b3 REF x3
+b3 EQU x3 "now"
+b3 time "n.08" x3
+b2 Location x2 x4
+b2 REF x4
+b2 supermarket "n.01" x4
+
+% Sentence: 465
+% Raw sent: Our school is 80 years old.
+b1 REF x1
+b1 User x1 "speaker"
+b1 school "n.01" x1
+b2 Time x4 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Quantity x3 "80"
+b2 Unit x3 "year"
+b2 measure "n.02" x3
+b2 REF x4
+b2 Theme x4 x1
+b2 Value x4 x3
+b2 age "n.01" x4
+
+% Sentence: 466
+% Raw sent: I made supper.
+b1 REF x1
+b1 Agent x1 "speaker"
+b1 Result x1 x3
+b1 Time x1 x2
+b1 make "v.39" x1
+b2 REF x2
+b2 TPR x2 "now"
+b2 time "n.08" x2
+b1 REF x3
+b1 supper "n.01" x3
+
+% Sentence: 467
+% Raw sent: This house is famous.
+b1 REF x1
+b1 house "n.01" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 famous "a.01" x3
+
+% Sentence: 468
+% Raw sent: Texas Instruments produces mobile phones.
+b1 REF x1
+b1 Name x1 x1
+b1 organization "n.01" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Result x2 x4
+b2 Time x2 x3
+b2 produce "v.02" x2
+b3 REF x3
+b3 EQU x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 mobile_phone "n.01" x4
+
+% Sentence: 469
+% Raw sent: Tom tripped on something.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Time x2 x3
+b2 male "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b2 Patient x2 x4
+b2 REF x4
+b2 entity "n.01" x4
+
+% Sentence: 470
+% Raw sent: I owe him 1,000 dollars.
+b1 REF x1
+b1 Agent x1 "speaker"
+b1 Beneficiary x1 x3
+b1 Theme x1 x4
+b1 Time x1 x2
+b1 owe "v.03" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 time "n.08" x2
+b3 REF x3
+b3 male "n.02" x3
+b1 REF x4
+b1 Quantity x4 "1000"
+b1 Unit x4 "dollar"
+b1 measure "n.02" x4
+
+% Sentence: 471
+% Raw sent: He drank three bottles of beer.
+b1 REF x1
+b1 male "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Patient x2 x4
+b2 Time x2 x3
+b2 drink "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 Quantity x4 "3"
+b2 bottle "n.02" x4
+b2 Quantity x5 x4
+b2 REF x5
+b2 beer "n.01" x5
+
+% Sentence: 472
+% Raw sent: This train leaves at nine o'clock.
+b1 REF x1
+b1 train "n.01" x1
+b2 REF x2
+b2 Theme x2 x1
+b2 leave "v.01" x2
+b3 TPR "now" x3
+b2 Time x2 x3
+b3 REF x3
+b3 time "n.08" x3
+b3 ClockTime x3 "09:00"
+
+% Sentence: 473
+% Raw sent: I can't understand this table.
+b1 POS b2
+b3 NOT b1
+b2 REF x1
+b2 Agent x1 "speaker"
+b2 Theme x1 x2
+b2 understand "v.01" x1
+b4 REF x2
+b4 table "n.02" x2
+
+% Sentence: 474
+% Raw sent: The conference drew 150 diplomats.
+b1 REF x1
+b1 conference "n.01" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Result x2 x4
+b2 Time x2 x3
+b2 draw "v.02" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 Quantity x4 "150"
+b2 REF x5
+b2 Role x4 x5
+b2 diplomat "n.01" x5
+b2 person "n.01" x4
+
+% Sentence: 475
+% Raw sent: I want a divorce.
+b1 REF x1
+b1 Pivot x1 "speaker"
+b1 Theme x1 x3
+b1 Time x1 x2
+b1 want "v.01" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 time "n.08" x2
+b1 REF x3
+b1 divorce "n.01" x3
+
+% Sentence: 476
+% Raw sent: I was meeting Bob at six.
+b1 TPR x1 "now"
+b2 Time x2 x1
+b1 REF x1
+b1 time "n.08" x1
+b2 REF x2
+b2 Co-Theme x2 x3
+b2 Theme x2 "speaker"
+b2 meet "v.01" x2
+b3 REF x3
+b3 Name x3 "bob"
+b3 male "n.02" x3
+b2 ClockTime x2 "18:00"
+
+% Sentence: 477
+% Raw sent: Do you speak Hebrew?
+b1 Time x2 x1
+b2 REF x1
+b2 EQU x1 "now"
+b2 time "n.08" x1
+b1 REF x2
+b1 Agent x2 "hearer"
+b1 Theme x2 x3
+b1 speak "v.03" x2
+b1 REF x3
+b1 hebrew "n.01" x3
+
+% Sentence: 478
+% Raw sent: The house has burnt down.
+b1 REF x1
+b1 house "n.01" x1
+b2 REF x2
+b2 Patient x2 x1
+b2 Time x2 x3
+b2 burn_down "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+
+% Sentence: 479
+% Raw sent: Mary misled me.
+b1 REF x1
+b1 Name x1 "mary"
+b1 female "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Patient x2 "speaker"
+b2 Time x2 x3
+b2 mislead "v.02" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+
+% Sentence: 480
+% Raw sent: We played on the banks of the Thames.
+b1 REF x1
+b1 Agent x1 "speaker"
+b1 Time x1 x2
+b1 play "v.01" x1
+b2 REF x2
+b2 TPR x2 "now"
+b2 time "n.08" x2
+b1 Location x1 x3
+b1 REF x3
+b1 bank "n.02" x3
+b1 PartOf x3 x4
+b3 REF x4
+b3 Name x4 "nile"
+b3 river "n.01" x4
+
+% Sentence: 481
+% Raw sent: I can't talk now.
+b1 POS b2
+b3 NOT b1
+b2 REF x1
+b2 Agent x1 "speaker"
+b2 talk "v.01" x1
+b2 Time x1 x2
+b4 REF x2
+b4 EQU x2 "now"
+b4 time "n.08" x2
+
+% Sentence: 482
+% Raw sent: Everything is new.
+b1 IMP b2 b3
+b2 REF x1
+b2 entity "n.01" x1
+b3 Time x3 x2
+b4 REF x2
+b4 EQU x2 "now"
+b4 time "n.08" x2
+b3 REF x3
+b3 Theme x3 x1
+b3 new "a.01" x3
+
+% Sentence: 483
+% Raw sent: The bicycle is mine.
+b1 REF x1
+b1 bicycle "n.01" x1
+b2 REF x2
+b2 Co-Theme x2 x4
+b2 Theme x2 x1
+b2 Time x2 x3
+b2 be "v.02" x2
+b3 REF x3
+b3 EQU x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 Owner x4 "speaker"
+b2 entity "n.01" x4
+
+% Sentence: 484
+% Raw sent: I want this bag.
+b1 REF x1
+b1 Pivot x1 "speaker"
+b1 Theme x1 x3
+b1 Time x1 x2
+b1 want "v.01" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 time "n.08" x2
+b3 REF x3
+b3 bag "n.01" x3
+
+% Sentence: 485
+% Raw sent: You're silly.
+b1 Time x2 x1
+b2 REF x1
+b2 EQU x1 "now"
+b2 time "n.08" x1
+b1 REF x2
+b1 Theme x2 "hearer"
+b1 silly "a.01" x2
+
+% Sentence: 486
+% Raw sent: He is Japanese.
+b1 REF x1
+b1 male "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 REF x4
+b2 Name x4 "japan"
+b2 Source x3 x4
+b2 Theme x3 x1
+b2 be "v.03" x3
+b2 country "n.02" x4
+
+% Sentence: 487
+% Raw sent: The dog is white.
+b1 REF x1
+b1 dog "n.01" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Colour x1 x3
+b2 white "a.01" x3
+
+% Sentence: 488
+% Raw sent: The monkey climbed up a tree.
+b1 REF x1
+b1 monkey "n.01" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Patient x2 x4
+b2 Time x2 x3
+b2 climb "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 tree "n.01" x4
+
+% Sentence: 489
+% Raw sent: I'm bored right now.
+b1 Time x2 x1
+b2 REF x1
+b2 EQU x1 "now"
+b2 time "n.08" x1
+b1 REF x2
+b1 Experiencer x2 "speaker"
+b1 bore "v.01" x2
+
+% Sentence: 490
+% Raw sent: There are rats in the kitchen.
+b1 REF x1
+b1 Theme x1 x3
+b1 Time x1 x2
+b1 be "v.03" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 time "n.08" x2
+b1 REF x3
+b1 rat "n.01" x3
+b1 Location x1 x4
+b3 REF x4
+b3 kitchen "n.01" x4
+
+% Sentence: 491
+% Raw sent: I forgot my pen.
+b1 REF x1
+b1 Agent x1 "speaker"
+b1 Theme x1 x3
+b1 Time x1 x2
+b1 forget "v.04" x1
+b2 REF x2
+b2 TPR x2 "now"
+b2 time "n.08" x2
+b3 REF x3
+b3 User x3 "speaker"
+b3 pen "n.01" x3
+
+% Sentence: 492
+% Raw sent: The dove symbolizes peace.
+b1 REF x1
+b1 pigeon "n.01" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 male "v.02" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 peace "n.01" x4
+
+% Sentence: 493
+% Raw sent: I am proud of you.
+b1 Time x2 x1
+b2 REF x1
+b2 EQU x1 "now"
+b2 time "n.08" x1
+b1 REF x2
+b1 Experiencer x2 "speaker"
+b1 proud "a.01" x2
+b1 Stimulus x2 "hearer"
+
+% Sentence: 494
+% Raw sent: Tom seems conceited.
+b1 Time x3 x1
+b2 REF x1
+b2 EQU x1 "now"
+b2 time "n.08" x1
+b3 REF x2
+b3 Name x2 "tom"
+b3 male "n.02" x2
+b1 REF x3
+b1 REF x4
+b1 Agent x3 x2
+b1 PRP x4 b4
+b1 Topic x3 x4
+b1 seem "v.01" x3
+b4 REF x5
+b4 Agent x5 x2
+b4 male "v.01" x5
+
+% Sentence: 495
+% Raw sent: Read this.
+b1 REF x1
+b1 Agent x1 "hearer"
+b1 Theme x1 x2
+b1 read "v.01" x1
+b2 REF x2
+b2 entity "n.01" x2
+
+% Sentence: 496
+% Raw sent: Everybody hates me.
+b1 IMP b2 b3
+b2 REF x1
+b2 person "n.01" x1
+b3 REF x2
+b3 Experiencer x2 x1
+b3 Stimulus x2 "speaker"
+b3 Time x2 x3
+b3 hate "v.01" x2
+b4 REF x3
+b4 EQU x3 "now"
+b4 time "n.08" x3
+
+% Sentence: 497
+% Raw sent: Tom lowered his gaze.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Patient x2 x4
+b2 Time x2 x3
+b2 lower "v.03" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b4 REF x4
+b4 User x4 x1
+b4 gaze "n.01" x4
+
+% Sentence: 498
+% Raw sent: I am engaged to her.
+b1 Time x2 x1
+b2 REF x1
+b2 EQU x1 "now"
+b2 time "n.08" x1
+b1 REF x2
+b1 Theme x2 "speaker"
+b1 engage "v.05" x2
+b1 Co-Theme x2 x3
+b3 REF x3
+b3 female "n.02" x3
+
+% Sentence: 499
+% Raw sent: Tom drove his car off a cliff.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Patient x2 x4
+b2 Time x2 x3
+b2 drive "v.03" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b4 REF x4
+b4 Owner x4 x1
+b4 car "n.01" x4
+b2 Source x2 x5
+b2 REF x5
+b2 cliff "n.01" x5
+
+% Sentence: 500
+% Raw sent: He's Argentinian.
+b1 REF x1
+b1 male "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 male "a.01" x3
+
+% Sentence: 501
+% Raw sent: Maria has long hair.
+b1 REF x1
+b1 Name x1 "maria"
+b1 female "n.02" x1
+b2 REF x2
+b2 Pivot x2 x1
+b2 Theme x2 x5
+b2 Time x2 x3
+b2 have "v.04" x2
+b3 REF x3
+b3 EQU x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 REF x5
+b2 Theme x4 x5
+b2 long "a.01" x4
+b2 hair "n.01" x5
+
+% Sentence: 502
+% Raw sent: My sister isn't studying now.
+b1 REF x1
+b1 Of x2 "speaker"
+b1 REF x2
+b1 Role x1 x2
+b1 person "n.01" x1
+b1 sister "n.01" x2
+b2 Time x4 x3
+b3 REF x3
+b3 EQU x3 "now"
+b3 time "n.08" x3
+b4 NOT b2
+b2 REF x4
+b2 Agent x4 x1
+b2 study "v.05" x4
+
+% Sentence: 503
+% Raw sent: I was furious.
+b1 Time x2 x1
+b2 REF x1
+b2 TPR x1 "now"
+b2 time "n.08" x1
+b1 REF x2
+b1 Theme x2 "speaker"
+b1 furious "a.01" x2
+
+% Sentence: 504
+% Raw sent: She loved Tom.
+b1 REF x1
+b1 female "n.02" x1
+b2 REF x2
+b2 Experiencer x2 x1
+b2 Stimulus x2 x4
+b2 Time x2 x3
+b2 love "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b4 REF x4
+b4 Name x4 "tom"
+b4 male "n.02" x4
+
+% Sentence: 505
+% Raw sent: Tom is courteous.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 male "a.01" x3
+
+% Sentence: 506
+% Raw sent: Many Finns are interested in culture.
+b1 REF x1
+b1 Quantity x1 "+"
+b1 bulb "n.02" x1
+b1 Time x3 x2
+b2 REF x2
+b2 EQU x2 "now"
+b2 time "n.08" x2
+b1 REF x3
+b1 Experiencer x3 x1
+b1 interested "a.01" x3
+b1 Stimulus x3 x4
+b1 REF x4
+b1 culture "n.01" x4
+
+% Sentence: 507
+% Raw sent: They are not at all interested.
+b1 REF x1
+b1 person "n.01" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b4 NOT b2
+b2 REF x3
+b2 Theme x3 x1
+b2 interested "a.01" x3
+
+% Sentence: 508
+% Raw sent: The customer is always right.
+b1 REF x1
+b1 customer "n.01" x1
+b2 EQU x2 "now"
+b3 Time x3 x2
+b2 REF x2
+b2 time "n.08" x2
+b4 IMP b2 b3
+b3 REF x3
+b3 Theme x3 x1
+b3 right "a.01" x3
+
+% Sentence: 509
+% Raw sent: Tom is wet.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Patient x3 x1
+b2 wet "a.01" x3
+
+% Sentence: 510
+% Raw sent: My father fixed a broken chair.
+b1 REF x1
+b1 Of x2 "speaker"
+b1 REF x2
+b1 Role x1 x2
+b1 father "n.01" x2
+b1 person "n.01" x1
+b2 REF x3
+b2 Agent x3 x1
+b2 Patient x3 x5
+b2 Time x3 x4
+b2 fix "v.01" x3
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b2 REF x5
+b2 REF x6
+b2 Theme x6 x5
+b2 broken "a.01" x6
+b2 chair "n.01" x5
+
+% Sentence: 511
+% Raw sent: Tom draws well.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Time x2 x3
+b2 male "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 Manner x2 x4
+b2 well "a.01" x4
+
+% Sentence: 512
+% Raw sent: Forgive me!
+b1 REF x1
+b1 Agent x1 "hearer"
+b1 Theme x1 "speaker"
+b1 forgive "v.01" x1
+
+% Sentence: 513
+% Raw sent: Tom works.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Time x2 x3
+b2 work "v.02" x2
+b3 REF x3
+b3 EQU x3 "now"
+b3 time "n.08" x3
+
+% Sentence: 514
+% Raw sent: The artist is gifted.
+b1 REF x1
+b1 REF x2
+b1 Role x1 x2
+b1 artist "n.01" x2
+b1 person "n.01" x1
+b2 Time x4 x3
+b3 REF x3
+b3 EQU x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 Theme x4 x1
+b2 male "a.01" x4
+
+% Sentence: 515
+% Raw sent: Where does your grandfather live?
+b1 REF x1
+b1 Location x4 x1
+b1 Name x1 "?"
+b1 location "n.01" x1
+b1 Time x4 x2
+b2 REF x2
+b2 EQU x2 "now"
+b2 time "n.08" x2
+b3 REF x3
+b3 Of x4 "hearer"
+b3 REF x4
+b3 Role x3 x4
+b3 grandfather "n.01" x4
+b3 person "n.01" x3
+b1 REF x5
+b1 Theme x5 x3
+b1 live "v.01" x5
+
+% Sentence: 516
+% Raw sent: Tom is disrespectful.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 male "a.01" x3
+
+% Sentence: 517
+% Raw sent: I'm fed up with this winter, I want spring right now!
+b1 DRS b2
+b1 DRS b3
+b2 Time x2 x1
+b4 REF x1
+b4 EQU x1 "now"
+b4 time "n.08" x1
+b2 REF x2
+b2 Experiencer x2 "speaker"
+b2 fed_up "a.01" x2
+b2 Stimulus x2 x3
+b5 REF x3
+b5 winter "n.01" x3
+b1 CONTINUATION b2 b3
+b3 REF x4
+b3 Pivot x4 "speaker"
+b3 Theme x4 x5
+b3 Time x4 x1
+b3 want "v.01" x4
+b3 REF x5
+b3 spring "n.01" x5
+
+% Sentence: 518
+% Raw sent: A lot of students around the world are studying English.
+b1 REF x1
+b1 Quantity x1 "+"
+b1 REF x2
+b1 Role x1 x2
+b1 person "n.01" x1
+b1 student "n.01" x2
+b1 Participant x1 x3
+b2 REF x3
+b2 world "n.01" x3
+b1 Time x5 x4
+b3 REF x4
+b3 EQU x4 "now"
+b3 time "n.08" x4
+b1 REF x5
+b1 Agent x5 x1
+b1 Theme x5 x6
+b1 study "v.03" x5
+b1 REF x6
+b1 english "n.01" x6
+
+% Sentence: 519
+% Raw sent: Mary hates Halloween.
+b1 REF x1
+b1 Name x1 "mary"
+b1 female "n.02" x1
+b2 REF x2
+b2 Experiencer x2 x1
+b2 Stimulus x2 x4
+b2 Time x2 x3
+b2 hate "v.01" x2
+b3 REF x3
+b3 EQU x3 "now"
+b3 time "n.08" x3
+b4 REF x4
+b4 Name x4 "halloween"
+b4 day "n.03" x4
+
+% Sentence: 520
+% Raw sent: Tom is very sociable.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 Time x4 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Attribute x3 x4
+b2 very "r.01" x3
+b2 REF x4
+b2 Theme x4 x1
+b2 sociable "a.01" x4
+
+% Sentence: 521
+% Raw sent: I was afraid.
+b1 Time x2 x1
+b2 REF x1
+b2 TPR x1 "now"
+b2 time "n.08" x1
+b1 REF x2
+b1 Experiencer x2 "speaker"
+b1 afraid "a.01" x2
+
+% Sentence: 522
+% Raw sent: Tom won't speak to Mary.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 TPR "now" x2
+b3 time "n.08" x2
+b4 NOT b2
+b2 REF x3
+b2 Agent x3 x1
+b2 speak "v.02" x3
+b2 Co-Agent x3 x4
+b5 REF x4
+b5 Name x4 "mary"
+b5 female "n.02" x4
+
+% Sentence: 523
+% Raw sent: That apple is bruised.
+b1 REF x1
+b1 apple "n.01" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 male "a.01" x3
+
+% Sentence: 524
+% Raw sent: He is suffering from a cold.
+b1 REF x1
+b1 male "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Experiencer x3 x1
+b2 suffer "v.02" x3
+b2 Stimulus x3 x4
+b2 REF x4
+b2 cold "n.01" x4
+
+% Sentence: 525
+% Raw sent: The blast destroyed everything.
+b1 REF x1
+b1 blast "n.01" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Patient x2 x4
+b2 Time x2 x3
+b2 destroy "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b4 IMP b5 b2
+b5 REF x4
+b5 entity "n.01" x4
+
+% Sentence: 526
+% Raw sent: I am horrified.
+b1 Time x2 x1
+b2 REF x1
+b2 EQU x1 "now"
+b2 time "n.08" x1
+b1 REF x2
+b1 Theme x2 "speaker"
+b1 male "a.01" x2
+
+% Sentence: 527
+% Raw sent: Look out!
+b1 REF x1
+b1 Theme x1 "hearer"
+b1 out "a.01" x1
+
+% Sentence: 528
+% Raw sent: We got dressed.
+b1 Time x2 x1
+b2 REF x1
+b2 TPR x1 "now"
+b2 time "n.08" x1
+b1 REF x2
+b1 Patient x2 "speaker"
+b1 dress "v.01" x2
+
+% Sentence: 529
+% Raw sent: Tom is rinsing the dishes.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Agent x3 x1
+b2 Source x3 x4
+b2 milk "v.01" x3
+b4 REF x4
+b4 dish "n.01" x4
+
+% Sentence: 530
+% Raw sent: The wind is blowing.
+b1 REF x1
+b1 wind "n.01" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 blow "v.05" x3
+
+% Sentence: 531
+% Raw sent: It's vibrating.
+b1 REF x1
+b1 entity "n.01" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 male "a.01" x3
+
+% Sentence: 532
+% Raw sent: Tom is extremely fit.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 Time x4 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Attribute x3 x4
+b2 extremely "r.02" x3
+b2 REF x4
+b2 Theme x4 x1
+b2 fit "a.01" x4
+
+% Sentence: 533
+% Raw sent: We are dozing off.
+b1 Time x2 x1
+b2 REF x1
+b2 EQU x1 "now"
+b2 time "n.08" x1
+b1 REF x2
+b1 Experiencer x2 "speaker"
+b1 doze_off "v.01" x2
+
+% Sentence: 534
+% Raw sent: He is a plucky guy.
+b1 REF x1
+b1 male "n.02" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 EQU x1 x3
+b2 Time x5 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 REF x4
+b2 Theme x4 x5
+b2 male "a.01" x4
+b2 REF x5
+b2 Role x3 x5
+b2 person "n.01" x3
+b2 guy "n.01" x5
+
+% Sentence: 535
+% Raw sent: I never lie.
+b1 NOT b2
+b2 REF x1
+b2 time "n.08" x1
+b2 REF x2
+b2 Agent x2 "speaker"
+b2 EQU x1 "now"
+b2 Time x2 x1
+b2 lie "v.01" x2
+
+% Sentence: 536
+% Raw sent: Tom saw a mouse.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 Experiencer x2 x1
+b2 Stimulus x2 x4
+b2 Time x2 x3
+b2 see "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 mouse "n.01" x4
+
+% Sentence: 537
+% Raw sent: He is very young.
+b1 REF x1
+b1 male "n.02" x1
+b2 Time x4 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Attribute x3 x4
+b2 very "r.01" x3
+b2 REF x4
+b2 Theme x4 x1
+b2 young "a.01" x4
+
+% Sentence: 538
+% Raw sent: I like my teachers.
+b1 REF x1
+b1 Experiencer x1 "speaker"
+b1 Stimulus x1 x3
+b1 Time x1 x2
+b1 like "v.02" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 time "n.08" x2
+b3 REF x3
+b3 Of x4 "speaker"
+b3 REF x4
+b3 Role x3 x4
+b3 person "n.01" x3
+b3 teacher "n.01" x4
+
+% Sentence: 539
+% Raw sent: He's a terrible driver.
+b1 REF x1
+b1 male "n.02" x1
+b2 REF x2
+b2 Co-Theme x2 x4
+b2 Theme x2 x1
+b2 Time x2 x3
+b2 be "v.08" x2
+b3 REF x3
+b3 EQU x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 REF x5
+b2 Theme x5 x6
+b2 terrible "a.01" x5
+b2 REF x6
+b2 Role x4 x6
+b2 driver "n.01" x6
+b2 person "n.01" x4
+
+% Sentence: 540
+% Raw sent: I'll buy a new one.
+b1 Time x2 x1
+b2 REF x1
+b2 TPR "now" x1
+b2 time "n.08" x1
+b1 REF x2
+b1 Agent x2 "speaker"
+b1 Theme x2 x3
+b1 buy "v.01" x2
+b1 REF x3
+b1 REF x4
+b1 Theme x4 x3
+b1 new "a.01" x4
+b1 person "n.01" x3
+
+% Sentence: 541
+% Raw sent: Mr. Ford is all right now.
+b1 REF x1
+b1 REF x2
+b1 Title x1 x2
+b1 mr "n.01" x2
+b1 Name x1 "ford"
+b1 male "n.02" x1
+b2 Time x4 x3
+b3 REF x3
+b3 EQU x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 Theme x4 x1
+b2 all_right "a.01" x4
+
+% Sentence: 542
+% Raw sent: I can't open this bottle.
+b1 POS b2
+b3 NOT b1
+b2 REF x1
+b2 Location x1 x2
+b2 Theme x1 "speaker"
+b2 open "v.01" x1
+b4 REF x2
+b4 bottle "n.01" x2
+
+% Sentence: 543
+% Raw sent: Tom is crying, too.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Agent x3 x1
+b2 cry "v.02" x3
+
+% Sentence: 544
+% Raw sent: She did not read the book.
+b1 REF x1
+b1 female "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 TPR x2 "now"
+b3 time "n.08" x2
+b4 NOT b2
+b2 REF x3
+b2 Experiencer x3 x1
+b2 Stimulus x3 x4
+b2 read "v.01" x3
+b5 REF x4
+b5 book "n.01" x4
+
+% Sentence: 545
+% Raw sent: The room is extremely small.
+b1 REF x1
+b1 room "n.01" x1
+b2 Time x4 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Attribute x3 x4
+b2 extremely "r.02" x3
+b2 REF x4
+b2 Theme x4 x1
+b2 small "a.01" x4
+
+% Sentence: 546
+% Raw sent: She lost Mary.
+b1 REF x1
+b1 female "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 lose "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b4 REF x4
+b4 Name x4 "mary"
+b4 female "n.02" x4
+
+% Sentence: 547
+% Raw sent: Pierce lives near Rossville Blvd.
+b1 REF x1
+b1 Name x1 "pierce"
+b1 male "n.02" x1
+b2 REF x2
+b2 Theme x2 x1
+b2 Time x2 x3
+b2 live "v.01" x2
+b3 REF x3
+b3 EQU x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 APX x4 x5
+b2 Location x2 x4
+b2 location "n.01" x4
+b4 REF x5
+b4 Name x5 x5
+b4 city "n.01" x5
+
+% Sentence: 548
+% Raw sent: Can you give me a kilo of plums?
+b1 POS b2
+b2 REF x1
+b2 Agent x1 "hearer"
+b2 Recipient x1 "speaker"
+b2 Theme x1 x2
+b2 give "v.03" x1
+b2 REF x2
+b2 Unit x2 "kilo"
+b2 measure "n.02" x2
+
+% Sentence: 549
+% Raw sent: My bedroom is crawling with spiders.
+b1 REF x1
+b1 User x1 "speaker"
+b1 bedroom "n.01" x1
+b2 Time x3 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Location x3 x1
+b2 crawl "v.03" x3
+b2 Theme x3 x4
+b2 REF x4
+b2 spider "n.01" x4
+
+% Sentence: 550
+% Raw sent: You are on the wrong train.
+b1 REF x1
+b1 Theme x1 "hearer"
+b1 Time x1 x2
+b1 be "v.03" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 time "n.08" x2
+b1 Location x1 x3
+b3 REF x3
+b3 REF x4
+b3 Theme x4 x3
+b3 wrong "a.01" x4
+b3 train "n.01" x3
+
+% Sentence: 551
+% Raw sent: Kraft sold Celestial Seasonings.
+b1 REF x1
+b1 Name x1 x1
+b1 company "n.01" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 sell "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b4 REF x4
+b4 Name x4 "celestial~seasonings"
+b4 company "n.01" x4
+
+% Sentence: 552
+% Raw sent: The tires are very sticky.
+b1 REF x1
+b1 tire "n.01" x1
+b2 Time x4 x2
+b3 REF x2
+b3 EQU x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Attribute x3 x4
+b2 very "r.01" x3
+b2 REF x4
+b2 Theme x4 x1
+b2 sticky "a.01" x4
+
+% Sentence: 553
+% Raw sent: Bill was killed by an intruder.
+b1 REF x1
+b1 Name x1 "bill"
+b1 male "n.02" x1
+b2 Time x3 x2
+b3 REF x2
+b3 TPR x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Patient x3 x1
+b2 kill "v.01" x3
+b2 Agent x3 x4
+b2 REF x4
+b2 intruder "n.01" x4
+
+% Sentence: 554
+% Raw sent: No one was alive.
+b1 NOT b2
+b2 REF x1
+b2 person "n.01" x1
+b2 Time x3 x2
+b3 REF x2
+b3 TPR x2 "now"
+b3 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 alive "a.01" x3
+
+% Sentence: 555
+% Raw sent: Tom spent several hours in the library.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Duration x2 x4
+b2 Time x2 x3
+b2 spend "v.01" x2
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b2 REF x4
+b2 Quantity x4 "+"
+b2 Unit x4 "hour"
+b2 measure "n.02" x4
+b2 Location x2 x5
+b4 REF x5
+b4 library "n.02" x5
+
+% Sentence: 556
+% Raw sent: Tom visited us yesterday.
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Co-Agent x2 "speaker"
+b2 TPR x3 "now"
+b2 visit "v.01" x2
+b2 time "n.08" x3
+b2 REF x3
+b2 Time x2 x3
+b2 REF x4
+b2 EQU x4 "now"
+b2 TAB x3 x4
+b2 day "n.03" x3
+b2 day "n.03" x4
+

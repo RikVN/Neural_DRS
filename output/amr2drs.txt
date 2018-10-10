@@ -1,0 +1,7922 @@
+% Sentence: 0
+% Input sent: Tom can't speak French. Tom can't speak Spanish either.
+b0 REF x1
+b10 REF x9
+b10 TPR x9 "now"
+b10 time "n.08" x9
+b0 Time x1 x9
+b0 possible "v.01" x1
+b1 NOT b0
+b0 Patient x1 x2
+b2 REF x2
+b2 speak "v.01" x2
+b2 Agent x2 x3
+b3 REF x3
+b3 person "n.01" x3
+b3 Name x3 "Tom"
+b2 Patient x2 x5
+b5 REF x5
+b5 person "n.01" x5
+b5 Theme x6 x5
+b5 REF x6
+b5 country "a.01" x6
+b6 Name x6 "Spain"
+b2 Patient x8 x2
+b8 REF x8
+b8 possible "v.01" x8
+b9 NOT b8
+
+% Sentence: 1
+% Input sent: He stole money from me.
+b0 REF x1
+b3 REF x5
+b3 TPR x5 "now"
+b3 time "n.08" x5
+b0 Time x1 x5
+b0 steal "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 male "n.02" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 money "n.01" x3
+b0 Theme x1 "speaker"
+
+% Sentence: 2
+% Input sent: I phoned.
+b0 REF x1
+b1 REF x3
+b1 TPR x3 "now"
+b1 time "n.08" x3
+b0 Time x1 x3
+b0 phone "v.01" x1
+b0 Agent x1 "speaker"
+
+% Sentence: 3
+% Input sent: Tom suffered from a collapsed lung.
+b0 REF x1
+b5 REF x6
+b5 TPR x6 "now"
+b5 time "n.08" x6
+b0 Time x1 x6
+b0 suffer "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+b0 Patient x1 x4
+b3 REF x4
+b3 lung "n.01" x4
+b3 Patient x5 x4
+b4 REF x5
+b4 collapse "v.01" x5
+
+% Sentence: 4
+% Input sent: I cannot swim at all.
+b0 REF x1
+b5 REF x5
+b5 TPR x5 "now"
+b5 time "n.08" x5
+b0 Time x1 x5
+b0 possible "v.01" x1
+b1 NOT b0
+b0 Patient x1 x2
+b2 REF x2
+b2 swim "v.01" x2
+b2 Agent x2 "speaker"
+b2 Degree x2 x4
+b4 REF x4
+b4 at-all "n.01" x4
+
+% Sentence: 5
+% Input sent: We captured cicadas with a net.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 capture "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b2 REF x3
+b2 cicada "n.01" x3
+b0 Manner x1 x4
+b3 REF x4
+b3 net "n.01" x4
+
+% Sentence: 6
+% Input sent: Lalita called.
+b0 REF x1
+b2 REF x4
+b2 TPR x4 "now"
+b2 time "n.08" x4
+b0 Time x1 x4
+b0 call "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Lalita"
+
+% Sentence: 7
+% Input sent: He was sent by his company to Kazakhstan.
+b0 REF x1
+b4 REF x6
+b4 TPR x6 "now"
+b4 time "n.08" x6
+b0 Time x1 x6
+b0 send "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 company "n.01" x2
+b2 REF x3
+b2 male "n.02" x3
+b0 Patient x1 x3
+b0 Theme x1 x4
+b3 REF x4
+b3 country "n.01" x4
+b3 Name x4 "Kazakhstan"
+
+% Sentence: 8
+% Input sent: Tom laid his racket on the ground.
+b0 REF x1
+b5 REF x6
+b5 TPR x6 "now"
+b5 time "n.08" x6
+b0 Time x1 x6
+b0 lay "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+b0 Patient x1 x4
+b3 REF x4
+b3 racket "n.01" x4
+b0 Location x1 x5
+b4 REF x5
+b4 ground "n.01" x5
+
+% Sentence: 9
+% Input sent: Tom suspected that his father was dyslexic.
+b0 REF x1
+b8 REF x9
+b8 TPR x9 "now"
+b8 time "n.08" x9
+b0 Time x1 x9
+b0 suspect "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+b0 Patient x1 x4
+b3 REF x4
+b3 dyslexic "n.01" x4
+b3 Theme x4 x5
+b4 REF x5
+b4 person "n.01" x5
+b4 Agent x6 x5
+b5 REF x6
+b5 have-rel-role "v.01" x6
+b5 Patient x6 x7
+b6 REF x7
+b6 male "n.02" x7
+b5 Theme x6 x8
+b7 REF x8
+b7 father "n.01" x8
+
+% Sentence: 10
+% Input sent: Mr. Smith is an acquaintance of hers.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 acquaint "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Mr.~Smith"
+b0 Patient x1 x4
+b3 REF x4
+b3 female "n.02" x4
+
+% Sentence: 11
+% Input sent: I'm a foreigner.
+b0 REF x1
+b0 person "n.01" x1
+b0 Theme x2 x1
+b0 REF x2
+b0 foreign "a.01" x2
+b0 Theme x1 "speaker"
+
+% Sentence: 12
+% Input sent: Tom doesn't know me.
+b0 REF x1
+b3 REF x5
+b3 TPR x5 "now"
+b3 time "n.08" x5
+b0 Time x1 x5
+b0 know "v.01" x1
+b1 NOT b0
+b0 Agent x1 x2
+b2 REF x2
+b2 person "n.01" x2
+b2 Name x2 "Tom"
+b0 Patient x1 "speaker"
+
+% Sentence: 13
+% Input sent: He lies.
+b0 REF x1
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+b0 Time x1 x3
+b0 lie "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 male "n.02" x2
+
+% Sentence: 14
+% Input sent: The news spread fast.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 spread "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 news "n.01" x2
+b0 Patient x3 x1
+b2 REF x3
+b2 fast "v.01" x3
+
+% Sentence: 15
+% Input sent: The telephone rang repeatedly.
+b0 REF x1
+b2 REF x4
+b2 TPR x4 "now"
+b2 time "n.08" x4
+b0 Time x1 x4
+b0 repeat "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 rang "v.01" x2
+b1 Theme x3 x2
+b1 REF x3
+b1 telephone "a.01" x3
+
+% Sentence: 16
+% Input sent: She is the Prime Minister of Finland.
+b0 REF x1
+b5 REF x7
+b5 TPR x7 "now"
+b5 time "n.08" x7
+b0 Time x1 x7
+b0 have-org-role "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 female "n.02" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 country "n.01" x3
+b2 Name x3 "Finland"
+b0 Theme x1 x5
+b4 REF x5
+b4 minister "n.01" x5
+b4 Theme x6 x5
+b4 REF x6
+b4 prime "a.01" x6
+
+% Sentence: 17
+% Input sent: Everyone except Tom was wearing a tie.
+b0 REF x1
+b6 REF x7
+b6 TPR x7 "now"
+b6 time "n.08" x7
+b0 Time x1 x7
+b0 wear "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 everyone "n.01" x2
+b1 Theme x3 x2
+b2 REF x3
+b2 except "v.01" x3
+b2 Patient x3 x4
+b3 REF x4
+b3 person "n.01" x4
+b3 Name x4 "Tom"
+b0 Patient x1 x6
+b5 REF x6
+b5 tie "v.01" x6
+
+% Sentence: 18
+% Input sent: Tom is angry now.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 anger "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 tom "n.01" x2
+b0 Time x1 x3
+b2 REF x3
+b2 now "n.01" x3
+
+% Sentence: 19
+% Input sent: We rented a canoe.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 rent "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b2 REF x3
+b2 canoe "n.01" x3
+
+% Sentence: 20
+% Input sent: She's brushing her hair.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 brush "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 female "n.02" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 hair "n.01" x3
+b2 PartOf x3 x2
+
+% Sentence: 21
+% Input sent: Fish surface for air.
+b0 REF x1
+b0 surface "n.01" x1
+b0 Theme x2 x1
+b0 REF x2
+b0 fish "a.01" x2
+b0 Prep-for x1 x3
+b2 REF x3
+b2 air "n.01" x3
+
+% Sentence: 22
+% Input sent: One cannot not communicate.
+b0 REF x1
+b4 REF x4
+b4 TPR x4 "now"
+b4 time "n.08" x4
+b0 Time x1 x4
+b0 possible "v.01" x1
+b1 NOT b0
+b0 Patient x1 x2
+b2 REF x2
+b2 communicate "v.01" x2
+b2 Patient x2 x3
+b3 REF x3
+b3 one "n.01" x3
+
+% Sentence: 23
+% Input sent: Tom is ready.
+b0 REF x1
+b2 REF x4
+b2 TPR x4 "now"
+b2 time "n.08" x4
+b0 Time x1 x4
+b0 ready "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+
+% Sentence: 24
+% Input sent: My plan worked.
+b0 REF x1
+b2 REF x4
+b2 TPR x4 "now"
+b2 time "n.08" x4
+b0 Time x1 x4
+b0 work "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 plan "n.01" x2
+
+% Sentence: 25
+% Input sent: I'm drunk.
+b0 REF x1
+b0 drunk "n.01" x1
+b0 Theme x1 "speaker"
+
+% Sentence: 26
+% Input sent: But nobody believed her.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 contrast "v.01" x1
+b0 Theme x1 x2
+b1 REF x2
+b1 believe "v.01" x2
+b1 Agent x2 x3
+b2 REF x3
+b2 nobody "n.01" x3
+b1 Patient x2 x4
+b3 REF x4
+b3 female "n.02" x4
+
+% Sentence: 27
+% Input sent: His dog ran in the yard.
+b1 REF x1
+b1 alwayswrongconcept "n.01" x1
+
+% Sentence: 28
+% Input sent: Tom cleaned the toilet.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 clean "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+b0 Patient x1 x4
+b3 REF x4
+b3 toilet "n.01" x4
+
+% Sentence: 29
+% Input sent: He is poor.
+b0 REF x1
+b0 poor "n.01" x1
+b0 Theme x1 x2
+b1 REF x2
+b1 male "n.02" x2
+
+% Sentence: 30
+% Input sent: Tom is extremely gullible.
+b0 REF x1
+b0 gullible "n.01" x1
+b0 Degree x1 x2
+b1 REF x2
+b1 extreme "n.01" x2
+b0 Theme x1 x3
+b2 REF x3
+b2 tom "n.01" x3
+
+% Sentence: 31
+% Input sent: I deserve an explanation.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 deserve "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b2 REF x3
+b2 explain "v.01" x3
+
+% Sentence: 32
+% Input sent: A hare raced with a tortoise.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 race "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 hare "n.01" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 tortoise "n.01" x3
+
+% Sentence: 33
+% Input sent: I have to hurry!
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 obligate "v.01" x1
+b0 Patient x1 "speaker"
+b0 Theme x1 x3
+b2 REF x3
+b2 hurry "v.01" x3
+b2 Patient x3 x2
+
+% Sentence: 34
+% Input sent: The cat is watching the fish.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 watch "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 cat "n.01" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 fish "n.01" x3
+
+% Sentence: 35
+% Input sent: Some people might assume that.
+b0 REF x1
+b5 REF x6
+b5 TPR x6 "now"
+b5 time "n.08" x6
+b0 Time x1 x6
+b0 possible "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 assume "v.01" x2
+b1 Agent x2 x3
+b2 REF x3
+b2 person "n.01" x3
+b2 Theme x4 x3
+b2 REF x4
+b2 some "a.01" x4
+b1 Patient x2 x5
+b4 REF x5
+b4 that "n.01" x5
+
+% Sentence: 36
+% Input sent: You lied to me!
+b0 REF x1
+b1 REF x4
+b1 TPR x4 "now"
+b1 time "n.08" x4
+b0 Time x1 x4
+b0 lie "v.01" x1
+b0 Agent x1 "hearer"
+b0 Theme x1 "speaker"
+
+% Sentence: 37
+% Input sent: The girls reveled in dancing.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 revel "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 girl "n.01" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 dance "v.01" x3
+
+% Sentence: 38
+% Input sent: That's humiliating.
+b0 REF x1
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+b0 Time x1 x3
+b0 humiliate "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 that "n.01" x2
+
+% Sentence: 39
+% Input sent: She handed him the money that she owed him.
+b0 REF x1
+b5 REF x6
+b5 TPR x6 "now"
+b5 time "n.08" x6
+b0 Time x1 x6
+b0 hand "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 female "n.02" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 money "n.01" x3
+b2 Patient x4 x3
+b3 REF x4
+b3 owe "v.01" x4
+b3 Agent x4 x2
+b3 Theme x4 x5
+b4 REF x5
+b4 male "n.02" x5
+b0 Theme x1 x5
+
+% Sentence: 40
+% Input sent: The door is opening now.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 open "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 door "n.01" x2
+b0 Time x1 x3
+b2 REF x3
+b2 now "n.01" x3
+
+% Sentence: 41
+% Input sent: She is listening to him.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 listen "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 female "n.02" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 male "n.02" x3
+
+% Sentence: 42
+% Input sent: Will Tom die?
+b0 REF x1
+b2 REF x4
+b2 TPR x4 "now"
+b2 time "n.08" x4
+b0 Time x1 x4
+b0 die "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+
+% Sentence: 43
+% Input sent: I ate.
+b0 REF x1
+b1 REF x3
+b1 TPR x3 "now"
+b1 time "n.08" x3
+b0 Time x1 x3
+b0 ate "v.01" x1
+b0 Agent x1 "speaker"
+
+% Sentence: 44
+% Input sent: She is not a good sailor.
+b0 REF x1
+b4 REF x4
+b4 TPR x4 "now"
+b4 time "n.08" x4
+b0 Time x1 x4
+b0 sail "v.01" x1
+b1 NOT b0
+b0 Agent x1 x2
+b2 REF x2
+b2 female "n.02" x2
+b0 Patient x3 x1
+b3 REF x3
+b3 good "v.01" x3
+
+% Sentence: 45
+% Input sent: A smell of lilies filled the room.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 fill "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 smell "v.01" x2
+b1 Patient x2 x3
+b2 REF x3
+b2 lily "n.01" x3
+b0 Theme x1 x4
+b3 REF x4
+b3 room "n.01" x4
+
+% Sentence: 46
+% Input sent: I'm nervous now.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 nervous "v.01" x1
+b0 Agent x1 "speaker"
+b0 Time x1 x3
+b2 REF x3
+b2 now "n.01" x3
+
+% Sentence: 47
+% Input sent: Tom loves chocolate cake.
+b0 REF x1
+b4 REF x6
+b4 TPR x6 "now"
+b4 time "n.08" x6
+b0 Time x1 x6
+b0 love "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+b0 Patient x1 x4
+b3 REF x4
+b3 cake "n.01" x4
+b3 Theme x5 x4
+b3 REF x5
+b3 chocolate "a.01" x5
+
+% Sentence: 48
+% Input sent: Tom's smiling.
+b0 REF x1
+b2 REF x4
+b2 TPR x4 "now"
+b2 time "n.08" x4
+b0 Time x1 x4
+b0 smile "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+
+% Sentence: 49
+% Input sent: Wait!
+b0 REF x1
+b1 REF x3
+b1 TPR x3 "now"
+b1 time "n.08" x3
+b0 Time x1 x3
+b0 wait "v.01" x1
+b0 Patient x1 "hearer"
+
+% Sentence: 50
+% Input sent: Did Tom try?
+b0 REF x1
+b2 REF x4
+b2 TPR x4 "now"
+b2 time "n.08" x4
+b0 Time x1 x4
+b0 try "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+
+% Sentence: 51
+% Input sent: She grew roses.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 grow "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 female "n.02" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 rose "n.01" x3
+
+% Sentence: 52
+% Input sent: Yunus founded the Grameen Bank 30 years ago.
+b1 REF x1
+b1 alwayswrongconcept "n.01" x1
+
+% Sentence: 53
+% Input sent: They have drunk two bottles of wine.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 drink "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 wine "n.01" x3
+b2 Quantity x3 x4
+b3 REF x4
+b3 bottle "n.01" x4
+b3 Quantity x4 "2"
+
+% Sentence: 54
+% Input sent: Who won?
+b0 REF x1
+b0 amr-unknown "n.01" x1
+b0 Theme x2 x1
+b0 REF x2
+b0 won "a.01" x2
+
+% Sentence: 55
+% Input sent: Ah!
+b0 REF x1
+b0 ah "n.01" x1
+
+% Sentence: 56
+% Input sent: My father was an engineer.
+b0 REF x1
+b5 REF x6
+b5 TPR x6 "now"
+b5 time "n.08" x6
+b0 Time x1 x6
+b0 engineer "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Agent x3 x2
+b2 REF x3
+b2 have-rel-role "v.01" x3
+b2 Patient x3 "speaker"
+b2 Theme x3 x5
+b4 REF x5
+b4 father "n.01" x5
+
+% Sentence: 57
+% Input sent: She wrinkled her brows.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 wrink "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 female "n.02" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 brow "n.01" x3
+
+% Sentence: 58
+% Input sent: He is out now.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 out "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 male "n.02" x2
+b0 Time x1 x3
+b2 REF x3
+b2 now "n.01" x3
+
+% Sentence: 59
+% Input sent: No comment.
+b0 REF x1
+b2 REF x2
+b2 TPR x2 "now"
+b2 time "n.08" x2
+b0 Time x1 x2
+b0 comment "v.01" x1
+b1 NOT b0
+
+% Sentence: 60
+% Input sent: She dialed the wrong number.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 dial "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 female "n.02" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 number "n.01" x3
+b2 Patient x4 x3
+b3 REF x4
+b3 wrong "v.01" x4
+
+% Sentence: 61
+% Input sent: Nobody called.
+b0 REF x1
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+b0 Time x1 x3
+b0 call "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 nobody "n.01" x2
+
+% Sentence: 62
+% Input sent: That doesn't regard you at all.
+b0 REF x1
+b3 REF x5
+b3 TPR x5 "now"
+b3 time "n.08" x5
+b0 Time x1 x5
+b0 regard "v.01" x1
+b1 NOT b0
+b0 Agent x1 x2
+b2 REF x2
+b2 that "n.01" x2
+b0 Patient x1 "hearer"
+b0 Theme x4 x1
+b0 REF x4
+b0 at-all "a.01" x4
+
+% Sentence: 63
+% Input sent: I told him everything.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 tell "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b2 REF x3
+b2 everything "n.01" x3
+b0 Theme x1 x4
+b3 REF x4
+b3 male "n.02" x4
+
+% Sentence: 64
+% Input sent: I went fishing.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 go "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b2 REF x3
+b2 fish "v.01" x3
+b2 Agent x3 x2
+
+% Sentence: 65
+% Input sent: There are a lot of breweries in Bavaria.
+b0 REF x1
+b0 brewery "n.01" x1
+b0 Location x1 x2
+b1 REF x2
+b1 world-region "n.01" x2
+b1 Name x2 "Bavaria"
+b0 Quantity x1 x4
+b3 REF x4
+b3 lot "n.01" x4
+
+% Sentence: 66
+% Input sent: Everyone wants that.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 want "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 everyone "n.01" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 that "n.01" x3
+
+% Sentence: 67
+% Input sent: He needs assistants.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 need "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 male "n.02" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 person "n.01" x3
+b2 Agent x4 x3
+b3 REF x4
+b3 assist "v.01" x4
+
+% Sentence: 68
+% Input sent: I am baffled.
+b0 REF x1
+b1 REF x3
+b1 TPR x3 "now"
+b1 time "n.08" x3
+b0 Time x1 x3
+b0 baffle "v.01" x1
+b0 Patient x1 "speaker"
+
+% Sentence: 69
+% Input sent: The pie is fresh.
+b0 REF x1
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+b0 Time x1 x3
+b0 fresh "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 pie "n.01" x2
+
+% Sentence: 70
+% Input sent: The insulin was making her fat.
+b1 REF x1
+b1 alwayswrongconcept "n.01" x1
+
+% Sentence: 71
+% Input sent: I skipped breakfast.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 skip "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b2 REF x3
+b2 breakfast "v.01" x3
+
+% Sentence: 72
+% Input sent: The sun is rising.
+b0 REF x1
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+b0 Time x1 x3
+b0 rise "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 sun "n.01" x2
+
+% Sentence: 73
+% Input sent: I caught a fish!
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 catch "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b2 REF x3
+b2 fish "n.01" x3
+
+% Sentence: 74
+% Input sent: Nice suit.
+b0 REF x1
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+b0 Time x1 x3
+b0 sue "v.01" x1
+b0 Patient x2 x1
+b1 REF x2
+b1 nice "v.01" x2
+
+% Sentence: 75
+% Input sent: Tom's cellphone rang and he answered it.
+b1 REF x1
+b1 alwayswrongconcept "n.01" x1
+
+% Sentence: 76
+% Input sent: He bowed to the Queen.
+b0 REF x1
+b3 REF x5
+b3 TPR x5 "now"
+b3 time "n.08" x5
+b0 Time x1 x5
+b0 bow "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 male "n.02" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 political-party "n.01" x3
+b2 Name x3 "Queen"
+
+% Sentence: 77
+% Input sent: This hospital has a lot of new equipment.
+b0 REF x1
+b6 REF x7
+b6 TPR x7 "now"
+b6 time "n.08" x7
+b0 Time x1 x7
+b0 have "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 hospital "n.01" x2
+b1 Theme x3 x2
+b1 REF x3
+b1 this "a.01" x3
+b0 Patient x1 x4
+b3 REF x4
+b3 equipment "n.01" x4
+b3 Patient x5 x4
+b4 REF x5
+b4 new "v.01" x5
+b3 Quantity x4 x6
+b5 REF x6
+b5 lot "n.01" x6
+
+% Sentence: 78
+% Input sent: Is tapwater drinkable in Australia?
+b0 REF x1
+b3 REF x5
+b3 TPR x5 "now"
+b3 time "n.08" x5
+b0 Time x1 x5
+b0 drinkable "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 tapwater "n.01" x2
+b0 Location x1 x3
+b2 REF x3
+b2 country "n.01" x3
+b2 Name x3 "Australia"
+
+% Sentence: 79
+% Input sent: There are many fish in this lake.
+b0 REF x1
+b0 fish "n.01" x1
+b0 Quantity x1 x2
+b1 REF x2
+b1 many "n.01" x2
+b0 Prep-in x1 x3
+b2 REF x3
+b2 lake "n.01" x3
+b2 Theme x4 x3
+b2 REF x4
+b2 this "a.01" x4
+
+% Sentence: 80
+% Input sent: Ann swam across the river.
+b1 REF x1
+b1 alwayswrongconcept "n.01" x1
+
+% Sentence: 81
+% Input sent: The tiger cub looked like a large kitten.
+b0 REF x1
+b4 REF x6
+b4 TPR x6 "now"
+b4 time "n.08" x6
+b0 Time x1 x6
+b0 look "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 cub "n.01" x2
+b1 Theme x3 x2
+b1 REF x3
+b1 tiger "a.01" x3
+b0 Patient x1 x4
+b3 REF x4
+b3 kitten "n.01" x4
+b3 Theme x5 x4
+b3 REF x5
+b3 large "a.01" x5
+
+% Sentence: 82
+% Input sent: Tom isn't winning.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 win "v.01" x1
+b1 NOT b0
+b0 Agent x1 x2
+b2 REF x2
+b2 person "n.01" x2
+b2 Name x2 "Tom"
+
+% Sentence: 83
+% Input sent: Tom is not dead.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 die "v.01" x1
+b1 NOT b0
+b0 Patient x1 x2
+b2 REF x2
+b2 person "n.01" x2
+b2 Name x2 "Tom"
+
+% Sentence: 84
+% Input sent: I have got into Hyogo University.
+b0 REF x1
+b3 REF x5
+b3 TPR x5 "now"
+b3 time "n.08" x5
+b0 Time x1 x5
+b0 get "v.01" x1
+b0 Patient x1 "speaker"
+b0 Theme x1 x3
+b2 REF x3
+b2 university "n.01" x3
+b2 Name x3 "Hyogo~University"
+
+% Sentence: 85
+% Input sent: He jumped into the train.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 jump "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 male "n.02" x2
+b0 Destination x1 x3
+b2 REF x3
+b2 train "n.01" x3
+
+% Sentence: 86
+% Input sent: We found one.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 find "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b2 REF x3
+b2 one "n.01" x3
+
+% Sentence: 87
+% Input sent: We expect that he will pass the examination.
+b0 REF x1
+b5 REF x6
+b5 TPR x6 "now"
+b5 time "n.08" x6
+b0 Time x1 x6
+b0 expect "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b2 REF x3
+b2 pass "v.01" x3
+b2 Agent x3 x4
+b3 REF x4
+b3 male "n.02" x4
+b2 Patient x3 x5
+b4 REF x5
+b4 examine "v.01" x5
+
+% Sentence: 88
+% Input sent: He can swim.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 possible "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 swim "v.01" x2
+b1 Agent x2 x3
+b2 REF x3
+b2 male "n.02" x3
+
+% Sentence: 89
+% Input sent: Warn Tom.
+b0 REF x1
+b1 REF x3
+b1 TPR x3 "now"
+b1 time "n.08" x3
+b0 Time x1 x3
+b0 warn "v.01" x1
+b0 Agent x1 "hearer"
+b0 Patient x1 x2
+
+% Sentence: 90
+% Input sent: Tom and Mary detest each other.
+b1 REF x1
+b1 alwayswrongconcept "n.01" x1
+
+% Sentence: 91
+% Input sent: She loves to cook.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 love "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 female "n.02" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 cook "v.01" x3
+b2 Agent x3 x2
+
+% Sentence: 92
+% Input sent: She fled Australia.
+b0 REF x1
+b3 REF x5
+b3 TPR x5 "now"
+b3 time "n.08" x5
+b0 Time x1 x5
+b0 flee "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 female "n.02" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 country "n.01" x3
+b2 Name x3 "Australia"
+
+% Sentence: 93
+% Input sent: He is working in the field of biology.
+b0 REF x1
+b3 REF x5
+b3 TPR x5 "now"
+b3 time "n.08" x5
+b0 Time x1 x5
+b0 work "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 male "n.02" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 field "n.01" x3
+b2 Theme x4 x3
+b2 REF x4
+b2 biology "a.01" x4
+
+% Sentence: 94
+% Input sent: I love hamburgers.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 love "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b2 REF x3
+b2 hamburger "n.01" x3
+
+% Sentence: 95
+% Input sent: We remember.
+b0 REF x1
+b1 REF x3
+b1 TPR x3 "now"
+b1 time "n.08" x3
+b0 Time x1 x3
+b0 remember "v.01" x1
+b0 Agent x1 "speaker"
+
+% Sentence: 96
+% Input sent: He was brave.
+b0 REF x1
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+b0 Time x1 x3
+b0 brave "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 male "n.02" x2
+
+% Sentence: 97
+% Input sent: It's 3:30.
+b0 REF x1
+b0 company "n.01" x1
+b0 Name x1 "3.30"
+
+% Sentence: 98
+% Input sent: Tom extinguished the fire.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 extinguish "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+b0 Patient x1 x4
+b3 REF x4
+b3 fire "n.01" x4
+
+% Sentence: 99
+% Input sent: Where did you put my umbrella?
+b0 REF x1
+b5 REF x6
+b5 TPR x6 "now"
+b5 time "n.08" x6
+b0 Time x1 x6
+b0 put "v.01" x1
+b0 Agent x1 "hearer"
+b0 Patient x1 x3
+b2 REF x3
+b2 umbrella "n.01" x3
+b0 Location x1 x5
+b4 REF x5
+b4 amr-unknown "n.01" x5
+
+% Sentence: 100
+% Input sent: Yesterday I was ill.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 ill "v.01" x1
+b0 Patient x1 "speaker"
+b0 Time x1 x3
+b2 REF x3
+b2 yesterday "n.01" x3
+
+% Sentence: 101
+% Input sent: You're a workaholic.
+b0 REF x1
+b0 workaholic "n.01" x1
+b0 Theme x1 "hearer"
+
+% Sentence: 102
+% Input sent: Tom failed because he didn't study.
+b1 REF x1
+b1 alwayswrongconcept "n.01" x1
+
+% Sentence: 103
+% Input sent: It works.
+b0 REF x1
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+b0 Time x1 x3
+b0 work "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 thing "n.12" x2
+
+% Sentence: 104
+% Input sent: We concurred.
+b0 REF x1
+b1 REF x3
+b1 TPR x3 "now"
+b1 time "n.08" x3
+b0 Time x1 x3
+b0 do "v.01" x1
+b0 Agent x1 "speaker"
+
+% Sentence: 105
+% Input sent: Somebody called.
+b0 REF x1
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+b0 Time x1 x3
+b0 call "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 somebody "n.01" x2
+
+% Sentence: 106
+% Input sent: Maybe Tom killed himself.
+b0 REF x1
+b3 REF x5
+b3 TPR x5 "now"
+b3 time "n.08" x5
+b0 Time x1 x5
+b0 possible "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 kill "v.01" x2
+b1 Agent x2 x3
+b2 REF x3
+b2 person "n.01" x3
+b2 Name x3 "Tom"
+b1 Patient x2 x3
+
+% Sentence: 107
+% Input sent: Something's burning.
+b0 REF x1
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+b0 Time x1 x3
+b0 burn "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 something "n.01" x2
+
+% Sentence: 108
+% Input sent: That politician is an old fox.
+b0 REF x1
+b0 politician "n.01" x1
+b0 Theme x2 x1
+b0 REF x2
+b0 old "a.01" x2
+b0 Theme x3 x1
+b0 REF x3
+b0 fox "a.01" x3
+b2 Theme x3 x2
+
+% Sentence: 109
+% Input sent: This disturbs him.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 disturb "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 this "n.01" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 male "n.02" x3
+
+% Sentence: 110
+% Input sent: She idolized him.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 idolize "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 female "n.02" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 male "n.02" x3
+
+% Sentence: 111
+% Input sent: We should break up.
+b0 REF x1
+b2 REF x4
+b2 TPR x4 "now"
+b2 time "n.08" x4
+b0 Time x1 x4
+b0 recommend "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 break-up "v.01" x2
+b1 Agent x2 "speaker"
+
+% Sentence: 112
+% Input sent: The submarine hid in the depths of the ocean.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 hide "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 submarine "n.01" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 depail "v.01" x3
+b2 Patient x3 x4
+b3 REF x4
+b3 ocean "n.01" x4
+
+% Sentence: 113
+% Input sent: I abhor spiders.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 abhor "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b2 REF x3
+b2 spider "n.01" x3
+
+% Sentence: 114
+% Input sent: Tom was unarmed.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 arm "v.01" x1
+b1 NOT b0
+b0 Patient x1 x2
+b2 REF x2
+b2 person "n.01" x2
+b2 Name x2 "Tom"
+
+% Sentence: 115
+% Input sent: Tom is swimming in the river.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 swim "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+b0 Location x1 x4
+b3 REF x4
+b3 river "n.01" x4
+
+% Sentence: 116
+% Input sent: You mustn't throw litter in the street.
+b1 REF x1
+b1 alwayswrongconcept "n.01" x1
+
+% Sentence: 117
+% Input sent: Tom sold his house.
+b1 REF x1
+b1 alwayswrongconcept "n.01" x1
+
+% Sentence: 118
+% Input sent: The tower is fifteen metres high.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 high "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 tower "n.01" x2
+b0 Patient x3 x1
+b2 REF x3
+b2 high "v.01" x3
+
+% Sentence: 119
+% Input sent: The submarines sank a lot of ships.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 sink "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 submarine "n.01" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 ship "n.01" x3
+b2 Quantity x3 x4
+b3 REF x4
+b3 lot "n.01" x4
+
+% Sentence: 120
+% Input sent: Mary is snoring.
+b0 REF x1
+b2 REF x4
+b2 TPR x4 "now"
+b2 time "n.08" x4
+b0 Time x1 x4
+b0 snore "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Mary"
+
+% Sentence: 121
+% Input sent: I'm exhausted.
+b0 REF x1
+b1 REF x3
+b1 TPR x3 "now"
+b1 time "n.08" x3
+b0 Time x1 x3
+b0 exhaust "v.01" x1
+b0 Patient x1 "speaker"
+
+% Sentence: 122
+% Input sent: You're terrible.
+b0 REF x1
+b1 REF x3
+b1 TPR x3 "now"
+b1 time "n.08" x3
+b0 Time x1 x3
+b0 terrible "v.01" x1
+b0 Patient x1 "hearer"
+
+% Sentence: 123
+% Input sent: Mary is a fashion junkie.
+b0 REF x1
+b0 junkie "n.01" x1
+b0 Theme x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Mary"
+b0 Theme x4 x1
+b0 REF x4
+b0 fashion "a.01" x4
+
+% Sentence: 124
+% Input sent: Speak clear.
+b0 REF x1
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+b0 Time x1 x3
+b0 clear "v.01" x1
+b0 Patient x2 x1
+b1 REF x2
+b1 speak "v.01" x2
+
+% Sentence: 125
+% Input sent: We were right.
+b0 REF x1
+b1 REF x3
+b1 TPR x3 "now"
+b1 time "n.08" x3
+b0 Time x1 x3
+b0 right "v.01" x1
+b0 Patient x1 "speaker"
+
+% Sentence: 126
+% Input sent: Bilbao is a city in the Basque Country
+b0 REF x1
+b0 city "n.01" x1
+b0 Theme x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Bilbao"
+b0 Location x1 x4
+b3 REF x4
+b3 country "n.01" x4
+b3 Theme x5 x4
+b3 REF x5
+b3 basque "a.01" x5
+
+% Sentence: 127
+% Input sent: Tom honked the horn.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 honk "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+b0 Patient x1 x4
+b3 REF x4
+b3 horn "n.01" x4
+
+% Sentence: 128
+% Input sent: The storm let up.
+b0 REF x1
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+b0 Time x1 x3
+b0 let "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 storm "v.01" x2
+
+% Sentence: 129
+% Input sent: Russia fears the system.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 fear "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 country "n.01" x2
+b1 Name x2 "Russia"
+b0 Patient x1 x4
+b3 REF x4
+b3 system "n.01" x4
+
+% Sentence: 130
+% Input sent: You must be very proud.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 infer "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 pride "v.01" x2
+b1 Agent x2 "hearer"
+b1 Degree x2 x4
+b3 REF x4
+b3 very "n.01" x4
+
+% Sentence: 131
+% Input sent: I cannot speak German.
+b0 REF x1
+b5 REF x6
+b5 TPR x6 "now"
+b5 time "n.08" x6
+b0 Time x1 x6
+b0 possible "v.01" x1
+b1 NOT b0
+b0 Patient x1 x2
+b2 REF x2
+b2 speak "v.01" x2
+b2 Agent x2 "speaker"
+b2 Patient x2 x4
+b4 REF x4
+b4 country "n.01" x4
+b4 Name x4 "Germany"
+
+% Sentence: 132
+% Input sent: I love pizza.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 love "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b2 REF x3
+b2 pizza "n.01" x3
+
+% Sentence: 133
+% Input sent: My mother made me a sweater.
+b0 REF x1
+b6 REF x7
+b6 TPR x7 "now"
+b6 time "n.08" x7
+b0 Time x1 x7
+b0 make "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Agent x3 x2
+b2 REF x3
+b2 have-rel-role "v.01" x3
+b2 Patient x3 "speaker"
+b2 Theme x3 x5
+b4 REF x5
+b4 mother "n.01" x5
+b0 Patient x1 x6
+b5 REF x6
+b5 sweater "n.01" x6
+
+% Sentence: 134
+% Input sent: Mary hates parties.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 hate "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Mary"
+b0 Patient x1 x4
+b3 REF x4
+b3 party "n.01" x4
+
+% Sentence: 135
+% Input sent: I want to pay with a check.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 want "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b2 REF x3
+b2 pay "v.01" x3
+b2 Agent x3 x2
+b2 Recipient x3 x4
+b3 REF x4
+b3 check "n.01" x4
+
+% Sentence: 136
+% Input sent: Are you lucky?
+b0 REF x1
+b0 lucky "n.01" x1
+b0 Theme x1 "hearer"
+
+% Sentence: 137
+% Input sent: Tom ripped you off.
+b0 REF x1
+b2 REF x5
+b2 TPR x5 "now"
+b2 time "n.08" x5
+b0 Time x1 x5
+b0 rip-off "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+b0 Patient x1 "hearer"
+
+% Sentence: 138
+% Input sent: He wants the money.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 want "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 male "n.02" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 money "n.01" x3
+
+% Sentence: 139
+% Input sent: Tom is a fakir.
+b0 REF x1
+b0 fakir "n.01" x1
+b0 Theme x1 x2
+b1 REF x2
+b1 tom "n.01" x2
+
+% Sentence: 140
+% Input sent: Is the cat all right?
+b0 REF x1
+b2 REF x4
+b2 TPR x4 "now"
+b2 time "n.08" x4
+b0 Time x1 x4
+b0 right "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 cat "n.01" x2
+b0 Theme x3 x1
+b0 REF x3
+b0 all "a.01" x3
+
+% Sentence: 141
+% Input sent: Tom says he's busy.
+b0 REF x1
+b5 REF x6
+b5 TPR x6 "now"
+b5 time "n.08" x6
+b0 Time x1 x6
+b0 say "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+b0 Patient x1 x4
+b3 REF x4
+b3 busy "v.01" x4
+b3 Patient x4 x5
+b4 REF x5
+b4 male "n.02" x5
+
+% Sentence: 142
+% Input sent: My grandmother passed away.
+b0 REF x1
+b5 REF x6
+b5 TPR x6 "now"
+b5 time "n.08" x6
+b0 Time x1 x6
+b0 pass-away "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Agent x3 x2
+b2 REF x3
+b2 have-rel-role "v.01" x3
+b2 Patient x3 "speaker"
+b2 Theme x3 x5
+b4 REF x5
+b4 grandmother "n.01" x5
+
+% Sentence: 143
+% Input sent: Tom knew something.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 know "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+b0 Patient x1 x4
+b3 REF x4
+b3 something "n.01" x4
+
+% Sentence: 144
+% Input sent: I'm pregnant.
+b0 REF x1
+b0 pregnant "n.01" x1
+b0 Theme x1 "speaker"
+
+% Sentence: 145
+% Input sent: I don't have a bicycle.
+b0 REF x1
+b4 REF x4
+b4 TPR x4 "now"
+b4 time "n.08" x4
+b0 Time x1 x4
+b0 have "v.01" x1
+b1 NOT b0
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b3 REF x3
+b3 bicycle "n.01" x3
+
+% Sentence: 146
+% Input sent: I think Tom is normal.
+b0 REF x1
+b4 REF x6
+b4 TPR x6 "now"
+b4 time "n.08" x6
+b0 Time x1 x6
+b0 think "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b2 REF x3
+b2 normal "v.01" x3
+b2 Patient x3 x4
+b3 REF x4
+b3 person "n.01" x4
+b3 Name x4 "Tom"
+
+% Sentence: 147
+% Input sent: I'm athletic.
+b0 REF x1
+b0 athletic "n.01" x1
+b0 Theme x1 "speaker"
+
+% Sentence: 148
+% Input sent: I was crying.
+b0 REF x1
+b1 REF x3
+b1 TPR x3 "now"
+b1 time "n.08" x3
+b0 Time x1 x3
+b0 cry "v.01" x1
+b0 Agent x1 "speaker"
+
+% Sentence: 149
+% Input sent: Tom picked the diamond up and looked at it.
+b1 REF x1
+b1 alwayswrongconcept "n.01" x1
+
+% Sentence: 150
+% Input sent: I, too, am worried about Tom.
+b0 REF x1
+b2 REF x5
+b2 TPR x5 "now"
+b2 time "n.08" x5
+b0 Time x1 x5
+b0 worry "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 tom "n.01" x2
+b0 Patient x1 "speaker"
+b0 Theme x4 x1
+b0 REF x4
+b0 too "a.01" x4
+
+% Sentence: 151
+% Input sent: I eat a banana.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 eat "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b2 REF x3
+b2 banana "n.01" x3
+
+% Sentence: 152
+% Input sent: Are they live?
+b0 REF x1
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+b0 Time x1 x3
+b0 live "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+
+% Sentence: 153
+% Input sent: She forgave you.
+b0 REF x1
+b2 REF x4
+b2 TPR x4 "now"
+b2 time "n.08" x4
+b0 Time x1 x4
+b0 forgave "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 female "n.02" x2
+b0 Patient x1 "hearer"
+
+% Sentence: 154
+% Input sent: I'm disgusted.
+b0 REF x1
+b1 REF x3
+b1 TPR x3 "now"
+b1 time "n.08" x3
+b0 Time x1 x3
+b0 disgust "v.01" x1
+b0 Patient x1 "speaker"
+
+% Sentence: 155
+% Input sent: They called President Roosevelt a pirate.
+b0 REF x1
+b7 REF x8
+b7 TPR x8 "now"
+b7 time "n.08" x8
+b0 Time x1 x8
+b0 call "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 person "n.01" x3
+b2 Name x3 "Roosevelt"
+b2 Agent x5 x3
+b4 REF x5
+b4 have-org-role "v.01" x5
+b4 Theme x5 x6
+b5 REF x6
+b5 president "n.01" x6
+b0 Theme x1 x7
+b6 REF x7
+b6 pirate "n.01" x7
+
+% Sentence: 156
+% Input sent: I forgot the password.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 forget "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b2 REF x3
+b2 password "n.01" x3
+
+% Sentence: 157
+% Input sent: Yesterday I went to the opera.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 go "v.01" x1
+b0 Agent x1 "speaker"
+b0 Destination x1 x3
+b2 REF x3
+b2 opera "n.01" x3
+b0 Time x1 x4
+b3 REF x4
+b3 yesterday "n.01" x4
+
+% Sentence: 158
+% Input sent: No one expected him to win.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 expect "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 no-one "n.01" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 win "v.01" x3
+b2 Agent x3 x4
+b3 REF x4
+b3 male "n.02" x4
+
+% Sentence: 159
+% Input sent: Tom was thoughtful.
+b0 REF x1
+b2 REF x4
+b2 TPR x4 "now"
+b2 time "n.08" x4
+b0 Time x1 x4
+b0 think-ful "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+
+% Sentence: 160
+% Input sent: I love Italian food.
+b1 REF x1
+b1 alwayswrongconcept "n.01" x1
+
+% Sentence: 161
+% Input sent: Tom left at midnight.
+b0 REF x1
+b5 REF x6
+b5 TPR x6 "now"
+b5 time "n.08" x6
+b0 Time x1 x6
+b0 leave "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+b0 Time x1 x4
+b3 REF x4
+b3 date-entity "n.01" x4
+b3 Dayperiod x4 x5
+b4 REF x5
+b4 night "n.01" x5
+
+% Sentence: 162
+% Input sent: He needs an umbrella.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 need "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 male "n.02" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 umbrella "n.01" x3
+
+% Sentence: 163
+% Input sent: The company spends a lot of money on advertising.
+b0 REF x1
+b5 REF x6
+b5 TPR x6 "now"
+b5 time "n.08" x6
+b0 Time x1 x6
+b0 spend "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 company "n.01" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 money "n.01" x3
+b2 Quantity x3 x4
+b3 REF x4
+b3 lot "n.01" x4
+b0 Theme x1 x5
+b4 REF x5
+b4 advertise "v.01" x5
+b4 Agent x5 x2
+
+% Sentence: 164
+% Input sent: Who did William Wallace defeat?
+b0 REF x1
+b4 REF x6
+b4 TPR x6 "now"
+b4 time "n.08" x6
+b0 Time x1 x6
+b0 defeat "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "William~Wallace"
+b0 Patient x1 x4
+b3 REF x4
+b3 person "n.01" x4
+b3 Name x4 "William~Wallace"
+
+% Sentence: 165
+% Input sent: Tom lowered the bucket into the well.
+b0 REF x1
+b5 REF x6
+b5 TPR x6 "now"
+b5 time "n.08" x6
+b0 Time x1 x6
+b0 lower "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+b0 Patient x1 x4
+b3 REF x4
+b3 bucket "n.01" x4
+b0 Destination x1 x5
+b4 REF x5
+b4 well "n.01" x5
+
+% Sentence: 166
+% Input sent: He gave in.
+b0 REF x1
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+b0 Time x1 x3
+b0 give-in "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 male "n.02" x2
+
+% Sentence: 167
+% Input sent: There's a hidden door in the library.
+b0 REF x1
+b0 door "n.01" x1
+b0 Patient x2 x1
+b1 REF x2
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b1 Time x2 x4
+b1 hide "v.01" x2
+b0 Location x1 x3
+b2 REF x3
+b2 library "n.01" x3
+
+% Sentence: 168
+% Input sent: I will not lie to her.
+b0 REF x1
+b4 REF x4
+b4 TPR x4 "now"
+b4 time "n.08" x4
+b0 Time x1 x4
+b0 lie "v.01" x1
+b1 NOT b0
+b0 Agent x1 "speaker"
+b0 Theme x1 x3
+b3 REF x3
+b3 female "n.02" x3
+
+% Sentence: 169
+% Input sent: Klava oversimplifies everything.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 oversimplify "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Klava"
+b0 Patient x1 x4
+b3 REF x4
+b3 everything "n.01" x4
+
+% Sentence: 170
+% Input sent: She cared for her sick mother.
+b0 REF x1
+b6 REF x7
+b6 TPR x7 "now"
+b6 time "n.08" x7
+b0 Time x1 x7
+b0 care "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 female "n.02" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 person "n.01" x3
+b2 Agent x4 x3
+b3 REF x4
+b3 have-rel-role "v.01" x4
+b3 Patient x4 x2
+b3 Theme x4 x5
+b4 REF x5
+b4 mother "n.01" x5
+b2 Patient x6 x3
+b5 REF x6
+b5 sick "v.01" x6
+
+% Sentence: 171
+% Input sent: I'm tired of backgammon.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 tire "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b2 REF x3
+b2 backgammon "n.01" x3
+
+% Sentence: 172
+% Input sent: Tom is smashed.
+b0 REF x1
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+b0 Time x1 x3
+b0 smash "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 tom "n.01" x2
+
+% Sentence: 173
+% Input sent: Tom is manipulative.
+b0 REF x1
+b0 manipulative "n.01" x1
+b0 Theme x1 x2
+b1 REF x2
+b1 tom "n.01" x2
+
+% Sentence: 174
+% Input sent: They stopped.
+b0 REF x1
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+b0 Time x1 x3
+b0 stop "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+
+% Sentence: 175
+% Input sent: Tom's eating.
+b0 REF x1
+b2 REF x4
+b2 TPR x4 "now"
+b2 time "n.08" x4
+b0 Time x1 x4
+b0 eat "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+
+% Sentence: 176
+% Input sent: Tom insulted Mary.
+b0 REF x1
+b4 REF x6
+b4 TPR x6 "now"
+b4 time "n.08" x6
+b0 Time x1 x6
+b0 insult "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+b0 Patient x1 x4
+b3 REF x4
+b3 person "n.01" x4
+b3 Name x4 "Mary"
+
+% Sentence: 177
+% Input sent: The rain is letting up.
+b0 REF x1
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+b0 Time x1 x3
+b0 let "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 rain "v.01" x2
+
+% Sentence: 178
+% Input sent: Maybe he is Italian or Spanish.
+b1 REF x1
+b1 alwayswrongconcept "n.01" x1
+
+% Sentence: 179
+% Input sent: Tom was sweating.
+b0 REF x1
+b2 REF x4
+b2 TPR x4 "now"
+b2 time "n.08" x4
+b0 Time x1 x4
+b0 sweat "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+
+% Sentence: 180
+% Input sent: He substituted for his father.
+b0 REF x1
+b5 REF x6
+b5 TPR x6 "now"
+b5 time "n.08" x6
+b0 Time x1 x6
+b0 substitute "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 male "n.02" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 person "n.01" x3
+b2 Agent x4 x3
+b3 REF x4
+b3 have-rel-role "v.01" x4
+b3 Patient x4 x2
+b3 Theme x4 x5
+b4 REF x5
+b4 father "n.01" x5
+
+% Sentence: 181
+% Input sent: Summer has ended.
+b0 REF x1
+b2 REF x4
+b2 TPR x4 "now"
+b2 time "n.08" x4
+b0 Time x1 x4
+b0 end "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Summer"
+
+% Sentence: 182
+% Input sent: I grew up in a small town.
+b0 REF x1
+b3 REF x5
+b3 TPR x5 "now"
+b3 time "n.08" x5
+b0 Time x1 x5
+b0 grow-up "v.01" x1
+b0 Patient x1 "speaker"
+b0 Location x1 x3
+b2 REF x3
+b2 town "n.01" x3
+b2 Theme x4 x3
+b2 REF x4
+b2 small "a.01" x4
+
+% Sentence: 183
+% Input sent: I work at the post office.
+b0 REF x1
+b3 REF x5
+b3 TPR x5 "now"
+b3 time "n.08" x5
+b0 Time x1 x5
+b0 work "v.01" x1
+b0 Agent x1 "speaker"
+b0 Location x1 x3
+b2 REF x3
+b2 office "n.01" x3
+b2 Theme x4 x3
+b2 REF x4
+b2 post "a.01" x4
+
+% Sentence: 184
+% Input sent: Tom is stirring his coffee.
+b1 REF x1
+b1 alwayswrongconcept "n.01" x1
+
+% Sentence: 185
+% Input sent: I regret that decision.
+b0 REF x1
+b4 REF x6
+b4 TPR x6 "now"
+b4 time "n.08" x6
+b0 Time x1 x6
+b0 regret "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b2 REF x3
+b2 thing "n.01" x3
+b2 Patient x4 x3
+b3 REF x4
+b3 decide "v.01" x4
+b2 Theme x5 x3
+b2 REF x5
+b2 that "a.01" x5
+
+% Sentence: 186
+% Input sent: I'd better drive you home.
+b0 REF x1
+b5 REF x6
+b5 TPR x6 "now"
+b5 time "n.08" x6
+b0 Time x1 x6
+b0 drive "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b2 REF x3
+b2 home "n.01" x3
+b0 Patient x4 x1
+b3 REF x4
+b3 good "v.01" x4
+b3 Degree x4 x5
+b4 REF x5
+b4 more "n.01" x5
+
+% Sentence: 187
+% Input sent: She rinsed the dishes.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 rins "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 female "n.02" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 dish "n.01" x3
+
+% Sentence: 188
+% Input sent: Three suspects have been arrested.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 arrest "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Quantity x2 "3"
+b1 Theme x3 x2
+b2 REF x3
+b2 suspect "v.01" x3
+
+% Sentence: 189
+% Input sent: He's good.
+b0 REF x1
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+b0 Time x1 x3
+b0 good "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 male "n.02" x2
+
+% Sentence: 190
+% Input sent: Grow up!
+b0 REF x1
+b1 REF x3
+b1 TPR x3 "now"
+b1 time "n.08" x3
+b0 Time x1 x3
+b0 grow-up "v.01" x1
+b0 Patient x1 "hearer"
+
+% Sentence: 191
+% Input sent: I hope she's all right.
+b0 REF x1
+b4 REF x6
+b4 TPR x6 "now"
+b4 time "n.08" x6
+b0 Time x1 x6
+b0 hope "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b2 REF x3
+b2 right "v.01" x3
+b2 Patient x3 x4
+b3 REF x4
+b3 female "n.02" x4
+b2 Theme x5 x3
+b2 REF x5
+b2 all "a.01" x5
+
+% Sentence: 192
+% Input sent: All journeys begin with a first step.
+b0 REF x1
+b5 REF x6
+b5 TPR x6 "now"
+b5 time "n.08" x6
+b0 Time x1 x6
+b0 begin "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 journey "v.01" x2
+b1 Theme x3 x2
+b1 REF x3
+b1 all "a.01" x3
+b0 Instrument x1 x4
+b3 REF x4
+b3 step "n.01" x4
+b3 Ord x4 x5
+b4 REF x5
+b4 ordinal-entity "n.01" x5
+b4 Value x5 "1"
+
+% Sentence: 193
+% Input sent: He inherited an old wooden chest.
+b0 REF x1
+b3 REF x6
+b3 TPR x6 "now"
+b3 time "n.08" x6
+b0 Time x1 x6
+b0 inherit "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 male "n.02" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 chest "n.01" x3
+b2 Theme x4 x3
+b2 REF x4
+b2 wood "a.01" x4
+b2 Theme x5 x3
+b2 REF x5
+b2 old "a.01" x5
+
+% Sentence: 194
+% Input sent: We found it.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 find "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b2 REF x3
+b2 thing "n.12" x3
+
+% Sentence: 195
+% Input sent: Man has been writing for about 6000 years.
+b1 REF x1
+b1 alwayswrongconcept "n.01" x1
+
+% Sentence: 196
+% Input sent: I hope Tom agrees.
+b0 REF x1
+b4 REF x6
+b4 TPR x6 "now"
+b4 time "n.08" x6
+b0 Time x1 x6
+b0 hope "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b2 REF x3
+b2 agree "v.01" x3
+b2 Agent x3 x4
+b3 REF x4
+b3 person "n.01" x4
+b3 Name x4 "Tom"
+
+% Sentence: 197
+% Input sent: We're very happy with the results.
+b0 REF x1
+b5 REF x6
+b5 TPR x6 "now"
+b5 time "n.08" x6
+b0 Time x1 x6
+b0 happy "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 thing "n.01" x2
+b1 Theme x3 x2
+b2 REF x3
+b2 result "v.01" x3
+b0 Patient x1 "speaker"
+b0 Degree x1 x5
+b4 REF x5
+b4 very "n.01" x5
+
+% Sentence: 198
+% Input sent: He is writing a letter.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 write "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 male "n.02" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 letter "n.01" x3
+
+% Sentence: 199
+% Input sent: The storm abated.
+b0 REF x1
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+b0 Time x1 x3
+b0 abate "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 storm "v.01" x2
+
+% Sentence: 200
+% Input sent: Tom didn't answer all the questions.
+b0 REF x1
+b6 REF x7
+b6 TPR x7 "now"
+b6 time "n.08" x7
+b0 Time x1 x7
+b0 answer "v.01" x1
+b1 NOT b0
+b0 Agent x1 x2
+b2 REF x2
+b2 person "n.01" x2
+b2 Name x2 "Tom"
+b0 Patient x1 x4
+b4 REF x4
+b4 thing "n.01" x4
+b4 Patient x5 x4
+b5 REF x5
+b5 question "v.01" x5
+b4 Theme x6 x4
+b4 REF x6
+b4 all "a.01" x6
+
+% Sentence: 201
+% Input sent: I will help.
+b0 REF x1
+b1 REF x3
+b1 TPR x3 "now"
+b1 time "n.08" x3
+b0 Time x1 x3
+b0 help "v.01" x1
+b0 Agent x1 "speaker"
+
+% Sentence: 202
+% Input sent: Over three thousand people attended the concert.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 attend "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Quantity x2 x3
+b2 REF x3
+b2 over "n.01" x3
+b0 Patient x1 x4
+b3 REF x4
+b3 concert "n.01" x4
+
+% Sentence: 203
+% Input sent: Many a man has predicted it.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 predict "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 man "n.01" x2
+b1 Quantity x2 x3
+b2 REF x3
+b2 many "n.01" x3
+b0 Patient x1 x4
+b3 REF x4
+b3 thing "n.12" x4
+
+% Sentence: 204
+% Input sent: They furnished the library with new books.
+b0 REF x1
+b5 REF x6
+b5 TPR x6 "now"
+b5 time "n.08" x6
+b0 Time x1 x6
+b0 furnish "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 library "n.01" x3
+b0 Instrument x1 x4
+b3 REF x4
+b3 book "n.01" x4
+b3 Patient x5 x4
+b4 REF x5
+b4 new "v.01" x5
+
+% Sentence: 205
+% Input sent: Tom wore a Hawaiian shirt.
+b1 REF x1
+b1 alwayswrongconcept "n.01" x1
+
+% Sentence: 206
+% Input sent: I borrowed Tom's car.
+b1 REF x1
+b1 alwayswrongconcept "n.01" x1
+
+% Sentence: 207
+% Input sent: Her aunt's glasses are fashionable.
+b1 REF x1
+b1 alwayswrongconcept "n.01" x1
+
+% Sentence: 208
+% Input sent: I have a truck.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 have "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b2 REF x3
+b2 truck "n.01" x3
+
+% Sentence: 209
+% Input sent: My computer has frozen.
+b0 REF x1
+b2 REF x4
+b2 TPR x4 "now"
+b2 time "n.08" x4
+b0 Time x1 x4
+b0 freeze "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 computer "n.01" x2
+
+% Sentence: 210
+% Input sent: A decapitated body was on the coroner's table.
+b1 REF x1
+b1 alwayswrongconcept "n.01" x1
+
+% Sentence: 211
+% Input sent: I have a big dog.
+b0 REF x1
+b3 REF x5
+b3 TPR x5 "now"
+b3 time "n.08" x5
+b0 Time x1 x5
+b0 have "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b2 REF x3
+b2 dog "n.01" x3
+b2 Theme x4 x3
+b2 REF x4
+b2 big "a.01" x4
+
+% Sentence: 212
+% Input sent: He is gay.
+b0 REF x1
+b0 gay "n.01" x1
+b0 Theme x1 x2
+b1 REF x2
+b1 male "n.02" x2
+
+% Sentence: 213
+% Input sent: He made Miss Green his secretary.
+b0 REF x1
+b6 REF x7
+b6 TPR x7 "now"
+b6 time "n.08" x7
+b0 Time x1 x7
+b0 make "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 male "n.02" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 person "n.01" x3
+b2 Name x3 "Miss~Green"
+b2 Agent x5 x3
+b4 REF x5
+b4 have-rel-role "v.01" x5
+b4 Patient x5 x2
+b4 Theme x5 x6
+b5 REF x6
+b5 secretary "n.01" x6
+
+% Sentence: 214
+% Input sent: Tom knocked on the door.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 knock "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+b0 Patient x1 x4
+b3 REF x4
+b3 door "n.01" x4
+
+% Sentence: 215
+% Input sent: There are over 800,000 Basque speakers in the world.
+b0 REF x1
+b0 person "n.01" x1
+b0 Quantity x1 x2
+b1 REF x2
+b1 over "n.01" x2
+b0 Agent x3 x1
+b2 REF x3
+b5 REF x6
+b5 TPR x6 "now"
+b5 time "n.08" x6
+b2 Time x3 x6
+b2 speak "v.01" x3
+b2 Theme x4 x3
+b2 REF x4
+b2 basque "a.01" x4
+b0 Location x1 x5
+b4 REF x5
+b4 world "n.01" x5
+
+% Sentence: 216
+% Input sent: I'm really fed up with this heat.
+b0 REF x1
+b5 REF x6
+b5 TPR x6 "now"
+b5 time "n.08" x6
+b0 Time x1 x6
+b0 feed-up "v.01" x1
+b0 Patient x1 "speaker"
+b0 Theme x1 x3
+b2 REF x3
+b2 heat "n.01" x3
+b2 Theme x4 x3
+b2 REF x4
+b2 this "a.01" x4
+b0 Degree x1 x5
+b4 REF x5
+b4 really "n.01" x5
+
+% Sentence: 217
+% Input sent: Mary can speak Japanese.
+b1 REF x1
+b1 alwayswrongconcept "n.01" x1
+
+% Sentence: 218
+% Input sent: Wolves stalked the flock.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 stalk "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Agent x3 x2
+b2 REF x3
+b2 wolf "v.01" x3
+b0 Patient x1 x4
+b3 REF x4
+b3 flock "n.01" x4
+
+% Sentence: 219
+% Input sent: Tom arrived at 2:30.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 arrive "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+b0 Time x1 x4
+b3 REF x4
+b3 date-entity "n.01" x4
+b3 Time x4 "2:30"
+
+% Sentence: 220
+% Input sent: I was very selfish.
+b0 REF x1
+b0 selfish "n.01" x1
+b0 Degree x1 x2
+b1 REF x2
+b1 very "n.01" x2
+b0 Theme x1 "speaker"
+
+% Sentence: 221
+% Input sent: The alarm didn't wake Tom.
+b0 REF x1
+b4 REF x4
+b4 TPR x4 "now"
+b4 time "n.08" x4
+b0 Time x1 x4
+b0 wake "v.01" x1
+b1 NOT b0
+b0 Agent x1 x2
+b2 REF x2
+b2 alarm "v.01" x2
+b0 Patient x1 x3
+b3 REF x3
+b3 tom "n.01" x3
+
+% Sentence: 222
+% Input sent: The medicine didn't help at all.
+b0 REF x1
+b4 REF x4
+b4 TPR x4 "now"
+b4 time "n.08" x4
+b0 Time x1 x4
+b0 help "v.01" x1
+b1 NOT b0
+b0 Agent x1 x2
+b2 REF x2
+b2 medicine "n.01" x2
+b0 Degree x1 x3
+b3 REF x3
+b3 at-all "n.01" x3
+
+% Sentence: 223
+% Input sent: He dreams that everybody in China speaks Esperanto.
+b0 REF x1
+b7 REF x9
+b7 TPR x9 "now"
+b7 time "n.08" x9
+b0 Time x1 x9
+b0 dream "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 male "n.02" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 speak "v.01" x3
+b2 Agent x3 x4
+b3 REF x4
+b3 everybody "n.01" x4
+b3 Location x4 x5
+b4 REF x5
+b4 country "n.01" x5
+b4 Name x5 "China"
+b2 Patient x3 x7
+b6 REF x7
+b6 person "n.01" x7
+b6 Name x7 "Esperanto"
+
+% Sentence: 224
+% Input sent: You hugged Mary.
+b0 REF x1
+b3 REF x5
+b3 TPR x5 "now"
+b3 time "n.08" x5
+b0 Time x1 x5
+b0 hug "v.01" x1
+b0 Agent x1 "hearer"
+b0 Patient x1 x3
+b2 REF x3
+b2 person "n.01" x3
+b2 Name x3 "Mary"
+
+% Sentence: 225
+% Input sent: Tom's paralyzed.
+b0 REF x1
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+b0 Time x1 x3
+b0 paralyze "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 tom "n.01" x2
+
+% Sentence: 226
+% Input sent: Oil this bicycle.
+b0 REF x1
+b0 oil "n.01" x1
+b0 Theme x1 x2
+b1 REF x2
+b1 bicycle "n.01" x2
+b1 Theme x3 x2
+b1 REF x3
+b1 this "a.01" x3
+
+% Sentence: 227
+% Input sent: I brought wine.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 bring "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b2 REF x3
+b2 wine "n.01" x3
+
+% Sentence: 228
+% Input sent: I was born on June 4, 1974.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 bear "v.01" x1
+b0 Patient x1 "speaker"
+b0 Time x1 x3
+b2 REF x3
+b2 date-entity "n.01" x3
+b2 YearOfCentury x3 "1974"
+b2 MonthOfYear x3 "6"
+b2 Day x3 "4"
+
+% Sentence: 229
+% Input sent: She smoked a cigar.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 smoke "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 female "n.02" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 cigar "n.01" x3
+
+% Sentence: 230
+% Input sent: Tom was excited.
+b0 REF x1
+b2 REF x4
+b2 TPR x4 "now"
+b2 time "n.08" x4
+b0 Time x1 x4
+b0 excite "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+
+% Sentence: 231
+% Input sent: Nobody can surpass him.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 possible "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 surpass "v.01" x2
+b1 Agent x2 x3
+b2 REF x3
+b2 nobody "n.01" x3
+b1 Patient x2 x4
+b3 REF x4
+b3 male "n.02" x4
+
+% Sentence: 232
+% Input sent: Try hard.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 try "v.01" x1
+b0 Agent x1 "hearer"
+b0 Patient x1 x3
+b2 REF x3
+b2 hard "n.01" x3
+
+% Sentence: 233
+% Input sent: There are many earthquakes in Japan.
+b0 REF x1
+b0 earthquake "n.01" x1
+b0 Quantity x1 x2
+b1 REF x2
+b1 many "n.01" x2
+b0 Location x1 x3
+b2 REF x3
+b2 country "n.01" x3
+b2 Name x3 "Japan"
+
+% Sentence: 234
+% Input sent: I was expelled from school.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 expel "v.01" x1
+b0 Patient x1 "speaker"
+b0 Theme x1 x3
+b2 REF x3
+b2 school "n.01" x3
+
+% Sentence: 235
+% Input sent: I needed money.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 need "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b2 REF x3
+b2 money "n.01" x3
+
+% Sentence: 236
+% Input sent: My brother is rich.
+b0 REF x1
+b0 rich "n.01" x1
+b0 Theme x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Agent x3 x2
+b2 REF x3
+b5 REF x6
+b5 TPR x6 "now"
+b5 time "n.08" x6
+b2 Time x3 x6
+b2 have-rel-role "v.01" x3
+b2 Patient x3 "speaker"
+b2 Theme x3 x5
+b4 REF x5
+b4 brother "n.01" x5
+
+% Sentence: 237
+% Input sent: I need to buy one.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 need "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b2 REF x3
+b2 buy "v.01" x3
+b2 Agent x3 x2
+b2 Patient x3 x4
+b3 REF x4
+b3 one "n.01" x4
+
+% Sentence: 238
+% Input sent: She pulled down the blinds.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 pull-down "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 female "n.02" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 blind "n.01" x3
+
+% Sentence: 239
+% Input sent: No one is perfect.
+b0 REF x1
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+b0 Time x1 x3
+b0 perfect "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 no-one "n.01" x2
+
+% Sentence: 240
+% Input sent: It's clean.
+b0 REF x1
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+b0 Time x1 x3
+b0 clean "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 thing "n.12" x2
+
+% Sentence: 241
+% Input sent: My son is playing in the rain.
+b0 REF x1
+b6 REF x7
+b6 TPR x7 "now"
+b6 time "n.08" x7
+b0 Time x1 x7
+b0 play "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Agent x3 x2
+b2 REF x3
+b2 have-rel-role "v.01" x3
+b2 Patient x3 "speaker"
+b2 Theme x3 x5
+b4 REF x5
+b4 son "n.01" x5
+b0 Patient x1 x6
+b5 REF x6
+b5 rain "v.01" x6
+
+% Sentence: 242
+% Input sent: The city walls are so beautiful!
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 beautiful "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 wall "n.01" x2
+b1 PartOf x2 x3
+b2 REF x3
+b2 city "n.01" x3
+b0 Degree x1 x4
+b3 REF x4
+b3 so "n.01" x4
+
+% Sentence: 243
+% Input sent: I will make a note in my notebook.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 make "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b2 REF x3
+b2 note "n.01" x3
+b2 Location x3 x4
+b3 REF x4
+b3 notebook "n.01" x4
+
+% Sentence: 244
+% Input sent: Reform allows home schooling.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 allow "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 reform "v.01" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 school "v.01" x3
+b2 Theme x3 x4
+b3 REF x4
+b3 home "n.01" x4
+
+% Sentence: 245
+% Input sent: She's cleaning the book.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 clean "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 female "n.02" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 book "n.01" x3
+
+% Sentence: 246
+% Input sent: He needed money.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 need "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 male "n.02" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 money "n.01" x3
+
+% Sentence: 247
+% Input sent: Tom is playing poker with his friends.
+b0 REF x1
+b8 REF x9
+b8 TPR x9 "now"
+b8 time "n.08" x9
+b0 Time x1 x9
+b0 play "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+b0 Patient x1 x4
+b3 REF x4
+b3 poker "n.01" x4
+b0 Theme x1 x5
+b4 REF x5
+b4 person "n.01" x5
+b4 Agent x6 x5
+b5 REF x6
+b5 have-rel-role "v.01" x6
+b5 Patient x6 x7
+b6 REF x7
+b6 male "n.02" x7
+b5 Theme x6 x8
+b7 REF x8
+b7 friend "n.01" x8
+
+% Sentence: 248
+% Input sent: The dog is dying.
+b0 REF x1
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+b0 Time x1 x3
+b0 die "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 dog "n.01" x2
+
+% Sentence: 249
+% Input sent: Tom is Mary's stepson.
+b1 REF x1
+b1 alwayswrongconcept "n.01" x1
+
+% Sentence: 250
+% Input sent: I leave tomorrow.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 leave "v.01" x1
+b0 Agent x1 "speaker"
+b0 Time x1 x3
+b2 REF x3
+b2 tomorrow "n.01" x3
+
+% Sentence: 251
+% Input sent: Mary broke up with me.
+b0 REF x1
+b2 REF x5
+b2 TPR x5 "now"
+b2 time "n.08" x5
+b0 Time x1 x5
+b0 break-up "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Mary"
+b0 Patient x1 "speaker"
+
+% Sentence: 252
+% Input sent: Tom threw Mary a rope.
+b0 REF x1
+b4 REF x6
+b4 TPR x6 "now"
+b4 time "n.08" x6
+b0 Time x1 x6
+b0 throw "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+b0 Patient x1 x4
+b3 REF x4
+b3 rope "n.01" x4
+b3 Name x4 "Mary"
+
+% Sentence: 253
+% Input sent: The doctor told Tom that he should eat a lot of vegetables.
+b0 REF x1
+b7 REF x9
+b7 TPR x9 "now"
+b7 time "n.08" x9
+b0 Time x1 x9
+b0 tell "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 doctor "n.01" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 recommend "v.01" x3
+b2 Patient x3 x4
+b3 REF x4
+b3 eat "v.01" x4
+b3 Agent x4 x2
+b3 Patient x4 x5
+b4 REF x5
+b4 vegetable "n.01" x5
+b4 Quantity x5 x6
+b5 REF x6
+b5 lot "n.01" x6
+b0 Theme x1 x7
+b6 REF x7
+b6 person "n.01" x7
+b6 Name x7 "Tom"
+
+% Sentence: 254
+% Input sent: There is yogurt in the refrigerator.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 be-located-at "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 yogurt "n.01" x2
+b0 Theme x1 x3
+b2 REF x3
+b2 refrigerator "n.01" x3
+
+% Sentence: 255
+% Input sent: Maybe Tom was hiding something.
+b0 REF x1
+b5 REF x6
+b5 TPR x6 "now"
+b5 time "n.08" x6
+b0 Time x1 x6
+b0 possible "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 hide "v.01" x2
+b1 Agent x2 x3
+b2 REF x3
+b2 person "n.01" x3
+b2 Name x3 "Tom"
+b1 Patient x2 x5
+b4 REF x5
+b4 something "n.01" x5
+
+% Sentence: 256
+% Input sent: I received a telegram from her.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 receive "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b2 REF x3
+b2 telegram "n.01" x3
+b0 Theme x1 x4
+b3 REF x4
+b3 female "n.02" x4
+
+% Sentence: 257
+% Input sent: Who escaped?
+b0 REF x1
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+b0 Time x1 x3
+b0 escape "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 amr-unknown "n.01" x2
+
+% Sentence: 258
+% Input sent: Call him.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 call "v.01" x1
+b0 Agent x1 "hearer"
+b0 Patient x1 x3
+b2 REF x3
+b2 male "n.02" x3
+
+% Sentence: 259
+% Input sent: The river is also polluted.
+b0 REF x1
+b2 REF x4
+b2 TPR x4 "now"
+b2 time "n.08" x4
+b0 Time x1 x4
+b0 pollute "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 river "n.01" x2
+b0 Theme x3 x1
+b0 REF x3
+b0 also "a.01" x3
+
+% Sentence: 260
+% Input sent: She ate her dinner.
+b0 REF x1
+b0 dinner "n.01" x1
+b0 PartOf x1 x2
+b1 REF x2
+b1 female "n.02" x2
+
+% Sentence: 261
+% Input sent: Lincoln welcomed his old political opponent.
+b0 REF x1
+b5 REF x8
+b5 TPR x8 "now"
+b5 time "n.08" x8
+b0 Time x1 x8
+b0 welcome "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Lincoln"
+b0 Patient x1 x4
+b3 REF x4
+b3 person "n.01" x4
+b3 Agent x5 x4
+b4 REF x5
+b4 oppose "v.01" x5
+b4 Patient x5 x2
+b4 Theme x6 x5
+b4 REF x6
+b4 politics "a.01" x6
+b4 Theme x7 x5
+b4 REF x7
+b4 old "a.01" x7
+
+% Sentence: 262
+% Input sent: His stupidity is abysmal.
+b1 REF x1
+b1 alwayswrongconcept "n.01" x1
+
+% Sentence: 263
+% Input sent: He darkens the room.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 darken "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 male "n.02" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 room "n.01" x3
+
+% Sentence: 264
+% Input sent: The game excited lots of people.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 excite "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 game "n.01" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 person "n.01" x3
+b2 Quantity x3 x4
+b3 REF x4
+b3 lot "n.01" x4
+
+% Sentence: 265
+% Input sent: A lot of insects are chirping in the field.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 chirp "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 insect "n.01" x2
+b1 Quantity x2 x3
+b2 REF x3
+b2 lot "n.01" x3
+b0 Location x1 x4
+b3 REF x4
+b3 field "n.01" x4
+
+% Sentence: 266
+% Input sent: Mary massaged my shoulders.
+b0 REF x1
+b4 REF x6
+b4 TPR x6 "now"
+b4 time "n.08" x6
+b0 Time x1 x6
+b0 massage "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Mary"
+b0 Patient x1 x4
+b3 REF x4
+b3 shoulder "n.01" x4
+
+% Sentence: 267
+% Input sent: Tom looks hesitant.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 look "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+b0 Patient x1 x4
+b3 REF x4
+b3 hesitant "n.01" x4
+
+% Sentence: 268
+% Input sent: Many people were arrested.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 arrest "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Quantity x2 x3
+b2 REF x3
+b2 many "n.01" x3
+
+% Sentence: 269
+% Input sent: This flag is very pretty.
+b0 REF x1
+b0 pretty "n.01" x1
+b0 Degree x1 x2
+b1 REF x2
+b1 very "n.01" x2
+b0 Theme x1 x3
+b2 REF x3
+b2 flag "n.01" x3
+b2 Theme x4 x3
+b2 REF x4
+b2 this "a.01" x4
+
+% Sentence: 270
+% Input sent: These are perfect.
+b0 REF x1
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+b0 Time x1 x3
+b0 perfect "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 this "n.01" x2
+
+% Sentence: 271
+% Input sent: She acknowledged her mistake.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 acknowledge "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 female "n.02" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 mistake "v.01" x3
+b2 Agent x3 x2
+
+% Sentence: 272
+% Input sent: Tom dug a hole in the backyard.
+b0 REF x1
+b5 REF x6
+b5 TPR x6 "now"
+b5 time "n.08" x6
+b0 Time x1 x6
+b0 dig "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+b0 Patient x1 x4
+b3 REF x4
+b3 hole "n.01" x4
+b0 Location x1 x5
+b4 REF x5
+b4 backyard "n.01" x5
+
+% Sentence: 273
+% Input sent: He is spinning wool.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 spin "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 male "n.02" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 wool "n.01" x3
+
+% Sentence: 274
+% Input sent: I am saving up so that I can go to Australia.
+b0 REF x1
+b5 REF x7
+b5 TPR x7 "now"
+b5 time "n.08" x7
+b0 Time x1 x7
+b0 save-up "v.01" x1
+b0 Agent x1 "speaker"
+b0 Goal x1 x3
+b2 REF x3
+b2 possible "v.01" x3
+b2 Patient x3 x4
+b3 REF x4
+b3 go "v.01" x4
+b3 Agent x4 x2
+b3 Destination x4 x5
+b4 REF x5
+b4 country "n.01" x5
+b4 Name x5 "Australia"
+
+% Sentence: 275
+% Input sent: We volunteered.
+b0 REF x1
+b1 REF x3
+b1 TPR x3 "now"
+b1 time "n.08" x3
+b0 Time x1 x3
+b0 volunteer "v.01" x1
+b0 Agent x1 "speaker"
+
+% Sentence: 276
+% Input sent: Tom intervened.
+b0 REF x1
+b2 REF x4
+b2 TPR x4 "now"
+b2 time "n.08" x4
+b0 Time x1 x4
+b0 intervene "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+
+% Sentence: 277
+% Input sent: I know that John is honest.
+b0 REF x1
+b4 REF x6
+b4 TPR x6 "now"
+b4 time "n.08" x6
+b0 Time x1 x6
+b0 know "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b2 REF x3
+b2 honest "v.01" x3
+b2 Agent x3 x4
+b3 REF x4
+b3 person "n.01" x4
+b3 Name x4 "John"
+
+% Sentence: 278
+% Input sent: Tom drives slowly.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 drive "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+b0 Patient x4 x1
+b3 REF x4
+b3 slow "v.01" x4
+
+% Sentence: 279
+% Input sent: The rope broke under the strain.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 break "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 rope "n.01" x2
+b0 Prep-under x1 x3
+b2 REF x3
+b2 strain "n.01" x3
+
+% Sentence: 280
+% Input sent: Your jokes aren't funny.
+b0 REF x1
+b0 funny "n.01" x1
+b1 NOT b0
+b0 Theme x1 x2
+b2 REF x2
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b2 Time x2 x4
+b2 joke "v.01" x2
+b2 Agent x2 "hearer"
+
+% Sentence: 281
+% Input sent: Breakfast is served at seven a.m.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 serve "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 breakfast "n.01" x2
+b0 Time x1 x3
+b2 REF x3
+b2 seven "n.01" x3
+
+% Sentence: 282
+% Input sent: I love Hitomi.
+b0 REF x1
+b3 REF x5
+b3 TPR x5 "now"
+b3 time "n.08" x5
+b0 Time x1 x5
+b0 love "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b2 REF x3
+b2 city "n.01" x3
+b2 Name x3 "Hitomi"
+
+% Sentence: 283
+% Input sent: Ken wasn't running.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 run "v.01" x1
+b1 NOT b0
+b0 Agent x1 x2
+b2 REF x2
+b2 person "n.01" x2
+b2 Name x2 "Ken"
+
+% Sentence: 284
+% Input sent: I accept your offer.
+b0 REF x1
+b3 REF x5
+b3 TPR x5 "now"
+b3 time "n.08" x5
+b0 Time x1 x5
+b0 accept "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b2 REF x3
+b2 offer "v.01" x3
+b2 Agent x3 "hearer"
+
+% Sentence: 285
+% Input sent: The postman was bitten by that dog.
+b0 REF x1
+b4 REF x6
+b4 TPR x6 "now"
+b4 time "n.08" x6
+b0 Time x1 x6
+b0 bite "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 dog "n.01" x2
+b1 Theme x3 x2
+b1 REF x3
+b1 that "a.01" x3
+b0 Patient x1 x4
+b3 REF x4
+b3 thing "n.01" x4
+b3 Name x4 "Postman"
+
+% Sentence: 286
+% Input sent: The serpent tempted Eve.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 tempt "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 event "n.01" x2
+b0 Patient x3 x1
+b2 REF x3
+b2 serpent "v.01" x3
+
+% Sentence: 287
+% Input sent: The car bumped the tree.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 bump "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 car "n.01" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 tree "n.01" x3
+
+% Sentence: 288
+% Input sent: You're wise.
+b0 REF x1
+b0 wise "n.01" x1
+b0 Theme x1 "hearer"
+
+% Sentence: 289
+% Input sent: Is the phone ringing?
+b0 REF x1
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+b0 Time x1 x3
+b0 ringe "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 phone "n.01" x2
+
+% Sentence: 290
+% Input sent: Tom quit.
+b0 REF x1
+b1 REF x3
+b1 TPR x3 "now"
+b1 time "n.08" x3
+b0 Time x1 x3
+b0 quit "v.01" x1
+b0 Theme x2 x1
+b0 REF x2
+b0 tom "a.01" x2
+
+% Sentence: 291
+% Input sent: He had his wallet stolen.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 have "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 male "n.02" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 steal "v.01" x3
+b2 Agent x3 x2
+b2 Patient x3 x4
+b3 REF x4
+b3 wallet "n.01" x4
+
+% Sentence: 292
+% Input sent: I made this chair.
+b0 REF x1
+b0 chair "n.01" x1
+b0 Theme x1 "speaker"
+b0 Theme x3 x1
+b0 REF x3
+b0 this "a.01" x3
+
+% Sentence: 293
+% Input sent: She joined us.
+b0 REF x1
+b2 REF x4
+b2 TPR x4 "now"
+b2 time "n.08" x4
+b0 Time x1 x4
+b0 join "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 female "n.02" x2
+b0 Patient x1 "speaker"
+
+% Sentence: 294
+% Input sent: He lives in the city.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 live "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 male "n.02" x2
+b0 Location x1 x3
+b2 REF x3
+b2 city "n.01" x3
+
+% Sentence: 295
+% Input sent: They marched two abreast.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 march "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 abreast "n.01" x3
+b2 Quantity x3 "2"
+
+% Sentence: 296
+% Input sent: Tom stared at Mary suspiciously.
+b0 REF x1
+b6 REF x7
+b6 TPR x7 "now"
+b6 time "n.08" x7
+b0 Time x1 x7
+b0 stare "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+b0 Theme x1 x4
+b3 REF x4
+b3 person "n.01" x4
+b3 Name x4 "Mary"
+b0 Manner x1 x6
+b5 REF x6
+b5 suspicious "n.01" x6
+
+% Sentence: 297
+% Input sent: Tom might be busy.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 possible "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 busy "v.01" x2
+b1 Patient x2 x3
+b2 REF x3
+b2 tom "n.01" x3
+
+% Sentence: 298
+% Input sent: I am not Irish.
+b0 REF x1
+b0 country "n.01" x1
+b1 NOT b0
+b0 Name x1 "Irish"
+b0 Theme x1 "speaker"
+
+% Sentence: 299
+% Input sent: He came back at 5 o'clock.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 come "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 male "n.02" x2
+b0 Direction x1 x3
+b2 REF x3
+b2 back "n.01" x3
+b0 Time x1 x4
+b3 REF x4
+b3 clock "n.01" x4
+b3 Quantity x4 "5"
+
+% Sentence: 300
+% Input sent: There are flying birds in the sky.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 fly "v.01" x1
+b0 Location x1 x2
+b1 REF x2
+b1 bird "n.01" x2
+b0 Location x1 x3
+b2 REF x3
+b2 sky "n.01" x3
+
+% Sentence: 301
+% Input sent: Nice dress.
+b0 REF x1
+b0 dress "n.01" x1
+b0 Patient x2 x1
+b1 REF x2
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+b1 Time x2 x3
+b1 nice "v.01" x2
+
+% Sentence: 302
+% Input sent: You can buy stamps at any post office.
+b0 REF x1
+b5 REF x8
+b5 TPR x8 "now"
+b5 time "n.08" x8
+b0 Time x1 x8
+b0 possible "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 buy "v.01" x2
+b1 Agent x2 "hearer"
+b1 Patient x2 x4
+b3 REF x4
+b3 stamp "n.01" x4
+b1 Location x2 x5
+b4 REF x5
+b4 office "n.01" x5
+b4 Theme x6 x5
+b4 REF x6
+b4 any "a.01" x6
+b4 Theme x7 x5
+b4 REF x7
+b4 post "a.01" x7
+
+% Sentence: 303
+% Input sent: Tom shrugged his shoulders.
+b1 REF x1
+b1 alwayswrongconcept "n.01" x1
+
+% Sentence: 304
+% Input sent: We survived!
+b0 REF x1
+b1 REF x3
+b1 TPR x3 "now"
+b1 time "n.08" x3
+b0 Time x1 x3
+b0 survive "v.01" x1
+b0 Agent x1 "speaker"
+
+% Sentence: 305
+% Input sent: I've seen a flying saucer.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 see "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b2 REF x3
+b2 saucer "n.01" x3
+b2 Patient x4 x3
+b3 REF x4
+b3 fly "v.01" x4
+
+% Sentence: 306
+% Input sent: I saw her a week ago.
+b1 REF x1
+b1 alwayswrongconcept "n.01" x1
+
+% Sentence: 307
+% Input sent: I'm illiterate.
+b0 REF x1
+b0 literate "n.01" x1
+b1 NOT b0
+b0 Theme x1 "speaker"
+
+% Sentence: 308
+% Input sent: I have lost my pencil.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 lose "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b2 REF x3
+b2 pencil "n.01" x3
+
+% Sentence: 309
+% Input sent: Someone has given me the cold.
+b0 REF x1
+b3 REF x5
+b3 TPR x5 "now"
+b3 time "n.08" x5
+b0 Time x1 x5
+b0 give "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 someone "n.01" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 cold "v.01" x3
+b2 Patient x3 "speaker"
+b0 Theme x1 x4
+
+% Sentence: 310
+% Input sent: I don't remember your name.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 remember "v.01" x1
+b1 NOT b0
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b3 REF x3
+b3 name "n.01" x3
+
+% Sentence: 311
+% Input sent: The college was founded by Mr Smith.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 found "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Mr~Smith"
+b0 Patient x1 x4
+b3 REF x4
+b3 college "n.01" x4
+
+% Sentence: 312
+% Input sent: Tom is grinning.
+b0 REF x1
+b2 REF x4
+b2 TPR x4 "now"
+b2 time "n.08" x4
+b0 Time x1 x4
+b0 grin "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+
+% Sentence: 313
+% Input sent: I lost my key.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 lose "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b2 REF x3
+b2 key "n.01" x3
+
+% Sentence: 314
+% Input sent: Abrams handed the cigarette to Browne.
+b0 REF x1
+b4 REF x6
+b4 TPR x6 "now"
+b4 time "n.08" x6
+b0 Time x1 x6
+b0 hand "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 abrams "n.01" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 cigarette "n.01" x3
+b0 Theme x1 x4
+b3 REF x4
+b3 person "n.01" x4
+b3 Name x4 "Browne"
+
+% Sentence: 315
+% Input sent: I love Natasha.
+b0 REF x1
+b3 REF x5
+b3 TPR x5 "now"
+b3 time "n.08" x5
+b0 Time x1 x5
+b0 love "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b2 REF x3
+b2 state "n.01" x3
+b2 Name x3 "Natasha"
+
+% Sentence: 316
+% Input sent: Tom abhors violence.
+b0 REF x1
+b0 violence "n.01" x1
+b0 Theme x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Agent x3 x2
+b2 REF x3
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b2 Time x3 x5
+b2 abhor "v.01" x3
+b2 Patient x3 x4
+b3 REF x4
+b3 tom "n.01" x4
+
+% Sentence: 317
+% Input sent: Tom has a boat.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 have "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+b0 Patient x1 x4
+b3 REF x4
+b3 boat "n.01" x4
+
+% Sentence: 318
+% Input sent: She used to play tennis every Sunday.
+b0 REF x1
+b6 REF x7
+b6 TPR x7 "now"
+b6 time "n.08" x7
+b0 Time x1 x7
+b0 use "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 female "n.02" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 play "v.01" x3
+b2 Agent x3 x2
+b2 Patient x3 x4
+b3 REF x4
+b3 tennis "n.01" x4
+b2 Time x3 x5
+b4 REF x5
+b4 date-entity "n.01" x5
+b4 Weekday x5 x6
+b5 REF x6
+b5 sunday "n.01" x6
+
+% Sentence: 319
+% Input sent: I'm a genius.
+b0 REF x1
+b0 genius "n.01" x1
+b0 Theme x1 "speaker"
+
+% Sentence: 320
+% Input sent: I'm game.
+b0 REF x1
+b0 game "n.01" x1
+b0 Theme x1 "speaker"
+
+% Sentence: 321
+% Input sent: She sang a song.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 sing "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 female "n.02" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 song "n.01" x3
+
+% Sentence: 322
+% Input sent: Tom is putting the children to bed.
+b0 REF x1
+b5 REF x6
+b5 TPR x6 "now"
+b5 time "n.08" x6
+b0 Time x1 x6
+b0 put "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+b0 Patient x1 x4
+b3 REF x4
+b3 child "n.01" x4
+b0 Theme x1 x5
+b4 REF x5
+b4 bed "n.01" x5
+
+% Sentence: 323
+% Input sent: I threw up.
+b0 REF x1
+b1 REF x3
+b1 TPR x3 "now"
+b1 time "n.08" x3
+b0 Time x1 x3
+b0 throw-up "v.01" x1
+b0 Agent x1 "speaker"
+
+% Sentence: 324
+% Input sent: She tried.
+b0 REF x1
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+b0 Time x1 x3
+b0 try "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 female "n.02" x2
+
+% Sentence: 325
+% Input sent: There are many birds in this park.
+b0 REF x1
+b0 bird "n.01" x1
+b0 Quantity x1 x2
+b1 REF x2
+b1 many "n.01" x2
+b0 Location x1 x3
+b2 REF x3
+b2 park "n.01" x3
+b2 Theme x4 x3
+b2 REF x4
+b2 this "a.01" x4
+
+% Sentence: 326
+% Input sent: Tom loves tulips.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 love "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+b0 Patient x1 x4
+b3 REF x4
+b3 tulip "n.01" x4
+
+% Sentence: 327
+% Input sent: Think about it.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 think "v.01" x1
+b0 Agent x1 "hearer"
+b0 Patient x1 x3
+b2 REF x3
+b2 thing "n.12" x3
+
+% Sentence: 328
+% Input sent: Everybody wants something.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 want "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 everybody "n.01" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 something "n.01" x3
+
+% Sentence: 329
+% Input sent: I ran out of money.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 run-out "v.01" x1
+b0 Patient x1 "speaker"
+b0 Theme x1 x3
+b2 REF x3
+b2 money "n.01" x3
+
+% Sentence: 330
+% Input sent: I supported him.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 support "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b2 REF x3
+b2 male "n.02" x3
+
+% Sentence: 331
+% Input sent: I haven't touched anything.
+b0 REF x1
+b4 REF x4
+b4 TPR x4 "now"
+b4 time "n.08" x4
+b0 Time x1 x4
+b0 touch "v.01" x1
+b1 NOT b0
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b3 REF x3
+b3 anything "n.01" x3
+
+% Sentence: 332
+% Input sent: They were satisfied.
+b0 REF x1
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+b0 Time x1 x3
+b0 satisfy "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 person "n.01" x2
+
+% Sentence: 333
+% Input sent: I am acquainted with Mr Smith.
+b0 REF x1
+b3 REF x5
+b3 TPR x5 "now"
+b3 time "n.08" x5
+b0 Time x1 x5
+b0 acquaint "v.01" x1
+b0 Patient x1 "speaker"
+b0 Theme x1 x3
+b2 REF x3
+b2 person "n.01" x3
+b2 Name x3 "Mr~Smith"
+
+% Sentence: 334
+% Input sent: I'm very lazy.
+b0 REF x1
+b0 lazy "n.01" x1
+b0 Theme x1 "speaker"
+b0 Degree x1 x3
+b2 REF x3
+b2 very "n.01" x3
+
+% Sentence: 335
+% Input sent: It's October the third.
+b0 REF x1
+b0 date-entity "n.01" x1
+b0 MonthOfYear x1 "10"
+b0 Day x1 "9"
+
+% Sentence: 336
+% Input sent: He played the piano and she sang.
+b1 REF x1
+b1 alwayswrongconcept "n.01" x1
+
+% Sentence: 337
+% Input sent: Bob's father works in a car factory.
+b0 REF x1
+b6 REF x8
+b6 TPR x8 "now"
+b6 time "n.08" x8
+b0 Time x1 x8
+b0 work "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Agent x3 x2
+b2 REF x3
+b2 have-rel-role "v.01" x3
+b2 Patient x3 x4
+b3 REF x4
+b3 bob "n.01" x4
+b2 Theme x3 x5
+b4 REF x5
+b4 father "n.01" x5
+b0 Location x1 x6
+b5 REF x6
+b5 factory "n.01" x6
+b5 Theme x7 x6
+b5 REF x7
+b5 car "a.01" x7
+
+% Sentence: 338
+% Input sent: She crawled out of bed.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 crawl "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 female "n.02" x2
+b0 Recipient x1 x3
+b2 REF x3
+b2 out "v.01" x3
+b2 Patient x3 x2
+b2 Theme x3 x4
+b3 REF x4
+b3 bed "n.01" x4
+
+% Sentence: 339
+% Input sent: I was very good.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 good "v.01" x1
+b0 Patient x1 "speaker"
+b0 Degree x1 x3
+b2 REF x3
+b2 very "n.01" x3
+
+% Sentence: 340
+% Input sent: I want it now!
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 want "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b2 REF x3
+b2 thing "n.12" x3
+b0 Time x1 x4
+b3 REF x4
+b3 now "n.01" x4
+
+% Sentence: 341
+% Input sent: I'm not your little sister.
+b0 REF x1
+b0 person "n.01" x1
+b1 NOT b0
+b0 Theme x2 x1
+b0 REF x2
+b0 little "a.01" x2
+b0 Agent x3 x1
+b3 REF x3
+b6 REF x7
+b6 TPR x7 "now"
+b6 time "n.08" x7
+b3 Time x3 x7
+b3 have-rel-role "v.01" x3
+b3 Patient x3 "hearer"
+b3 Theme x3 x5
+b5 REF x5
+b5 sister "n.01" x5
+b0 Theme x1 "speaker"
+
+% Sentence: 342
+% Input sent: Picasso is a famous artist.
+b0 REF x1
+b0 artist "n.01" x1
+b0 Patient x2 x1
+b1 REF x2
+b3 REF x5
+b3 TPR x5 "now"
+b3 time "n.08" x5
+b1 Time x2 x5
+b1 fame "v.01" x2
+b0 Theme x1 x3
+b2 REF x3
+b2 person "n.01" x3
+b2 Name x3 "Picasso"
+
+% Sentence: 343
+% Input sent: He's sitting in the waiting room.
+b0 REF x1
+b3 REF x5
+b3 TPR x5 "now"
+b3 time "n.08" x5
+b0 Time x1 x5
+b0 sit "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 male "n.02" x2
+b0 Theme x1 x3
+b2 REF x3
+b2 room "n.01" x3
+b2 Theme x4 x3
+b2 REF x4
+b2 wait "v.01" x4
+
+% Sentence: 344
+% Input sent: My shoes are brown.
+b0 REF x1
+b2 REF x4
+b2 TPR x4 "now"
+b2 time "n.08" x4
+b0 Time x1 x4
+b0 brown "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 shoe "n.01" x2
+
+% Sentence: 345
+% Input sent: You are not watching TV now.
+b0 REF x1
+b5 REF x5
+b5 TPR x5 "now"
+b5 time "n.08" x5
+b0 Time x1 x5
+b0 watch "v.01" x1
+b1 NOT b0
+b0 Agent x1 "hearer"
+b0 Patient x1 x3
+b3 REF x3
+b3 television "n.01" x3
+b0 Time x1 x4
+b4 REF x4
+b4 now "n.01" x4
+
+% Sentence: 346
+% Input sent: The dog is red.
+b0 REF x1
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+b0 Time x1 x3
+b0 red "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 dog "n.01" x2
+
+% Sentence: 347
+% Input sent: He loves animals.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 love "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 male "n.02" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 animal "n.01" x3
+
+% Sentence: 348
+% Input sent: Mr Smith teaches me English.
+b0 REF x1
+b5 REF x7
+b5 TPR x7 "now"
+b5 time "n.08" x7
+b0 Time x1 x7
+b0 teach "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Mr~Smith"
+b0 Patient x1 "speaker"
+b0 Recipient x1 x5
+b4 REF x5
+b4 language "n.01" x5
+b4 Name x5 "English"
+
+% Sentence: 349
+% Input sent: My mother told me to mow the lawn.
+b0 REF x1
+b7 REF x8
+b7 TPR x8 "now"
+b7 time "n.08" x8
+b0 Time x1 x8
+b0 tell "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Agent x3 x2
+b2 REF x3
+b2 have-rel-role "v.01" x3
+b2 Patient x3 "speaker"
+b2 Theme x3 x5
+b4 REF x5
+b4 mother "n.01" x5
+b0 Patient x1 x6
+b5 REF x6
+b5 mow "v.01" x6
+b5 Agent x6 x4
+b5 Patient x6 x7
+b6 REF x7
+b6 lawn "n.01" x7
+
+% Sentence: 350
+% Input sent: Tom cheated.
+b0 REF x1
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+b0 Time x1 x3
+b0 cheat "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 tom "n.01" x2
+
+% Sentence: 351
+% Input sent: Push the button.
+b0 REF x1
+b0 button "n.01" x1
+b0 Theme x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Push"
+
+% Sentence: 352
+% Input sent: I'm waiting for her to climb into her car.
+b0 REF x1
+b5 REF x6
+b5 TPR x6 "now"
+b5 time "n.08" x6
+b0 Time x1 x6
+b0 wait "v.01" x1
+b0 Patient x1 "speaker"
+b0 Theme x1 x3
+b2 REF x3
+b2 climb "v.01" x3
+b2 Agent x3 x4
+b3 REF x4
+b3 female "n.02" x4
+b2 Patient x3 x5
+b4 REF x5
+b4 car "n.01" x5
+
+% Sentence: 353
+% Input sent: Tom is eavesdropping.
+b0 REF x1
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+b0 Time x1 x3
+b0 eavesdroppe "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 tom "n.01" x2
+
+% Sentence: 354
+% Input sent: He is opening the window.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 open "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 male "n.02" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 window "n.01" x3
+
+% Sentence: 355
+% Input sent: Tom printed out the page.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 print-out "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+b0 Patient x1 x4
+b3 REF x4
+b3 page "n.01" x4
+
+% Sentence: 356
+% Input sent: Who'll drive?
+b0 REF x1
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+b0 Time x1 x3
+b0 drive "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 amr-unknown "n.01" x2
+
+% Sentence: 357
+% Input sent: I like the actor.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 like "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b2 REF x3
+b2 actor "n.01" x3
+
+% Sentence: 358
+% Input sent: Bob is popular at school.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 popular "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 bob "n.01" x2
+b0 Location x1 x3
+b2 REF x3
+b2 school "n.01" x3
+
+% Sentence: 359
+% Input sent: Tom and Mary picked up a hitchhiker.
+b1 REF x1
+b1 alwayswrongconcept "n.01" x1
+
+% Sentence: 360
+% Input sent: I wasn't prepared.
+b0 REF x1
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+b0 Time x1 x3
+b0 prepare "v.01" x1
+b1 NOT b0
+b0 Agent x1 "speaker"
+
+% Sentence: 361
+% Input sent: Ten prisoners broke out of jail.
+b0 REF x1
+b6 REF x7
+b6 TPR x7 "now"
+b6 time "n.08" x7
+b0 Time x1 x7
+b0 break "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Quantity x2 "2"
+b1 Patient x3 x2
+b2 REF x3
+b2 imprison "v.01" x3
+b0 Theme x1 x4
+b3 REF x4
+b3 out "v.01" x4
+b3 Patient x4 x5
+b4 REF x5
+b4 person "n.01" x5
+b3 Theme x4 x6
+b5 REF x6
+b5 jail "n.01" x6
+
+% Sentence: 362
+% Input sent: She picked up a coin.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 pick-up "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 female "n.02" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 coin "n.01" x3
+
+% Sentence: 363
+% Input sent: Mary just left.
+b0 REF x1
+b0 mary "n.01" x1
+b0 Patient x2 x1
+b1 REF x2
+b2 REF x4
+b2 TPR x4 "now"
+b2 time "n.08" x4
+b1 Time x2 x4
+b1 leave "v.01" x2
+b1 Theme x3 x2
+b1 REF x3
+b1 just "a.01" x3
+
+% Sentence: 364
+% Input sent: The skier suffered a head trauma.
+b0 REF x1
+b3 REF x5
+b3 TPR x5 "now"
+b3 time "n.08" x5
+b0 Time x1 x5
+b0 suffer "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 skier "n.01" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 trauma "n.01" x3
+b2 Theme x4 x3
+b2 REF x4
+b2 head "a.01" x4
+
+% Sentence: 365
+% Input sent: Tom is extremely strong.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 strong "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 tom "n.01" x2
+b0 Degree x1 x3
+b2 REF x3
+b2 extreme "n.01" x3
+
+% Sentence: 366
+% Input sent: This is creepy.
+b0 REF x1
+b0 creepy "n.01" x1
+b0 Theme x1 x2
+b1 REF x2
+b1 this "n.01" x2
+
+% Sentence: 367
+% Input sent: Tom took part in the race.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 take "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 tom "n.01" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 part "n.01" x3
+b0 Location x1 x4
+b3 REF x4
+b3 race "n.01" x4
+
+% Sentence: 368
+% Input sent: I was not lonely.
+b0 REF x1
+b0 lonely "n.01" x1
+b1 NOT b0
+b0 Theme x1 "speaker"
+
+% Sentence: 369
+% Input sent: The street is empty.
+b0 REF x1
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+b0 Time x1 x3
+b0 empty "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 street "n.01" x2
+
+% Sentence: 370
+% Input sent: She hugged him.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 hug "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 female "n.02" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 male "n.02" x3
+
+% Sentence: 371
+% Input sent: She has kept a diary for 3 years.
+b1 REF x1
+b1 alwayswrongconcept "n.01" x1
+
+% Sentence: 372
+% Input sent: The day was exhausting.
+b0 REF x1
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+b0 Time x1 x3
+b0 exhaust "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 day "n.01" x2
+
+% Sentence: 373
+% Input sent: Tom rolled over in bed.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 roll "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+b0 Location x1 x4
+b3 REF x4
+b3 bed "n.01" x4
+
+% Sentence: 374
+% Input sent: She found one.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 find "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 female "n.02" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 one "n.01" x3
+
+% Sentence: 375
+% Input sent: He was heartbroken.
+b0 REF x1
+b0 heartbroken "n.01" x1
+b0 Theme x1 x2
+b1 REF x2
+b1 male "n.02" x2
+
+% Sentence: 376
+% Input sent: I am spreading mustard on a slice of bread.
+b0 REF x1
+b5 REF x7
+b5 TPR x7 "now"
+b5 time "n.08" x7
+b0 Time x1 x7
+b0 spread "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b2 REF x3
+b2 person "n.01" x3
+b2 Name x3 "Mustard"
+b0 Theme x1 x5
+b4 REF x5
+b4 slice "n.01" x5
+b4 Theme x6 x5
+b4 REF x6
+b4 bread "a.01" x6
+
+% Sentence: 377
+% Input sent: The poet wrote many poems.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 write "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 poet "n.01" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 poem "n.01" x3
+b2 Quantity x3 x4
+b3 REF x4
+b3 many "n.01" x4
+
+% Sentence: 378
+% Input sent: He's watching the Olympics.
+b0 REF x1
+b3 REF x5
+b3 TPR x5 "now"
+b3 time "n.08" x5
+b0 Time x1 x5
+b0 watch "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 male "n.02" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 game "n.01" x3
+b2 Name x3 "Olympics"
+
+% Sentence: 379
+% Input sent: I love books.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 love "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b2 REF x3
+b2 book "n.01" x3
+
+% Sentence: 380
+% Input sent: I'll miss you too.
+b0 REF x1
+b1 REF x5
+b1 TPR x5 "now"
+b1 time "n.08" x5
+b0 Time x1 x5
+b0 miss "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 "hearer"
+b0 Theme x4 x1
+b0 REF x4
+b0 too "a.01" x4
+
+% Sentence: 381
+% Input sent: She won a phone.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 win "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 female "n.02" x2
+b0 Theme x1 x3
+b2 REF x3
+b2 phone "n.01" x3
+
+% Sentence: 382
+% Input sent: Tom works for an oil company.
+b0 REF x1
+b4 REF x6
+b4 TPR x6 "now"
+b4 time "n.08" x6
+b0 Time x1 x6
+b0 work "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+b0 Theme x1 x4
+b3 REF x4
+b3 company "n.01" x4
+b3 Theme x5 x4
+b3 REF x5
+b3 oil "a.01" x5
+
+% Sentence: 383
+% Input sent: Tom offered to lend me the money.
+b0 REF x1
+b6 REF x7
+b6 TPR x7 "now"
+b6 time "n.08" x7
+b0 Time x1 x7
+b0 offer "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+b0 Patient x1 x4
+b3 REF x4
+b3 lend "v.01" x4
+b3 Agent x4 x2
+b3 Patient x4 "speaker"
+b3 Theme x4 x6
+b5 REF x6
+b5 money "n.01" x6
+
+% Sentence: 384
+% Input sent: I'm sleepy!
+b0 REF x1
+b0 sleepy "n.01" x1
+b0 Theme x1 "speaker"
+
+% Sentence: 385
+% Input sent: Tom talked.
+b0 REF x1
+b2 REF x4
+b2 TPR x4 "now"
+b2 time "n.08" x4
+b0 Time x1 x4
+b0 talk "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+
+% Sentence: 386
+% Input sent: I wanted to run away with Tom.
+b0 REF x1
+b4 REF x6
+b4 TPR x6 "now"
+b4 time "n.08" x6
+b0 Time x1 x6
+b0 want "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b2 REF x3
+b2 run-away "v.01" x3
+b2 Agent x3 x2
+b2 Patient x3 x4
+b3 REF x4
+b3 thing "n.01" x4
+b3 Name x4 "Tom"
+
+% Sentence: 387
+% Input sent: Tom went to the theater with Mary.
+b0 REF x1
+b5 REF x7
+b5 TPR x7 "now"
+b5 time "n.08" x7
+b0 Time x1 x7
+b0 go "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+b0 Destination x1 x4
+b3 REF x4
+b3 theater "n.01" x4
+b0 Accompanier x1 x5
+b4 REF x5
+b4 person "n.01" x5
+b4 Name x5 "Mary"
+
+% Sentence: 388
+% Input sent: Tom was hurt.
+b0 REF x1
+b2 REF x4
+b2 TPR x4 "now"
+b2 time "n.08" x4
+b0 Time x1 x4
+b0 hurt "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+
+% Sentence: 389
+% Input sent: Baena Soares was arrested by the armed forces.
+b0 REF x1
+b4 REF x6
+b4 TPR x6 "now"
+b4 time "n.08" x6
+b0 Time x1 x6
+b0 arrest "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 force "n.01" x2
+b1 Patient x3 x2
+b2 REF x3
+b2 arm "v.01" x3
+b0 Patient x1 x4
+b3 REF x4
+b3 person "n.01" x4
+b3 Name x4 "Baena~Soares"
+
+% Sentence: 390
+% Input sent: That's obvious.
+b0 REF x1
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+b0 Time x1 x3
+b0 obvious "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 that "n.01" x2
+
+% Sentence: 391
+% Input sent: Who directed the film "Fail Safe"?
+b0 REF x1
+b3 REF x5
+b3 TPR x5 "now"
+b3 time "n.08" x5
+b0 Time x1 x5
+b0 direct "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 amr-unknown "n.01" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 film "n.01" x3
+b2 Name x3 "Fail~Safe"
+
+% Sentence: 392
+% Input sent: Tom underestimated Mary.
+b0 REF x1
+b4 REF x6
+b4 TPR x6 "now"
+b4 time "n.08" x6
+b0 Time x1 x6
+b0 underestimate "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+b0 Patient x1 x4
+b3 REF x4
+b3 person "n.01" x4
+b3 Name x4 "Mary"
+
+% Sentence: 393
+% Input sent: I needed it.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 need "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b2 REF x3
+b2 thing "n.12" x3
+
+% Sentence: 394
+% Input sent: That's cool.
+b0 REF x1
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+b0 Time x1 x3
+b0 cool "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 that "n.01" x2
+
+% Sentence: 395
+% Input sent: I am counting on your help.
+b0 REF x1
+b3 REF x5
+b3 TPR x5 "now"
+b3 time "n.08" x5
+b0 Time x1 x5
+b0 count "v.01" x1
+b0 Patient x1 "speaker"
+b0 Theme x1 x3
+b2 REF x3
+b2 help "v.01" x3
+b2 Agent x3 "hearer"
+
+% Sentence: 396
+% Input sent: I hate birthday parties.
+b0 REF x1
+b3 REF x5
+b3 TPR x5 "now"
+b3 time "n.08" x5
+b0 Time x1 x5
+b0 hate "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b2 REF x3
+b2 party "n.01" x3
+b2 Theme x4 x3
+b2 REF x4
+b2 birthday "a.01" x4
+
+% Sentence: 397
+% Input sent: Alfred Nobel is the inventor of dynamite.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 invent "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 company "n.01" x2
+b1 Name x2 "Alfred~Nobel"
+b0 Patient x1 x4
+b3 REF x4
+b3 dynamite "n.01" x4
+
+% Sentence: 398
+% Input sent: She has two thousand books.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 have "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 female "n.02" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 book "n.01" x3
+b2 Quantity x3 x4
+b3 REF x4
+b3 multiple "n.01" x4
+
+% Sentence: 399
+% Input sent: Everyone's eating.
+b0 REF x1
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+b0 Time x1 x3
+b0 eat "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 everyone "n.01" x2
+
+% Sentence: 400
+% Input sent: Tom raises Arabian horses.
+b1 REF x1
+b1 alwayswrongconcept "n.01" x1
+
+% Sentence: 401
+% Input sent: The doll lay on the floor.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 lay "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 doll "n.01" x2
+b0 Theme x1 x3
+b2 REF x3
+b2 floor "n.01" x3
+
+% Sentence: 402
+% Input sent: Tom is exceptional.
+b0 REF x1
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+b0 Time x1 x3
+b0 except "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 tom "n.01" x2
+
+% Sentence: 403
+% Input sent: Sumatra is an island.
+b0 REF x1
+b0 island "n.01" x1
+b0 Theme x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Sumatra"
+
+% Sentence: 404
+% Input sent: I am in Russia.
+b0 REF x1
+b3 REF x5
+b3 TPR x5 "now"
+b3 time "n.08" x5
+b0 Time x1 x5
+b0 be-located-at "v.01" x1
+b0 Patient x1 "speaker"
+b0 Theme x1 x3
+b2 REF x3
+b2 country "n.01" x3
+b2 Name x3 "Russia"
+
+% Sentence: 405
+% Input sent: I bought a few eggs and a little milk.
+b1 REF x1
+b1 alwayswrongconcept "n.01" x1
+
+% Sentence: 406
+% Input sent: John lives in New York.
+b0 REF x1
+b4 REF x6
+b4 TPR x6 "now"
+b4 time "n.08" x6
+b0 Time x1 x6
+b0 live "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "John"
+b0 Location x1 x4
+b3 REF x4
+b3 city "n.01" x4
+b3 Name x4 "New~York"
+
+% Sentence: 407
+% Input sent: It's nice.
+b0 REF x1
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+b0 Time x1 x3
+b0 nice "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 thing "n.12" x2
+
+% Sentence: 408
+% Input sent: Tom was praying.
+b0 REF x1
+b2 REF x4
+b2 TPR x4 "now"
+b2 time "n.08" x4
+b0 Time x1 x4
+b0 pray "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+
+% Sentence: 409
+% Input sent: I saw everything.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 see "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b2 REF x3
+b2 everything "n.01" x3
+
+% Sentence: 410
+% Input sent: She caused this.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 cause "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 female "n.02" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 this "n.01" x3
+
+% Sentence: 411
+% Input sent: The book is big.
+b0 REF x1
+b0 big "n.01" x1
+b0 Theme x1 x2
+b1 REF x2
+b1 book "n.01" x2
+
+% Sentence: 412
+% Input sent: The young boy helped the old woman.
+b0 REF x1
+b4 REF x6
+b4 TPR x6 "now"
+b4 time "n.08" x6
+b0 Time x1 x6
+b0 help "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 boy "n.01" x2
+b1 Theme x3 x2
+b1 REF x3
+b1 young "a.01" x3
+b0 Patient x1 x4
+b3 REF x4
+b3 woman "n.01" x4
+b3 Theme x5 x4
+b3 REF x5
+b3 old "a.01" x5
+
+% Sentence: 413
+% Input sent: I do some work for Tom from time to time.
+b0 REF x1
+b5 REF x7
+b5 TPR x7 "now"
+b5 time "n.08" x7
+b0 Time x1 x7
+b0 work "v.01" x1
+b0 Agent x1 "speaker"
+b0 Theme x1 x3
+b2 REF x3
+b2 person "n.01" x3
+b2 Name x3 "Tom"
+b0 Time x1 x5
+b4 REF x5
+b4 time "n.01" x5
+b0 Theme x6 x1
+b0 REF x6
+b0 some "a.01" x6
+
+% Sentence: 414
+% Input sent: I'll attend.
+b0 REF x1
+b1 REF x3
+b1 TPR x3 "now"
+b1 time "n.08" x3
+b0 Time x1 x3
+b0 attend "v.01" x1
+b0 Agent x1 "speaker"
+
+% Sentence: 415
+% Input sent: Tom is drowning!
+b0 REF x1
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+b0 Time x1 x3
+b0 drown "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 tom "n.01" x2
+
+% Sentence: 416
+% Input sent: The Prime Minister has resigned.
+b0 REF x1
+b4 REF x6
+b4 TPR x6 "now"
+b4 time "n.08" x6
+b0 Time x1 x6
+b0 resign "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Agent x3 x2
+b2 REF x3
+b2 have-org-role "v.01" x3
+b2 Theme x3 x4
+b3 REF x4
+b3 minister "n.01" x4
+b3 Theme x5 x4
+b3 REF x5
+b3 prime "a.01" x5
+
+% Sentence: 417
+% Input sent: Every author suffers from writer's block from time to time.
+b1 REF x1
+b1 alwayswrongconcept "n.01" x1
+
+% Sentence: 418
+% Input sent: She dialled the number.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 diall "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 female "n.02" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 number "n.01" x3
+
+% Sentence: 419
+% Input sent: Anna Politkovskaya was murdered.
+b0 REF x1
+b2 REF x4
+b2 TPR x4 "now"
+b2 time "n.08" x4
+b0 Time x1 x4
+b0 murder "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Anna~Politkovskaya"
+
+% Sentence: 420
+% Input sent: You're taunting me.
+b0 REF x1
+b1 REF x4
+b1 TPR x4 "now"
+b1 time "n.08" x4
+b0 Time x1 x4
+b0 taunt "v.01" x1
+b0 Agent x1 "hearer"
+b0 Patient x1 "speaker"
+
+% Sentence: 421
+% Input sent: Tom likes his coffee black.
+b0 REF x1
+b5 REF x7
+b5 TPR x7 "now"
+b5 time "n.08" x7
+b0 Time x1 x7
+b0 like "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+b0 Patient x1 x4
+b3 REF x4
+b3 person "n.01" x4
+b3 Patient x5 x4
+b4 REF x5
+b4 black "v.01" x5
+b3 Theme x6 x4
+b3 REF x6
+b3 coffee "a.01" x6
+
+% Sentence: 422
+% Input sent: The Berlin Wall was torn down in 1989.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 tear-down "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Berlin~Wall"
+b0 Time x1 x4
+b3 REF x4
+b3 date-entity "n.01" x4
+b3 YearOfCentury x4 "1989"
+
+% Sentence: 423
+% Input sent: Tom used a toothpick.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 use "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+b0 Patient x1 x4
+b3 REF x4
+b3 toothpick "n.01" x4
+
+% Sentence: 424
+% Input sent: Everything is all right now.
+b0 REF x1
+b3 REF x5
+b3 TPR x5 "now"
+b3 time "n.08" x5
+b0 Time x1 x5
+b0 right "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 everything "n.01" x2
+b0 Time x1 x3
+b2 REF x3
+b2 now "n.01" x3
+b2 Theme x4 x3
+b2 REF x4
+b2 all "a.01" x4
+
+% Sentence: 425
+% Input sent: Alas!
+b0 REF x1
+b0 alas "n.01" x1
+
+% Sentence: 426
+% Input sent: Tom is the one we want.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 want "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b2 REF x3
+b2 tom "n.01" x3
+
+% Sentence: 427
+% Input sent: He is rich, but he is unkind.
+b1 REF x1
+b1 alwayswrongconcept "n.01" x1
+
+% Sentence: 428
+% Input sent: He disappeared again.
+b0 REF x1
+b2 REF x4
+b2 TPR x4 "now"
+b2 time "n.08" x4
+b0 Time x1 x4
+b0 disappear "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 male "n.02" x2
+b0 Theme x3 x1
+b0 REF x3
+b0 again "a.01" x3
+
+% Sentence: 429
+% Input sent: He was also kind to animals.
+b0 REF x1
+b3 REF x5
+b3 TPR x5 "now"
+b3 time "n.08" x5
+b0 Time x1 x5
+b0 kind "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 male "n.02" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 animal "n.01" x3
+b0 Theme x4 x1
+b0 REF x4
+b0 also "a.01" x4
+
+% Sentence: 430
+% Input sent: I love Natasha.
+b0 REF x1
+b3 REF x5
+b3 TPR x5 "now"
+b3 time "n.08" x5
+b0 Time x1 x5
+b0 love "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b2 REF x3
+b2 state "n.01" x3
+b2 Name x3 "Natasha"
+
+% Sentence: 431
+% Input sent: All the students study English.
+b1 REF x1
+b1 alwayswrongconcept "n.01" x1
+
+% Sentence: 432
+% Input sent: Tom and Mary went hunting for Easter eggs.
+b1 REF x1
+b1 alwayswrongconcept "n.01" x1
+
+% Sentence: 433
+% Input sent: I have to button my jacket.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 obligate "v.01" x1
+b0 Patient x1 "speaker"
+b0 Theme x1 x3
+b2 REF x3
+b2 button "v.01" x3
+b2 Agent x3 x2
+b2 Patient x3 x4
+b3 REF x4
+b3 jacket "n.01" x4
+
+% Sentence: 434
+% Input sent: I adore elephants.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 adore "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b2 REF x3
+b2 elephant "n.01" x3
+
+% Sentence: 435
+% Input sent: That news got around.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 get "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 news "n.01" x2
+b1 Theme x3 x2
+b1 REF x3
+b1 that "a.01" x3
+b0 Patient x1 x4
+b3 REF x4
+b3 around "n.01" x4
+
+% Sentence: 436
+% Input sent: Everglades National Park is located in Florida.
+b0 REF x1
+b4 REF x6
+b4 TPR x6 "now"
+b4 time "n.08" x6
+b0 Time x1 x6
+b0 locate "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 park "n.01" x2
+b1 Name x2 "Everglades~National~Park"
+b0 Location x1 x4
+b3 REF x4
+b3 state "n.01" x4
+b3 Name x4 "Florida"
+
+% Sentence: 437
+% Input sent: Stir the paint with a stick.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 stir "v.01" x1
+b0 Agent x1 "hearer"
+b0 Patient x1 x3
+b2 REF x3
+b2 paint "n.01" x3
+b2 Prep-with x3 x4
+b3 REF x4
+b3 stick "n.01" x4
+
+% Sentence: 438
+% Input sent: I'm a volleyball player.
+b0 REF x1
+b0 person "n.01" x1
+b0 Agent x2 x1
+b1 REF x2
+b2 REF x5
+b2 TPR x5 "now"
+b2 time "n.08" x5
+b1 Time x2 x5
+b1 play "v.01" x2
+b0 Theme x3 x1
+b0 REF x3
+b0 volleyball "a.01" x3
+b0 Theme x1 "speaker"
+
+% Sentence: 439
+% Input sent: I like languages.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 like "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b2 REF x3
+b2 language "n.01" x3
+
+% Sentence: 440
+% Input sent: Fire burns.
+b0 REF x1
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+b0 Time x1 x3
+b0 burn "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 fire "n.01" x2
+
+% Sentence: 441
+% Input sent: He gave me some money.
+b0 REF x1
+b4 REF x6
+b4 TPR x6 "now"
+b4 time "n.08" x6
+b0 Time x1 x6
+b0 give "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 male "n.02" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 money "n.01" x3
+b2 Quantity x3 x4
+b3 REF x4
+b3 some "n.01" x4
+b0 Theme x1 "speaker"
+
+% Sentence: 442
+% Input sent: Comfort him.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 comfort "v.01" x1
+b0 Agent x1 "hearer"
+b0 Patient x1 x3
+b2 REF x3
+b2 male "n.02" x3
+
+% Sentence: 443
+% Input sent: The Canadian chopped down the tree with an ax.
+b0 REF x1
+b5 REF x6
+b5 TPR x6 "now"
+b5 time "n.08" x6
+b0 Time x1 x6
+b0 chop-down "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 country "n.01" x2
+b1 Name x2 "Canada"
+b0 Patient x1 x4
+b3 REF x4
+b3 tree "n.01" x4
+b0 Manner x1 x5
+b4 REF x5
+b4 amr-unknown "n.01" x5
+
+% Sentence: 444
+% Input sent: She graduated from Kobe University.
+b0 REF x1
+b3 REF x5
+b3 TPR x5 "now"
+b3 time "n.08" x5
+b0 Time x1 x5
+b0 graduate "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 female "n.02" x2
+b0 Theme x1 x3
+b2 REF x3
+b2 university "n.01" x3
+b2 Name x3 "Kobe~University"
+
+% Sentence: 445
+% Input sent: The television is not working
+b0 REF x1
+b3 REF x3
+b3 TPR x3 "now"
+b3 time "n.08" x3
+b0 Time x1 x3
+b0 work "v.01" x1
+b1 NOT b0
+b0 Agent x1 x2
+b2 REF x2
+b2 television "n.01" x2
+
+% Sentence: 446
+% Input sent: I was having dinner with Tom.
+b0 REF x1
+b0 dinner "n.01" x1
+b0 Accompanier x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+b0 Theme x1 "speaker"
+
+% Sentence: 447
+% Input sent: Tom is majoring in architecture.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 major "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+b0 Location x1 x4
+b3 REF x4
+b3 architecture "n.01" x4
+
+% Sentence: 448
+% Input sent: The dog attacked the little boy.
+b0 REF x1
+b3 REF x5
+b3 TPR x5 "now"
+b3 time "n.08" x5
+b0 Time x1 x5
+b0 attack "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 dog "n.01" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 boy "n.01" x3
+b2 Theme x4 x3
+b2 REF x4
+b2 little "a.01" x4
+
+% Sentence: 449
+% Input sent: Tom's cooking breakfast.
+b0 REF x1
+b3 REF x5
+b3 TPR x5 "now"
+b3 time "n.08" x5
+b0 Time x1 x5
+b0 break-fast "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 cook "v.01" x2
+b1 Agent x2 x3
+b2 REF x3
+b2 person "n.01" x3
+b2 Name x3 "Tom"
+
+% Sentence: 450
+% Input sent: She waved good-bye to me.
+b0 REF x1
+b4 REF x6
+b4 TPR x6 "now"
+b4 time "n.08" x6
+b0 Time x1 x6
+b0 wave "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 female "n.02" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 good "v.01" x3
+b0 Patient x4 x1
+b3 REF x4
+b3 cause "v.01" x4
+b3 Agent x4 "speaker"
+
+% Sentence: 451
+% Input sent: He is leaving Chicago tomorrow.
+b0 REF x1
+b5 REF x6
+b5 TPR x6 "now"
+b5 time "n.08" x6
+b0 Time x1 x6
+b0 leave "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 male "n.02" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 city "n.01" x3
+b2 Name x3 "Chicago"
+b0 Time x1 x5
+b4 REF x5
+b4 tomorrow "n.01" x5
+
+% Sentence: 452
+% Input sent: I didn't murder anyone.
+b0 REF x1
+b4 REF x4
+b4 TPR x4 "now"
+b4 time "n.08" x4
+b0 Time x1 x4
+b0 murder "v.01" x1
+b1 NOT b0
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b3 REF x3
+b3 anyone "n.01" x3
+
+% Sentence: 453
+% Input sent: Tom is bilingual.
+b0 REF x1
+b0 bilingual "n.01" x1
+b0 Theme x1 x2
+b1 REF x2
+b1 tom "n.01" x2
+
+% Sentence: 454
+% Input sent: The secret leaked out.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 leak "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 secret "n.01" x2
+b0 Direction x1 x3
+b2 REF x3
+b2 out "n.01" x3
+
+% Sentence: 455
+% Input sent: Tom got sick.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 get "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+b0 Patient x1 x4
+b3 REF x4
+b3 sick "v.01" x4
+b3 Patient x4 x2
+
+% Sentence: 456
+% Input sent: My father died five years ago.
+b1 REF x1
+b1 alwayswrongconcept "n.01" x1
+
+% Sentence: 457
+% Input sent: I agree.
+b0 REF x1
+b1 REF x3
+b1 TPR x3 "now"
+b1 time "n.08" x3
+b0 Time x1 x3
+b0 agree "v.01" x1
+b0 Agent x1 "speaker"
+
+% Sentence: 458
+% Input sent: I always get up at 6 o'clock in the morning.
+b0 REF x1
+b6 REF x7
+b6 TPR x7 "now"
+b6 time "n.08" x7
+b0 Time x1 x7
+b0 get-up "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b2 REF x3
+b2 onclock "n.01" x3
+b2 Quantity x3 "6"
+b0 Time x1 x4
+b3 REF x4
+b3 always "n.01" x4
+b0 Time x1 x5
+b4 REF x5
+b4 date-entity "n.01" x5
+b4 Dayperiod x5 x6
+b5 REF x6
+b5 morning "n.01" x6
+
+% Sentence: 459
+% Input sent: He devoted his life to his company.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 devote "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 male "n.02" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 life "n.01" x3
+b0 Theme x1 x4
+b3 REF x4
+b3 company "n.01" x4
+
+% Sentence: 460
+% Input sent: I don't want pizza. I'm not hungry.
+b1 REF x1
+b1 alwayswrongconcept "n.01" x1
+
+% Sentence: 461
+% Input sent: Tom drank the potion.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 drink "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+b0 Patient x1 x4
+b3 REF x4
+b3 potion "n.01" x4
+
+% Sentence: 462
+% Input sent: Tom is very polite.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 polite "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 tom "n.01" x2
+b0 Degree x1 x3
+b2 REF x3
+b2 very "n.01" x3
+
+% Sentence: 463
+% Input sent: My parents love me.
+b0 REF x1
+b5 REF x6
+b5 TPR x6 "now"
+b5 time "n.08" x6
+b0 Time x1 x6
+b0 love "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Agent x3 x2
+b2 REF x3
+b2 have-rel-role "v.01" x3
+b2 Patient x3 "speaker"
+b2 Theme x3 x5
+b4 REF x5
+b4 parent "n.01" x5
+b0 Patient x1 x4
+
+% Sentence: 464
+% Input sent: Tom works at a supermarket.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 work "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+b0 Location x1 x4
+b3 REF x4
+b3 supermarket "n.01" x4
+
+% Sentence: 465
+% Input sent: Our school is 80 years old.
+b1 REF x1
+b1 alwayswrongconcept "n.01" x1
+
+% Sentence: 466
+% Input sent: I made supper.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 make "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b2 REF x3
+b2 supper "n.01" x3
+
+% Sentence: 467
+% Input sent: This house is famous.
+b0 REF x1
+b2 REF x4
+b2 TPR x4 "now"
+b2 time "n.08" x4
+b0 Time x1 x4
+b0 fame "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 house "n.01" x2
+b1 Theme x3 x2
+b1 REF x3
+b1 this "a.01" x3
+
+% Sentence: 468
+% Input sent: Texas Instruments produces mobile phones.
+b0 REF x1
+b5 REF x6
+b5 TPR x6 "now"
+b5 time "n.08" x6
+b0 Time x1 x6
+b0 produce "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 instrument "n.01" x2
+b1 Theme x3 x2
+b1 REF x3
+b1 texas "a.01" x3
+b0 Patient x1 x4
+b3 REF x4
+b3 phone "n.01" x4
+b3 Patient x5 x4
+b4 REF x5
+b4 mobile "v.01" x5
+
+% Sentence: 469
+% Input sent: Tom tripped on something.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 trip "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+b0 Patient x1 x4
+b3 REF x4
+b3 something "n.01" x4
+
+% Sentence: 470
+% Input sent: I owe him 1,000 dollars.
+b1 REF x1
+b1 alwayswrongconcept "n.01" x1
+
+% Sentence: 471
+% Input sent: He drank three bottles of beer.
+b1 REF x1
+b1 alwayswrongconcept "n.01" x1
+
+% Sentence: 472
+% Input sent: This train leaves at nine o'clock.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 leave "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 train "n.01" x2
+b1 Theme x3 x2
+b1 REF x3
+b1 this "a.01" x3
+b0 Patient x1 x4
+b3 REF x4
+b3 onclock "n.01" x4
+b3 Quantity x4 "9"
+
+% Sentence: 473
+% Input sent: I can't understand this table.
+b0 REF x1
+b5 REF x6
+b5 TPR x6 "now"
+b5 time "n.08" x6
+b0 Time x1 x6
+b0 possible "v.01" x1
+b1 NOT b0
+b0 Patient x1 x2
+b2 REF x2
+b2 understand "v.01" x2
+b2 Agent x2 "speaker"
+b2 Patient x2 x4
+b4 REF x4
+b4 table "n.01" x4
+b4 Theme x5 x4
+b4 REF x5
+b4 this "a.01" x5
+
+% Sentence: 474
+% Input sent: The conference drew 150 diplomats.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 draw "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 conference "n.01" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 diplomat "n.01" x3
+b2 Quantity x3 "150"
+
+% Sentence: 475
+% Input sent: I want a divorce.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 want "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b2 REF x3
+b2 divorce "v.01" x3
+
+% Sentence: 476
+% Input sent: I was meeting Bob at six.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 meet "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b2 REF x3
+b2 bob "n.01" x3
+b0 Location x1 x4
+b3 REF x4
+b3 six "n.01" x4
+
+% Sentence: 477
+% Input sent: Do you speak Hebrew?
+b0 REF x1
+b3 REF x5
+b3 TPR x5 "now"
+b3 time "n.08" x5
+b0 Time x1 x5
+b0 speak "v.01" x1
+b0 Agent x1 "hearer"
+b0 Patient x1 x3
+b2 REF x3
+b2 person "n.01" x3
+b2 Name x3 "Hebrew"
+
+% Sentence: 478
+% Input sent: The house has burnt down.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 burn "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 house "n.01" x2
+b0 Direction x1 x3
+b2 REF x3
+b2 down "n.01" x3
+
+% Sentence: 479
+% Input sent: Mary misled me.
+b0 REF x1
+b2 REF x5
+b2 TPR x5 "now"
+b2 time "n.08" x5
+b0 Time x1 x5
+b0 misl "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Mary"
+b0 Patient x1 "speaker"
+
+% Sentence: 480
+% Input sent: We played on the banks of the Thames.
+b1 REF x1
+b1 alwayswrongconcept "n.01" x1
+
+% Sentence: 481
+% Input sent: I can't talk now.
+b0 REF x1
+b5 REF x5
+b5 TPR x5 "now"
+b5 time "n.08" x5
+b0 Time x1 x5
+b0 possible "v.01" x1
+b1 NOT b0
+b0 Patient x1 x2
+b2 REF x2
+b2 talk "v.01" x2
+b2 Agent x2 "speaker"
+b2 Time x2 x4
+b4 REF x4
+b4 now "n.01" x4
+
+% Sentence: 482
+% Input sent: Everything is new.
+b0 REF x1
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+b0 Time x1 x3
+b0 new "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 everything "n.01" x2
+
+% Sentence: 483
+% Input sent: The bicycle is mine.
+b0 REF x1
+b0 mine "n.01" x1
+b0 Theme x1 x2
+b1 REF x2
+b1 bicycle "n.01" x2
+
+% Sentence: 484
+% Input sent: I want this bag.
+b0 REF x1
+b3 REF x5
+b3 TPR x5 "now"
+b3 time "n.08" x5
+b0 Time x1 x5
+b0 want "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b2 REF x3
+b2 bag "n.01" x3
+b2 Theme x4 x3
+b2 REF x4
+b2 this "a.01" x4
+
+% Sentence: 485
+% Input sent: You're silly.
+b0 REF x1
+b0 silly "n.01" x1
+b0 Theme x1 "hearer"
+
+% Sentence: 486
+% Input sent: He is Japanese.
+b0 REF x1
+b0 person "n.01" x1
+b0 Theme x2 x1
+b0 REF x2
+b0 country "a.01" x2
+b1 Name x2 "Japan"
+b0 Theme x1 x4
+b3 REF x4
+b3 male "n.02" x4
+
+% Sentence: 487
+% Input sent: The dog is white.
+b0 REF x1
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+b0 Time x1 x3
+b0 white "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 dog "n.01" x2
+
+% Sentence: 488
+% Input sent: The monkey climbed up a tree.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 climb "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 monkey "n.01" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 tree "n.01" x3
+
+% Sentence: 489
+% Input sent: I'm bored right now.
+b0 REF x1
+b3 REF x5
+b3 TPR x5 "now"
+b3 time "n.08" x5
+b0 Time x1 x5
+b0 bore "v.01" x1
+b0 Patient x1 "speaker"
+b0 Time x1 x3
+b2 REF x3
+b2 now "n.01" x3
+b2 Theme x4 x3
+b2 REF x4
+b2 right "a.01" x4
+
+% Sentence: 490
+% Input sent: There are rats in the kitchen.
+b0 REF x1
+b0 rate "n.01" x1
+b0 Location x1 x2
+b1 REF x2
+b1 kitchen "n.01" x2
+
+% Sentence: 491
+% Input sent: I forgot my pen.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 forget "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b2 REF x3
+b2 pen "v.01" x3
+b2 Agent x3 x2
+
+% Sentence: 492
+% Input sent: The dove symbolizes peace.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 symbolize "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 dove "n.01" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 peace "n.01" x3
+
+% Sentence: 493
+% Input sent: I am proud of you.
+b0 REF x1
+b1 REF x4
+b1 TPR x4 "now"
+b1 time "n.08" x4
+b0 Time x1 x4
+b0 pride "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 "hearer"
+
+% Sentence: 494
+% Input sent: Tom seems conceited.
+b0 REF x1
+b3 REF x5
+b3 TPR x5 "now"
+b3 time "n.08" x5
+b0 Time x1 x5
+b0 seem "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 conceit "v.01" x2
+b1 Patient x2 x3
+b2 REF x3
+b2 person "n.01" x3
+b2 Name x3 "Tom"
+
+% Sentence: 495
+% Input sent: Read this.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 read "v.01" x1
+b0 Agent x1 "hearer"
+b0 Patient x1 x3
+b2 REF x3
+b2 this "n.01" x3
+
+% Sentence: 496
+% Input sent: Everybody hates me.
+b0 REF x1
+b2 REF x4
+b2 TPR x4 "now"
+b2 time "n.08" x4
+b0 Time x1 x4
+b0 hate "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 everybody "n.01" x2
+b0 Patient x1 "speaker"
+
+% Sentence: 497
+% Input sent: Tom lowered his gaze.
+b1 REF x1
+b1 alwayswrongconcept "n.01" x1
+
+% Sentence: 498
+% Input sent: I am engaged to her.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 engage "v.01" x1
+b0 Patient x1 "speaker"
+b0 Theme x1 x3
+b2 REF x3
+b2 female "n.02" x3
+
+% Sentence: 499
+% Input sent: Tom drove his car off a cliff.
+b0 REF x1
+b5 REF x6
+b5 TPR x6 "now"
+b5 time "n.08" x6
+b0 Time x1 x6
+b0 drive "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+b0 Patient x1 x4
+b3 REF x4
+b3 car "n.01" x4
+b0 Theme x1 x5
+b4 REF x5
+b4 cliff "n.01" x5
+
+% Sentence: 500
+% Input sent: He's Argentinian.
+b0 REF x1
+b0 person "n.01" x1
+b0 Theme x2 x1
+b0 REF x2
+b0 country "a.01" x2
+b1 Name x2 "Argentina"
+b0 Theme x1 x4
+b3 REF x4
+b3 male "n.02" x4
+
+% Sentence: 501
+% Input sent: Maria has long hair.
+b0 REF x1
+b5 REF x6
+b5 TPR x6 "now"
+b5 time "n.08" x6
+b0 Time x1 x6
+b0 have "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 country "n.01" x2
+b1 Name x2 "Maria"
+b0 Patient x1 x4
+b3 REF x4
+b3 hair "n.01" x4
+b3 Patient x5 x4
+b4 REF x5
+b4 long "v.01" x5
+
+% Sentence: 502
+% Input sent: My sister isn't studying now.
+b0 REF x1
+b7 REF x7
+b7 TPR x7 "now"
+b7 time "n.08" x7
+b0 Time x1 x7
+b0 study "v.01" x1
+b1 NOT b0
+b0 Agent x1 x2
+b2 REF x2
+b2 person "n.01" x2
+b2 Agent x3 x2
+b3 REF x3
+b3 have-rel-role "v.01" x3
+b3 Patient x3 "speaker"
+b3 Theme x3 x5
+b5 REF x5
+b5 sister "n.01" x5
+b0 Time x1 x6
+b6 REF x6
+b6 now "n.01" x6
+
+% Sentence: 503
+% Input sent: I was furious.
+b0 REF x1
+b1 REF x3
+b1 TPR x3 "now"
+b1 time "n.08" x3
+b0 Time x1 x3
+b0 furious "v.01" x1
+b0 Patient x1 "speaker"
+
+% Sentence: 504
+% Input sent: She loved Tom.
+b0 REF x1
+b3 REF x5
+b3 TPR x5 "now"
+b3 time "n.08" x5
+b0 Time x1 x5
+b0 love "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 female "n.02" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 person "n.01" x3
+b2 Name x3 "Tom"
+
+% Sentence: 505
+% Input sent: Tom is courteous.
+b0 REF x1
+b0 courteous "n.01" x1
+b0 Theme x1 x2
+b1 REF x2
+b1 tom "n.01" x2
+
+% Sentence: 506
+% Input sent: Many Finns are interested in culture.
+b0 REF x1
+b5 REF x6
+b5 TPR x6 "now"
+b5 time "n.08" x6
+b0 Time x1 x6
+b0 interest "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Quantity x2 x3
+b2 REF x3
+b2 many "n.01" x3
+b1 Patient x4 x2
+b3 REF x4
+b3 finn "v.01" x4
+b0 Theme x1 x5
+b4 REF x5
+b4 culture "n.01" x5
+
+% Sentence: 507
+% Input sent: They are not at all interested.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 interest "v.01" x1
+b1 NOT b0
+b0 Patient x1 x2
+b2 REF x2
+b2 person "n.01" x2
+b2 Theme x3 x2
+b2 REF x3
+b2 at-all "a.01" x3
+
+% Sentence: 508
+% Input sent: The customer is always right.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 right "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 customer "n.01" x2
+b0 Time x1 x3
+b2 REF x3
+b2 always "n.01" x3
+
+% Sentence: 509
+% Input sent: Tom is wet.
+b0 REF x1
+b0 wet "n.01" x1
+b0 Theme x1 x2
+b1 REF x2
+b1 tom "n.01" x2
+
+% Sentence: 510
+% Input sent: My father fixed a broken chair.
+b0 REF x1
+b7 REF x8
+b7 TPR x8 "now"
+b7 time "n.08" x8
+b0 Time x1 x8
+b0 fix "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Agent x3 x2
+b2 REF x3
+b2 have-rel-role "v.01" x3
+b2 Patient x3 "speaker"
+b2 Theme x3 x5
+b4 REF x5
+b4 father "n.01" x5
+b0 Patient x1 x6
+b5 REF x6
+b5 chair "n.01" x6
+b5 Patient x7 x6
+b6 REF x7
+b6 break "v.01" x7
+
+% Sentence: 511
+% Input sent: Tom draws well.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 draw "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+b0 Manner x1 x4
+b3 REF x4
+b3 well "n.01" x4
+
+% Sentence: 512
+% Input sent: Forgive me!
+b0 REF x1
+b1 REF x4
+b1 TPR x4 "now"
+b1 time "n.08" x4
+b0 Time x1 x4
+b0 forgive "v.01" x1
+b0 Agent x1 "hearer"
+b0 Patient x1 "speaker"
+
+% Sentence: 513
+% Input sent: Tom works.
+b0 REF x1
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+b0 Time x1 x3
+b0 work "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 tom "n.01" x2
+
+% Sentence: 514
+% Input sent: The artist is gifted.
+b0 REF x1
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+b0 Time x1 x3
+b0 gift "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 artist "n.01" x2
+
+% Sentence: 515
+% Input sent: Where does your grandfather live?
+b0 REF x1
+b6 REF x7
+b6 TPR x7 "now"
+b6 time "n.08" x7
+b0 Time x1 x7
+b0 live "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Agent x3 x2
+b2 REF x3
+b2 have-rel-role "v.01" x3
+b2 Patient x3 "hearer"
+b2 Theme x3 x5
+b4 REF x5
+b4 grandfather "n.01" x5
+b0 Location x1 x6
+b5 REF x6
+b5 amr-unknown "n.01" x6
+
+% Sentence: 516
+% Input sent: Tom is disrespectful.
+b0 REF x1
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+b0 Time x1 x3
+b0 disrespect "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 tom "n.01" x2
+
+% Sentence: 517
+% Input sent: I'm fed up with this winter, I want spring right now!
+b0 REF x1
+b0 multi-sentence "n.01" x1
+b0 Snt1 x1 x2
+b1 REF x2
+b9 REF x11
+b9 TPR x11 "now"
+b9 time "n.08" x11
+b1 Time x2 x11
+b1 feed-up "v.01" x2
+b1 Patient x2 "speaker"
+b1 Time x2 x4
+b3 REF x4
+b3 date-entity "n.01" x4
+b3 Season x4 x5
+b4 REF x5
+b4 winter "n.01" x5
+b4 Theme x6 x5
+b4 REF x6
+b4 this "a.01" x6
+b0 Snt2 x1 x7
+b6 REF x7
+b6 want "v.01" x7
+b6 Agent x7 x3
+b6 Patient x7 x8
+b7 REF x8
+b7 spring "v.01" x8
+b6 Time x7 x9
+b8 REF x9
+b8 now "n.01" x9
+b8 Theme x10 x9
+b8 REF x10
+b8 right "a.01" x10
+
+% Sentence: 518
+% Input sent: A lot of students around the world are studying English.
+b1 REF x1
+b1 alwayswrongconcept "n.01" x1
+
+% Sentence: 519
+% Input sent: Mary hates Halloween.
+b0 REF x1
+b4 REF x6
+b4 TPR x6 "now"
+b4 time "n.08" x6
+b0 Time x1 x6
+b0 hate "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Mary"
+b0 Patient x1 x4
+b3 REF x4
+b3 person "n.01" x4
+b3 Name x4 "Halloween"
+
+% Sentence: 520
+% Input sent: Tom is very sociable.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 sociable "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 tom "n.01" x2
+b0 Degree x1 x3
+b2 REF x3
+b2 very "n.01" x3
+
+% Sentence: 521
+% Input sent: I was afraid.
+b0 REF x1
+b1 REF x3
+b1 TPR x3 "now"
+b1 time "n.08" x3
+b0 Time x1 x3
+b0 fear "v.01" x1
+b0 Agent x1 "speaker"
+
+% Sentence: 522
+% Input sent: Tom won't speak to Mary.
+b0 REF x1
+b4 REF x6
+b4 TPR x6 "now"
+b4 time "n.08" x6
+b0 Time x1 x6
+b0 speak "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+b0 Theme x1 x4
+b3 REF x4
+b3 person "n.01" x4
+b3 Name x4 "Mary"
+
+% Sentence: 523
+% Input sent: That apple is bruised.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 bruise "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 thing "n.01" x2
+b1 Theme x3 x2
+b1 REF x3
+b1 that "a.01" x3
+b1 Patient x4 x2
+b3 REF x4
+b3 apple "v.01" x4
+
+% Sentence: 524
+% Input sent: He is suffering from a cold.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 suffer "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 male "n.02" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 cold "v.01" x3
+
+% Sentence: 525
+% Input sent: The blast destroyed everything.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 destroy "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 blast "v.01" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 everything "n.01" x3
+
+% Sentence: 526
+% Input sent: I am horrified.
+b0 REF x1
+b1 REF x3
+b1 TPR x3 "now"
+b1 time "n.08" x3
+b0 Time x1 x3
+b0 horrify "v.01" x1
+b0 Patient x1 "speaker"
+
+% Sentence: 527
+% Input sent: Look out!
+b0 REF x1
+b1 REF x3
+b1 TPR x3 "now"
+b1 time "n.08" x3
+b0 Time x1 x3
+b0 look-out "v.01" x1
+b0 Agent x1 "hearer"
+
+% Sentence: 528
+% Input sent: We got dressed.
+b0 REF x1
+b1 REF x3
+b1 TPR x3 "now"
+b1 time "n.08" x3
+b0 Time x1 x3
+b0 dress "v.01" x1
+b0 Patient x1 "speaker"
+
+% Sentence: 529
+% Input sent: Tom is rinsing the dishes.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 rinse "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+b0 Patient x1 x4
+b3 REF x4
+b3 dish "n.01" x4
+
+% Sentence: 530
+% Input sent: The wind is blowing.
+b0 REF x1
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+b0 Time x1 x3
+b0 blow "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 wind "n.01" x2
+
+% Sentence: 531
+% Input sent: It's vibrating.
+b0 REF x1
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+b0 Time x1 x3
+b0 vibrate "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 thing "n.12" x2
+
+% Sentence: 532
+% Input sent: Tom is extremely fit.
+b0 REF x1
+b3 REF x4
+b3 TPR x4 "now"
+b3 time "n.08" x4
+b0 Time x1 x4
+b0 fit "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 tom "n.01" x2
+b0 Degree x1 x3
+b2 REF x3
+b2 extreme "n.01" x3
+
+% Sentence: 533
+% Input sent: We are dozing off.
+b0 REF x1
+b1 REF x3
+b1 TPR x3 "now"
+b1 time "n.08" x3
+b0 Time x1 x3
+b0 doze-off "v.01" x1
+b0 Agent x1 "speaker"
+
+% Sentence: 534
+% Input sent: He is a plucky guy.
+b0 REF x1
+b0 guy "n.01" x1
+b0 Theme x2 x1
+b0 REF x2
+b0 pluck "a.01" x2
+b0 Theme x1 x3
+b2 REF x3
+b2 male "n.02" x3
+
+% Sentence: 535
+% Input sent: I never lie.
+b0 REF x1
+b4 REF x4
+b4 TPR x4 "now"
+b4 time "n.08" x4
+b0 Time x1 x4
+b0 lie "v.01" x1
+b1 NOT b0
+b0 Agent x1 "speaker"
+b0 Time x1 x3
+b3 REF x3
+b3 ever "n.01" x3
+
+% Sentence: 536
+% Input sent: Tom saw a mouse.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 see "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+b0 Patient x1 x4
+b3 REF x4
+b3 mouse "n.01" x4
+
+% Sentence: 537
+% Input sent: He is very young.
+b0 REF x1
+b0 young "n.01" x1
+b0 Theme x1 x2
+b1 REF x2
+b1 male "n.02" x2
+b0 Degree x1 x3
+b2 REF x3
+b2 very "n.01" x3
+
+% Sentence: 538
+% Input sent: I like my teachers.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 like "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b2 REF x3
+b2 person "n.01" x3
+b2 Agent x4 x3
+b3 REF x4
+b3 teach "v.01" x4
+b3 Patient x4 x2
+
+% Sentence: 539
+% Input sent: He's a terrible driver.
+b0 REF x1
+b0 person "n.01" x1
+b0 Agent x2 x1
+b1 REF x2
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b1 Time x2 x5
+b1 drive "v.01" x2
+b0 Theme x1 x3
+b2 REF x3
+b2 male "n.02" x3
+b0 Patient x4 x1
+b3 REF x4
+b3 terrible "v.01" x4
+
+% Sentence: 540
+% Input sent: I'll buy a new one.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 buy "v.01" x1
+b0 Agent x1 "speaker"
+b0 Patient x1 x3
+b2 REF x3
+b2 one "n.01" x3
+b2 Patient x4 x3
+b3 REF x4
+b3 new "v.01" x4
+
+% Sentence: 541
+% Input sent: Mr. Ford is all right now.
+b0 REF x1
+b4 REF x6
+b4 TPR x6 "now"
+b4 time "n.08" x6
+b0 Time x1 x6
+b0 right "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Mr.~Ford"
+b0 Time x1 x4
+b3 REF x4
+b3 now "n.01" x4
+b3 Theme x5 x4
+b3 REF x5
+b3 all "a.01" x5
+
+% Sentence: 542
+% Input sent: I can't open this bottle.
+b0 REF x1
+b5 REF x6
+b5 TPR x6 "now"
+b5 time "n.08" x6
+b0 Time x1 x6
+b0 possible "v.01" x1
+b1 NOT b0
+b0 Patient x1 x2
+b2 REF x2
+b2 open "v.01" x2
+b2 Agent x2 "speaker"
+b2 Patient x2 x4
+b4 REF x4
+b4 bottle "n.01" x4
+b4 Theme x5 x4
+b4 REF x5
+b4 this "a.01" x5
+
+% Sentence: 543
+% Input sent: Tom is crying, too.
+b0 REF x1
+b2 REF x5
+b2 TPR x5 "now"
+b2 time "n.08" x5
+b0 Time x1 x5
+b0 cry "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+b0 Theme x4 x1
+b0 REF x4
+b0 too "a.01" x4
+
+% Sentence: 544
+% Input sent: She did not read the book.
+b0 REF x1
+b4 REF x4
+b4 TPR x4 "now"
+b4 time "n.08" x4
+b0 Time x1 x4
+b0 read "v.01" x1
+b1 NOT b0
+b0 Agent x1 x2
+b2 REF x2
+b2 female "n.02" x2
+b0 Patient x1 x3
+b3 REF x3
+b3 book "n.01" x3
+
+% Sentence: 545
+% Input sent: The room is extremely small.
+b0 REF x1
+b0 small "n.01" x1
+b0 Theme x1 x2
+b1 REF x2
+b1 room "n.01" x2
+b0 Degree x1 x3
+b2 REF x3
+b2 extreme "n.01" x3
+
+% Sentence: 546
+% Input sent: She lost Mary.
+b0 REF x1
+b3 REF x5
+b3 TPR x5 "now"
+b3 time "n.08" x5
+b0 Time x1 x5
+b0 lose "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 female "n.02" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 person "n.01" x3
+b2 Name x3 "Mary"
+
+% Sentence: 547
+% Input sent: Pierce lives near Rossville Blvd.
+b0 REF x1
+b5 REF x7
+b5 TPR x7 "now"
+b5 time "n.08" x7
+b0 Time x1 x7
+b0 live "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Pierce"
+b0 Patient x4 x1
+b3 REF x4
+b3 near "v.01" x4
+b3 Theme x4 x5
+b4 REF x5
+b4 person "n.01" x5
+b4 Name x5 "Rossville~Blvd"
+
+% Sentence: 548
+% Input sent: Can you give me a kilo of plums?
+b0 REF x1
+b4 REF x7
+b4 TPR x7 "now"
+b4 time "n.08" x7
+b0 Time x1 x7
+b0 possible "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 give "v.01" x2
+b1 Agent x2 "hearer"
+b1 Patient x2 x4
+b3 REF x4
+b3 kilo "n.01" x4
+b3 Theme x5 x4
+b3 REF x5
+b3 plum "a.01" x5
+b1 Theme x2 "speaker"
+
+% Sentence: 549
+% Input sent: My bedroom is crawling with spiders.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 crawl "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 bedroom "n.01" x2
+b0 Patient x1 x4
+b3 REF x4
+b3 spider "n.01" x4
+
+% Sentence: 550
+% Input sent: You are on the wrong train.
+b0 REF x1
+b4 REF x5
+b4 TPR x5 "now"
+b4 time "n.08" x5
+b0 Time x1 x5
+b0 be-located-at "v.01" x1
+b0 Patient x1 "hearer"
+b0 Theme x1 x3
+b2 REF x3
+b2 train "n.01" x3
+b2 Theme x4 x3
+b3 REF x4
+b3 wrong "v.01" x4
+
+% Sentence: 551
+% Input sent: Kraft sold Celestial Seasonings.
+b0 REF x1
+b4 REF x6
+b4 TPR x6 "now"
+b4 time "n.08" x6
+b0 Time x1 x6
+b0 sell "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Kraft"
+b0 Patient x1 x4
+b3 REF x4
+b3 season "n.01" x4
+b3 Theme x5 x4
+b3 REF x5
+b3 celestial "a.01" x5
+
+% Sentence: 552
+% Input sent: The tires are very sticky.
+b0 REF x1
+b0 sticky "n.01" x1
+b0 Theme x1 x2
+b1 REF x2
+b1 tire "n.01" x2
+b0 Degree x1 x3
+b2 REF x3
+b2 very "n.01" x3
+
+% Sentence: 553
+% Input sent: Bill was killed by an intruder.
+b0 REF x1
+b3 REF x5
+b3 TPR x5 "now"
+b3 time "n.08" x5
+b0 Time x1 x5
+b0 kill "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 intruder "n.01" x2
+b0 Patient x1 x3
+b2 REF x3
+b2 person "n.01" x3
+b2 Name x3 "Bill"
+
+% Sentence: 554
+% Input sent: No one was alive.
+b0 REF x1
+b2 REF x3
+b2 TPR x3 "now"
+b2 time "n.08" x3
+b0 Time x1 x3
+b0 alive "v.01" x1
+b0 Patient x1 x2
+b1 REF x2
+b1 no-one "n.01" x2
+
+% Sentence: 555
+% Input sent: Tom spent several hours in the library.
+b1 REF x1
+b1 alwayswrongconcept "n.01" x1
+
+% Sentence: 556
+% Input sent: Tom visited us yesterday.
+b0 REF x1
+b5 REF x6
+b5 TPR x6 "now"
+b5 time "n.08" x6
+b0 Time x1 x6
+b0 visit "v.01" x1
+b0 Agent x1 x2
+b1 REF x2
+b1 person "n.01" x2
+b1 Name x2 "Tom"
+b0 Patient x1 "speaker"
+b0 Time x1 x5
+b4 REF x5
+b4 yesterday "n.01" x5
+

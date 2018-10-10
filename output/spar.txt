@@ -1,0 +1,6684 @@
+% Sentence: 0
+% Input sent: Tom can't speak French. Tom can't speak Spanish either.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 1
+% Input sent: He stole money from me.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 2
+% Input sent: I phoned.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 3
+% Input sent: Tom suffered from a collapsed lung.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 4
+% Input sent: I cannot swim at all.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 5
+% Input sent: We captured cicadas with a net.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 6
+% Input sent: Lalita called.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 7
+% Input sent: He was sent by his company to Kazakhstan.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 8
+% Input sent: Tom laid his racket on the ground.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 9
+% Input sent: Tom suspected that his father was dyslexic.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 10
+% Input sent: Mr. Smith is an acquaintance of hers.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 11
+% Input sent: I'm a foreigner.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 12
+% Input sent: Tom doesn't know me.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 13
+% Input sent: He lies.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 14
+% Input sent: The news spread fast.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 15
+% Input sent: The telephone rang repeatedly.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 16
+% Input sent: She is the Prime Minister of Finland.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 17
+% Input sent: Everyone except Tom was wearing a tie.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 18
+% Input sent: Tom is angry now.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 19
+% Input sent: We rented a canoe.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 20
+% Input sent: She's brushing her hair.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 21
+% Input sent: Fish surface for air.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 22
+% Input sent: One cannot not communicate.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 23
+% Input sent: Tom is ready.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 24
+% Input sent: My plan worked.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 25
+% Input sent: I'm drunk.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 26
+% Input sent: But nobody believed her.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 27
+% Input sent: His dog ran in the yard.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 28
+% Input sent: Tom cleaned the toilet.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 29
+% Input sent: He is poor.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 30
+% Input sent: Tom is extremely gullible.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 31
+% Input sent: I deserve an explanation.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 32
+% Input sent: A hare raced with a tortoise.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 33
+% Input sent: I have to hurry!
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 34
+% Input sent: The cat is watching the fish.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 35
+% Input sent: Some people might assume that.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 36
+% Input sent: You lied to me!
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 37
+% Input sent: The girls reveled in dancing.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 38
+% Input sent: That's humiliating.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 39
+% Input sent: She handed him the money that she owed him.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 40
+% Input sent: The door is opening now.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 41
+% Input sent: She is listening to him.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 42
+% Input sent: Will Tom die?
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 43
+% Input sent: I ate.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 44
+% Input sent: She is not a good sailor.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 45
+% Input sent: A smell of lilies filled the room.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 46
+% Input sent: I'm nervous now.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 47
+% Input sent: Tom loves chocolate cake.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 48
+% Input sent: Tom's smiling.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 49
+% Input sent: Wait!
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 50
+% Input sent: Did Tom try?
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 51
+% Input sent: She grew roses.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 52
+% Input sent: Yunus founded the Grameen Bank 30 years ago.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 53
+% Input sent: They have drunk two bottles of wine.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 54
+% Input sent: Who won?
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 55
+% Input sent: Ah!
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 56
+% Input sent: My father was an engineer.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 57
+% Input sent: She wrinkled her brows.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 58
+% Input sent: He is out now.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 59
+% Input sent: No comment.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 60
+% Input sent: She dialed the wrong number.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 61
+% Input sent: Nobody called.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 62
+% Input sent: That doesn't regard you at all.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 63
+% Input sent: I told him everything.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 64
+% Input sent: I went fishing.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 65
+% Input sent: There are a lot of breweries in Bavaria.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 66
+% Input sent: Everyone wants that.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 67
+% Input sent: He needs assistants.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 68
+% Input sent: I am baffled.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 69
+% Input sent: The pie is fresh.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 70
+% Input sent: The insulin was making her fat.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 71
+% Input sent: I skipped breakfast.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 72
+% Input sent: The sun is rising.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 73
+% Input sent: I caught a fish!
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 74
+% Input sent: Nice suit.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 75
+% Input sent: Tom's cellphone rang and he answered it.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 76
+% Input sent: He bowed to the Queen.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 77
+% Input sent: This hospital has a lot of new equipment.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 78
+% Input sent: Is tapwater drinkable in Australia?
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 79
+% Input sent: There are many fish in this lake.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 80
+% Input sent: Ann swam across the river.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 81
+% Input sent: The tiger cub looked like a large kitten.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 82
+% Input sent: Tom isn't winning.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 83
+% Input sent: Tom is not dead.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 84
+% Input sent: I have got into Hyogo University.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 85
+% Input sent: He jumped into the train.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 86
+% Input sent: We found one.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 87
+% Input sent: We expect that he will pass the examination.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 88
+% Input sent: He can swim.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 89
+% Input sent: Warn Tom.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 90
+% Input sent: Tom and Mary detest each other.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 91
+% Input sent: She loves to cook.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 92
+% Input sent: She fled Australia.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 93
+% Input sent: He is working in the field of biology.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 94
+% Input sent: I love hamburgers.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 95
+% Input sent: We remember.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 96
+% Input sent: He was brave.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 97
+% Input sent: It's 3:30.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 98
+% Input sent: Tom extinguished the fire.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 99
+% Input sent: Where did you put my umbrella?
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 100
+% Input sent: Yesterday I was ill.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 101
+% Input sent: You're a workaholic.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 102
+% Input sent: Tom failed because he didn't study.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 103
+% Input sent: It works.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 104
+% Input sent: We concurred.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 105
+% Input sent: Somebody called.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 106
+% Input sent: Maybe Tom killed himself.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 107
+% Input sent: Something's burning.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 108
+% Input sent: That politician is an old fox.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 109
+% Input sent: This disturbs him.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 110
+% Input sent: She idolized him.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 111
+% Input sent: We should break up.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 112
+% Input sent: The submarine hid in the depths of the ocean.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 113
+% Input sent: I abhor spiders.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 114
+% Input sent: Tom was unarmed.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 115
+% Input sent: Tom is swimming in the river.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 116
+% Input sent: You mustn't throw litter in the street.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 117
+% Input sent: Tom sold his house.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 118
+% Input sent: The tower is fifteen metres high.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 119
+% Input sent: The submarines sank a lot of ships.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 120
+% Input sent: Mary is snoring.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 121
+% Input sent: I'm exhausted.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 122
+% Input sent: You're terrible.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 123
+% Input sent: Mary is a fashion junkie.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 124
+% Input sent: Speak clear.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 125
+% Input sent: We were right.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 126
+% Input sent: Bilbao is a city in the Basque Country
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 127
+% Input sent: Tom honked the horn.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 128
+% Input sent: The storm let up.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 129
+% Input sent: Russia fears the system.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 130
+% Input sent: You must be very proud.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 131
+% Input sent: I cannot speak German.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 132
+% Input sent: I love pizza.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 133
+% Input sent: My mother made me a sweater.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 134
+% Input sent: Mary hates parties.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 135
+% Input sent: I want to pay with a check.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 136
+% Input sent: Are you lucky?
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 137
+% Input sent: Tom ripped you off.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 138
+% Input sent: He wants the money.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 139
+% Input sent: Tom is a fakir.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 140
+% Input sent: Is the cat all right?
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 141
+% Input sent: Tom says he's busy.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 142
+% Input sent: My grandmother passed away.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 143
+% Input sent: Tom knew something.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 144
+% Input sent: I'm pregnant.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 145
+% Input sent: I don't have a bicycle.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 146
+% Input sent: I think Tom is normal.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 147
+% Input sent: I'm athletic.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 148
+% Input sent: I was crying.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 149
+% Input sent: Tom picked the diamond up and looked at it.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 150
+% Input sent: I, too, am worried about Tom.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 151
+% Input sent: I eat a banana.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 152
+% Input sent: Are they live?
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 153
+% Input sent: She forgave you.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 154
+% Input sent: I'm disgusted.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 155
+% Input sent: They called President Roosevelt a pirate.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 156
+% Input sent: I forgot the password.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 157
+% Input sent: Yesterday I went to the opera.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 158
+% Input sent: No one expected him to win.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 159
+% Input sent: Tom was thoughtful.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 160
+% Input sent: I love Italian food.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 161
+% Input sent: Tom left at midnight.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 162
+% Input sent: He needs an umbrella.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 163
+% Input sent: The company spends a lot of money on advertising.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 164
+% Input sent: Who did William Wallace defeat?
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 165
+% Input sent: Tom lowered the bucket into the well.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 166
+% Input sent: He gave in.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 167
+% Input sent: There's a hidden door in the library.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 168
+% Input sent: I will not lie to her.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 169
+% Input sent: Klava oversimplifies everything.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 170
+% Input sent: She cared for her sick mother.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 171
+% Input sent: I'm tired of backgammon.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 172
+% Input sent: Tom is smashed.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 173
+% Input sent: Tom is manipulative.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 174
+% Input sent: They stopped.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 175
+% Input sent: Tom's eating.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 176
+% Input sent: Tom insulted Mary.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 177
+% Input sent: The rain is letting up.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 178
+% Input sent: Maybe he is Italian or Spanish.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 179
+% Input sent: Tom was sweating.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 180
+% Input sent: He substituted for his father.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 181
+% Input sent: Summer has ended.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 182
+% Input sent: I grew up in a small town.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 183
+% Input sent: I work at the post office.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 184
+% Input sent: Tom is stirring his coffee.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 185
+% Input sent: I regret that decision.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 186
+% Input sent: I'd better drive you home.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 187
+% Input sent: She rinsed the dishes.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 188
+% Input sent: Three suspects have been arrested.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 189
+% Input sent: He's good.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 190
+% Input sent: Grow up!
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 191
+% Input sent: I hope she's all right.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 192
+% Input sent: All journeys begin with a first step.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 193
+% Input sent: He inherited an old wooden chest.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 194
+% Input sent: We found it.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 195
+% Input sent: Man has been writing for about 6000 years.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 196
+% Input sent: I hope Tom agrees.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 197
+% Input sent: We're very happy with the results.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 198
+% Input sent: He is writing a letter.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 199
+% Input sent: The storm abated.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 200
+% Input sent: Tom didn't answer all the questions.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 201
+% Input sent: I will help.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 202
+% Input sent: Over three thousand people attended the concert.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 203
+% Input sent: Many a man has predicted it.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 204
+% Input sent: They furnished the library with new books.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 205
+% Input sent: Tom wore a Hawaiian shirt.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 206
+% Input sent: I borrowed Tom's car.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 207
+% Input sent: Her aunt's glasses are fashionable.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 208
+% Input sent: I have a truck.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 209
+% Input sent: My computer has frozen.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 210
+% Input sent: A decapitated body was on the coroner's table.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 211
+% Input sent: I have a big dog.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 212
+% Input sent: He is gay.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 213
+% Input sent: He made Miss Green his secretary.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 214
+% Input sent: Tom knocked on the door.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 215
+% Input sent: There are over 800,000 Basque speakers in the world.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 216
+% Input sent: I'm really fed up with this heat.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 217
+% Input sent: Mary can speak Japanese.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 218
+% Input sent: Wolves stalked the flock.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 219
+% Input sent: Tom arrived at 2:30.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 220
+% Input sent: I was very selfish.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 221
+% Input sent: The alarm didn't wake Tom.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 222
+% Input sent: The medicine didn't help at all.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 223
+% Input sent: He dreams that everybody in China speaks Esperanto.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 224
+% Input sent: You hugged Mary.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 225
+% Input sent: Tom's paralyzed.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 226
+% Input sent: Oil this bicycle.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 227
+% Input sent: I brought wine.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 228
+% Input sent: I was born on June 4, 1974.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 229
+% Input sent: She smoked a cigar.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 230
+% Input sent: Tom was excited.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 231
+% Input sent: Nobody can surpass him.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 232
+% Input sent: Try hard.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 233
+% Input sent: There are many earthquakes in Japan.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 234
+% Input sent: I was expelled from school.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 235
+% Input sent: I needed money.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 236
+% Input sent: My brother is rich.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 237
+% Input sent: I need to buy one.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 238
+% Input sent: She pulled down the blinds.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 239
+% Input sent: No one is perfect.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 240
+% Input sent: It's clean.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 241
+% Input sent: My son is playing in the rain.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 242
+% Input sent: The city walls are so beautiful!
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 243
+% Input sent: I will make a note in my notebook.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 244
+% Input sent: Reform allows home schooling.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 245
+% Input sent: She's cleaning the book.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 246
+% Input sent: He needed money.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 247
+% Input sent: Tom is playing poker with his friends.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 248
+% Input sent: The dog is dying.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 249
+% Input sent: Tom is Mary's stepson.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 250
+% Input sent: I leave tomorrow.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 251
+% Input sent: Mary broke up with me.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 252
+% Input sent: Tom threw Mary a rope.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 253
+% Input sent: The doctor told Tom that he should eat a lot of vegetables.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 254
+% Input sent: There is yogurt in the refrigerator.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 255
+% Input sent: Maybe Tom was hiding something.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 256
+% Input sent: I received a telegram from her.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 257
+% Input sent: Who escaped?
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 258
+% Input sent: Call him.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 259
+% Input sent: The river is also polluted.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 260
+% Input sent: She ate her dinner.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 261
+% Input sent: Lincoln welcomed his old political opponent.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 262
+% Input sent: His stupidity is abysmal.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 263
+% Input sent: He darkens the room.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 264
+% Input sent: The game excited lots of people.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 265
+% Input sent: A lot of insects are chirping in the field.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 266
+% Input sent: Mary massaged my shoulders.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 267
+% Input sent: Tom looks hesitant.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 268
+% Input sent: Many people were arrested.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 269
+% Input sent: This flag is very pretty.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 270
+% Input sent: These are perfect.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 271
+% Input sent: She acknowledged her mistake.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 272
+% Input sent: Tom dug a hole in the backyard.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 273
+% Input sent: He is spinning wool.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 274
+% Input sent: I am saving up so that I can go to Australia.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 275
+% Input sent: We volunteered.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 276
+% Input sent: Tom intervened.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 277
+% Input sent: I know that John is honest.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 278
+% Input sent: Tom drives slowly.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 279
+% Input sent: The rope broke under the strain.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 280
+% Input sent: Your jokes aren't funny.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 281
+% Input sent: Breakfast is served at seven a.m.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 282
+% Input sent: I love Hitomi.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 283
+% Input sent: Ken wasn't running.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 284
+% Input sent: I accept your offer.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 285
+% Input sent: The postman was bitten by that dog.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 286
+% Input sent: The serpent tempted Eve.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 287
+% Input sent: The car bumped the tree.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 288
+% Input sent: You're wise.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 289
+% Input sent: Is the phone ringing?
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 290
+% Input sent: Tom quit.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 291
+% Input sent: He had his wallet stolen.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 292
+% Input sent: I made this chair.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 293
+% Input sent: She joined us.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 294
+% Input sent: He lives in the city.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 295
+% Input sent: They marched two abreast.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 296
+% Input sent: Tom stared at Mary suspiciously.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 297
+% Input sent: Tom might be busy.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 298
+% Input sent: I am not Irish.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 299
+% Input sent: He came back at 5 o'clock.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 300
+% Input sent: There are flying birds in the sky.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 301
+% Input sent: Nice dress.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 302
+% Input sent: You can buy stamps at any post office.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 303
+% Input sent: Tom shrugged his shoulders.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 304
+% Input sent: We survived!
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 305
+% Input sent: I've seen a flying saucer.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 306
+% Input sent: I saw her a week ago.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 307
+% Input sent: I'm illiterate.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 308
+% Input sent: I have lost my pencil.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 309
+% Input sent: Someone has given me the cold.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 310
+% Input sent: I don't remember your name.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 311
+% Input sent: The college was founded by Mr Smith.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 312
+% Input sent: Tom is grinning.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 313
+% Input sent: I lost my key.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 314
+% Input sent: Abrams handed the cigarette to Browne.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 315
+% Input sent: I love Natasha.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 316
+% Input sent: Tom abhors violence.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 317
+% Input sent: Tom has a boat.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 318
+% Input sent: She used to play tennis every Sunday.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 319
+% Input sent: I'm a genius.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 320
+% Input sent: I'm game.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 321
+% Input sent: She sang a song.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 322
+% Input sent: Tom is putting the children to bed.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 323
+% Input sent: I threw up.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 324
+% Input sent: She tried.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 325
+% Input sent: There are many birds in this park.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 326
+% Input sent: Tom loves tulips.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 327
+% Input sent: Think about it.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 328
+% Input sent: Everybody wants something.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 329
+% Input sent: I ran out of money.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 330
+% Input sent: I supported him.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 331
+% Input sent: I haven't touched anything.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 332
+% Input sent: They were satisfied.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 333
+% Input sent: I am acquainted with Mr Smith.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 334
+% Input sent: I'm very lazy.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 335
+% Input sent: It's October the third.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 336
+% Input sent: He played the piano and she sang.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 337
+% Input sent: Bob's father works in a car factory.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 338
+% Input sent: She crawled out of bed.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 339
+% Input sent: I was very good.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 340
+% Input sent: I want it now!
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 341
+% Input sent: I'm not your little sister.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 342
+% Input sent: Picasso is a famous artist.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 343
+% Input sent: He's sitting in the waiting room.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 344
+% Input sent: My shoes are brown.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 345
+% Input sent: You are not watching TV now.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 346
+% Input sent: The dog is red.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 347
+% Input sent: He loves animals.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 348
+% Input sent: Mr Smith teaches me English.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 349
+% Input sent: My mother told me to mow the lawn.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 350
+% Input sent: Tom cheated.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 351
+% Input sent: Push the button.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 352
+% Input sent: I'm waiting for her to climb into her car.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 353
+% Input sent: Tom is eavesdropping.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 354
+% Input sent: He is opening the window.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 355
+% Input sent: Tom printed out the page.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 356
+% Input sent: Who'll drive?
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 357
+% Input sent: I like the actor.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 358
+% Input sent: Bob is popular at school.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 359
+% Input sent: Tom and Mary picked up a hitchhiker.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 360
+% Input sent: I wasn't prepared.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 361
+% Input sent: Ten prisoners broke out of jail.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 362
+% Input sent: She picked up a coin.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 363
+% Input sent: Mary just left.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 364
+% Input sent: The skier suffered a head trauma.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 365
+% Input sent: Tom is extremely strong.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 366
+% Input sent: This is creepy.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 367
+% Input sent: Tom took part in the race.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 368
+% Input sent: I was not lonely.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 369
+% Input sent: The street is empty.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 370
+% Input sent: She hugged him.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 371
+% Input sent: She has kept a diary for 3 years.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 372
+% Input sent: The day was exhausting.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 373
+% Input sent: Tom rolled over in bed.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 374
+% Input sent: She found one.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 375
+% Input sent: He was heartbroken.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 376
+% Input sent: I am spreading mustard on a slice of bread.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 377
+% Input sent: The poet wrote many poems.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 378
+% Input sent: He's watching the Olympics.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 379
+% Input sent: I love books.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 380
+% Input sent: I'll miss you too.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 381
+% Input sent: She won a phone.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 382
+% Input sent: Tom works for an oil company.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 383
+% Input sent: Tom offered to lend me the money.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 384
+% Input sent: I'm sleepy!
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 385
+% Input sent: Tom talked.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 386
+% Input sent: I wanted to run away with Tom.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 387
+% Input sent: Tom went to the theater with Mary.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 388
+% Input sent: Tom was hurt.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 389
+% Input sent: Baena Soares was arrested by the armed forces.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 390
+% Input sent: That's obvious.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 391
+% Input sent: Who directed the film "Fail Safe"?
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 392
+% Input sent: Tom underestimated Mary.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 393
+% Input sent: I needed it.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 394
+% Input sent: That's cool.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 395
+% Input sent: I am counting on your help.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 396
+% Input sent: I hate birthday parties.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 397
+% Input sent: Alfred Nobel is the inventor of dynamite.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 398
+% Input sent: She has two thousand books.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 399
+% Input sent: Everyone's eating.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 400
+% Input sent: Tom raises Arabian horses.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 401
+% Input sent: The doll lay on the floor.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 402
+% Input sent: Tom is exceptional.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 403
+% Input sent: Sumatra is an island.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 404
+% Input sent: I am in Russia.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 405
+% Input sent: I bought a few eggs and a little milk.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 406
+% Input sent: John lives in New York.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 407
+% Input sent: It's nice.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 408
+% Input sent: Tom was praying.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 409
+% Input sent: I saw everything.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 410
+% Input sent: She caused this.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 411
+% Input sent: The book is big.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 412
+% Input sent: The young boy helped the old woman.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 413
+% Input sent: I do some work for Tom from time to time.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 414
+% Input sent: I'll attend.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 415
+% Input sent: Tom is drowning!
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 416
+% Input sent: The Prime Minister has resigned.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 417
+% Input sent: Every author suffers from writer's block from time to time.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 418
+% Input sent: She dialled the number.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 419
+% Input sent: Anna Politkovskaya was murdered.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 420
+% Input sent: You're taunting me.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 421
+% Input sent: Tom likes his coffee black.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 422
+% Input sent: The Berlin Wall was torn down in 1989.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 423
+% Input sent: Tom used a toothpick.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 424
+% Input sent: Everything is all right now.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 425
+% Input sent: Alas!
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 426
+% Input sent: Tom is the one we want.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 427
+% Input sent: He is rich, but he is unkind.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 428
+% Input sent: He disappeared again.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 429
+% Input sent: He was also kind to animals.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 430
+% Input sent: I love Natasha.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 431
+% Input sent: All the students study English.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 432
+% Input sent: Tom and Mary went hunting for Easter eggs.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 433
+% Input sent: I have to button my jacket.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 434
+% Input sent: I adore elephants.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 435
+% Input sent: That news got around.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 436
+% Input sent: Everglades National Park is located in Florida.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 437
+% Input sent: Stir the paint with a stick.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 438
+% Input sent: I'm a volleyball player.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 439
+% Input sent: I like languages.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 440
+% Input sent: Fire burns.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 441
+% Input sent: He gave me some money.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 442
+% Input sent: Comfort him.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 443
+% Input sent: The Canadian chopped down the tree with an ax.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 444
+% Input sent: She graduated from Kobe University.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 445
+% Input sent: The television is not working
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 446
+% Input sent: I was having dinner with Tom.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 447
+% Input sent: Tom is majoring in architecture.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 448
+% Input sent: The dog attacked the little boy.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 449
+% Input sent: Tom's cooking breakfast.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 450
+% Input sent: She waved good-bye to me.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 451
+% Input sent: He is leaving Chicago tomorrow.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 452
+% Input sent: I didn't murder anyone.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 453
+% Input sent: Tom is bilingual.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 454
+% Input sent: The secret leaked out.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 455
+% Input sent: Tom got sick.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 456
+% Input sent: My father died five years ago.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 457
+% Input sent: I agree.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 458
+% Input sent: I always get up at 6 o'clock in the morning.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 459
+% Input sent: He devoted his life to his company.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 460
+% Input sent: I don't want pizza. I'm not hungry.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 461
+% Input sent: Tom drank the potion.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 462
+% Input sent: Tom is very polite.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 463
+% Input sent: My parents love me.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 464
+% Input sent: Tom works at a supermarket.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 465
+% Input sent: Our school is 80 years old.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 466
+% Input sent: I made supper.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 467
+% Input sent: This house is famous.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 468
+% Input sent: Texas Instruments produces mobile phones.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 469
+% Input sent: Tom tripped on something.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 470
+% Input sent: I owe him 1,000 dollars.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 471
+% Input sent: He drank three bottles of beer.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 472
+% Input sent: This train leaves at nine o'clock.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 473
+% Input sent: I can't understand this table.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 474
+% Input sent: The conference drew 150 diplomats.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 475
+% Input sent: I want a divorce.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 476
+% Input sent: I was meeting Bob at six.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 477
+% Input sent: Do you speak Hebrew?
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 478
+% Input sent: The house has burnt down.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 479
+% Input sent: Mary misled me.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 480
+% Input sent: We played on the banks of the Thames.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 481
+% Input sent: I can't talk now.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 482
+% Input sent: Everything is new.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 483
+% Input sent: The bicycle is mine.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 484
+% Input sent: I want this bag.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 485
+% Input sent: You're silly.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 486
+% Input sent: He is Japanese.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 487
+% Input sent: The dog is white.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 488
+% Input sent: The monkey climbed up a tree.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 489
+% Input sent: I'm bored right now.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 490
+% Input sent: There are rats in the kitchen.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 491
+% Input sent: I forgot my pen.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 492
+% Input sent: The dove symbolizes peace.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 493
+% Input sent: I am proud of you.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 494
+% Input sent: Tom seems conceited.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 495
+% Input sent: Read this.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 496
+% Input sent: Everybody hates me.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 497
+% Input sent: Tom lowered his gaze.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 498
+% Input sent: I am engaged to her.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 499
+% Input sent: Tom drove his car off a cliff.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 500
+% Input sent: He's Argentinian.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 501
+% Input sent: Maria has long hair.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 502
+% Input sent: My sister isn't studying now.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 503
+% Input sent: I was furious.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 504
+% Input sent: She loved Tom.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 505
+% Input sent: Tom is courteous.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 506
+% Input sent: Many Finns are interested in culture.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 507
+% Input sent: They are not at all interested.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 508
+% Input sent: The customer is always right.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 509
+% Input sent: Tom is wet.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 510
+% Input sent: My father fixed a broken chair.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 511
+% Input sent: Tom draws well.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 512
+% Input sent: Forgive me!
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 513
+% Input sent: Tom works.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 514
+% Input sent: The artist is gifted.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 515
+% Input sent: Where does your grandfather live?
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 516
+% Input sent: Tom is disrespectful.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 517
+% Input sent: I'm fed up with this winter, I want spring right now!
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 518
+% Input sent: A lot of students around the world are studying English.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 519
+% Input sent: Mary hates Halloween.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 520
+% Input sent: Tom is very sociable.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 521
+% Input sent: I was afraid.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 522
+% Input sent: Tom won't speak to Mary.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 523
+% Input sent: That apple is bruised.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 524
+% Input sent: He is suffering from a cold.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 525
+% Input sent: The blast destroyed everything.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 526
+% Input sent: I am horrified.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 527
+% Input sent: Look out!
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 528
+% Input sent: We got dressed.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 529
+% Input sent: Tom is rinsing the dishes.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 530
+% Input sent: The wind is blowing.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 531
+% Input sent: It's vibrating.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 532
+% Input sent: Tom is extremely fit.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 533
+% Input sent: We are dozing off.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 534
+% Input sent: He is a plucky guy.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 535
+% Input sent: I never lie.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 536
+% Input sent: Tom saw a mouse.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 537
+% Input sent: He is very young.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 538
+% Input sent: I like my teachers.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 539
+% Input sent: He's a terrible driver.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 540
+% Input sent: I'll buy a new one.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 541
+% Input sent: Mr. Ford is all right now.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 542
+% Input sent: I can't open this bottle.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 543
+% Input sent: Tom is crying, too.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 544
+% Input sent: She did not read the book.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 545
+% Input sent: The room is extremely small.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 546
+% Input sent: She lost Mary.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 547
+% Input sent: Pierce lives near Rossville Blvd.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 548
+% Input sent: Can you give me a kilo of plums?
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 549
+% Input sent: My bedroom is crawling with spiders.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 550
+% Input sent: You are on the wrong train.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 551
+% Input sent: Kraft sold Celestial Seasonings.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 552
+% Input sent: The tires are very sticky.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 553
+% Input sent: Bill was killed by an intruder.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 554
+% Input sent: No one was alive.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 555
+% Input sent: Tom spent several hours in the library.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+
+% Sentence: 556
+% Input sent: Tom visited us yesterday.
+b1 REF x1
+b1 male "n.02" x1
+b3 REF t1
+b3 TPR t1 "now"
+b3 time "n.08" t1
+k0 Agent e1 x1
+k0 REF e1
+k0 Time e1 t1
+k0 smile "v.01" e1
+

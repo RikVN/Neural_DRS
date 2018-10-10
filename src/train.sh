@@ -6,7 +6,7 @@ source $1 #first command line argument is the config file with specific settings
 src_vocab=$MAIN_FOLDER$VOCAB$VOCAB_NAME$ext_src
 tgt_vocab=$MAIN_FOLDER$VOCAB$VOCAB_NAME$ext_tgt
 
-## First get word embeddings for this vocab - if we added "word" as second argument ###
+## First get word embeddings for this vocab
 if [[ $representation = "word" || $representation = 'char_word' ]]; then
 	src_embed=$MAIN_FOLDER$embed$src_id$emb_ext
 	tgt_embed=$MAIN_FOLDER$embed$tgt_id$emb_ext
