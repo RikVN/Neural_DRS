@@ -23,6 +23,10 @@ def create_arg_parser():
     parser.add_argument("-o", "--output_file", required=True, type=str, help="Output file")
     parser.add_argument("-v", "--var", default='rel', choices=['rel', 'abs', 'none'], help="How do we rewrite the variables, relatively (default), absolute or not necessary?")
     parser.add_argument("-s", "--sig_file", required=True, type=str, help="Signature file for format checking")
+    parser.add_argument("-n", "--no_referee", action="store_true", help="Don't do referee - just give back output")
+    parser.add_argument("-rc", "--remove_concepts", type=int, default=0, 
+                        help="Remove concepts that occur more often than X times (default 0 means no removal). This helps if you parse longer sentences and the parser gets into a loop. \
+                              Note that this setting was not used for the TACL paper experiments.")
     args = parser.parse_args()
     return args
 
@@ -65,9 +69,16 @@ def restore_variables(in_drss, var):
                 var_drs, cur_repairs = restore_variables_relative(drs, idx+1)
                 repairs += cur_repairs
             elif var == 'abs':
-                var_drs, repairs = restore_variables_absolute(drs)
+                var_drs, repairs = restore_variables_absolute(drs, idx+1)
             elif var == 'none':
-                var_drs = [x.split() for x in drs]
+                var_drs = []
+                for clause in drs:
+                    cur_clause = clause.split()[0:clause.split().index('%')] if '%' in clause.split() else clause.split()
+                    if len(cur_clause) in [3,4]:
+                        var_drs.append(cur_clause)
+                    else:
+                        repairs += 1
+                        print 'DRS {0}: Ignoring clause {1} because of wrong arity'.format(idx, clause) 
         except:
             var_drs = dummy_drs()
             dummies += 1
@@ -114,9 +125,9 @@ def get_disc_refs(drs):
 
 def check_ref_clauses(input_drs, drs_idx):
     '''Check if each discourse referent that is used has a REF clause'''
-    drs = [x for x in input_drs if not x.strip().startswith('%')]               # get DRS without comments
+    drs = [x for x in input_drs if not x.strip().startswith('%')]              # get DRS without comments
     clause_refs = [[x.split()[2], x] for x in drs if x.split()[1] == 'REF']    # get discourse referents with initial clause
-    refs = [x.split()[2] for x in drs if x.split()[1] == 'REF']                 # all discourse referents introduced by REF
+    refs = [x.split()[2] for x in drs if x.split()[1] == 'REF']                # all discourse referents introduced by REF
 
     # Save discourse referents found in other non-REF clauses
     disc_refs = get_disc_refs(drs)
@@ -158,21 +169,51 @@ def check_doubles(drs, drs_idx):
     return new_drs, fixes
 
 
-def easy_fixes(drss):
+def remove_concepts(drs, rm_concepts, drs_idx):
+    '''Remove all concepts that occur more often than rm_concepts times
+       Do the same for names -- they might also loop and occur way too often
+       This setting was not used in the TACL paper, but might help for 
+       parsing longer sentences'''
+    new_drs, concs, names = [], [], []
+    fixes = 0
+    for clause_string in drs:
+        clause = clause_string.split()
+        if len(clause[1]) == len([a for a in clause[1] if a.islower()]):
+            if not concs.count(clause[1]) > rm_concepts:
+                new_drs.append(" ".join(clause))
+            else:
+                print 'DRS {0}: removing {1} because concept occurs > {2}'.format(drs_idx, clause_string, rm_concepts)
+                fixes += 1  
+            concs.append(clause[1]) 
+        elif clause[1] == 'Name' and len(clause) == 4:
+            if not names.count(clause[3]) > rm_concepts:
+                new_drs.append(" ".join(clause))
+            else:
+                print 'DRS {0}: removing {1} because name occurs > {2}'.format(drs_idx, clause_string, rm_concepts)
+                fixes += 1  
+            names.append(clause[3]) 
+        else:
+            new_drs.append(" ".join(clause))
+    return new_drs, fixes
+
+
+def easy_fixes(drss, rm_concepts):
     '''Perform some easy output-fixing for trivial errors the model makes'''
     keep_drss = []
-    fixes, dummies = 0, 0
+    fixes, dummies, conc_fixes = 0, 0, 0
     for idx, drs in enumerate(drss):
         try:
             # Check if there are double clauses (not allowed, so remove them)
-            new_drs, dub_fixes = check_doubles(drs, idx)
+            new_drs, dub_fixes = check_doubles(drs, idx+1)
             # Check if each discourse referent that is used also has a REF
             # So removing spurious REFs, or adding them if necessary
-            new_drs, ref_fixes = check_ref_clauses(new_drs, idx)
-            keep_drss.append(drs)
-            fixes += (dub_fixes + ref_fixes)
+            new_drs, ref_fixes = check_ref_clauses(new_drs, idx+1)
+            if rm_concepts > 0:
+                new_drs, conc_fixes = remove_concepts(new_drs, rm_concepts, idx+1)
+            keep_drss.append(new_drs)
+            fixes += (dub_fixes + ref_fixes + conc_fixes)
         except:
-            print 'DRS {0}: error when applying "easy" fixes, add dummy DRS'.format(idx)
+            print 'DRS {0}: error when applying "easy" fixes, add dummy DRS'.format(idx+1)
             keep_drss.append(dummy_drs(list_output=False))
             dummies += 1
     return keep_drss, fixes, dummies
@@ -190,7 +231,6 @@ def box_variable(key, dic):
 
 def new_var_name(item, var_list, cur_var, clause_string, ident, drs_idx):
     '''Get new variable name for references such as @-1 and @1'''
-
     if item == ident + 'NEW':
         # Deal with newly introduced variables that say new
         return_var = var_list[cur_var]
@@ -255,75 +295,79 @@ def restore_variables_relative(drs, drs_idx):
     box_ident, var_ident = '$', '@'
 
     for clause_string in drs:
-        cur_clause = clause_string.split()
-        # Clause has 2 or 3 items
-        if len(cur_clause) in [2, 3]:
-            # Restore box variable
-            first_var, repairs, cur_box = new_var_name(cur_clause[0], box_list, cur_box, clause_string, box_ident, drs_idx)
-            repairs_needed += repairs
-            if cur_clause[1] == 'REF':
-                # Add REF with x-variable for the REF-case
-                cur_var += 1
-                new_clauses.append([first_var, 'REF', 'x' + str(cur_var)])
-            elif cur_clause[1] in op_boxes: #handle box variables
-                second_var, repairs, cur_box = new_var_name(cur_clause[2], box_list, cur_box, clause_string, box_ident, drs_idx)
+        try:
+            cur_clause = clause_string.split()
+            # Clause has 2 or 3 items
+            if len(cur_clause) in [2, 3]:
+                # Restore box variable
+                first_var, repairs, cur_box = new_var_name(cur_clause[0], box_list, cur_box, clause_string, box_ident, drs_idx)
                 repairs_needed += repairs
-                new_clauses.append([first_var, cur_clause[1], second_var])
-            else:
-                print 'DRS {0}: warning, clause {1} gets ignored'.format(drs_idx, clause_string) #clause is invalid by definition, ignore
-                repairs_needed += 1
-        # Clause has 4 items
-        elif len(cur_clause) == 4:
-            first_var, repairs, cur_box = new_var_name(cur_clause[0], box_list, cur_box, clause_string, box_ident, drs_idx)
-            repairs_needed += repairs
-            # Second item is an operator
-            if all_upper(cur_clause[1]):
-                # Handle second variable
-                second_var, third_var = cur_clause[2], cur_clause[3] #defaults
-                if not between_quotes(cur_clause[2]):
-                    if not (cur_clause[1] in op_boxes and cur_clause[1] != 'PRP'):
-                        second_var, repairs, cur_var = new_var_name(cur_clause[2], var_list, cur_var, clause_string, var_ident, drs_idx)
-                        repairs_needed += repairs
-                # Handle third variable (if there)
-                if not between_quotes(cur_clause[3]):
-                    if cur_clause[1] == 'PRP':
-                        second_var, repairs, cur_var = new_var_name(cur_clause[2], var_list, cur_var, clause_string, var_ident, drs_idx)
-                        repairs_needed += repairs
-                        third_var, repairs, cur_box = new_var_name(cur_clause[3], box_list, cur_box, clause_string, box_ident, drs_idx)
-                        repairs_needed += repairs
-                    elif cur_clause[1] in op_boxes: #get box variable
-                        second_var, repairs, cur_box = new_var_name(cur_clause[2], box_list, cur_box, clause_string, box_ident, drs_idx)
-                        repairs_needed += repairs
-                        third_var, repairs, cur_box = new_var_name(cur_clause[3], box_list, cur_box, clause_string, box_ident, drs_idx)
-                        repairs_needed += repairs
-                    else:
+                if cur_clause[1] == 'REF':
+                    # Add REF with x-variable for the REF-case
+                    cur_var += 1
+                    new_clauses.append([first_var, 'REF', 'x' + str(cur_var)])
+                elif cur_clause[1] in op_boxes: #handle box variables
+                    second_var, repairs, cur_box = new_var_name(cur_clause[2], box_list, cur_box, clause_string, box_ident, drs_idx)
+                    repairs_needed += repairs
+                    new_clauses.append([first_var, cur_clause[1], second_var])
+                else:
+                    print 'DRS {0}: warning, clause {1} gets ignored'.format(drs_idx, clause_string) #clause is invalid by definition, ignore
+                    repairs_needed += 1
+            # Clause has 4 items
+            elif len(cur_clause) == 4:
+                first_var, repairs, cur_box = new_var_name(cur_clause[0], box_list, cur_box, clause_string, box_ident, drs_idx)
+                repairs_needed += repairs
+                # Second item is an operator
+                if all_upper(cur_clause[1]):
+                    # Handle second variable
+                    second_var, third_var = cur_clause[2], cur_clause[3] #defaults
+                    if not between_quotes(cur_clause[2]):
+                        if not (cur_clause[1] in op_boxes and cur_clause[1] != 'PRP'):
+                            second_var, repairs, cur_var = new_var_name(cur_clause[2], var_list, cur_var, clause_string, var_ident, drs_idx)
+                            repairs_needed += repairs
+                    # Handle third variable (if there)
+                    if not between_quotes(cur_clause[3]):
+                        if cur_clause[1] == 'PRP':
+                            second_var, repairs, cur_var = new_var_name(cur_clause[2], var_list, cur_var, clause_string, var_ident, drs_idx)
+                            repairs_needed += repairs
+                            third_var, repairs, cur_box = new_var_name(cur_clause[3], box_list, cur_box, clause_string, box_ident, drs_idx)
+                            repairs_needed += repairs
+                        elif cur_clause[1] in op_boxes: #get box variable
+                            second_var, repairs, cur_box = new_var_name(cur_clause[2], box_list, cur_box, clause_string, box_ident, drs_idx)
+                            repairs_needed += repairs
+                            third_var, repairs, cur_box = new_var_name(cur_clause[3], box_list, cur_box, clause_string, box_ident, drs_idx)
+                            repairs_needed += repairs
+                        else:
+                            third_var, repairs, cur_var = new_var_name(cur_clause[3], var_list, cur_var, clause_string, var_ident, drs_idx)
+                            repairs_needed += repairs
+                    new_clauses.append([first_var, cur_clause[1], second_var, third_var])
+                # Second item is a role
+                elif is_role(cur_clause[1]):
+                    second_var, repairs, cur_var = new_var_name(cur_clause[2], var_list, cur_var, clause_string, var_ident, drs_idx)
+                    repairs_needed += repairs
+                    if not between_quotes(cur_clause[3]):
                         third_var, repairs, cur_var = new_var_name(cur_clause[3], var_list, cur_var, clause_string, var_ident, drs_idx)
                         repairs_needed += repairs
-                new_clauses.append([first_var, cur_clause[1], second_var, third_var])
-            # Second item is a role
-            elif is_role(cur_clause[1]):
-                second_var, repairs, cur_var = new_var_name(cur_clause[2], var_list, cur_var, clause_string, var_ident, drs_idx)
-                repairs_needed += repairs
-                if not between_quotes(cur_clause[3]):
+                    else:
+                        third_var = cur_clause[3]
+                    new_clauses.append([first_var, cur_clause[1], second_var, third_var])
+                # Otherwise it must be a concept (b1 work "v.01" x2)
+                else:
                     third_var, repairs, cur_var = new_var_name(cur_clause[3], var_list, cur_var, clause_string, var_ident, drs_idx)
                     repairs_needed += repairs
-                else:
-                    third_var = cur_clause[3]
-                new_clauses.append([first_var, cur_clause[1], second_var, third_var])
-            # Otherwise it must be a concept (b1 work "v.01" x2)
-            else:
-                third_var, repairs, cur_var = new_var_name(cur_clause[3], var_list, cur_var, clause_string, var_ident, drs_idx)
-                repairs_needed += repairs
-                ## Put default sense if model did not produce that
-                if not between_quotes(cur_clause[2]) and '"' not in cur_clause[2] and cur_clause[2].islower():
-                    print 'DRS {0}: no sense was added for concept {1}, add default sense'.format(drs_idx, cur_clause[2])
-                    new_clauses.append([first_var, cur_clause[1], '"n.01"', third_var])
-                    repairs_needed += 1
-                else:
-                    new_clauses.append([first_var, cur_clause[1], cur_clause[2], third_var])
-        else: #clause has wrong length, ignore
-            print 'DRS {0}: warning, clause {1} gets ignored'.format(drs_idx, clause_string)
-            repairs_needed += 1
+                    ## Put default sense if model did not produce that
+                    if not between_quotes(cur_clause[2]) and '"' not in cur_clause[2] and cur_clause[2].islower():
+                        print 'DRS {0}: no sense was added for concept {1}, add default sense'.format(drs_idx, cur_clause[2])
+                        new_clauses.append([first_var, cur_clause[1], '"n.01"', third_var])
+                        repairs_needed += 1
+                    else:
+                        new_clauses.append([first_var, cur_clause[1], cur_clause[2], third_var])
+            else: #clause has wrong length, ignore
+                print 'DRS {0}: warning, clause {1} gets ignored'.format(drs_idx, clause_string)
+                repairs_needed += 1
+        except:
+            repairs_needed
+            print 'DRS {0}: Error when processing {1} -- ignore clause'.format(drs_idx, clause_string)      
     return new_clauses, repairs_needed
 
 
@@ -337,7 +381,7 @@ def get_variable(key, dct, ident):
     return item, dct
 
 
-def restore_variables_absolute(drs):
+def restore_variables_absolute(drs, drs_idx):
     '''Restore the dummy variable names we used to actual variables -- absolute'''
     new_clauses = []
     var_dict, box_dict = {}, {}
@@ -345,56 +389,60 @@ def restore_variables_absolute(drs):
     repairs = 0
 
     for clause_string in drs:
-        cur_clause = clause_string.split()
-        # Clause has 2 or 3 items
-        if len(cur_clause) in [2, 3]:
-            # Restore box variable
-            first_var, box_dict = get_variable(cur_clause[0], box_dict, box_id)
-            if cur_clause[1] in op_boxes: #handle box variables
-                second_var, box_dict = get_variable(cur_clause[2], box_dict, box_id)
-            else:
-                second_var, var_dict = get_variable(cur_clause[2], var_dict, var_id)
-            new_clauses.append([first_var, cur_clause[1], second_var])
+        try:
+            cur_clause = clause_string.split()
+            # Clause has 2 or 3 items
+            if len(cur_clause) in [2, 3]:
+                # Restore box variable
+                first_var, box_dict = get_variable(cur_clause[0], box_dict, box_id)
+                if cur_clause[1] in op_boxes: #handle box variables
+                    second_var, box_dict = get_variable(cur_clause[2], box_dict, box_id)
+                else:
+                    second_var, var_dict = get_variable(cur_clause[2], var_dict, var_id)
+                new_clauses.append([first_var, cur_clause[1], second_var])
 
-        # Clause has 4 items
-        else:
-            first_var, box_dict = get_variable(cur_clause[0], box_dict, box_id)
-            # Second item is an operator
-            if all_upper(cur_clause[1]):
-                # Handle second variable
-                second_var, third_var = cur_clause[2], cur_clause[3] #defaults
-                if not between_quotes(cur_clause[2]):
-                    if not (cur_clause[1] in op_boxes and cur_clause[1] != 'PRP'):
-                        second_var, var_dict = get_variable(cur_clause[2], var_dict, var_id)
-                # Handle third variable (if there)
-                if not between_quotes(cur_clause[3]):
-                    if cur_clause[1] == 'PRP':
-                        second_var, var_dict = get_variable(cur_clause[2], var_dict, var_id)
-                        third_var, box_dict = get_variable(cur_clause[3], box_dict, box_id)
-                    elif cur_clause[1] in op_boxes:
-                        second_var, box_dict = get_variable(cur_clause[2], box_dict, box_id)
-                        third_var, box_dict = get_variable(cur_clause[3], box_dict, box_id)
-                    else:
-                        third_var, var_dict = get_variable(cur_clause[3], var_dict, var_id)
-                new_clauses.append([first_var, cur_clause[1], second_var, third_var])
-            # Second item is a role
-            elif is_role(cur_clause[1]):
-                second_var, var_dict = get_variable(cur_clause[2], var_dict, var_id)
-                if not between_quotes(cur_clause[3]):
-                    third_var, var_dict = get_variable(cur_clause[3], var_dict, var_id)
-                else:
-                    third_var = cur_clause[3]
-                new_clauses.append([first_var, cur_clause[1], second_var, third_var])
-            # Otherwise it must be a concept (b1 work "v.01" x2)
+            # Clause has 4 items
             else:
-                third_var, var_dict = get_variable(cur_clause[3], var_dict, var_id)
-                ## Put default sense if model did not produce that
-                if not between_quotes(cur_clause[2]) and '"' not in cur_clause[2] and cur_clause[2].islower():
-                    print 'DRS {0}: no sense was added for concept {1}, add default sense'.format(drs_idx, clause_string)
-                    repairs += 1
-                    new_clauses.append([first_var, cur_clause[1], '"n.01"', third_var])
+                first_var, box_dict = get_variable(cur_clause[0], box_dict, box_id)
+                # Second item is an operator
+                if all_upper(cur_clause[1]):
+                    # Handle second variable
+                    second_var, third_var = cur_clause[2], cur_clause[3] #defaults
+                    if not between_quotes(cur_clause[2]):
+                        if not (cur_clause[1] in op_boxes and cur_clause[1] != 'PRP'):
+                            second_var, var_dict = get_variable(cur_clause[2], var_dict, var_id)
+                    # Handle third variable (if there)
+                    if not between_quotes(cur_clause[3]):
+                        if cur_clause[1] == 'PRP':
+                            second_var, var_dict = get_variable(cur_clause[2], var_dict, var_id)
+                            third_var, box_dict = get_variable(cur_clause[3], box_dict, box_id)
+                        elif cur_clause[1] in op_boxes:
+                            second_var, box_dict = get_variable(cur_clause[2], box_dict, box_id)
+                            third_var, box_dict = get_variable(cur_clause[3], box_dict, box_id)
+                        else:
+                            third_var, var_dict = get_variable(cur_clause[3], var_dict, var_id)
+                    new_clauses.append([first_var, cur_clause[1], second_var, third_var])
+                # Second item is a role
+                elif is_role(cur_clause[1]):
+                    second_var, var_dict = get_variable(cur_clause[2], var_dict, var_id)
+                    if not between_quotes(cur_clause[3]):
+                        third_var, var_dict = get_variable(cur_clause[3], var_dict, var_id)
+                    else:
+                        third_var = cur_clause[3]
+                    new_clauses.append([first_var, cur_clause[1], second_var, third_var])
+                # Otherwise it must be a concept (b1 work "v.01" x2)
                 else:
-                    new_clauses.append([first_var, cur_clause[1], cur_clause[2], third_var])
+                    third_var, var_dict = get_variable(cur_clause[3], var_dict, var_id)
+                    ## Put default sense if model did not produce that
+                    if not between_quotes(cur_clause[2]) and '"' not in cur_clause[2] and cur_clause[2].islower():
+                        print 'DRS {0}: no sense was added for concept {1}, add default sense'.format(drs_idx, clause_string)
+                        repairs += 1
+                        new_clauses.append([first_var, cur_clause[1], '"n.01"', third_var])
+                    else:
+                        new_clauses.append([first_var, cur_clause[1], cur_clause[2], third_var])
+        except:
+            repairs += 1
+            print 'DRS {0}: Error when processing {1} -- ignore clause'.format(drs_idx, clause_string)              
     return new_clauses, repairs
 
 
@@ -425,15 +473,23 @@ if __name__ == "__main__":
 
     # Then restore the variables in the correct way
     processed_drss, num_repairs, num_dummies = restore_variables(drss, args.var)
-
+    
     # First fix some easy-to-fix errors regarding REF clauses
-    drss_fixed, num_fixes, easy_dummies = easy_fixes(processed_drss)
-
+    drss_fixed, num_fixes, easy_dummies = easy_fixes(processed_drss, args.remove_concepts)
+    
     # Now add default for DRSs that are still invalid by doing the more complicated semantic format check (referee)
-    drss_final, print_str, error_total = extensive_format_check(drss_fixed, args.sig_file)
-
+    if not args.no_referee:
+        drss_final, print_str, error_total = extensive_format_check(drss_fixed, args.sig_file)
+    else:
+        drss_final = drss_fixed
+        error_total = 0
+    
     # Write the postprocessed, valid output
     write_list_of_lists(drss_final, args.output_file)
 
     # Print some final error statistics
-    print '{0} out of {1} DRSs were invalid and replaced by a dummy DRS\n{2} repairs were needed'.format(num_dummies + easy_dummies + error_total, len(drss_final), num_fixes + num_repairs)
+    print '\n{0} repairs needed and {1} replaced by dummy for restoring variables'.format(num_repairs, num_dummies)
+    print '{0} repairs needed and {1} replaced by dummy for performing easy fixes'.format(num_fixes, easy_dummies)
+    if not args.no_referee:
+        print '{0} replaced by dummy due to referee check'.format(error_total)
+    print '\nTotal: {0} out of {1} DRSs replaced by a dummy and {2} repairs were needed'.format(num_dummies + easy_dummies + error_total, len(drss_final), num_fixes + num_repairs)
