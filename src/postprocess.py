@@ -179,14 +179,14 @@ def remove_concepts(drs, rm_concepts, drs_idx):
     for clause_string in drs:
         clause = clause_string.split()
         if len(clause[1]) == len([a for a in clause[1] if a.islower()]):
-            if not concs.count(clause[1]) > rm_concepts:
+            if not concs.count(clause[1]) >= rm_concepts:
                 new_drs.append(" ".join(clause))
             else:
                 print 'DRS {0}: removing {1} because concept occurs > {2}'.format(drs_idx, clause_string, rm_concepts)
                 fixes += 1  
             concs.append(clause[1]) 
         elif clause[1] == 'Name' and len(clause) == 4:
-            if not names.count(clause[3]) > rm_concepts:
+            if not names.count(clause[3]) >= rm_concepts:
                 new_drs.append(" ".join(clause))
             else:
                 print 'DRS {0}: removing {1} because name occurs > {2}'.format(drs_idx, clause_string, rm_concepts)
