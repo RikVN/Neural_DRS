@@ -138,19 +138,13 @@ The baseline parsers SPAR and amr2drs are available in the [DRS_parsing reposito
 
 ## Citation ##
 
-We are currently publishing a paper regarding our models and the CLF referee, when published the link will be here.
+This directory is part of our TACL paper ([preprint here](https://arxiv.org/abs/1810.12579)). 
 
-If you use Counter, please cite our [LREC paper](http://www.let.rug.nl/rob/doc/lrec2018.pdf):
+R. Van Noord, L. Abzianidze, A. Toral, J. Bos (2018): **Exploring Neural Methods for Parsing Discourse Representation Structures.** To appear in TACL 2018
+
+If you use Counter, please cite our [LREC paper](https://arxiv.org/pdf/1802.08599.pdf):
 
 Rik van Noord, Lasha Abzianidze, Hessel Haagsma, and Johan Bos, 2018. **Evaluating scoped meaning representations**. In Proceedings of the Eleventh International Conference on Language Resources and Evaluation (LREC 2018), Miyazaki, Japan
-
-@inproceedings{vanNoordLREC:2018,  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; title = {Evaluating Scoped Meaning Representations}  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; author    = {van Noord, Rik and Abzianidze, Lasha and Haagsma, Hessel and Bos, Johan},  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; booktitle = {Proceedings of the Eleventh International Conference on Language Resources and Evaluation (LREC 2018)},  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; address   = {Miyazaki, Japan},  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; year      = {2018}  
-}  
 
 ## Acknowledgments
 
