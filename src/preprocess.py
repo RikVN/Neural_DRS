@@ -138,15 +138,17 @@ def rewrite_drss_relative(drs):
                 new_clauses.append([first_var, cur_clause[1], second_var, third_var])
             # Second item is a role
             elif is_role(cur_clause[1]):
-                second_var, vars_seen = new_var_name(cur_clause[2], var_order, cur_var, vars_seen)
+                second_var, third_var = cur_clause[2], cur_clause[3]
+                if not between_quotes(cur_clause[2]):
+                    second_var, vars_seen = new_var_name(cur_clause[2], var_order, cur_var, vars_seen)
                 if not between_quotes(cur_clause[3]):
                     third_var, vars_seen = new_var_name(cur_clause[3], var_order, cur_var, vars_seen)
-                else:
-                    third_var = cur_clause[3]
                 new_clauses.append([first_var, cur_clause[1], second_var, third_var])
             # Otherwise it must be a concept (b1 work "v.01" x2)
             else:
-                third_var, vars_seen = new_var_name(cur_clause[3], var_order, cur_var, vars_seen)
+                third_var = cur_clause[3]
+                if not between_quotes(cur_clause[3]):
+                    third_var, vars_seen = new_var_name(cur_clause[3], var_order, cur_var, vars_seen)
                 new_clauses.append([first_var, cur_clause[1], cur_clause[2], third_var])
     return new_clauses
 
@@ -312,24 +314,24 @@ if __name__ == "__main__":
         for idx, drs in enumerate(drss):
             # Rewrite the variables
             try:
-                if args.variables == 'rel':
-                    rewritten_drs = rewrite_drss_relative(drs)
-                elif args.variables == 'abs':
-                    rewritten_drs = rewrite_drss_absolute(drs)
-                elif args.variables == 'none':
-                    drs = [x for x in drs if x.strip() and not x.startswith('%')]
-                    rewritten_drs = [clause.split()[0:clause.split().index('%')] if '%' in clause.split() else clause.split() for clause in drs]
-                var_format.append([" ".join(x) for x in rewritten_drs])
+				if args.variables == 'rel':
+					rewritten_drs = rewrite_drss_relative(drs)
+				elif args.variables == 'abs':
+					rewritten_drs = rewrite_drss_absolute(drs)
+				elif args.variables == 'none':
+					drs = [x for x in drs if x.strip() and not x.startswith('%')]
+					rewritten_drs = [clause.split()[0:clause.split().index('%')] if '%' in clause.split() else clause.split() for clause in drs]
+				var_format.append([" ".join(x) for x in rewritten_drs])
 
-                # If we use "word", do not do char level
-                if args.representation == 'word':
-                    char_level_drs = word_level(rewritten_drs)
-                else:
-                    char_level_drs = char_level(rewritten_drs)
+				# If we use "word", do not do char level
+				if args.representation == 'word':
+					char_level_drs = word_level(rewritten_drs)
+				else:
+					char_level_drs = char_level(rewritten_drs)
 
-                # Insert special clause separation character
-                one_line_drs = " *** ".join(char_level_drs)
-                rewritten_drss.append(one_line_drs)
+				# Insert special clause separation character
+				one_line_drs = " *** ".join(char_level_drs)
+				rewritten_drss.append(one_line_drs)
             # The input is expected to be in a certain format
             # However sometimes something can go wrong, we either ignore those
             # instances or throw an error

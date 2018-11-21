@@ -14,7 +14,7 @@ import codecs
 
 ### Settings
 
-op_boxes = ['NOT', 'POS', 'NEC', 'IMP', 'DIS', 'PRP', 'DRS', 'ANSWER', 'PARALLEL', 'CONTINUATION', 'CONTRAST', 'RESULT', 'EXPLANATION']
+op_boxes = ['NOT', 'POS', 'NEC', 'IMP', 'DIS', 'PRP', 'DRS', 'ANSWER', 'PARALLEL', 'CONTINUATION', 'CONTRAST', 'RESULT', 'EXPLANATION', 'DUP']
 
 ### Functions
 
