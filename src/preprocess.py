@@ -8,6 +8,7 @@ Example usage (python2): python preprocess.py -i INPUT_FILE -s SENT_FILE -c feat
 
 
 import argparse
+import io
 import sys
 reload(sys)
 sys.setdefaultencoding('utf-8')
@@ -296,7 +297,7 @@ if __name__ == "__main__":
     args = create_arg_parser()
 
     # First do the sentences
-    sents = [x.strip() for x in open(args.sentence_file, 'r')]
+    sents = [x.strip() for x in io.open(args.sentence_file, encoding='utf8')]
     sents = preprocess_sents(sents, args)
     write_to_file(sents, args.sentence_file + args.char_sent_ext)
 
@@ -304,7 +305,7 @@ if __name__ == "__main__":
     if not args.sents_only:
         # Get list of DRSs and sentences
         drss = get_drss(args.input_file)
-        sents = [x.strip() for x in open(args.sentence_file, 'r')]
+        sents = [x.strip() for x in io.open(args.sentence_file, encoding='utf8')]
 
         # Rewrite DRS variables
         rewritten_drss, var_format = [], []
