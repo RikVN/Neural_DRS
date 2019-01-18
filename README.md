@@ -76,7 +76,7 @@ For training, you can apply our pre- and postprocessing scripts. Note that you a
 
 ### Getting data ###
 
-If you cloned the [DRS_parsing repository](https://github.com/RikVN/DRS_parsing), you'll have the train and dev set for PMB release 2.1.0 available. Otherwise, download a [PMB release](http://pmb.let.rug.nl/data.php) and construct the training data yourself, or use some other data set. Our scripts expect the train and dev data to be in the same folder.
+If you cloned the [DRS_parsing repository](https://github.com/RikVN/DRS_parsing), you'll have the train and dev set for PMB release 2.1.0 and 2.2.0 available. Otherwise, download a [PMB release](http://pmb.let.rug.nl/data.php) and construct the training data yourself, or use some other data set. Our scripts expect the train and dev data to be in the same folder.
 
 ### Config files ###
 
@@ -110,7 +110,7 @@ Noe that the input file should be in the correct character-level format (src/pre
 If you parsed the PMB 2.1.0 development set, you can calculate an F-score by using Counter:
 
 ```
-python ../DRS_parsing/evaluation/counter.py -f1 CLF_OUTPUT -f2 ../DRS_parsing/data/dev.txt
+python ../DRS_parsing/evaluation/counter.py -f1 CLF_OUTPUT -f2 GOLD_DEV
 ```
 
 The baseline model should score somewhere between 72 and 74 in F-score. You can create your own config files to perform different experiments.
