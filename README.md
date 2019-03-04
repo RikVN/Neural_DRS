@@ -1,6 +1,6 @@
 # Neural DRS parsing
 
-This folder contains scripts to use our neural seq2seq model to produce DRSs. Also, new models can be trained.
+This folder contains scripts to use our neural seq2seq model to produce DRSs. For details, please see our [TACL paper](https://www.mitpressjournals.org/doi/abs/10.1162/tacl_a_00241).
 
 ## Getting Started
 
@@ -138,9 +138,9 @@ The baseline parsers SPAR and amr2drs are available in the [DRS_parsing reposito
 
 ## Citation ##
 
-This directory is part of our TACL paper ([preprint here](https://arxiv.org/abs/1810.12579)). 
+This directory is part of our [TACL paper](https://www.mitpressjournals.org/doi/abs/10.1162/tacl_a_00241).
 
-R. Van Noord, L. Abzianidze, A. Toral, J. Bos (2018): **Exploring Neural Methods for Parsing Discourse Representation Structures.** To appear in TACL 2018
+van Noord, R., Abzianidze, L., Toral, A., & Bos, J. (2018). *Exploring Neural Methods for Parsing Discourse Representation Structures. Transactions Of The Association For Computational Linguistics*, 6, 619-633
 
 If you use Counter, please cite our [LREC paper](https://arxiv.org/pdf/1802.08599.pdf):
 
