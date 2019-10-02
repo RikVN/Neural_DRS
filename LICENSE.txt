@@ -1,0 +1,17 @@
+=============
+ LICENSE
+=============
+
+This codebase is available under 
+	the Open Data Commons Attribution License (ODC-BY): 
+	https://opendatacommons.org/licenses/by/1.0/index.html
+
+TL;DR: The license allows to
+* Share: To copy, distribute and use the database.
+* Create: To produce works from the database.
+* Adapt: To modify, transform and build upon the database.
+AS LONG AS YOU:
+* Attribute: You must attribute any public use of the database, or works produced from the database, 
+  in the manner specified in the license. For any use or redistribution of the database, or works 
+  produced from it, you must make clear to others the license of the database and keep intact 
+  any notices on the original database.
