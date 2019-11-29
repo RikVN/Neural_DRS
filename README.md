@@ -62,7 +62,7 @@ First I'll describe how to run experiments with OpenNMT, which we described in [
 
 ### Parsing raw text
 
-If you only want to do parsing, please download (one of) our [pre-trained models](http://www.http://www.let.rug.nl/rikvannoord/DRS/TACL/models/). If you want ``setup.sh``, the GPU models should already be downloaded. You can choose between our best gold-only models, or our best model in general, that is also trained on the silver data released in PMB 2.1.0.
+If you only want to do parsing, please download (one of) our [pre-trained models](http://www.http://www.let.rug.nl/rikvannoord/DRS/TACL/models/). If you ran ``setup.sh``, the GPU models should already be downloaded. You can choose between our best gold-only models, or our best model in general, that is also trained on the silver data released in PMB 2.1.0.
 
 When using one of those models, you will have to preprocess the input to the input structure the model expects.
 
@@ -130,9 +130,9 @@ The models trained with Marian can use linguistic features (but don't have to ne
 
 You can extract all the linguistic features (lem/pos/dep/sem/ccg) using ``src/marian_scripts/extract_ling_features.sh``, like this:
 
-``
+```
 ./src/marian_scripts/extract_ling_features.sh $SENT_FILE
-``
+```
 
 $SENT_FILE should not be tokenized already, we use CoreNLP to do that. If $TNT is not set in the default config, it simply skips semtagging.
 
@@ -154,17 +154,17 @@ First extract the linguistic features for you sentence file as described above, 
 
 Then, for our best silver model, you have to preprocess the lemma features to a char-level representation.
 
-``
+```
 python src/merge_tags.py -f ${SENT_FILE}.lem --char_exts .lem > ${SENT_FILE}.clem
-``
+```
 
 The parse script will automatically take care of preprocessing the raw sentence file, using the settings as described in the specific config file.
 
 Now to the actual parsing. You have to use the config file that fits with the model you chose, i.e. use config/marian/best_gold_silver.sh if you use our best silver model. Obviously, fill in the variables yourself, depending on where you put the file(s):
 
-``
+```
 ./src/marian_scripts/parse_raw_text.sh config/marian/best_gold_silver.sh $PRETRAINED_MODEL $OUTPUT_FILE $SENT_FILE ${SENT_FILE}.clem
-``
+```
 
 This will automatically postprocess your file to ${OUTPUT_FILE}.res. Also, ${OUTPUT_FILE}.res.log will contain information about this process.
 
@@ -176,9 +176,9 @@ The script ``src/marian_pipeline.sh`` can be used to run your own experiments. A
 
 Some things to note: if $PRETRAINED_FOLDER and $FINETUNED_FOLDER are both set, it automatically does pretraining + finetuning. If you only want "normal" training, leave $FINETUNED_FOLDER empty. Our best silver model can simply be reproduced by this:
 
-``
+```
 ./src/marian_scripts/pipeline.sh config/marian/best_gold_silver.sh
-``
+```
 
 ## Output ##
 
@@ -186,9 +186,9 @@ If you're only interested in the output of our parser(s), please check the **out
 
 From the output files you can recreate the F-scores. I added a script that does this automatically for all experiments.
 
-``
+```
 ./src/marian_scripts/reproduce_fscores.sh
-``
+```
 
 ### PMB release 2.1.0 ###
 
