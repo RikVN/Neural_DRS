@@ -19,7 +19,7 @@
 # If $TNT is empty, we will assume you don't want semantic tagging
 
 # General locations
-GIT_HOME="/SET/YOUR/FOLDER/HERE/"		# where the Git Neural_DRS repository is located
+GIT_HOME="/home/p266548/Documents/DRS_parsing/Neural_DRS/"		# where the Git Neural_DRS repository is located
 EVAL_GIT_HOME="${GIT_HOME}DRS_parsing/"		# where the Git evaluation repository is located
 MARIAN_HOME="${GIT_HOME}marian/build/"	# where marian scripts are located
 
