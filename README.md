@@ -148,7 +148,7 @@ By using --char_exts you specify which files (by extension) should be in charact
 
 ### Parsing from raw text ###
 
-If you're only interested in parsing from raw text, please download one of your [pretrained models](http://www.let.rug.nl/rikvannoord/DRS/IWCS/models/). Probably you want to use our best model, which is gold + silver with lemmas as extra linguistic features (best_gold_silver). 
+If you're only interested in parsing from raw text, please download one of our [pretrained models](http://www.let.rug.nl/rikvannoord/DRS/IWCS/models/). Probably you want to use our best model, which is gold + silver with lemmas as extra linguistic features (best_gold_silver). Again, ``setup.sh`` should have already handled this (check models/).
 
 First extract the linguistic features for you sentence file as described above, using ``extract_ling_features.sh``.
 
@@ -170,7 +170,7 @@ This will automatically postprocess your file to ${OUTPUT_FILE}.res. Also, ${OUT
 
 ### Training your own model ###
 
-The script ``src/marian_pipeline.sh`` can be used to run your own experiments. Again, note that each experiment needs its own config file. I have added examples of config files in config/marian/, which can also be used to train our best gold-only and best general model.
+The script ``src/marian_scripts/pipeline.sh`` can be used to run your own experiments. Again, note that each experiment needs its own config file. I have added examples of config files in config/marian/, which can also be used to train our best gold-only and best general model.
 
 **Make sure that the models have access to the files with linguistic features**, as is described above. In config/marian/default_config.sh you can see which settings can be overwritten to create different experiments.
 
