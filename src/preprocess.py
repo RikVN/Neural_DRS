@@ -10,7 +10,7 @@ import argparse
 import sys
 import copy
 from uts import write_to_file, write_list_of_lists, get_drss, is_operator, between_quotes, op_boxes, is_role
-from concept_to_wordnet import conc_to_wordnet
+#from concept_to_wordnet import conc_to_wordnet
 from clf_referee import check_clf
 from clf_referee import get_signature
 
