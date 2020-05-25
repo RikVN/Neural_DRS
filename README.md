@@ -227,7 +227,7 @@ These are the results from [this paper](https://www.aclweb.org/anthology/W19-050
 I retrained the OpenNMT and Marian systems + baselines on the 3.0.0 data. Output files are available in output/. Boxer is trained using a better role labeler, which explains the increase in performance.
 
 | Parser				      | F1-dev	| F1-test |
-| ------- | ------- | ------- | ------- |
+| ------- | ------- | ------- | 
 | Marian best model  | 86.8  | 87.7        |
 | ONMT best model    | 84.3       | 84.9        |
 | Boxer              | 78.2       | 78.8       |
