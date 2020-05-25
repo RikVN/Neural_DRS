@@ -8,13 +8,8 @@ Example usage (python3): python preprocess.py -i INPUT_FILE -s SENT_FILE -c feat
 
 import argparse
 import copy
-<<<<<<< HEAD
 from uts import write_to_file, write_list_of_lists, get_drss, is_operator, between_quotes, op_boxes,  \
                 is_role, read_and_strip_file, drs_string_to_list
-=======
-from uts import write_to_file, write_list_of_lists, get_drss, is_operator, between_quotes, op_boxes, is_role
-#from concept_to_wordnet import conc_to_wordnet
->>>>>>> 7614b0daf3d044a046f63ce297ea2e49d1f5437b
 from clf_referee import check_clf
 from clf_referee import get_signature
 
@@ -398,7 +393,7 @@ def write_sentences_and_extra_files(sents, remove_idxs, remove_ill, extra_files,
 
 if __name__ == "__main__":
     args = create_arg_parser()
-    
+
     remove_idxs = []
     # First do the sentences
     if not args.drss_only:
