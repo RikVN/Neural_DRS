@@ -38,10 +38,6 @@ export PYTHONPATH=${PYTHONPATH}:/your/folders/here/Neural_DRS/DRS_parsing/evalua
 If you want to use an ensemble during parsing for OpenNMT, you will have to checkout the ensemble branch. Instructions on how to do that are [here](http://forum.opennmt.net/t/ensemble-decoding/115/11). Note that you have to specify $ONMT_HOME in config/opennmt/default_config.sh to the correct location of this branch. 
 
 Note: if you want to run Marian on CPU, check out [this fork](https://github.com/dhgoratela/Neural_DRS) by [dhgoratela](https://github.com/dhgoratela) and especially [this script](https://github.com/dhgoratela/Neural_DRS/blob/v2.2.0-marian-cpu/src/marian_cpu_preset.sh).
-<<<<<<< HEAD
-=======
-
->>>>>>> 7614b0daf3d044a046f63ce297ea2e49d1f5437b
 
 ### Configuration
 
