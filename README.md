@@ -11,6 +11,12 @@ git clone https://github.com/RikVN/Neural_DRS
 cd Neural_DRS
 ```
 
+This repository works with PMB release. If you want to work with 2.2.0 (or older), run this:
+
+```
+git checkout v2.2.0-final
+```
+
 ### Prerequisites
 
 I advise creating a Conda environment to install the dependencies. My own Python scripts are for Python 3.
@@ -32,7 +38,10 @@ export PYTHONPATH=${PYTHONPATH}:/your/folders/here/Neural_DRS/DRS_parsing/evalua
 If you want to use an ensemble during parsing for OpenNMT, you will have to checkout the ensemble branch. Instructions on how to do that are [here](http://forum.opennmt.net/t/ensemble-decoding/115/11). Note that you have to specify $ONMT_HOME in config/opennmt/default_config.sh to the correct location of this branch. 
 
 Note: if you want to run Marian on CPU, check out [this fork](https://github.com/dhgoratela/Neural_DRS) by [dhgoratela](https://github.com/dhgoratela) and especially [this script](https://github.com/dhgoratela/Neural_DRS/blob/v2.2.0-marian-cpu/src/marian_cpu_preset.sh).
+<<<<<<< HEAD
+=======
 
+>>>>>>> 7614b0daf3d044a046f63ce297ea2e49d1f5437b
 
 ### Configuration
 
@@ -114,7 +123,7 @@ This will most likely take some time. If training is finished, you can parse new
 
 Noe that the input file should be in the correct character-level format (src/preprocess.py). The output will be automatically postprocessed. You can only use multiple models if you are using the ensemble branch of OpenNMT (see above).
 
-If you parsed the PMB 2.1.0 development set (or any other set with gold standard available), you can calculate an F-score by using Counter:
+If you parsed a gold standard dev/test set, you can calculate an F-score by using Counter:
 
 ```
 python ../DRS_parsing/evaluation/counter.py -f1 $CLF_OUTPUT -f2 $GOLD_DEV
@@ -184,13 +193,8 @@ Some things to note: if $PRETRAINED_FOLDER and $FINETUNED_FOLDER are both set, i
 
 ## Output ##
 
-If you're only interested in the output of our parser(s), please check the **output/** folder.  We have added parser output on the development set for PMB release 2.1.0, and dev + test for PMB release 2.2.0.
+If you're only interested in the output of our parser(s), please check the **output/** folder.  We have added parser output on the development set for PMB release 2.1.0, and dev + test for PMB release 2.2.0/3.0.0.
 
-From the output files you can recreate the F-scores. I added a script that does this automatically for all experiments.
-
-```
-./src/marian_scripts/reproduce_fscores.sh
-```
 
 ### PMB release 2.1.0 ###
 
@@ -204,7 +208,7 @@ From the output files you can recreate the F-scores. I added a script that does 
 | Boxer                       | 74.3         | output of the semantic parser Boxer |
 | amr2drs                     | 43.2         | output of a rule-based parser that converts AMRs to DRSs |
 | SIM-SPAR                    | 56.8         | baseline - outputs the DRS in the train set most similar to current DRS |
-| SPAR                        | 39.7         | baseline parser that outputs a fixed DRSs for each sentence |
+| SPAR                        | 39.7         | baseline parser that outputs a fixed DRS for each sentence |
 
 The baseline parsers SPAR and amr2drs are available in the [DRS_parsing repository](https://github.com/RikVN/DRS_parsing).
 
@@ -219,7 +223,21 @@ These are the results from [this paper](https://www.aclweb.org/anthology/W19-050
 | ONMT best model             | 80.9        | 83.2        | Best OpenNMT model retrained on PMB-2.2.0 |
 | Boxer                       | 72.2        | 72.2        | output of the semantic parser Boxer |
 | SIM-SPAR                    | 53.3        | 57.7        | baseline - outputs the DRS in the train set most similar to current DRS |
-| SPAR                        | 40.0        | 40.8        | baseline parser that outputs a fixed DRSs for each sentence |
+| SPAR                        | 40.0        | 40.8        | baseline parser that outputs a fixed DRS for each sentence |
+
+
+### PMB release 3.0.0 ###
+
+I retrained the OpenNMT and Marian systems + baselines on the 3.0.0 data. Output files are available in output/. Boxer is trained using a better role labeler, which explains the increase in performance.
+
+| Parser				      | F1-dev	| F1-test |
+| ------- | ------- | ------- | ------- |
+| Marian best model  | 86.8  | 87.7        |
+| ONMT best model    | 84.3       | 84.9        |
+| Boxer              | 78.2       | 78.8       |
+| SIM-SPAR           | 54.9     | 59.2      |
+| SPAR               | 40.9       | 42.1        |
+
 
 ## Author
 
