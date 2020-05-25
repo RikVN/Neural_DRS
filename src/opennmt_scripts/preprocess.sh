@@ -25,7 +25,8 @@ cp $GOLD_FOLDER$gold_train$sent_ext $MAIN_FOLDER$WORKING$TRAIN
 cp $GOLD_FOLDER$gold_dev$sent_ext $MAIN_FOLDER$WORKING$DEV
 
 # Do Python preprocessing to put files in character-level format, for train/dev
-python $PREPROCESS_PYTHON --input_file $MAIN_FOLDER$WORKING$TRAIN$gold_train --sentence_file $MAIN_FOLDER$WORKING$TRAIN$gold_train$sent_ext --casing $casing --representation $representation --variables $var_rewrite --char_drs_ext $char_drs_ext --char_sent_ext $char_sent_ext --var_drs_ext $var_drs_ext
+# Remove ill-formed DRSs from train set
+python $PREPROCESS_PYTHON --input_file $MAIN_FOLDER$WORKING$TRAIN$gold_train --remove_ill --sig_file $sig_file --sentence_file $MAIN_FOLDER$WORKING$TRAIN$gold_train$sent_ext --casing $casing --representation $representation --variables $var_rewrite --char_drs_ext $char_drs_ext --char_sent_ext $char_sent_ext --var_drs_ext $var_drs_ext
 python $PREPROCESS_PYTHON --input_file $MAIN_FOLDER$WORKING$DEV$gold_dev --sentence_file $MAIN_FOLDER$WORKING$DEV$gold_dev$sent_ext --casing $casing --representation $representation --variables $var_rewrite --char_drs_ext $char_drs_ext --char_sent_ext $char_sent_ext --var_drs_ext $var_drs_ext
 
 # Then do OpenNMT preprocessing to create the vocabulary files

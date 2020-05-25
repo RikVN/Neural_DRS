@@ -80,8 +80,10 @@ train() {
 
 	# Load all train/dev sets in variables (train/dev_src/tgt)
 	set_dataset_vars $1 $5 $6
-	# Set predefined random seeds
-	seeds=(4321 1111 2222 3333 4444 5555 6666 7777 8888 9999)
+	# Set predefined random seeds if not present in config file
+	if [[ -z ${seeds+x} ]]; then
+		seeds=(4321 1111 2222 3333 4444 5555 6666 7777 8888 9999)
+	fi
 	let idx=0 || true # to not end the script https://unix.stackexchange.com/questions/63166/bash-e-exits-when-let-or-expr-evaluates-to-0
 
 	# Loop over multiple runs

@@ -82,15 +82,15 @@ test_preprocess_postprocess(){
 	printf "Test preprocssing and immediately postprocessing for all possibilities and data sets\n"
 	# Set data folder
 	data=${cur_dir}/DRS_parsing/data/
-	# Loop over the 2 latest release and train/dev/test sets
-	for data_set in pmb-2.1.0 pmb-2.2.0; do
+	# Loop over the latest release and train/dev/test sets
+	for data_set in pmb-3.0.0; do
 		for set in train dev test; do
 			drs_file="$data/$data_set/gold/${set}.txt"
 			sent_file="${drs_file}.raw"
-			# For 2.1.0 there's no test, so skip that
+			# Only if file exists
 			if [[ -f $drs_file ]] ; then
 				echo $drs_file
-				# Check if char/word representation works and if casing feature still works
+				## Check if char/word representation works and if casing feature still works
 				for rep in char word char_word; do
 					for case in normal lower feature; do
 						python src/preprocess.py -i $drs_file -s $sent_file -c $case -v rel -r $rep
@@ -103,16 +103,16 @@ test_preprocess_postprocess(){
 					python src/preprocess.py -i $drs_file -s $sent_file -c feature -v $var -r char
 					# Try different things during postprocessing and see if they all work
 					python src/postprocess.py -i ${drs_file}.char.tgt -o ${drs_file}.restore -s ${cur_dir}/DRS_parsing/evaluation/clf_signature.yaml -v $var
-					# Without referee
+					## Without referee
 					python src/postprocess.py -i ${drs_file}.char.tgt -o ${drs_file}.restore -s ${cur_dir}/DRS_parsing/evaluation/clf_signature.yaml -v $var --no_referee
 					# Try to fix wrong DRSs (probably the same as without this feature for gold standard)
 					python src/postprocess.py -i ${drs_file}.char.tgt -o ${drs_file}.restore -s ${cur_dir}/DRS_parsing/evaluation/clf_signature.yaml -v $var --fix
 					# Remove clauses after certain length (pick low amount so it occurs)
-					python src/postprocess.py -i ${drs_file}.char.tgt -o ${drs_file}.restore -s ${cur_dir}/DRS_parsing/evaluation/clf_signature.yaml -v $var -rc 2 -rr 2 -rcl 30
+					python src/postprocess.py -i ${drs_file}.char.tgt -o ${drs_file}.restore -s ${cur_dir}/DRS_parsing/evaluation/clf_signature.yaml -v $var -rc 4 -rr 4 -rcl 50
 					# Try to fix DRS with removal (so it actually occurs for gold)
-					python src/postprocess.py -i ${drs_file}.char.tgt -o ${drs_file}.restore -s ${cur_dir}/DRS_parsing/evaluation/clf_signature.yaml -v $var -rc 2 -rr 2 -rcl 30 --fix
+					python src/postprocess.py -i ${drs_file}.char.tgt -o ${drs_file}.restore -s ${cur_dir}/DRS_parsing/evaluation/clf_signature.yaml -v $var -rc 4 -rr 4 -rcl 50 --fix
 					# Add baseline instead of dummy for ill-formed DRSs
-					python src/postprocess.py -i ${drs_file}.char.tgt -o ${drs_file}.restore -s ${cur_dir}/DRS_parsing/evaluation/clf_signature.yaml -v $var -rc 2 -rr 2 -rcl 30 --baseline
+					python src/postprocess.py -i ${drs_file}.char.tgt -o ${drs_file}.restore -s ${cur_dir}/DRS_parsing/evaluation/clf_signature.yaml -v $var -rc 4 -rr 4 -rcl 50 --baseline
 				done
 			fi
 		done
@@ -120,19 +120,19 @@ test_preprocess_postprocess(){
 }
 
 
-# Check that preprocessing and then postprocessing results in Counter score of > 0.995
+# Check that preprocessing and then postprocessing also works on gold + silver data
 test_pp_gold_silver(){
 	printf "\n----------------------------------------------\n"
 	printf "Test preprocessing and postprocessing for gold + silver data\n"
-	printf "Counter score should be > 0.995\n"
-	printf "NOTE: this can take over 2 hours\n"
 	# Also remove ill-formed from the to be tested set
-	drs_file=${cur_dir}/DRS_parsing/data/pmb-2.2.0/gold_plus_silver/train.txt
+	drs_file=${cur_dir}/pmb_exp_data_3.0.0/en/gold_plus_silver/train.txt
 	sent_file=${drs_file}.raw
 	python src/preprocess.py -i $drs_file -s $sent_file -c feature -v rel -r char --remove_ill --sig_file ${cur_dir}/DRS_parsing/evaluation/clf_signature.yaml
 	python src/postprocess.py -i ${drs_file}.char.tgt -o ${drs_file}.restore -s ${cur_dir}/DRS_parsing/evaluation/clf_signature.yaml -v rel
 	# Run counter to check if the scores is > 0.995
-	python ${cur_dir}/DRS_parsing/evaluation/counter.py -f1 ${drs_file}.valid -f2 ${drs_file}.restore -g ${cur_dir}/DRS_parsing/evaluation/clf_signature.yaml -r 10
+	printf "Uncomment the next line to run Counter as well\n"
+	printf "This can take over 2 hours, so skip for now\n"
+	#python ${cur_dir}/DRS_parsing/evaluation/counter.py -f1 ${drs_file}.valid -f2 ${drs_file}.restore -g ${cur_dir}/DRS_parsing/evaluation/clf_signature.yaml -r 10
 }
 
 ############ MAIN ###############
@@ -142,23 +142,25 @@ mkdir -p test
 SENT_FILE="${cur_dir}/test/test.txt.raw"
 printf "This is a test sentence.\nAlso give me a parse for this sentence.\n" > $SENT_FILE
 
-# First test OpenNMT experiments
+## First test OpenNMT experiments
 test_opennmt_parse
 test_opennmt_train
 
-# Now test Marian experiments
+### Now test Marian experiments
 test_marian_feature_extraction
 test_marian_parse_raw
 test_marian_train
-test_fscores_marian
+# This is commented out for 3.0.0 now, since Referee will error
+# You have to revert the DRS_parsing repo to v2.2.0 for this to work
+#test_fscores_marian
 
-# Test preprocess/postprocess for all data that is made available through the DRS_parsing/ repo
-# There shouldn't be any errors
+## Test preprocess/postprocess for all data that is made available through the DRS_parsing/ repo
+## There shouldn't be any errors
 test_preprocess_postprocess
 
-# Also compare for gold_plus_silver data if preprocessing + postprocessing results in F-score of virutally 1.0
-# Use the most common setting, char + rel + feature
-#test_pp_gold_silver
+## Also compare for gold_plus_silver data if preprocessing + postprocessing results in F-score of virutally 1.0
+## Use the most common setting, char + rel + feature
+test_pp_gold_silver
 
 
 

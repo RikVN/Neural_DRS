@@ -20,6 +20,7 @@ def repl_atomic_category(match):
 def create_arg_parser():
     parser = argparse.ArgumentParser()
     parser.add_argument("-f", "--input_file", required=True, type=str, help="Input file with sentences that need to be parsed")
+    parser.add_argument("-t", "--tok_file", required=True, type=str, help="Input file with tokenized sentences")
     parser.add_argument("-tok", "--tokenize", action='store_true', help="Tokenize the individual categories, adding a space character and dividing in separate characters")
     parser.add_argument("-s", "--separator", default="***", type=str, help="Separator between tokens for parse")
     args = parser.parse_args()
@@ -41,22 +42,30 @@ def tokenize_cat(cat):
 if __name__ == '__main__':
     args = create_arg_parser()
 
+    # Load tokenized sentences, so that we can print enough "FAILED-PARSE" tokens if parse failed
+    # This is mainly because AllenNLP needs a tag per token
+    sents = [x.strip().split() for x in open(args.tok_file, 'r')]
+
     # Add spaces around the separator for printing
     sep = " {0} ".format(args.separator)
     cur_cats = []
     prev_new = False
+    cur_idx = 0
 
     # Loop over input parse file
     for line in open(args.input_file, 'r'):
         if not line.strip():
             if cur_cats:
                 # Newline means we finished current parse, move on to next
-                print(sep.join(cur_cats))
+                print(" ".join(sep.join(cur_cats).split()))
+                cur_idx += 1
                 cur_cats = []
             elif prev_new:
                 # Previously we also saw a newline, this happens for failed parse
                 # So just output that on a new line and move on to the next
-                print("FAILED-PARSE")
+                failed_list = ["FAILED-PARSE" for x in sents[cur_idx]]
+                print (" ".join(failed_list))
+                cur_idx += 1
             prev_new = True
             # Else the previous line had text, but there are no cats, this can happen in
             # the beginning of the parse file, just do nothing then
@@ -77,4 +86,4 @@ if __name__ == '__main__':
 
     # If file didn't end with a newline, print output we still had saved
     if cur_cats:
-        print(sep.join(cur_cats))
+        print(" ".join(sep.join(cur_cats).split()))

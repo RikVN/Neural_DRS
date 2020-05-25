@@ -21,9 +21,6 @@ disable_logs=""
 
 # Check if arguments are set -- $2 and $3 are input files and output files
 if [ ! -z "$2" ] && [ ! -z "$3" ] && [ ! -z "$4" ]; then
-	#echo "Producing output..."
-	#echo "Input file: $2"
-	#echo "Output file: $3"
 	# Get all models in a single param
 	models="${@:4}"
 	# Do parsing here

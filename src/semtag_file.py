@@ -58,7 +58,7 @@ if __name__ == "__main__":
     convert_file(args.input_file, args.extension)
 
     # Do the actual semtagging here with TnT + model
-    output = subprocess.check_output('{0}tnt -v0 {1} {2}'.format(args.tnt, args.model, args.input_file + args.extension), shell=True, encoding='utf8')
+    output = subprocess.check_output('{0}tnt -v0 {1} {2}'.format(args.tnt, args.model, args.input_file + args.extension), shell=True).decode()
 
     # Convert the output back to one tag per line and write final output
     sent_output = convert_back(output)

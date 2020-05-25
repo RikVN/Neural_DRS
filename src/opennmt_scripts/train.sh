@@ -5,8 +5,10 @@ set -eu -o pipefail
 source ../config/opennmt/default_config.sh #always load default settings from config file here
 source $1 #first command line argument is the config file with specific settings -- it overrides settings in default_config.sh if added
 
-src_vocab=$MAIN_FOLDER$VOCAB$VOCAB_NAME$ext_src
-tgt_vocab=$MAIN_FOLDER$VOCAB$VOCAB_NAME$ext_tgt
+if [[ -z ${src_vocab+x} ]]; then
+	src_vocab=$MAIN_FOLDER$VOCAB$VOCAB_NAME$ext_src
+	tgt_vocab=$MAIN_FOLDER$VOCAB$VOCAB_NAME$ext_tgt
+fi
 
 # First get word embeddings for this vocab
 if [[ $representation = "word" || $representation = 'char_word' ]]; then

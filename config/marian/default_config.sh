@@ -28,14 +28,14 @@ MARIAN_HOME="${GIT_HOME}marian/build/"	# where marian scripts are located
 CORENLP="${GIT_HOME}stanford-corenlp-full-2018-10-05"
 EASYCCG="${GIT_HOME}easyccg/"
 CCG_MODEL="${EASYCCG}/model"
-TNT=""
-TNT_MODEL=""
+TNT="/net/gsb/pmb/ext/tnt/"
+TNT_MODEL="/home/p266548/Documents/pmb_wc/retrain/sem_tagger/tnt/en.model.20200310141141/model"
 
 ###################################################################
 
 # Settings for parsing (CCG) - only needed if you want extra features 
 MAX_SEN_LEN="150"
-DO_TOK="-tok" # do tokenizing of CCG categories -> NP/N to NP / N
+DO_TOK="" # add "-tok" :  do tokenizing of CCG categories -> NP/N to NP / N
 
 ##### PARAMETER SETTINGS FOR EXPERIMENTS #####
 
