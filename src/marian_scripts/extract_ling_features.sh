@@ -78,8 +78,11 @@ python $PROCESS_PARSE --input_file ${sent_file}.parse.full $DO_TOK -s "" -t ${se
 # If $TNT is not set, we assume you don't want semtagging and skip
 if [[ -n "$TNT" ]]; then
 	python $SEM_TAGGER --input_file ${sent_file}.tok --tnt $TNT --model $TNT_MODEL > ${sent_file}.sem
+	sem="sem" # we check sem when doing feature extration
+else
+	sem=""
 fi
 
 CHECK_PY="src/check_feature_extraction.py"
 # Check if parsing files are valid
-python $CHECK_PY -f ${sent_file} -e tok sem pos lem ccg dep
+python $CHECK_PY -f ${sent_file} -e tok pos lem ccg dep $sem
