@@ -13,7 +13,7 @@ cd ../
 # Get the DRS parsing repo with the scripts (Counter) and data
 git clone https://github.com/RikVN/DRS_parsing
 cd DRS_parsing
-git checkout v.2.2.0
+
 pip install -r requirements.txt
 pip install scipy
 
