@@ -11,7 +11,7 @@ git clone https://github.com/RikVN/Neural_DRS
 cd Neural_DRS
 ```
 
-This repository works with PMB release. If you want to work with 2.2.0 (or older), run this:
+This repository works with PMB release 3.0.0. If you want to work with 2.2.0 (or older), run this:
 
 ```
 git checkout v2.2.0-final
