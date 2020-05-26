@@ -18,7 +18,9 @@ pip install -r requirements.txt
 pip install scipy
 
 # Get the 3.0.0 data
-wget "https://pmb.let.rug.nl/releases/pmb_exp_data_3.0.0.zip"
+#wget "https://pmb.let.rug.nl/releases/pmb_exp_data_3.0.0.zip"
+# PMB website is down, temporarily get the files from here
+wget "http://www.let.rug.nl/rikvannoord/pmb_release/pmb_exp_data_3.0.0.zip"
 unzip pmb_exp_data_3.0.0.zip
 
 # The files in the DRS_parsing repo only have gold and silver separately
