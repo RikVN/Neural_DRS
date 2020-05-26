@@ -29,6 +29,8 @@ I made a script ``setup.sh`` that handles installation of all software (though I
 ./src/setup.sh
 ```
 
+There are a few things that this script does not take care of, but need to be installed: [Apache Ant](https://ant.apache.org/) (for easyCCG), [cmake](https://cmake.org/install/) (for building Marian), [Torch](http://torch.ch/docs/getting-started.html) (for running OpenNMT).
+
 This will also clone the [DRS_parsing respository](https://github.com/RikVN/DRS_parsing), which contains the DRS data and evaluation scripts. The scripts in this section will import from clf_referee.py, so make sure DRS_parsing/evaluation/ is on your $PYTHONPATH, e.g. like this:
 
 ```
@@ -57,7 +59,7 @@ If you want to check that everything is installed/downloaded/setup correctly, si
 ./src/unit_tests.sh
 ```
 
-This does a range of tests for the OpenNMT and Marian experiments and can only succeed if everything works.
+This does a range of tests for the OpenNMT and Marian experiments and can only succeed if everything works. Note that this requires to be run on GPU!
 
 ## Running with OpenNMT ##
 
