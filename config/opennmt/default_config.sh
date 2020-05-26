@@ -16,7 +16,7 @@
 
 ###### IMPORTANT TO SET THESE ######
 
-GIT_HOME="/home/p266548/Documents/DRS_parsing/Neural_DRS/"	# where the Git Neural_DRS repository is located
+GIT_HOME=""	# where the Git Neural_DRS repository is located
 ONMT_HOME="${GIT_HOME}/OpenNMT/"		# where OpenNMT is located
 gpuid="-gpuid 1" 						# Use -gpuid 1 if training from GPU, otherwise 0 for cpu
 sig_file="${GIT_HOME}DRS_parsing/evaluation/clf_signature.yaml" # signature file for clf_referee, check if correct location

@@ -19,7 +19,7 @@
 # If $TNT is empty, we will assume you don't want semantic tagging
 
 # General locations
-GIT_HOME="/home/p266548/Documents/DRS_parsing/Neural_DRS/"		# where the Git Neural_DRS repository is located
+GIT_HOME=""		# where the Git Neural_DRS repository is located
 EVAL_GIT_HOME="${GIT_HOME}DRS_parsing/"		# where the Git evaluation repository is located
 MARIAN_HOME="${GIT_HOME}marian/build/"	# where marian scripts are located
 
@@ -28,8 +28,8 @@ MARIAN_HOME="${GIT_HOME}marian/build/"	# where marian scripts are located
 CORENLP="${GIT_HOME}stanford-corenlp-full-2018-10-05"
 EASYCCG="${GIT_HOME}easyccg/"
 CCG_MODEL="${EASYCCG}/model"
-TNT="/net/gsb/pmb/ext/tnt/"
-TNT_MODEL="/home/p266548/Documents/pmb_wc/retrain/sem_tagger/tnt/en.model.20200310141141/model"
+TNT=""
+TNT_MODEL=""
 
 ###################################################################
 
