@@ -21,7 +21,7 @@ git checkout v2.2.0-final
 
 I advise creating a Conda environment to install the dependencies. My own Python scripts are for Python 3.
 
-You will need either the Torch version of [OpenNMT](https://github.com/OpenNMT/OpenNMT) or [Marian](https://marian-nmt.github.io/) **with all their dependencies**. Also, if you want to use the Marian parser of the [IWCS paper](https://www.aclweb.org/anthology/W19-0504/), you will have to install software to get the linguistic features ([CoreNLP](https://stanfordnlp.github.io/CoreNLP/download.html), [easyCCG](https://github.com/ParallelMeaningBank/easyccg)).
+You will need either the Torch version of [OpenNMT](https://github.com/OpenNMT/OpenNMT) or [Marian](https://marian-nmt.github.io/) **with all their dependencies**. Also, if you want to use the Marian parser of the [IWCS paper](https://www.aclweb.org/anthology/W19-0504/), you will have to install software to get the linguistic features ([CoreNLP](https://stanfordnlp.github.io/CoreNLP/download.html), [easyCCG](https://github.com/ParallelMeaningBank/easyccg)). EasyCCG requires Apache Ant to be installed.
 
 I made a script ``setup.sh`` that handles installation of all software (though I'm not sure about all the dependencies):
 
