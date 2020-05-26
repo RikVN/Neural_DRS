@@ -21,13 +21,15 @@ git checkout v2.2.0-final
 
 I advise creating a Conda environment to install the dependencies. My own Python scripts are for Python 3.
 
-You will need either the Torch version of [OpenNMT](https://github.com/OpenNMT/OpenNMT) or [Marian](https://marian-nmt.github.io/) **with all their dependencies**. Also, if you want to use the Marian parser of the [IWCS paper](https://www.aclweb.org/anthology/W19-0504/), you will have to install software to get the linguistic features ([CoreNLP](https://stanfordnlp.github.io/CoreNLP/download.html), [easyCCG](https://github.com/ParallelMeaningBank/easyccg)). EasyCCG requires Apache Ant to be installed.
+You will need either the Torch version of [OpenNMT](https://github.com/OpenNMT/OpenNMT) or [Marian](https://marian-nmt.github.io/) **with all their dependencies**. Also, if you want to use the Marian parser of the [IWCS paper](https://www.aclweb.org/anthology/W19-0504/), you will have to install software to get the linguistic features ([CoreNLP](https://stanfordnlp.github.io/CoreNLP/download.html), [easyCCG](https://github.com/ParallelMeaningBank/easyccg)).
 
 I made a script ``setup.sh`` that handles installation of all software (though I'm not sure about all the dependencies):
 
 ```
 ./src/setup.sh
 ```
+
+There are a few things that this script does not take care of, but need to be installed: [Apache Ant](https://ant.apache.org/) (for easyCCG), [cmake](https://cmake.org/install/) (for building Marian), [Torch](http://torch.ch/docs/getting-started.html) (for running OpenNMT).
 
 This will also clone the [DRS_parsing respository](https://github.com/RikVN/DRS_parsing), which contains the DRS data and evaluation scripts. The scripts in this section will import from clf_referee.py, so make sure DRS_parsing/evaluation/ is on your $PYTHONPATH, e.g. like this:
 
@@ -57,7 +59,7 @@ If you want to check that everything is installed/downloaded/setup correctly, si
 ./src/unit_tests.sh
 ```
 
-This does a range of tests for the OpenNMT and Marian experiments and can only succeed if everything works.
+This does a range of tests for the OpenNMT and Marian experiments and can only succeed if everything works. Note that this requires to be run on GPU!
 
 ## Running with OpenNMT ##
 
