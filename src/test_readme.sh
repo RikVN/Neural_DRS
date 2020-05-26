@@ -43,13 +43,13 @@ python DRS_parsing/evaluation/counter.py -f1 $GOLD_DEV -f2 $GOLD_DEV -g $SIG_FIL
 # Extract linguistic features with Marian
 
 ./src/marian_scripts/extract_ling_features.sh $SENT_FILE
-python src/merge_tags.py -f ${SENT_FILE}.feat.pos ${SENT_FILE}.feat.dep ${SENT_FILE}.feat.ccg ${SENT_FILE}.feat.lem --char_exts .feat.lem > ${SENT_FILE}.feat.multi
-python src/merge_tags.py -f ${SENT_FILE}.feat.lem --char_exts .feat.lem > ${SENT_FILE}.feat.clem
+python src/merge_tags.py -f ${SENT_FILE}.pos ${SENT_FILE}.dep ${SENT_FILE}.ccg ${SENT_FILE}.lem --char_exts .lem > ${SENT_FILE}.multi
+python src/merge_tags.py -f ${SENT_FILE}.lem --char_exts .lem > ${SENT_FILE}.clem
 
 # Now parse using the best Marian model
 PRETRAINED_MODEL="${cur_dir}/models/marian/best_gold_silver.npz"
 OUTPUT_FILE="${SENT_FILE}.seq.marian"
-./src/marian_scripts/parse_raw_text.sh config/marian/best_gold_silver.sh $PRETRAINED_MODEL $OUTPUT_FILE $SENT_FILE ${SENT_FILE}.feat.clem
+./src/marian_scripts/parse_raw_text.sh config/marian/best_gold_silver.sh $PRETRAINED_MODEL $OUTPUT_FILE $SENT_FILE ${SENT_FILE}.clem
 
 # Train new Marian model, use sample data instead of gold + silver from README (takes too long)
 ./src/marian_scripts/pipeline.sh config/marian/sample.sh

@@ -33,7 +33,7 @@ function get_output() {
 # Better variable name
 in_file=$1
 sent_fol=$(dirname "$in_file")
-sent_file=${in_file}.feat
+sent_file=${in_file}
 
 # First fix the raw sentence, mainly for CCG tagging purposes
 # We have to do some preprocessing of the sentence to prevent easily avoidable errors
