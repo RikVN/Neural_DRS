@@ -76,7 +76,10 @@ class PreprocessSentences:
             return [x.lower() for x in self.sentences]
         elif self.casing == 'feature':
             # Add lowercase, but add a feature indicating that it was uppercase before
-            return ["".join([self.case_feature + char.lower() if char.isupper() else char for char in sent]) for sent in self.sentences]
+            if self.representation == "word":
+                return [" ".join([self.case_feature + ' ' + word.lower() if len([char for char in word if char.isupper()]) > 0 else word.lower() for word in sent.split()]) for sent in self.sentences]
+            else:
+                return ["".join([self.case_feature + char.lower() if char.isupper() else char for char in sent]) for sent in self.sentences]
 
     def char_tokenization(self, in_sents):
         '''Do character-level tokenization, i.e. change:
@@ -126,6 +129,7 @@ class PreprocessSentences:
             sents = self.char_word_level(sents)
         # AllenNLP format doesn't like unfinished quotes, for some reason, fix here
         sents = self.fix_quotes(sents)
+        sents = [" ".join(sent.replace(self.case_feature, ' ' + self.case_feature + ' ').split()) for sent in sents]
         return sents
 
     def fix_quotes(self, sents):
