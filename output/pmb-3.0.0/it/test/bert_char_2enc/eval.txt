@@ -1,0 +1,8 @@
+For score-type: F-score
+Runs: 5
+All scores: 0.8043, 0.8042, 0.811, 0.801, 0.8048
+Highest score: 0.811
+Lowest score : 0.801
+Average score: 0.8050600000000001
+Standard deviation: 0.0032604294195703806
+Confidence interval: [0.8005, 0.8096]

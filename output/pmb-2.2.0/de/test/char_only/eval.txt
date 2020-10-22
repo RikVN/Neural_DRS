@@ -1,0 +1,27 @@
+For score-type: F-score
+Runs: 5
+All scores: 0.6392, 0.6346, 0.6645, 0.6459, 0.6342
+Highest score: 0.6645
+Lowest score : 0.6342
+Average score: 0.64368
+Standard deviation: 0.01123199002848559
+Confidence interval: [0.6281, 0.6593]
+
+For score-type: Precision
+Runs: 5
+All scores: 0.6955, 0.695, 0.7127, 0.7054, 0.6966
+Highest score: 0.7127
+Lowest score : 0.695
+Average score: 0.70104
+Standard deviation: 0.006954883176588961
+Confidence interval: [0.6914, 0.7107]
+
+For score-type: Recall
+Runs: 5
+All scores: 0.5914, 0.5839, 0.6224, 0.5956, 0.582
+Highest score: 0.6224
+Lowest score : 0.582
+Average score: 0.5950599999999999
+Standard deviation: 0.014534593217562015
+Confidence interval: [0.5749, 0.6152]
+

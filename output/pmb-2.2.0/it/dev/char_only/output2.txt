@@ -1,0 +1,4371 @@
+b1 REF x1
+b1 Name x1 "nick~leeson"
+b1 person "n.01" x1
+b2 REF x2
+b2 TPR x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Patient x3 x1
+b2 arrest "v.01" x3
+b2 Theme x3 x4
+b3 REF x4
+b3 collapse "n.01" x4
+b3 Theme x4 x5
+b4 REF x5
+b4 Name x5 "bank~plc"
+b4 organization "n.01" x5
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 Co-Agent x2 x4
+b2 TPR x3 "now"
+b2 Time x2 x3
+b2 kiss "v.01" x2
+b2 time "n.08" x3
+b3 REF x4
+b3 Name x4 "mary"
+b3 female "n.02" x4
+
+b1 REF x1
+b1 EQU x1 "now"
+b1 Time x2 x1
+b1 time "n.08" x1
+b1 REF x2
+b1 Theme x2 "hearer"
+b1 intelligent "a.01" x2
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 TPR x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 fire "v.01" x3
+
+b1 REF x1
+b1 skirt "n.01" x1
+b1 REF x2
+b1 Colour x1 x2
+b1 red "a.01" x2
+b2 REF x3
+b2 EQU x3 "now"
+b2 Time x4 x3
+b2 time "n.08" x3
+b2 REF x4
+b2 Theme x4 x1
+b2 new "a.01" x4
+
+b1 REF x1
+b1 girl "n.01" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 solitary "a.01" x3
+
+b1 REF x1
+b1 EQU x1 "now"
+b1 Time x2 x1
+b1 time "n.08" x1
+b1 REF x2
+b1 Experiencer x2 "hearer"
+b1 allergic "a.02" x2
+b1 Theme x2 x3
+b1 REF x3
+b1 cat "n.01" x3
+
+b1 REF x1
+b1 Name x1 "?"
+b1 person "n.01" x1
+b1 EQU x1 "now"
+b1 EQU x1 x2
+b2 REF x2
+b2 radio "n.01" x2
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 tall "a.01" x3
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Patient x2 x1
+b2 TPR x3 "now"
+b2 Time x2 x3
+b2 sonnecchiava "v.01" x2
+b2 time "n.08" x3
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 time "n.08" x2
+b3 REF x3
+b3 Experiencer x3 x1
+b3 Stimulus x3 x4
+b3 Time x3 x2
+b3 know "v.01" x3
+b2 IMP b4 b3
+b4 REF x4
+b4 person "n.01" x4
+
+b1 REF x1
+b1 t-shirt "n.01" x1
+b2 REF x2
+b2 REF x3
+b2 EQU x3 "now"
+b2 Theme x2 x1
+b2 Time x2 x3
+b2 Value x2 x4
+b2 cost "v.01" x2
+b2 time "n.08" x3
+b2 REF x4
+b2 Quantity x4 "10"
+b2 Unit x4 "euro"
+b2 measure "n.02" x4
+
+b1 REF x1
+b1 REF x2
+b1 Agent x1 "speaker"
+b1 EQU x2 "now"
+b1 Theme x1 x3
+b1 Time x1 x2
+b1 time "n.08" x2
+b1 want "v.01" x1
+b1 REF x3
+b1 gelato "n.01" x3
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 Theme x2 x1
+b2 be "v.01" x2
+b2 Theme x2 x3
+b2 REF x3
+b2 hospital "n.01" x3
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b1 REF x2
+b1 EQU x2 "now"
+
+b1 REF x1
+b1 Theme x1 "speaker"
+b1 sarcastica "a.01" x1
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 EQU x1 "now"
+b2 EQU x1 x2
+b3 REF x2
+
+b1 REF x1
+b1 Name x1 "nara"
+b1 person "n.01" x1
+b1 EQU x1 "now"
+b1 EQU x1 x2
+b1 REF x2
+b1 Quantity x2 "+"
+b1 deer "n.01" x2
+
+b1 REF x1
+b1 anatre "n.01" x1
+b2 REF x2
+b2 REF x3
+b2 Patient x2 x1
+b2 TPR x3 "now"
+b2 Time x2 x3
+b2 schiamazzavano "v.01" x2
+b2 time "n.08" x3
+
+b1 REF x1
+b1 report "n.01" x1
+b2 REF x2
+b2 TPR x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 rewrite "v.01" x3
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 incompetent "a.01" x3
+
+b1 REF x1
+b1 Quantity x1 "13"
+b1 house "n.01" x1
+b1 REF x2
+b1 TPR x2 "now"
+b1 Time x3 x2
+b1 time "n.08" x2
+b1 REF x3
+b1 Patient x3 x1
+b1 destroy "v.01" x3
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b1 REF x2
+b1 EQU x2 "now"
+
+b1 REF x1
+b1 Name x1 "chuck"
+b1 male "n.02" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 insolent "a.01" x3
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 strong "a.01" x3
+
+b1 REF x1
+b1 film "n.01" x1
+b2 REF x2
+b2 TPR x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 head "v.01" x3
+b2 Agent x3 x4
+b3 REF x4
+b3 Name x4 "jan~de~bont"
+b3 person "n.01" x4
+
+b1 REF x1
+b1 Of x2 "speaker"
+b1 REF x2
+b1 Role x1 x2
+b1 person "n.01" x1
+b1 sister "n.01" x2
+b2 EQU x1 "now"
+b2 EQU x1 x3
+b3 REF x3
+b3 music "n.01" x3
+
+b1 REF x1
+b1 movie "n.01" x1
+b2 REF x2
+b2 TPR x3 "now"
+b2 Theme x2 x1
+b2 start "v.01" x2
+b2 Time x2 x3
+b2 REF x3
+b2 time "n.08" x3
+b2 ClockTime x3 "12:00"
+
+b1 REF x1
+b1 dog "n.01" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 handsome "a.01" x3
+
+b1 REF x1
+b1 female "n.02" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 Agent x3 x1
+b2 andando "v.01" x3
+b2 REF x3
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 TPR x3 "now"
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 compose "v.01" x2
+b2 time "n.08" x3
+b3 REF x4
+b3 Name x4 "911"
+b3 person "n.01" x4
+
+b1 REF x1
+b1 frog "n.01" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 EQU x3 "now"
+b2 Time x2 x3
+b2 grace "v.04" x2
+b2 time "n.08" x3
+
+b1 REF x1
+b1 Name x1 "mary"
+b1 female "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 TPR x3 "now"
+b2 Time x2 x3
+b2 ridacchiato "v.01" x2
+b2 time "n.08" x3
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Agent x3 x1
+b2 Theme x3 x4
+b2 pun "v.01" x3
+b3 REF x4
+b3 cow "n.01" x4
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Experiencer x3 x1
+b2 suffer "v.01" x3
+
+b1 NOT b2
+b2 REF x1
+b2 pessuno "n.01" x1
+b1 REF x2
+b1 EQU x2 "now"
+b1 time "n.08" x2
+b2 REF x3
+b2 Agent x3 x1
+b2 Theme x3 "speaker"
+b2 Time x3 x2
+b2 understand "v.04" x3
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 NOT b3
+b3 REF x2
+b3 Agent x2 x1
+b3 play "v.01" x2
+b3 Instrument x2 x3
+b3 REF x3
+b3 golf "n.01" x3
+
+b1 NOT b2
+b2 EQU x1 "now"
+b2 EQU x1 "speaker"
+b1 REF x1
+
+b1 REF x1
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 EQU x3 "now"
+b2 Experiencer x2 x1
+b2 Stimulus x2 x4
+b2 Time x2 x3
+b2 care "v.01" x2
+b2 time "n.08" x3
+b2 REF x4
+b2 dress "n.01" x4
+b2 Source x2 x5
+b3 REF x5
+b3 Name x5 "turchia"
+b3 person "n.01" x5
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Agent x3 x1
+b2 soffrendo "v.01" x3
+b2 Theme x3 x4
+b2 REF x4
+b2 cancer "n.01" x4
+
+b1 REF x1
+b1 REF x2
+b1 Experiencer x1 x3
+b1 TPR x2 "now"
+b1 Time x1 x2
+b1 cut "v.01" x1
+b1 time "n.08" x2
+b2 REF x3
+b2 cheese "n.01" x3
+b2 Theme x3 x4
+b2 REF x4
+b2 knife "n.01" x4
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 TPR x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Patient x3 x1
+b2 stab "v.01" x3
+
+b1 REF x1
+b1 male "n.02" x1
+b2 EQU x1 "now"
+b2 EQU x1 x2
+b2 REF x2
+b2 REF x3
+b2 Role x2 x3
+b2 person "n.01" x2
+b2 slob "n.01" x3
+
+b1 REF x1
+b1 computer "n.01" x1
+b2 REF x2
+b2 Agent x2 x1
+b2 Theme x2 x3
+b2 cost "v.01" x2
+b2 REF x3
+b2 Unit x3 "dollar"
+b2 measure "n.02" x3
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Experiencer x3 x1
+b2 disarmite "a.01" x3
+
+b1 REF x1
+b1 REF x2
+b1 Role x1 x2
+b1 hunter "n.01" x2
+b1 person "n.01" x1
+b2 REF x3
+b2 REF x4
+b2 Agent x3 x1
+b2 TPR x4 "now"
+b2 Time x3 x4
+b2 shoot "v.01" x3
+b2 time "n.08" x4
+b2 Theme x3 x5
+b2 REF x5
+b2 bear "n.01" x5
+
+b1 REF x1
+b1 female "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 TPR x3 "now"
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 draw "v.01" x2
+b2 time "n.08" x3
+b2 REF x4
+b2 tree "n.01" x4
+
+b1 REF x1
+b1 person "n.01" x1
+b1 REF x2
+b1 EQU x2 "now"
+b1 Time x3 x2
+b1 time "n.08" x2
+b1 REF x3
+b1 Theme x3 x1
+b1 knock "v.01" x3
+b1 Instrument x3 x4
+b1 REF x4
+b1 door "n.01" x4
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Experiencer x3 x1
+b2 allergic "a.02" x3
+b2 Stimulus x3 x4
+b2 REF x4
+b2 egg "n.01" x4
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 EQU x3 "now"
+b2 Experiencer x2 x1
+b2 Stimulus x2 "hearer"
+b2 Time x2 x3
+b2 hate "v.01" x2
+b2 time "n.08" x3
+
+b1 REF x1
+b1 Theme x1 "speaker"
+b1 divorced "a.01" x1
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 shy "a.01" x3
+
+b1 REF x1
+b1 REF x2
+b1 Agent x1 "speaker"
+b1 EQU x2 "now"
+b1 Theme x1 x3
+b1 Time x1 x2
+b1 drive "v.01" x1
+b1 time "n.08" x2
+b1 REF x3
+b1 decappottabile "n.01" x3
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Patient x2 x1
+b2 TPR x3 "now"
+b2 Time x2 x3
+b2 salutò "v.01" x2
+b2 time "n.08" x3
+
+b1 REF x1
+b1 Participant x1 x2
+b1 event "v.01" x1
+b2 REF x2
+b2 entity "n.01" x2
+b2 REF x3
+b2 Theme x3 x2
+b2 starnazza "a.01" x3
+
+b1 IMP b2 b3
+b2 REF x1
+b2 entity "n.01" x1
+b1 REF x2
+b1 EQU x2 "now"
+b1 time "n.08" x2
+b3 Time x3 x2
+b3 REF x3
+b3 Agent x3 x1
+b3 new "a.01" x3
+b3 Theme x3 "speaker"
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Experiencer x2 x1
+b2 Stimulus x2 x4
+b2 TPR x3 "now"
+b2 Time x2 x3
+b2 miss "v.01" x2
+b2 time "n.08" x3
+b3 REF x4
+b3 exit "n.01" x4
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b1 REF x2
+b1 EQU x2 "now"
+
+b1 REF x1
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 EQU x3 "now"
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 found "v.01" x2
+b2 time "n.08" x3
+b2 REF x4
+b2 cape "n.01" x4
+
+b1 REF x1
+b1 Name x1 "sekkura"
+b1 person "n.01" x1
+b2 EQU x1 "now"
+b2 EQU x1 x2
+b2 REF x2
+b2 REF x3
+b2 Role x2 x3
+b2 person "n.01" x2
+b2 qualify "n.01" x3
+
+b1 REF x1
+b1 Name x1 "giovannino"
+b1 person "n.01" x1
+b2 REF x2
+b2 REF x3
+b2 EQU x3 "now"
+b2 Patient x2 x1
+b2 Time x2 x3
+b2 scorreggia "v.01" x2
+b2 time "n.08" x3
+b2 Instrument x2 x4
+b2 REF x4
+b2 class "n.02" x4
+
+b1 IMP b2 b3
+b2 REF x1
+b2 walena "n.01" x1
+b3 EQU x1 x2
+b3 REF x2
+b3 mammal "n.01" x2
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Experiencer x3 x1
+b2 allergic "a.02" x3
+b2 Stimulus x3 x4
+b2 REF x4
+b2 mold "n.01" x4
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Agent x3 x1
+b2 trust "v.01" x3
+
+b1 REF x1
+b1 wind "n.01" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Agent x3 x1
+b2 soffiando "v.01" x3
+b2 Agent x3 x4
+b2 REF x4
+b2 east "n.01" x4
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 time "n.08" x2
+b3 REF x3
+b3 Experiencer x3 x1
+b3 Stimulus x3 x4
+b3 Time x3 x2
+b3 hate "v.01" x3
+b2 IMP b4 b3
+b4 REF x4
+b4 party "n.01" x4
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 NOT b3
+b2 REF x2
+b2 EQU x2 "now"
+b2 time "n.08" x2
+b3 Time x3 x2
+b3 REF x3
+b3 Experiencer x3 x1
+b3 hungry "a.01" x3
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Experiencer x3 x1
+b2 know "v.01" x3
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Patient x2 x1
+b2 TPR x3 "now"
+b2 Time x2 x3
+b2 hesitate "v.01" x2
+b2 time "n.08" x3
+
+b1 REF x1
+b1 shit "n.01" x1
+b2 REF x2
+b2 Theme x2 x1
+b2 stink "v.01" x2
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 TPR x3 "now"
+b2 Theme x2 x1
+b2 Time x2 x3
+b2 fly "v.01" x2
+b2 time "n.08" x3
+b2 Instrument x2 x4
+b3 REF x4
+b3 Name x4 "boston"
+b3 location "n.01" x4
+
+b1 REF x1
+b1 male "n.02" x1
+b2 EQU x1 "now"
+b2 EQU x1 x2
+b2 REF x2
+b2 REF x3
+b2 Role x2 x3
+b2 person "n.01" x2
+b2 run "n.01" x3
+b2 REF x4
+b2 Theme x4 x2
+b2 fast "a.01" x4
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Experiencer x3 x1
+b2 allergic "a.02" x3
+b2 Stimulus x3 x4
+b2 REF x4
+b2 noci "n.01" x4
+
+b1 NOT b2
+b2 EQU "speaker" "now"
+b2 EQU "speaker" x1
+b2 REF x1
+
+b1 REF x1
+b1 Experiencer x1 "speaker"
+b1 Stimulus x1 x2
+b1 like "v.01" x1
+b2 REF x2
+b2 horse "n.01" x2
+
+b1 REF x1
+b1 REF x2
+b1 Agent x1 "speaker"
+b1 Co-Agent x1 x3
+b1 TPR x2 "now"
+b1 Time x1 x2
+b1 play "v.01" x1
+b1 time "n.08" x2
+b2 REF x3
+b2 fisar "n.01" x3
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 TPR x3 "now"
+b2 Time x2 x3
+b2 gigacchiò "v.01" x2
+b2 time "n.08" x3
+
+b1 NOT b2
+b2 REF x1
+b2 pessuno "n.01" x1
+b1 REF x2
+b1 EQU x2 "now"
+b1 time "n.08" x2
+b2 REF x3
+b2 REF x4
+b2 PRP x4 b3
+b2 Pivot x3 x1
+b2 Theme x3 x4
+b2 Time x3 x2
+b2 want "v.01" x3
+b3 REF x5
+b3 Patient x5 x1
+b3 die "v.01" x5
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 EQU x1 "now"
+b2 EQU x1 x2
+b3 REF x2
+b3 Of x3 "speaker"
+b3 REF x3
+b3 Role x2 x3
+b3 cousin "n.01" x3
+b3 person "n.01" x2
+
+b1 REF x1
+b1 REF x2
+b1 Patient x1 "speaker"
+b1 TPR x2 "now"
+b1 Time x1 x2
+b1 exaggerato "v.01" x1
+b1 time "n.08" x2
+
+b1 REF x1
+b1 Name x1 "mary"
+b1 female "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 EQU x3 "now"
+b2 Experiencer x2 x1
+b2 Stimulus x2 "speaker"
+b2 Time x2 x3
+b2 bear "v.01" x2
+b2 time "n.08" x3
+
+b1 POS b2
+b2 REF x1
+b2 Agent x1 "speaker"
+b2 Theme x1 x2
+b2 speak "v.01" x1
+b2 REF x2
+b2 Quantity x2 "+"
+b2 language "n.01" x2
+
+b1 REF x1
+b1 REF x2
+b1 EQU x2 "now"
+b1 Theme x1 "speaker"
+b1 Time x1 x2
+b1 live "v.01" x1
+b1 time "n.08" x2
+b1 Instrument x1 x3
+b2 REF x3
+b2 Name x3 "boston"
+b2 location "n.01" x3
+
+b1 REF x1
+b1 Name x1 "pua"
+b1 female "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 TPR x3 "now"
+b2 Time x2 x3
+b2 sing "v.01" x2
+b2 time "n.08" x3
+
+b1 REF x1
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 Asset x2 x4
+b2 TPR x3 "now"
+b2 Time x2 x3
+b2 pay "v.01" x2
+b2 time "n.08" x3
+b2 REF x4
+b2 Quantity x4 "20"
+b2 Unit x4 "dollar"
+b2 measure "n.02" x4
+b2 Theme x4 x5
+b3 REF x5
+b3 lipstick "n.01" x5
+
+b1 REF x1
+b1 police "n.01" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 TPR x3 "now"
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 disperso "v.01" x2
+b2 time "n.08" x3
+b3 REF x4
+b3 crowd "n.01" x4
+
+b1 REF x1
+b1 Name x1 "thomas~edison"
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 Result x2 x4
+b2 TPR x3 "now"
+b2 Time x2 x3
+b2 invent "v.01" x2
+b2 time "n.08" x3
+b3 REF x4
+b3 lilk "n.01" x4
+b3 REF x5
+b3 Theme x5 x4
+b3 electric "a.01" x5
+
+b1 REF x1
+b1 Theme x1 "speaker"
+b1 assetata "a.01" x1
+
+b1 REF x1
+b1 REF x2
+b1 TPR x2 "now"
+b1 Time x1 x2
+b1 sorrise "v.01" x1
+b1 time "n.08" x2
+
+b1 REF x1
+b1 Name x1 "linda"
+b1 female "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 EQU x3 "now"
+b2 Experiencer x2 x1
+b2 Stimulus x2 x4
+b2 Time x2 x3
+b2 like "v.01" x2
+b2 time "n.08" x3
+b3 REF x4
+b3 cioccolata "n.01" x4
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 TPR x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Agent x3 x1
+b2 walk "v.01" x3
+
+b1 REF x1
+b1 man "n.01" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 right "a.02" x3
+
+b1 REF x1
+b1 relations "n.01" x1
+b2 POS b3
+b3 REF x2
+b3 Theme x2 x1
+b3 exaggerate "a.01" x2
+
+b1 REF x1
+b1 male "n.02" x1
+b2 EQU x1 x2
+b2 TPR x1 "now"
+b3 IMP b1 b2
+b1 REF x2
+b1 hope "n.01" x2
+
+b1 REF x1
+b1 door "n.01" x1
+b2 REF x2
+b2 TPR x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 open "a.01" x3
+
+b1 REF x1
+b1 Name x1 "marilyn~monroe"
+b1 person "n.01" x1
+b2 REF x2
+b2 Patient x2 x1
+b2 TPR x3 "now"
+b2 die "v.01" x2
+b2 REF x3
+b2 Time x2 x3
+b2 time "n.08" x3
+b2 REF x4
+b2 Quantity x4 "33"
+b2 Unit x4 "year"
+b2 measure "n.02" x4
+b2 TAB x3 x4
+b2 TAB x4 "now"
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 TPR x3 "now"
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 segnò "v.01" x2
+b2 time "n.08" x3
+b2 REF x4
+b2 Quantity x4 "3"
+b2 sting "n.02" x4
+
+b1 IMP b2 b3
+b2 REF x1
+b2 coccodrile "n.01" x1
+b1 REF x2
+b1 TPR x2 "now"
+b1 time "n.08" x2
+b3 REF x3
+b3 Agent x3 x1
+b3 Patient x3 x4
+b3 Time x3 x2
+b3 eat "v.01" x3
+b3 REF x4
+b3 dog "n.01" x4
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 happy "a.01" x3
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Experiencer x3 x1
+b2 know "v.01" x3
+
+b1 REF x1
+b1 music "n.01" x1
+b2 REF x2
+b2 TPR x2 "now"
+b2 time "n.08" x2
+b3 REF x3
+b3 Agent x3 x4
+b3 Theme x3 x1
+b3 Time x3 x2
+b3 attract "v.01" x3
+b2 IMP b4 b3
+b4 REF x4
+b4 person "n.01" x4
+
+b1 REF x1
+b1 Name x1 "martin~luther~king"
+b1 person "n.01" x1
+b2 REF x2
+b2 TPR x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Patient x3 x1
+b2 murder "v.01" x3
+b2 YearOfCentury x2 "1968"
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 NOT b3
+b2 REF x2
+b2 TPR x2 "now"
+b2 time "n.08" x2
+b3 Time x3 x2
+b3 REF x3
+b3 Agent x3 x1
+b3 Theme x3 x4
+b3 break "v.01" x3
+b3 REF x4
+b3 law "n.01" x4
+
+b1 REF x1
+b1 dog "n.01" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Colour x1 x3
+b2 green "a.01" x3
+b3 DRS b2
+b3 DRS b1
+b3 CONTINUATION b2 b1
+b1 REF x4
+b1 Theme x4 x1
+b1 handsome "a.01" x4
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 time "n.08" x2
+b3 REF x3
+b3 Experiencer x3 x1
+b3 Stimulus x3 x4
+b3 Time x3 x2
+b3 hate "v.01" x3
+b2 IMP b4 b3
+b4 REF x4
+b4 spider "n.01" x4
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 TPR x3 "now"
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 dimenava "v.01" x2
+b2 time "n.08" x3
+b3 REF x4
+b3 finger "n.01" x4
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 EQU x3 "now"
+b2 Time x2 x3
+b2 sing "v.01" x2
+b2 time "n.08" x3
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 TPR x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Agent x3 x1
+b2 proud "a.01" x3
+b2 Theme x3 "hearer"
+
+b1 REF x1
+b1 Participant x1 x2
+b1 event "v.01" x1
+b2 REF x2
+b2 Name x2 "tom"
+b2 male "n.02" x2
+b2 REF x3
+b2 Theme x3 x2
+b2 allergic "a.01" x3
+b2 Theme x3 x4
+b2 REF x4
+b2 entity "n.01" x4
+
+b1 REF x1
+b1 Name x1 "jane"
+b1 female "n.02" x1
+b2 REF x2
+b2 TPR x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 furious "a.01" x3
+
+b1 EQU "speaker" "now"
+b1 EQU "speaker" x1
+b1 REF x1
+b1 claim "n.01" x1
+
+b1 REF x1
+b1 Name x1 "aurore"
+b1 person "n.01" x1
+b1 REF x2
+b1 Agent x2 x1
+b1 Patient x2 x3
+b1 marry "v.01" x2
+b2 REF x3
+b2 Name x3 "chabrol"
+b2 person "n.01" x3
+
+b1 REF x1
+b1 sirena "n.01" x1
+b1 Theme x1 x2
+b1 REF x2
+b1 ClockTime x2 "12:00"
+b1 time "n.08" x2
+b1 REF x3
+b1 EQU x3 "now"
+b1 Time x4 x3
+b1 time "n.08" x3
+b1 REF x4
+b1 Agent x4 x1
+b1 play "v.01" x4
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 drunk "a.01" x3
+
+b1 REF x1
+b1 Of x2 "speaker"
+b1 REF x2
+b1 Role x1 x2
+b1 mother "n.01" x2
+b1 person "n.01" x1
+b2 REF x3
+b2 EQU x3 "now"
+b2 Time x4 x3
+b2 time "n.08" x3
+b2 REF x4
+b2 Theme x4 x1
+b2 beautiful "a.01" x4
+
+b1 REF x1
+b1 Name x1 "taninna"
+b1 female "n.02" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Agent x3 x1
+b2 impallidendo "v.01" x3
+
+b1 REF x1
+b1 female "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 EQU x3 "now"
+b2 Time x2 x3
+b2 soffre "v.01" x2
+b2 time "n.08" x3
+b2 Theme x2 x4
+b2 REF x4
+b2 osteoporosis "n.01" x4
+
+b1 REF x1
+b1 female "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 TPR x3 "now"
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 cut "v.01" x2
+b2 time "n.08" x3
+b2 REF x4
+b2 onion "n.03" x4
+
+b1 IMP b2 b3
+b2 REF x1
+b2 cookie "n.01" x1
+b3 REF x2
+b3 Theme x2 x1
+b3 be "v.01" x2
+b1 REF x3
+b1 table "n.01" x3
+
+b1 REF x1
+b1 appendice "n.01" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 REF x4
+b2 EQU x4 "now"
+b2 Theme x3 x1
+b2 Time x3 x4
+b2 be "v.01" x3
+b2 time "n.08" x4
+b2 Theme x3 x5
+b2 REF x5
+b2 REF x6
+b2 REF x7
+b2 APX x6 x7
+b2 Quantity x5 x6
+b2 quantity "n.01" x6
+b2 quantity "n.01" x7
+b2 EQU x7 "10"
+b2 Unit x7 "cock"
+b2 measure "n.02" x5
+
+b1 REF x1
+b1 REF x2
+b1 Role x1 x2
+b1 doctor "n.01" x2
+b1 person "n.01" x1
+b1 REF x3
+b1 REF x4
+b1 Agent x3 x1
+b1 TPR x4 "now"
+b1 Theme x3 x5
+b1 Time x3 x4
+b1 examinò "v.01" x3
+b1 time "n.08" x4
+b2 REF x5
+b2 REF x6
+b2 Theme x5 x6
+b2 mr "n.01" x6
+b2 Name x5 "brown"
+b2 male "n.02" x5
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 TPR x3 "now"
+b2 Theme x2 x1
+b2 Time x2 x3
+b2 live "v.01" x2
+b2 time "n.08" x3
+b2 Instrument x2 x4
+b3 REF x4
+b3 Name x4 "boston"
+b3 location "n.01" x4
+
+b1 Time x2 x1
+b1 REF x1
+b1 YearOfCentury x1 "1497~jahn~cabot"
+b1 person "n.01" x1
+b1 REF x2
+b1 REF x3
+b1 Agent x2 x1
+b1 TPR x3 "now"
+b1 Theme x2 x4
+b1 Time x2 x3
+b1 explorò "v.01" x2
+b1 time "n.08" x3
+b2 REF x4
+b2 Name x4 "canada"
+b2 location "n.01" x4
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Patient x2 x1
+b2 TPR x3 "now"
+b2 Time x2 x3
+b2 piangeva "v.01" x2
+b2 time "n.08" x3
+
+b1 REF x1
+b1 cat "n.01" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 TPR x3 "now"
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 saltò "v.01" x2
+b2 time "n.08" x3
+b2 REF x4
+b2 bird "n.01" x4
+
+b1 REF x1
+b1 REF x2
+b1 Agent x1 "speaker"
+b1 EQU x2 "now"
+b1 Theme x1 x3
+b1 Time x1 x2
+b1 time "n.08" x2
+b1 want "v.01" x1
+b1 REF x3
+b1 REF x4
+b1 Theme x4 x3
+b1 muffin "a.01" x4
+b1 english "n.01" x3
+
+b1 REF x1
+b1 Name x1 "tom"
+
+b1 IMP b2 b3
+b2 REF x1
+b2 person "n.01" x1
+b3 EQU x1 "now"
+b3 EQU x1 x2
+b4 REF x2
+b4 Name x2 "erkin"
+b4 male "n.02" x2
+
+b1 REF x1
+b1 Name x1 "?"
+b1 entity "n.01" x1
+b1 EQU x1 x2
+b1 TPR x1 "now"
+b1 REF x2
+b1 Order x2 "1"
+b1 REF x3
+b1 Role x2 x3
+b1 emperator "n.01" x3
+b1 person "n.01" x2
+b1 Theme x3 x4
+b2 REF x4
+b2 Name x4 "cina"
+b2 location "n.01" x4
+
+b1 REF x1
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 TPR x3 "now"
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 hand "v.01" x2
+b2 time "n.08" x3
+b2 REF x4
+b2 Quantity x4 "3"
+b2 Unit x4 "year"
+b2 measure "n.02" x4
+b2 Theme x2 x5
+b2 REF x5
+b2 prison "n.01" x5
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 Patient x2 x4
+b2 TPR x3 "now"
+b2 Time x2 x3
+b2 make "v.01" x2
+b2 time "n.08" x3
+b3 REF x4
+b3 persiane "n.01" x4
+
+b1 REF x1
+b1 Name x1 "italy"
+b1 country "n.02" x1
+b2 NOT b3
+b3 EQU x1 "now"
+b3 EQU x1 x2
+b4 REF x2
+b4 Name x2 "grecia"
+b4 location "n.01" x2
+
+b1 REF x1
+b1 Experiencer x1 "hearer"
+b1 Stimulus x1 x2
+b1 like "v.01" x1
+b2 REF x2
+b2 clothes "n.01" x2
+b2 REF x3
+b2 Colour x2 x3
+b2 blue "a.01" x3
+
+b1 REF x1
+b1 Of x2 "speaker"
+b1 REF x2
+b1 Role x1 x2
+b1 person "n.01" x1
+b1 son "n.01" x2
+b2 REF x3
+b2 REF x4
+b2 Agent x3 x1
+b2 EQU x4 "now"
+b2 Time x3 x4
+b2 soffre "v.01" x3
+b2 time "n.08" x4
+b2 Theme x3 x5
+b2 REF x5
+b2 osteoporosis "n.01" x5
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 Experiencer x2 x1
+b2 Stimulus x2 x3
+b2 hate "v.01" x2
+b3 REF x3
+b3 rule "n.01" x3
+
+b1 REF x1
+b1 Quantity x1 "2"
+b1 REF x2
+b1 REF x3
+b1 APX x2 x3
+b1 Quantity x1 x2
+b1 quantity "n.01" x2
+b1 quantity "n.01" x3
+b1 Instrument x1 x4
+b1 REF x4
+b1 Quantity x4 "4"
+b1 Unit x4 "4"
+b1 time "n.08" x4
+
+b1 REF x1
+b1 Participant x1 x2
+b1 event "v.01" x1
+b2 REF x2
+b2 REF x3
+b2 Theme x3 x2
+b2 beautiful "a.01" x3
+b2 fischia "n.01" x2
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 TPR x3 "now"
+b2 Theme x2 x1
+b2 Time x2 x3
+b2 arrive "v.01" x2
+b2 time "n.08" x3
+b2 Theme x2 x4
+b3 REF x4
+b3 Name x4 "boston"
+b3 city "n.01" x4
+b2 Instrument x2 x5
+b2 REF x5
+b2 ClockTime x5 "14:30"
+b2 time "n.08" x5
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 EQU x1 "now"
+b2 EQU x1 x2
+b2 REF x2
+b2 REF x3
+b2 Theme x3 x2
+b2 excellent "a.01" x3
+b2 REF x4
+b2 Role x2 x4
+b2 person "n.01" x2
+b2 physicist "n.01" x4
+
+b1 REF x1
+b1 Agent x1 "speaker"
+b1 Theme x1 x2
+b1 contact "v.01" x1
+b2 REF x2
+b2 Name x2 "tom"
+b2 male "n.02" x2
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 TPR x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Patient x3 x1
+b2 stab "v.01" x3
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 TPR x3 "now"
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 spense "v.01" x2
+b2 time "n.08" x3
+b3 REF x4
+b3 tv "n.01" x4
+
+b1 REF x1
+b1 female "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 TPR x3 "now"
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 grill "v.01" x2
+b2 time "n.08" x3
+b2 REF x4
+b2 steak "n.01" x4
+
+b1 REF x1
+b1 Name x1 "millie"
+b1 female "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 EQU x3 "now"
+b2 Experiencer x2 x1
+b2 Stimulus x2 x4
+b2 Time x2 x3
+b2 love "v.01" x2
+b2 time "n.08" x3
+b3 REF x4
+b3 cioccolato "n.01" x4
+
+b1 REF x1
+b1 dog "n.01" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 Patient x2 x4
+b2 TPR x3 "now"
+b2 Time x2 x3
+b2 bite "v.01" x2
+b2 time "n.08" x3
+b3 REF x4
+b3 man "n.01" x4
+
+b1 REF x1
+b1 male "n.02" x1
+b2 REF x2
+b2 TPR x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Patient x3 x1
+b2 arrest "v.01" x3
+b2 Location x3 x4
+b3 REF x4
+b3 Name x4 "egitto"
+b3 city "n.01" x4
+
+b1 REF x1
+b1 EQU x1 "now"
+b1 Time x2 x1
+b1 time "n.08" x1
+b1 REF x2
+b1 Theme x2 "speaker"
+b1 well "a.01" x2
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 TPR x3 "now"
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 signato "v.01" x2
+b2 time "n.08" x3
+b2 REF x4
+b2 goal "n.01" x4
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 PRP x3 b3
+b2 Theme x2 x3
+b2 Time x2 x4
+b2 think "v.01" x2
+b2 REF x4
+b2 EQU x4 "now"
+b2 time "n.08" x4
+b3 Time x5 x4
+b3 REF x5
+b3 Theme x5 "speaker"
+b3 jealous "a.01" x5
+
+b1 REF x1
+b1 puzza "n.01" x1
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Experiencer x3 x1
+b2 allergic "a.02" x3
+b2 Stimulus x3 x4
+b2 REF x4
+b2 sou "n.01" x4
+
+b1 REF x1
+b1 male "n.02" x1
+b2 REF x2
+b2 Theme x2 x1
+b2 come "v.01" x2
+b2 Theme x2 x3
+b3 REF x3
+b3 Name x3 "francia"
+b3 country "n.02" x3
+
+b1 REF x1
+b1 fish "n.01" x1
+b1 REF x2
+b1 Agent x2 x1
+b1 fly "v.01" x2
+
+b1 REF x1
+b1 bear "n.01" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 Patient x2 x4
+b2 TPR x3 "now"
+b2 Time x2 x3
+b2 eat "v.01" x2
+b2 time "n.08" x3
+b2 REF x4
+b2 apple "n.01" x4
+
+b1 REF x1
+b1 Patient x1 "speaker"
+b1 usci "v.01" x1
+b1 Theme x1 x2
+b1 REF x2
+b1 home "n.01" x2
+b1 ClockTime x1 "17:00"
+
+b1 REF x1
+b1 Name x1 "mayuko"
+b1 female "n.02" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 dance "v.01" x3
+b2 Instrument x3 x4
+b3 REF x4
+b3 music "n.01" x4
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 do "v.01" x3
+
+b1 REF x1
+b1 area "n.01" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 isolated "a.01" x3
+
+b1 IMP b2 b3
+b2 REF x1
+b2 person "n.01" x1
+b3 REF x2
+b3 Agent x2 x1
+b3 ridono "v.01" x2
+
+b1 REF x1
+b1 frontiera "n.01" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 closed "a.01" x3
+
+b1 REF x1
+b1 male "n.02" x1
+b2 NOT b3
+b3 REF x2
+b3 Experiencer x2 x1
+b3 Stimulus x2 x3
+b3 know "v.01" x2
+b3 REF x3
+b3 entity "n.01" x3
+
+b1 REF x1
+b1 pond "n.01" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 deep "a.01" x3
+b2 meter "n.01" x2
+
+b1 REF x1
+b1 boat "n.01" x1
+b2 REF x2
+b2 TPR x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 equipage "v.01" x3
+b2 Theme x3 x4
+b2 REF x4
+b2 radar "n.01" x4
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Agent x3 x1
+b2 Patient x3 x4
+b2 chew "v.01" x3
+b2 REF x4
+b2 toothbule "n.01" x4
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Agent x3 x1
+b2 Co-Agent x3 x4
+b2 kiss "v.01" x3
+b3 REF x4
+b3 Name x4 "mary"
+b3 female "n.02" x4
+
+b1 REF x1
+b1 tower "n.01" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 tall "a.01" x3
+b2 meter "n.01" x2
+
+b1 REF x1
+b1 manchester~united "n.01" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 TPR x3 "now"
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 defeat "v.01" x2
+b2 time "n.08" x3
+b3 REF x4
+b3 fulham "n.01" x4
+
+b1 EQU "hearer" "now"
+b1 EQU "hearer" x1
+b1 REF x1
+b1 tree "n.01" x1
+
+b1 REF x1
+b1 Name x1 "robin~hood"
+b1 person "n.01" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 TPR x3 "now"
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 derubava "v.01" x2
+b2 time "n.08" x3
+b3 REF x4
+b3 ricchi "n.01" x4
+
+b1 REF x1
+b1 book "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 EQU x3 "now"
+b2 Theme x2 x1
+b2 Time x2 x3
+b2 Value x2 x4
+b2 cost "v.01" x2
+b2 time "n.08" x3
+b2 REF x4
+b2 Quantity x4 "3000"
+b2 Unit x4 "yen"
+b2 measure "n.02" x4
+
+b1 REF x1
+b1 book "n.01" x1
+b2 EQU x1 "now"
+b2 EQU x1 x2
+b2 REF x2
+
+b1 REF x1
+b1 REF x2
+b1 Agent x1 "speaker"
+b1 TPR x2 "now"
+b1 Theme x1 x3
+b1 Time x1 x2
+b1 climb "v.01" x1
+b1 time "n.08" x2
+b2 REF x3
+b2 Name x3 "monte~aso"
+b2 male "n.02" x3
+
+b1 REF x1
+b1 Name x1 "charles~de~gaulle"
+b1 male "n.02" x1
+b2 REF x2
+b2 Patient x2 x1
+b2 TPR x3 "now"
+b2 die "v.01" x2
+b2 Time x2 x3
+b2 REF x3
+b2 time "n.08" x3
+b2 YearOfCentury x3 "1970"
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 TPR x3 "now"
+b2 Time x2 x3
+b2 shudder "v.01" x2
+b2 time "n.08" x3
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 Theme x2 x1
+b2 exaggera "v.01" x2
+
+b1 REF x1
+b1 Of x2 "speaker"
+b1 REF x2
+b1 Role x1 x2
+b1 mother "n.01" x2
+b1 person "n.01" x1
+b2 REF x3
+b2 REF x4
+b2 Agent x3 x1
+b2 EQU x4 "now"
+b2 Theme x3 x5
+b2 Time x3 x4
+b2 bring "v.01" x3
+b2 time "n.08" x4
+b2 REF x5
+b2 Quantity x5 "10"
+b2 egg "n.02" x5
+
+b1 REF x1
+b1 REF x2
+b1 Agent x1 "speaker"
+b1 TPR x2 "now"
+b1 Theme x1 x3
+b1 Time x1 x2
+b1 guardai "v.01" x1
+b1 time "n.08" x2
+b1 REF x3
+b1 documentary "n.01" x3
+
+b1 NOT b2
+b2 REF x1
+b2 pessuno "n.01" x1
+b1 REF x2
+b1 EQU x2 "now"
+b1 time "n.08" x2
+b2 Time x3 x2
+b2 REF x3
+b2 Theme x3 x1
+b2 invulnerable "a.01" x3
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 TPR x3 "now"
+b2 Time x2 x3
+b2 time "n.08" x3
+b2 work "v.01" x2
+b2 Instrument x2 x4
+b2 REF x4
+b2 compagnia~petrolifera "n.01" x4
+
+b1 REF x1
+b1 EQU x1 "now"
+b1 Time x2 x1
+b1 time "n.08" x1
+b1 REF x2
+b1 Agent x2 "speaker"
+b1 work "v.01" x2
+b1 Goal x2 "hearer"
+
+b1 REF x1
+b1 Of x2 "speaker"
+b1 REF x2
+b1 Role x1 x2
+b1 person "n.01" x1
+b1 wife "n.01" x2
+b2 REF x3
+b2 REF x4
+b2 REF x5
+b2 Agent x3 x1
+b2 PRP x4 b3
+b2 TPR x5 "now"
+b2 Time x3 x5
+b2 Topic x3 x4
+b2 look "v.01" x3
+b2 time "n.08" x5
+b3 REF x6
+b3 Theme x6 x1
+b3 surprised "a.01" x6
+
+b1 NOT b2
+b2 REF x1
+b2 person "n.01" x1
+b1 REF x2
+b1 EQU x2 "now"
+b1 time "n.08" x2
+b2 Time x3 x2
+b2 REF x3
+b2 Theme x3 x1
+b2 perfect "a.01" x3
+
+b1 IMP b2 b3
+b2 REF x1
+b2 bee "n.01" x1
+b3 REF x2
+b3 Theme x2 x1
+b3 stay "v.01" x2
+
+b1 NOT b2
+b2 REF x1
+b2 pessuno "n.01" x1
+b1 REF x2
+b1 TPR x2 "now"
+b1 time "n.08" x2
+b2 REF x3
+b2 Agent x3 x1
+b2 Time x3 x2
+b2 lie "v.01" x3
+
+b1 REF x1
+b1 Name x1 "leloir"
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Co-Theme x2 x4
+b2 TPR x3 "now"
+b2 Theme x2 x1
+b2 Time x2 x3
+b2 be "v.01" x2
+b2 time "n.08" x3
+b3 REF x4
+b3 Name x4 "argentina"
+b3 location "n.01" x4
+
+b1 REF x1
+b1 tea "n.01" x1
+b2 REF x2
+b2 REF x3
+b2 EQU x3 "now"
+b2 Theme x2 x1
+b2 Time x2 x3
+b2 Value x2 x4
+b2 cost "v.01" x2
+b2 time "n.08" x3
+b2 REF x4
+b2 Quantity x4 "2"
+b2 Unit x4 "euro"
+b2 measure "n.02" x4
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Patient x3 x1
+b2 divorziando "v.01" x3
+b2 Agent x3 x4
+b3 REF x4
+b3 Name x4 "mary"
+b3 female "n.02" x4
+
+b1 REF x1
+b1 Theme x1 x2
+b1 applaudono "v.01" x1
+b2 IMP b3 b1
+b3 REF x2
+b3 person "n.01" x2
+
+b1 REF x1
+b1 person "n.01" x1
+b2 REF x2
+b2 Experiencer x2 x1
+b2 Stimulus x2 x3
+b2 hate "v.01" x2
+b3 REF x3
+b3 spider "n.01" x3
+
+b1 REF x1
+b1 Of x2 "speaker"
+b1 REF x2
+b1 Role x1 x2
+b1 father "n.01" x2
+b1 person "n.01" x1
+b2 REF x3
+b2 EQU x3 "now"
+b2 Time x4 x3
+b2 time "n.08" x3
+b2 REF x4
+b2 Theme x4 x1
+b2 go "v.01" x4
+b2 Theme x4 x5
+b3 REF x5
+b3 Name x5 "cina"
+b3 location "n.01" x5
+
+b1 REF x1
+b1 semaforo "n.01" x1
+b2 NOT b3
+b3 REF x2
+b3 Theme x2 x1
+b3 work "v.01" x2
+
+b1 REF x1
+b1 Participant x1 x2
+b1 event "v.01" x1
+b1 REF x2
+b1 can "n.01" x2
+
+b1 REF x1
+b1 office "n.01" x1
+b2 REF x2
+b2 TPR x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 desert "v.01" x3
+
+b1 REF x1
+b1 entity "n.01" x1
+b2 REF x2
+b2 male "n.02" x2
+b1 REF x3
+b1 Agent x3 x1
+b1 Patient x3 x2
+b1 bite "v.01" x3
+
+b1 REF x1
+b1 Name x1 "pm"
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 TPR x3 "now"
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 buy "v.01" x2
+b2 time "n.08" x3
+b2 REF x4
+b2 Quantity x4 "3"
+b2 REF x5
+b2 Role x4 x5
+b2 factor "n.01" x5
+b2 person "n.01" x4
+
+b1 REF x1
+b1 bambina "n.01" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Agent x3 x1
+b2 Theme x3 x4
+b2 pat "v.04" x3
+b2 REF x4
+b2 cat "n.01" x4
+
+b1 REF x1
+b1 female "n.02" x1
+b2 REF x2
+b2 male "n.02" x2
+b3 REF x3
+b3 Agent x3 x1
+b3 Theme x3 x2
+b3 forgive "v.01" x3
+
+b1 REF x1
+b1 Name x1 "auckland"
+b1 female "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Co-Theme x2 x4
+b2 EQU x3 "now"
+b2 Theme x2 x1
+b2 Time x2 x3
+b2 be "v.01" x2
+b2 time "n.08" x3
+b2 REF x4
+b2 city "n.01" x4
+b2 Theme x4 x5
+b2 REF x5
+b2 REF x6
+b2 Theme x5 x6
+b2 new "n.01" x6
+b2 person "n.01" x5
+
+b1 REF x1
+b1 female "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 TPR x3 "now"
+b2 Time x2 x3
+b2 time "n.08" x3
+b2 wander "v.01" x2
+b2 Goal x2 x4
+b3 REF x4
+b3 country "n.01" x4
+
+b1 REF x1
+b1 Agent x1 "speaker"
+b1 Result x1 x2
+b1 write "v.01" x1
+b1 REF x2
+b1 book "n.01" x2
+b1 REF x3
+b1 Quantity x3 "2"
+b1 Unit x3 "year"
+b1 measure "n.02" x3
+b1 TAB x1 x3
+b1 TAB x3 "now"
+
+b1 EQU "speaker" "now"
+b1 EQU "speaker" x1
+b1 REF x1
+b1 glutine "n.01" x1
+
+b1 REF x1
+b1 tacchino "n.01" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 EQU x3 "now"
+b2 Time x2 x3
+b2 pluck "v.01" x2
+b2 time "n.08" x3
+
+b1 REF x1
+b1 bed "n.01" x1
+b2 REF x2
+b2 REF x3
+b2 EQU x3 "now"
+b2 Theme x2 x1
+b2 Time x2 x3
+b2 be "v.01" x2
+b2 time "n.08" x3
+b2 Theme x2 x4
+b2 REF x4
+b2 Quantity x4 "120"
+b2 Unit x4 "euro"
+b2 measure "n.02" x4
+
+b1 REF x1
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 TPR "now" x3
+b2 Theme x2 x1
+b2 Time x2 x3
+b2 leave "v.01" x2
+b2 time "n.08" x3
+b2 Instrument x2 x4
+b2 REF x4
+b2 ClockTime x4 "08:00"
+b2 time "n.08" x4
+
+b1 REF x1
+b1 EQU x1 "now"
+b1 Time x2 x1
+b1 time "n.08" x1
+b1 REF x2
+b1 Theme x2 "speaker"
+b1 lazy "a.01" x2
+
+b1 IMP b2 b3
+b2 REF x1
+b2 person "n.01" x1
+b3 EQU x1 "now"
+b3 EQU x1 x2
+b3 REF x2
+b3 Theme x2 x3
+b4 REF x3
+b4 male "n.02" x3
+
+b1 REF x1
+b1 clock "n.01" x1
+b2 REF x2
+b2 REF x3
+b2 EQU x3 "now"
+b2 Theme x2 x1
+b2 Time x2 x3
+b2 Value x2 x4
+b2 coss "v.01" x2
+b2 time "n.08" x3
+b2 REF x4
+b2 Quantity x4 "50"
+b2 Unit x4 "yen"
+b2 measure "n.02" x4
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Agent x3 x1
+b2 celebrate "v.01" x3
+
+b1 REF x1
+b1 male "n.02" x1
+b2 REF x2
+b2 Theme x2 x1
+b2 fermentava "v.01" x2
+
+b1 REF x1
+b1 hall "n.01" x1
+b2 REF x2
+b2 REF x3
+b2 Attribute x2 x4
+b2 EQU x3 "now"
+b2 Theme x2 x1
+b2 Time x2 x3
+b2 contain "v.01" x2
+b2 time "n.08" x3
+b2 REF x4
+b2 Quantity x4 "2000"
+b2 person "n.01" x4
+
+b1 REF x1
+b1 Name x1 "david~beckham"
+b1 person "n.01" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 live "v.01" x3
+b2 Location x3 x4
+b3 REF x4
+b3 Name x4 "america"
+b3 location "n.01" x4
+
+b1 REF x1
+b1 Name x1 "spartan~air~lines"
+b1 person "n.01" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 TPR x3 "now"
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 acquisì "v.01" x2
+b2 time "n.08" x3
+b2 REF x4
+b2 united~airways "n.01" x4
+
+b1 REF x1
+b1 Name x1 "charles~de~gaulle"
+b1 male "n.02" x1
+b2 REF x2
+b2 Patient x2 x1
+b2 TPR x3 "now"
+b2 die "v.01" x2
+b2 Time x2 x3
+b2 REF x3
+b2 time "n.08" x3
+b2 YearOfCentury x3 "1970"
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 TPR x3 "now"
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 time "n.08" x3
+b2 win "v.01" x2
+b3 REF x4
+b3 lottery "n.01" x4
+
+b1 REF x1
+b1 Name x1 "edison"
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 TPR x3 "now"
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 invent "v.01" x2
+b2 time "n.08" x3
+b3 REF x4
+b3 Name x4 "kinetoscopio"
+b3 person "n.01" x4
+
+b1 REF x1
+b1 Name x1 "mary"
+
+b1 REF x1
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 TPR x3 "now"
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 hire "v.01" x2
+b2 time "n.08" x3
+b2 REF x4
+b2 REF x5
+b2 Role x4 x5
+b2 investigatore~privator "n.01" x5
+b2 person "n.01" x4
+
+b1 REF x1
+b1 Of x2 "speaker"
+b1 REF x2
+b1 Role x1 x2
+b1 mother "n.01" x2
+b1 person "n.01" x1
+b2 REF x3
+b2 REF x4
+b2 Agent x3 x1
+b2 TPR x4 "now"
+b2 Theme x3 x5
+b2 Time x3 x4
+b2 taste "v.01" x3
+b2 time "n.08" x4
+b3 REF x5
+b3 milk "n.01" x5
+
+b1 REF x1
+b1 Name x1 "mary"
+b1 female "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 TPR x3 "now"
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 smoke "v.01" x2
+b2 time "n.08" x3
+b2 REF x4
+b2 cigar "n.01" x4
+
+b1 REF x1
+b1 female "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 EQU x3 "now"
+b2 Time x2 x3
+b2 soffre "v.01" x2
+b2 time "n.08" x3
+b2 Theme x2 x4
+b2 REF x4
+b2 illness "n.01" x4
+b2 REF x5
+b2 Theme x5 x4
+b2 contaious "a.01" x5
+
+b1 REF x1
+b1 alarm "n.01" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 TPR x3 "now"
+b2 Time x2 x3
+b2 suonò "v.01" x2
+b2 time "n.08" x3
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Agent x3 x1
+b2 study "v.01" x3
+b2 Instrument x3 x4
+b2 REF x4
+b2 moment "n.01" x4
+
+b1 REF x1
+b1 door "n.01" x1
+b2 NOT b3
+b2 REF x2
+b2 TPR x2 "now"
+b2 time "n.08" x2
+b3 Time x3 x2
+b3 REF x3
+b3 Theme x3 x1
+b3 closed "a.01" x3
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Experiencer x2 x1
+b2 PRP x3 b3
+b2 Stimulus x2 x3
+b2 Time x2 x4
+b2 know "v.01" x2
+b2 REF x4
+b2 EQU x4 "now"
+b2 time "n.08" x4
+b4 REF x5
+b4 Name x5 "mary"
+b4 female "n.02" x5
+b3 Time x6 x4
+b3 REF x6
+b3 Agent x6 x5
+b3 lie "v.01" x6
+
+b1 REF x1
+b1 dog "n.01" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Agent x3 x1
+b2 Patient x3 x4
+b2 chew "v.01" x3
+b2 REF x4
+b2 bone "n.01" x4
+
+b1 REF x1
+b1 dog "n.01" x1
+b1 REF x2
+b1 EQU x2 "now"
+
+b1 REF x1
+b1 car "n.01" x1
+b2 NOT b3
+b2 REF x2
+b2 EQU x2 "now"
+b2 time "n.08" x2
+b3 Time x3 x2
+b3 REF x3
+b3 Agent x3 x1
+b3 work "v.01" x3
+
+b1 REF x1
+b1 REF x2
+b1 Role x1 x2
+b1 person "n.01" x1
+b1 policeman "n.01" x2
+b2 REF x3
+b2 REF x4
+b2 Agent x3 x1
+b2 TPR x4 "now"
+b2 Theme x3 x5
+b2 Time x3 x4
+b2 chase "v.02" x3
+b2 time "n.08" x4
+b3 REF x5
+b3 REF x6
+b3 Role x5 x6
+b3 person "n.01" x5
+b3 thief "n.01" x6
+
+b1 REF x1
+b1 Name x1 "henry~ford"
+b1 person "n.01" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 TPR x3 "now"
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 found "v.01" x2
+b2 time "n.08" x3
+b3 REF x4
+b3 Name x4 "ford~motor~company"
+b3 location "n.01" x4
+
+b1 REF x1
+b1 Quantity x1 "4"
+b1 Theme x1 "4"
+b1 times "n.02" x1
+b1 REF x2
+b1 Co-Theme x2 "20"
+b1 Theme x2 x1
+b1 be "v.03" x2
+
+b1 REF x1
+b1 person "n.01" x1
+b2 NOT b3
+b3 REF x2
+b3 Agent x2 x1
+b3 Theme x2 x3
+b3 mangeranno "v.01" x2
+b3 REF x3
+b3 meat "n.01" x3
+
+b1 IMP b2 b3
+b2 REF x1
+b2 PartOf x1 x2
+b2 entity "n.01" x1
+b4 REF x2
+b4 boy "n.01" x2
+b1 REF x3
+b1 TPR x3 "now"
+b1 time "n.08" x3
+b3 REF x4
+b3 Patient x4 x1
+b3 Time x4 x3
+b3 dance "v.01" x4
+
+b1 REF x1
+b1 REF x2
+b1 Role x1 x2
+b1 doctor "n.01" x2
+b1 person "n.01" x1
+b2 REF x3
+b2 REF x4
+b2 Agent x3 x1
+b2 TPR x4 "now"
+b2 Theme x3 x5
+b2 Time x3 x4
+b2 examine "v.01" x3
+b2 time "n.08" x4
+b3 REF x5
+b3 REF x6
+b3 Role x5 x6
+b3 patient "n.01" x6
+b3 person "n.01" x5
+
+b1 REF x1
+b1 REF x2
+b1 Role x1 x2
+b1 person "n.01" x1
+b1 policeman "n.01" x2
+b2 REF x3
+b2 EQU x3 "now"
+b2 Time x4 x3
+b2 time "n.08" x3
+b2 REF x4
+b2 Agent x4 x1
+b2 Theme x4 x5
+b2 wear "v.01" x4
+b2 REF x5
+b2 mask "n.01" x5
+
+b1 REF x1
+b1 person "n.01" x1
+b1 REF x2
+b1 REF x3
+b1 Agent x2 x1
+b1 TPR x3 "now"
+b1 Time x2 x3
+b1 knock "v.01" x2
+b1 time "n.08" x3
+b1 Destination x2 x4
+b1 REF x4
+b1 door "n.01" x4
+
+b1 REF x1
+b1 Theme x1 "speaker"
+b1 capiamo "v.01" x1
+
+b1 IMP b2 b3
+b2 REF x1
+b2 banana "n.01" x1
+b1 REF x2
+b1 EQU x2 "now"
+b1 time "n.08" x2
+b3 Time x3 x2
+b3 REF x3
+b3 Colour x1 x3
+b3 yellow "a.01" x3
+
+b1 REF x1
+b1 wind "n.01" x1
+b2 REF x2
+b2 REF x3
+b2 TPR x3 "now"
+b2 Theme x2 x1
+b2 Time x2 x3
+b2 olulava "v.01" x2
+b2 time "n.08" x3
+
+b1 IMP b2 b3
+b2 REF x1
+b2 book "n.01" x1
+b3 POS b4
+b4 REF x2
+b4 Patient x2 x1
+b4 emozionare "v.01" x2
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 TPR x3 "now"
+b2 Theme x2 x1
+b2 Time x2 x3
+b2 dance "v.01" x2
+b2 time "n.08" x3
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 TPR x3 "now"
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 keep "v.01" x2
+b2 time "n.08" x3
+b2 REF x4
+b2 diary "n.01" x4
+
+b1 REF x1
+b1 Name x1 "ken"
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 TPR x3 "now"
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 hear "v.01" x2
+b2 time "n.08" x3
+b3 REF x4
+b3 Name x4 "tom"
+b3 male "n.02" x4
+
+b1 REF x1
+b1 Name x1 "charles~de~gaulle"
+b1 male "n.02" x1
+b2 REF x2
+b2 Patient x2 x1
+b2 TPR x3 "now"
+b2 die "v.01" x2
+b2 Time x2 x3
+b2 REF x3
+b2 time "n.08" x3
+b2 YearOfCentury x3 "1970"
+
+b1 REF x1
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 Patient x2 x4
+b2 TPR x3 "now"
+b2 Time x2 x3
+b2 invent "v.01" x2
+b2 time "n.08" x3
+b2 REF x4
+b2 scuse "n.01" x4
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 forgive "a.01" x3
+
+b1 REF x1
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 TPR x3 "now"
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 raccolse "v.01" x2
+b2 time "n.08" x3
+b2 REF x4
+b2 stone "n.01" x4
+
+b1 REF x1
+b1 REF x2
+b1 Theme x1 x2
+b1 steve "n.01" x2
+b1 Name x1 "miller~band"
+b1 location "n.01" x1
+b2 REF x3
+b2 REF x4
+b2 Agent x3 x1
+b2 Result x3 x5
+b2 TPR x4 "now"
+b2 Time x3 x4
+b2 publish "v.01" x3
+b2 time "n.08" x4
+b2 REF x5
+b2 REF x6
+b2 Theme x6 x5
+b2 new "a.01" x6
+b2 album "n.01" x5
+b2 Theme x5 x7
+b2 REF x7
+b2 MonthOfYear x7 "06"
+b2 time "n.08" x7
+b2 YearOfCentury x7 "2010"
+
+b1 REF x1
+b1 REF x2
+b1 EQU x2 "now"
+b1 Patient x1 x3
+b1 Time x1 x2
+b1 devastano "v.01" x1
+b1 time "n.08" x2
+b2 REF x3
+b2 Name x3 "europa"
+b2 location "n.01" x3
+
+b1 REF x1
+b1 god "n.01" x1
+b1 REF x2
+b1 REF x3
+b1 Agent x2 x1
+b1 Result x2 x4
+b1 TPR x3 "now"
+b1 Time x2 x3
+b1 make "v.01" x2
+b1 time "n.08" x3
+b2 REF x4
+b2 world "n.01" x4
+b1 Instrument x2 x5
+b1 REF x5
+b1 Quantity x5 "6"
+b1 Unit x5 "day"
+b1 measure "n.02" x5
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 TPR x3 "now"
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 taste "v.01" x2
+b2 time "n.08" x3
+b3 REF x4
+b3 male "n.02" x4
+
+b1 REF x1
+b1 salve "v.01" x1
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 NOT b3
+b3 REF x2
+b3 Agent x2 x1
+b3 smoke "v.01" x2
+
+b1 REF x1
+b1 female "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 TPR x3 "now"
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 stirò "v.01" x2
+b2 time "n.08" x3
+b2 REF x4
+b2 skirt "n.01" x4
+
+b1 REF x1
+b1 child "n.01" x1
+b2 REF x2
+b2 REF x3
+b2 EQU x3 "now"
+b2 Theme x2 x1
+b2 Time x2 x3
+b2 ballano "v.01" x2
+b2 time "n.08" x3
+b2 Instrument x2 x4
+b2 REF x4
+b2 fore "n.01" x4
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 NOT b3
+b2 REF x2
+b2 EQU x2 "now"
+b2 time "n.08" x2
+b3 Time x3 x2
+b3 REF x3
+b3 Theme x3 x1
+b3 strafact "v.01" x3
+
+b1 REF x1
+b1 girl "n.01" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 TPR x3 "now"
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 time "n.08" x3
+b2 wear "v.01" x2
+b2 REF x4
+b2 kimono "n.01" x4
+b2 REF x5
+b2 Colour x4 x5
+b2 pale~blue "a.01" x5
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Agent x3 x1
+b2 Patient x3 x4
+b2 sleep "v.01" x3
+b2 REF x4
+b2 balloon "n.02" x4
+
+b1 EQU "speaker" "now"
+b1 EQU "speaker" x1
+b1 REF x1
+b1 REF x2
+b1 Role x1 x2
+b1 camionista "n.01" x2
+b1 person "n.01" x1
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 NOT b3
+b3 REF x2
+b3 Agent x2 x1
+b3 Theme x2 x3
+b3 nall "v.01" x2
+b4 REF x3
+b4 Name x3 "mary"
+b4 female "n.02" x3
+
+b1 REF x1
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 Patient x2 x4
+b2 TPR x3 "now"
+b2 Time x2 x3
+b2 pain "v.01" x2
+b2 time "n.08" x3
+b2 REF x4
+b2 dog "n.01" x4
+
+b1 REF x1
+b1 female "n.02" x1
+b2 REF x2
+b2 entity "n.01" x2
+b3 EQU x1 "now"
+b3 EQU x1 x2
+
+b1 REF x1
+b1 female "n.02" x1
+b2 EQU x1 "now"
+b2 EQU x1 x2
+b3 REF x2
+b3 cake "n.01" x2
+
+b1 REF x1
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 TPR x3 "now"
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 take "v.01" x2
+b2 time "n.08" x3
+b3 REF x4
+b3 Of x4 x1
+b3 book "n.01" x4
+
+b1 REF x1
+b1 bull "n.01" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Patient x3 x1
+b2 muggendo "v.01" x3
+
+b1 REF x1
+b1 film "n.01" x1
+b2 REF x2
+b2 TPR x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 head "v.01" x3
+b2 Agent x3 x4
+b3 REF x4
+b3 Name x4 "jan~de~bont"
+b3 person "n.01" x4
+
+b1 REF x1
+b1 Theme x1 "speaker"
+b1 breed "v.01" x1
+b1 Instrument x1 x2
+b1 REF x2
+b1 Quantity x2 "4"
+b1 Unit x2 "month"
+b1 measure "n.02" x2
+
+b1 NOT b2
+b2 REF x1
+b2 entity "n.01" x1
+b1 REF x2
+b1 EQU x2 "now"
+b1 time "n.08" x2
+b2 Time x3 x2
+b2 REF x3
+b2 Theme x3 x1
+b2 sacred "a.01" x3
+
+b1 REF x1
+b1 EQU x1 "now"
+b1 Time x2 x1
+b1 time "n.08" x1
+b1 REF x2
+b1 Theme x2 "hearer"
+b1 tall "a.01" x2
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 TPR x3 "now"
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 make "v.01" x2
+b2 time "n.08" x3
+b3 REF x4
+b3 risk "n.01" x4
+
+b1 REF x1
+b1 REF x2
+b1 Theme x1 x2
+b1 papa "n.01" x2
+b1 Name x1 "paolo~iaolo"
+b1 person "n.01" x1
+b2 REF x3
+b2 REF x4
+b2 Patient x3 x1
+b2 TPR x4 "now"
+b2 Time x3 x4
+b2 nato "v.01" x3
+b2 time "n.08" x4
+b2 Location x3 x5
+b3 REF x5
+b3 Name x5 "polonia"
+b3 country "n.02" x5
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 EQU x3 "now"
+b2 Time x2 x3
+b2 soffre "v.01" x2
+b2 time "n.08" x3
+b2 Theme x2 x4
+b2 REF x4
+b2 osteoporosis "n.01" x4
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 Patient x2 x4
+b2 TPR x3 "now"
+b2 Time x2 x3
+b2 eat "v.01" x2
+b2 time "n.08" x3
+b2 REF x4
+b2 apple "n.01" x4
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 TPR x3 "now"
+b2 Time x2 x3
+b2 smile "v.01" x2
+b2 time "n.08" x3
+
+b1 REF x1
+b1 Of x2 "hearer"
+b1 REF x2
+b1 Role x1 x2
+b1 father "n.01" x2
+b1 person "n.01" x1
+b2 EQU x1 "now"
+b2 EQU x1 x3
+b2 REF x3
+b2 REF x4
+b2 Role x3 x4
+b2 bravissimo "n.01" x4
+b2 person "n.01" x3
+b2 REF x5
+b2 Theme x5 x3
+b2 pianist "a.01" x5
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 EQU x1 "now"
+b2 EQU x1 x2
+b2 REF x2
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 TPR x3 "now"
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 time "n.08" x3
+b2 wear "v.01" x2
+b2 REF x4
+b2 glove "n.01" x4
+
+b1 REF x1
+b1 female "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 TPR x3 "now"
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 installato "v.01" x2
+b2 time "n.08" x3
+b2 REF x4
+b2 program "n.01" x4
+
+b1 REF x1
+b1 fly "n.01" x1
+b2 REF x2
+b2 Theme x2 x1
+b2 stay "v.01" x2
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 Patient x2 x4
+b2 TPR x3 "now"
+b2 Time x2 x3
+b2 stab "v.03" x2
+b2 time "n.08" x3
+b3 REF x4
+b3 Name x4 "mary"
+b3 female "n.02" x4
+
+b1 REF x1
+b1 clock "n.01" x1
+b1 REF x2
+b1 Theme x2 x1
+b1 old "a.01" x2
+b2 EQU x1 "now"
+b2 EQU x1 x3
+b2 REF x3
+b2 Quantity x3 "mille"
+b2 Unit x3 "dollar"
+b2 measure "n.02" x3
+
+b1 REF x1
+b1 sheep "n.01" x1
+b2 REF x2
+b2 Theme x2 x1
+b2 good "a.01" x2
+
+b1 REF x1
+b1 lake "n.01" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 deep "a.01" x3
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 unkind "a.01" x3
+
+b1 REF x1
+b1 this "n.01" x1
+b2 REF x2
+b2 REF x3
+b2 Patient x2 x1
+b2 TPR "now" x3
+b2 Time x2 x3
+b2 continuerà "v.01" x2
+b2 time "n.08" x3
+
+b1 REF x1
+b1 REF x2
+b1 Agent x1 "speaker"
+b1 Patient x1 x3
+b1 TPR x2 "now"
+b1 Time x1 x2
+b1 eat "v.01" x1
+b1 time "n.08" x2
+b1 REF x3
+b1 Quantity x3 "3"
+b1 hot_dog "n.02" x3
+
+b1 REF x1
+b1 Quantity x1 "4"
+b1 REF x2
+b1 APX x1 x2
+b1 Quantity x1 x1
+b1 quantity "n.01" x1
+b1 quantity "n.01" x2
+b1 EQU x2 "now"
+b1 EQU x1 x3
+b1 REF x3
+b1 REF x4
+b1 Theme x3 x4
+b1 ventidue "n.01" x4
+
+b1 REF x1
+b1 Name x1 "kanchenjunga"
+b1 location "n.01" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 tall "a.01" x3
+
+b1 REF x1
+b1 Name x1 "thomas~edison"
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 Result x2 x4
+b2 TPR x3 "now"
+b2 Time x2 x3
+b2 invent "v.01" x2
+b2 time "n.08" x3
+b3 REF x4
+b3 lilk "n.01" x4
+
+b1 REF x1
+b1 Name x1 "titanic"
+b1 artifact "n.01" x1
+b2 REF x2
+b2 REF x3
+b2 Patient x2 x1
+b2 TPR x3 "now"
+b2 Time x2 x3
+b2 sink "v.04" x2
+b2 time "n.08" x3
+b2 YearOfCentury x2 "1912"
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Experiencer x3 x1
+b2 allergic "a.02" x3
+b2 Stimulus x3 x4
+b2 REF x4
+b2 dust "n.01" x4
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 busy "a.01" x3
+
+b1 REF x1
+b1 Name x1 "john"
+b1 male "n.02" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 good "a.01" x3
+b2 Instrument x3 x4
+b2 REF x4
+b2 mathematics "n.01" x4
+
+b1 REF x1
+b1 Agent x1 "speaker"
+b1 Theme x1 x2
+b1 order "v.01" x1
+b1 REF x2
+b1 pizza "n.01" x2
+
+b1 REF x1
+b1 REF x2
+b1 Agent x1 "speaker"
+b1 EQU x2 "now"
+b1 Theme x1 x3
+b1 Time x1 x2
+b1 mangio "v.01" x1
+b1 time "n.08" x2
+b1 REF x3
+b1 apple "n.01" x3
+
+b1 REF x1
+b1 female "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 TPR x3 "now"
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 buy "v.01" x2
+b2 time "n.08" x3
+b2 REF x4
+b2 toy "n.01" x4
+b2 Goal x2 x5
+b3 REF x5
+b3 child "n.01" x5
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 NOT b3
+b2 REF x2
+b2 EQU x2 "now"
+b2 time "n.08" x2
+b3 Time x3 x2
+b3 REF x3
+b3 Theme x3 x1
+b3 outgo "a.01" x3
+
+b1 IMP b2 b3
+b2 REF x1
+b2 person "n.01" x1
+b3 REF x2
+b3 Theme x2 x1
+b3 ridevano "v.01" x2
+
+b1 REF x1
+b1 music "n.01" x1
+b1 REF x2
+b1 Theme x1 x2
+b1 classica "n.01" x2
+b2 REF x3
+b2 REF x4
+b2 EQU x4 "now"
+b2 Experiencer x3 "speaker"
+b2 Stimulus x3 x1
+b2 Time x3 x4
+b2 confort "v.01" x3
+b2 time "n.08" x4
+
+b1 REF x1
+b1 TPR x1 "now"
+b1 Time x2 x1
+b1 time "n.08" x1
+b1 REF x2
+b1 Theme x2 "speaker"
+b1 dance "v.02" x2
+b1 Instrument x2 x3
+b1 REF x3
+b1 field "n.01" x3
+
+b1 REF x1
+b1 male "n.02" x1
+b2 REF x2
+b2 TPR x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 surprised "a.01" x3
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b1 REF x2
+b1 EQU x2 "now"
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Agent x3 x1
+b2 jealous "a.01" x3
+b2 Theme x3 "hearer"
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 TPR x3 "now"
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 hand "v.01" x2
+b2 time "n.08" x3
+b2 REF x4
+b2 Quantity x4 "3"
+b2 Unit x4 "week"
+b2 measure "n.02" x4
+b2 Theme x2 x5
+b3 REF x5
+b3 Name x5 "boston"
+b3 location "n.01" x5
+
+b1 EQU "speaker" "now"
+b1 EQU "speaker" x1
+b2 REF x1
+b2 Name x1 "antonio"
+b2 male "n.02" x1
+
+b1 REF x1
+b1 Patient x1 x2
+b1 sciacallo "v.01" x1
+b1 REF x2
+b1 ulula "n.01" x2
+
+b1 REF x1
+b1 woman "n.01" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 Co-Agent x2 x4
+b2 TPR x3 "now"
+b2 Time x2 x3
+b2 hug "v.01" x2
+b2 time "n.08" x3
+b3 REF x4
+b3 baby "n.01" x4
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Theme x3 x1
+b2 deaf "a.01" x3
+
+b1 REF x1
+b1 Name x1 "elaine"
+b1 person "n.01" x1
+b2 REF x2
+b2 REF x3
+b2 EQU x3 "now"
+b2 Theme x2 x1
+b2 Time x2 x3
+b2 be "v.01" x2
+b2 time "n.08" x3
+b2 Theme x2 x4
+b2 REF x4
+b2 hospital "n.01" x4
+
+b1 REF x1
+b1 Name x1 "dick"
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 Beneficiary x2 "speaker"
+b2 TPR x3 "now"
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 pass "v.01" x2
+b2 time "n.08" x3
+b3 REF x4
+b3 photo "n.01" x4
+
+b1 REF x1
+b1 Name x1 "everglades"
+b1 person "n.01" x1
+b2 EQU x1 "now"
+b2 EQU x1 x2
+b2 REF x2
+b2 Quantity x2 "50"
+b2 Unit x2 "mile"
+b2 measure "n.02" x2
+
+b1 REF x1
+b1 person "n.01" x1
+b1 REF x2
+b1 EQU x2 "now"
+b1 Time x3 x2
+b1 time "n.08" x2
+b1 REF x3
+b1 Agent x3 x1
+b1 lie "v.01" x3
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 TPR x3 "now"
+b2 Time x2 x3
+b2 collaborò "v.01" x2
+b2 time "n.08" x3
+b2 Theme x2 x4
+b3 REF x4
+b3 police "n.01" x4
+
+b1 REF x1
+b1 Agent x1 "speaker"
+b1 Result x1 x2
+b1 write "v.01" x1
+b1 REF x2
+b1 poem "n.01" x2
+
+b1 REF x1
+b1 terrorist "n.01" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 TPR x3 "now"
+b2 Time x2 x3
+b2 fail "v.01" x2
+b2 time "n.08" x3
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 Attribute x2 x4
+b2 TPR x3 "now"
+b2 Time x2 x3
+b2 make "v.01" x2
+b2 time "n.08" x3
+b2 REF x4
+b2 Quantity x4 "20"
+b2 flession "n.01" x4
+
+b1 REF x1
+b1 Theme x1 x2
+b1 be "v.01" x1
+b1 REF x2
+b1 physics "n.01" x2
+
+b1 REF x1
+b1 wind "n.01" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Agent x3 x1
+b2 ululando "v.01" x3
+
+b1 REF x1
+b1 casino "n.01" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Agent x3 x1
+b2 Theme x3 x4
+b2 lose "v.01" x3
+b2 REF x4
+b2 money "n.01" x4
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 Attribute x2 x4
+b2 TPR x3 "now"
+b2 Time x2 x3
+b2 make "v.01" x2
+b2 time "n.08" x3
+b2 REF x4
+b2 wheel "n.01" x4
+
+b1 REF x1
+b1 EQU x1 "now"
+b1 REF x2
+b1 Name x2 "france"
+b1 Source x1 x2
+b1 country "n.02" x2
+b1 person "n.01" x1
+
+b1 REF x1
+b1 person "n.01" x1
+b1 EQU x1 x2
+b1 TPR x1 "now"
+b1 REF x2
+b1 car "n.01" x2
+b1 Theme x2 x3
+b2 REF x3
+b2 Name x3 "tom"
+b2 male "n.02" x3
+
+b1 REF x1
+b1 snake "n.01" x1
+b2 REF x2
+b2 Theme x2 x1
+b2 seble "a.01" x2
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 EQU x1 x2
+b2 TPR x1 "now"
+b2 REF x2
+b2 Name x2 "mary"
+b2 female "n.02" x2
+b2 REF x3
+b2 Quantity x3 "3"
+b2 Unit x3 "year"
+b2 measure "n.02" x3
+b2 TAB x2 x3
+b2 TAB x3 "now"
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 Experiencer x2 x1
+b2 Stimulus x2 x3
+b2 hate "v.01" x2
+b3 REF x3
+b3 Name x3 "mary"
+b3 female "n.02" x3
+
+b1 REF x1
+b1 Name x1 "accardo"
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 TPR x3 "now"
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 compose "v.01" x2
+b2 time "n.08" x3
+b2 REF x4
+b2 DayOfMonth x4 "24"
+b2 capricci "n.01" x4
+
+b1 REF x1
+b1 cat "n.01" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Agent x3 x1
+b2 meok "v.01" x3
+
+b1 REF x1
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 Patient x2 "speaker"
+b2 TPR x3 "now"
+b2 Time x2 x3
+b2 shoot "v.01" x2
+b2 time "n.08" x3
+
+b1 REF x1
+b1 school "n.01" x1
+b2 REF x2
+b2 Theme x2 x1
+b2 begin "v.01" x2
+b2 Instrument x2 x3
+b2 REF x3
+b2 ClockTime x3 "08:30"
+b2 time "n.08" x3
+
+b1 REF x1
+b1 EQU x1 "now"
+b1 time "n.08" x1
+b1 REF x2
+b1 Theme x2 x1
+b1 defeat "v.01" x2
+b1 Agent x2 x3
+b2 REF x3
+b2 Name x3 "max~purnell"
+b2 person "n.01" x3
+
+b1 REF x1
+b1 male "n.02" x1
+b2 NOT b3
+b2 REF x2
+b2 EQU x2 "now"
+b2 time "n.08" x2
+b3 Time x3 x2
+b3 REF x3
+b3 Theme x3 x1
+b3 jealous "a.01" x3
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 EQU x1 "now"
+b2 EQU x1 x2
+b2 REF x2
+b2 REF x3
+b2 Role x2 x3
+b2 person "n.01" x2
+b2 singer "n.01" x3
+b2 REF x4
+b2 Theme x4 x2
+b2 fantastic "a.01" x4
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 TPR x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Patient x3 x1
+b2 arrest "v.01" x3
+
+b1 REF x1
+b1 person "n.01" x1
+b2 REF x2
+b2 REF x3
+b2 Patient x2 x1
+b2 TPR x3 "now"
+b2 Time x2 x3
+b2 applaud "v.01" x2
+b2 time "n.08" x3
+
+b1 EQU "speaker" "now"
+b1 EQU "speaker" x1
+b1 REF x1
+b1 wine "n.01" x1
+
+b1 REF x1
+b1 le "n.01" x1
+b2 REF x2
+b2 REF x3
+b2 EQU x3 "now"
+b2 Experiencer x2 x1
+b2 Stimulus x2 x4
+b2 Time x2 x3
+b2 like "v.01" x2
+b2 time "n.08" x3
+b3 REF x4
+b3 REF x5
+b3 Role x4 x5
+b3 person "n.01" x4
+b3 pop "n.03" x5
+
+b1 REF x1
+b1 EQU x1 "now"
+b1 Time x2 x1
+b1 time "n.08" x1
+b1 REF x2
+b1 Agent x2 "speaker"
+b1 work "v.01" x2
+
+b1 REF x1
+b1 Name x1 "mary"
+b1 female "n.02" x1
+b2 REF x2
+b2 EQU x2 "now"
+b2 time "n.08" x2
+b3 REF x3
+b3 Experiencer x3 x1
+b3 Stimulus x3 x4
+b3 Time x3 x2
+b3 hate "v.01" x3
+b2 IMP b4 b3
+b4 REF x4
+b4 spider "n.01" x4
+
+b1 REF x1
+b1 nevica "v.01" x1
+
+b1 REF x1
+b1 thermometer "n.01" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 EQU x3 "now"
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 segna "v.01" x2
+b2 time "n.08" x3
+b2 REF x4
+b2 Quantity x4 "10"
+b2 che "n.01" x4
+
+b1 REF x1
+b1 dog "n.01" x1
+b2 REF x2
+b2 REF x3
+b2 Experiencer x2 x1
+b2 Stimulus x2 x4
+b2 TPR x3 "now"
+b2 Time x2 x3
+b2 smell "v.01" x2
+b2 time "n.08" x3
+b3 REF x4
+b3 stick "n.02" x4
+
+b1 IMP b2 b3
+b2 REF x1
+b2 coccodrile "n.01" x1
+b1 REF x2
+b1 TPR x2 "now"
+b1 time "n.08" x2
+b3 REF x3
+b3 Agent x3 x1
+b3 Patient x3 x4
+b3 Time x3 x2
+b3 eat "v.01" x3
+b4 REF x4
+b4 Name x4 "tom"
+b4 male "n.02" x4
+
+b1 REF x1
+b1 dog "n.01" x1
+b2 REF x2
+b2 REF x3
+b2 Patient x2 x1
+b2 TPR "now" x3
+b2 Time x2 x3
+b2 abbaierà "v.01" x2
+b2 time "n.08" x3
+
+b1 REF x1
+b1 Agent x1 "speaker"
+b1 Theme x1 x2
+b1 svegliato "v.01" x1
+b2 REF x2
+b2 Name x2 "tom"
+b2 male "n.02" x2
+
+b1 REF x1
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 TPR x3 "now"
+b2 Time x2 x3
+b2 smile "v.01" x2
+b2 time "n.08" x3
+
+b1 REF x1
+b1 REF x2
+b1 TPR x2 "now"
+b1 Theme x1 x3
+b1 Time x1 x2
+b1 invent "v.01" x1
+b1 time "n.08" x2
+b2 REF x3
+b2 dynamite "n.01" x3
+b1 Instrument x1 x4
+b1 REF x4
+b1 YearOfCentury x4 "1866"
+b1 time "n.08" x4
+
+b1 REF x1
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 EQU x3 "now"
+b2 Experiencer x2 x1
+b2 Stimulus x2 "speaker"
+b2 Time x2 x3
+b2 hate "v.01" x2
+b2 time "n.08" x3
+
+b1 REF x1
+b1 REF x2
+b1 EQU x2 "now"
+b1 Theme x1 "speaker"
+b1 Time x1 x2
+b1 live "v.01" x1
+b1 time "n.08" x2
+b1 Instrument x1 x3
+b1 REF x3
+b1 planet "n.01" x3
+b1 REF x4
+b1 Theme x3 x4
+b1 terra "n.01" x4
+
+b1 NOT b2
+b2 REF x1
+b2 pessuno "n.01" x1
+b1 REF x2
+b1 TPR x2 "now"
+b1 time "n.08" x2
+b2 REF x3
+b2 Agent x3 x1
+b2 Theme x3 x4
+b2 Time x3 x2
+b2 solve "v.01" x3
+b3 REF x4
+b3 problem "n.01" x4
+
+b1 REF x1
+b1 REF x2
+b1 Theme x1 x2
+b1 person "n.01" x1
+b1 stridisce "n.01" x2
+
+b1 REF x1
+b1 female "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 EQU x3 "now"
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 time "n.08" x3
+b2 wear "v.01" x2
+b2 REF x4
+b2 REF x5
+b2 Theme x5 x4
+b2 good "a.01" x5
+b2 hat "n.01" x4
+
+b1 REF x1
+b1 Quantity x1 "2"
+b1 REF x2
+b1 REF x3
+b1 APX x2 x3
+b1 Quantity x1 x2
+b1 quantity "n.01" x2
+b1 quantity "n.01" x3
+b1 EQU x3 "2"
+b1 REF x4
+b1 EQU x4 "now"
+b1 Time x2 x4
+b1 time "n.08" x4
+
+b1 REF x1
+b1 squirrel "n.01" x1
+b2 NOT b3
+b2 REF x2
+b2 EQU x2 "now"
+b2 time "n.08" x2
+b3 Time x3 x2
+b3 REF x3
+b3 Theme x3 x1
+b3 shy "a.01" x3
+
+b1 IMP b2 b3
+b2 REF x1
+b2 person "n.01" x1
+b3 EQU x1 "now"
+b3 EQU x1 x2
+b4 REF x2
+b4 Name x2 "tom"
+b4 male "n.02" x2
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 la "n.01" x2
+b3 EQU x1 x2
+b3 TPR x1 "now"
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b1 NOT b3
+b1 REF x2
+b1 EQU x2 "now"
+
+b1 IMP b2 b3
+b2 REF x1
+b2 dollar "n.01" x1
+b1 REF x2
+b1 EQU x2 "now"
+b1 time "n.08" x2
+b3 REF x3
+b3 Agent x3 x1
+b3 Time x3 x2
+b3 equivale "v.01" x3
+b3 Theme x3 x4
+b3 REF x4
+b3 Quantity x4 "100"
+b3 cent "n.01" x4
+
+b1 REF x1
+b1 Name x1 "giappone"
+b1 country "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 EQU x3 "now"
+b2 Theme x2 x1
+b2 Time x2 x3
+b2 be "v.01" x2
+b2 time "n.08" x3
+b2 Theme x2 x4
+b2 REF x4
+b2 est "n.01" x4
+b2 Theme x4 x5
+b3 REF x5
+b3 Name x5 "cina"
+b3 location "n.01" x5
+
+b1 REF x1
+b1 Theme x1 x2
+b1 saltarono "v.01" x1
+b2 IMP b3 b1
+b3 REF x2
+b3 person "n.01" x2
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 TPR x3 "now"
+b2 Time x2 x3
+b2 scream "v.01" x2
+b2 time "n.08" x3
+
+b1 REF x1
+b1 REF x2
+b1 EQU x2 "now"
+b1 Time x1 x2
+b1 ciao "v.01" x1
+b1 time "n.08" x2
+
+b1 REF x1
+b1 Theme x1 x2
+b1 gemono "v.01" x1
+b2 IMP b3 b1
+b3 REF x2
+b3 person "n.01" x2
+
+b1 REF x1
+b1 EQU x1 "now"
+b1 Time x2 x1
+b1 time "n.08" x1
+b1 REF x2
+b1 Patient x2 "hearer"
+b1 bo "v.01" x2
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 TPR x3 "now"
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 signato "v.01" x2
+b2 time "n.08" x3
+b2 REF x4
+b2 Quantity x4 "30"
+b2 point "n.01" x4
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b2 REF x2
+b2 TPR x2 "now"
+b2 Time x3 x2
+b2 time "n.08" x2
+b2 REF x3
+b2 Source x3 x1
+b2 rob "v.01" x3
+
+b1 REF x1
+b1 Theme x1 "speaker"
+b1 mind "v.01" x1
+
+b1 REF x1
+b1 Name x1 "gus"
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 TPR x3 "now"
+b2 Theme x2 x4
+b2 Time x2 x3
+b2 sell "v.01" x2
+b2 time "n.08" x3
+b3 REF x4
+b3 Name x4 "wehkamp"
+b3 organization "n.01" x4
+
+b1 REF x1
+b1 lamp "n.01" x1
+b2 REF x2
+b2 REF x3
+b2 Patient x2 x1
+b2 TPR x3 "now"
+b2 Time x2 x3
+b2 scoppiò "v.01" x2
+b2 time "n.08" x3
+
+b1 REF x1
+b1 Of x2 "speaker"
+b1 REF x2
+b1 Role x1 x2
+b1 person "n.01" x1
+b1 wife "n.01" x2
+b2 REF x3
+b2 REF x4
+b2 Agent x3 x1
+b2 EQU x4 "now"
+b2 Time x3 x4
+b2 soffre "v.01" x3
+b2 time "n.08" x4
+b2 Theme x3 x5
+b2 REF x5
+b2 polmonite "n.01" x5
+
+b1 REF x1
+b1 book "n.01" x1
+b2 REF x2
+b2 REF x3
+b2 EQU x3 "now"
+b2 Theme x2 x1
+b2 Time x2 x3
+b2 Value x2 x4
+b2 cost "v.01" x2
+b2 time "n.08" x3
+b2 REF x4
+b2 Quantity x4 "20"
+b2 Unit x4 "dollar"
+b2 measure "n.02" x4
+
+b1 REF x1
+b1 Name x1 "tom"
+b1 male "n.02" x1
+b1 REF x2
+b1 EQU x2 "now"
+
+b1 REF x1
+b1 Name x1 "betty"
+b1 female "n.02" x1
+b2 EQU x1 x2
+b2 TPR x1 "now"
+b3 IMP b4 b2
+b4 REF x2
+b4 person "n.01" x2
+
+b1 REF x1
+b1 Name x1 "mary"
+b1 female "n.02" x1
+b2 NOT b3
+b2 REF x2
+b2 TPR x2 "now"
+b2 time "n.08" x2
+b3 Time x3 x2
+b3 REF x3
+b3 Experiencer x3 x1
+b3 Stimulus x3 x4
+b3 see "v.01" x3
+b3 REF x4
+b3 entity "n.01" x4
+
+b1 REF x1
+b1 male "n.02" x1
+b2 REF x2
+b2 REF x3
+b2 Agent x2 x1
+b2 Asset x2 x4
+b2 TPR x3 "now"
+b2 Time x2 x3
+b2 pay "v.01" x2
+b2 time "n.08" x3
+b2 REF x4
+b2 Quantity x4 "1000"
+b2 Unit x4 "yen"
+b2 measure "n.02" x4
+b2 Beneficiary x2 x5
+b3 REF x5
+b3 book "n.01" x5
+
