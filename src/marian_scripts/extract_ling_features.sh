@@ -24,7 +24,7 @@ source config/marian/default_config.sh
 # Function that take as input stanford tagged conll file ($1), number of column to cut ($2) and output-file ($3)
 # It's possible that the token-line contains spaces (though not often), replace those by underscores
 function get_output() {
-	cat $1 | cut -d$'\t' -f$2 > ~/tmp.txt 
+	cat $1 | cut -d$'\t' -f$2 > ~/tmp.txt
 	# Replace all the weird unicode whitespace as well with normal space
 	perl -CSDA -plE 's/\s/ /g' ~/tmp.txt | sed -e 's/ /_/g' | sed -e 's/^$/XXXXXX/' | tr '\n' ' ' | sed -e $'s/XXXXXX/\\\n/g' | awk '{$1=$1};1' | sed -e :a -e '/^\n*$/{$d;N;};/\n$/ba' > $3
 	rm ~/tmp.txt
@@ -33,7 +33,7 @@ function get_output() {
 # Better variable name
 in_file=$1
 sent_fol=$(dirname "$in_file")
-sent_file=${in_file}
+sent_file=${in_file}.feat
 
 # First fix the raw sentence, mainly for CCG tagging purposes
 # We have to do some preprocessing of the sentence to prevent easily avoidable errors
