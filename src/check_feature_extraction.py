@@ -4,15 +4,15 @@
 '''Format check the feature extraction script, all extensions should have same amount of lines,
    with the lines also being the same length'''
 
-import re
-import sys
 import argparse
 
 
 def create_arg_parser():
     parser = argparse.ArgumentParser()
-    parser.add_argument("-f", "--input_file", required=True, type=str, help="Raw input-file (CCG-ready though)")
-    parser.add_argument("-e", "--extensions", default=['tok', 'sem', 'pos', 'lem', 'ccg', 'dep'], nargs="*", type=str, help="Extensions of the input file")
+    parser.add_argument("-f", "--input_file", required=True, type=str,
+                        help="Raw input-file (CCG-ready though)")
+    parser.add_argument("-e", "--extensions", default=['tok', 'sem', 'pos', 'lem', 'ccg', 'dep'],
+                        nargs="*", type=str, help="Extensions of the input file")
     args = parser.parse_args()
     return args
 
@@ -37,7 +37,7 @@ if __name__ == '__main__':
     # Error if lengths differ
     if len(lengths) != 1:
         for key in dic:
-            print (key, len(dic[key]))
+            print(key, len(dic[key]))
         raise ValueError("Unequal lengths for total lines, check above")
 
     # Check if all individual items have the same length
@@ -50,9 +50,9 @@ if __name__ == '__main__':
         if len(cur_lengths) != 1:
             for key in dic:
                 if key in ['.tok', 'tok']:
-                    print (" ".join(dic[key][idx]))
+                    print(" ".join(dic[key][idx]))
 
-                print (key, len(dic[key][idx]))
+                print(key, len(dic[key][idx]))
             raise ValueError("Unequal lengths for idv item, check above")
 
     print("All feature files have correct lengths")
