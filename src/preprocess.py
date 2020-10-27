@@ -2,16 +2,16 @@
 # -*- coding: utf8 -*-
 
 '''
-Script that preprocess DRS-clause files and puts them in a format for sequence-to-sequence algorithms
+Script that preprocess DRS-clause files and puts them in a format for seq2seq algorithms
 Example usage (python3): python preprocess.py -i INPUT_FILE -s SENT_FILE -c feature -v rel -r char
 '''
 
 import argparse
 import copy
-from uts import write_to_file, write_list_of_lists, get_drss, is_operator, between_quotes, op_boxes,  \
-                is_role, read_and_strip_file, drs_string_to_list
 from clf_referee import check_clf
 from clf_referee import get_signature
+from uts import write_to_file, write_list_of_lists, get_drss, is_operator, between_quotes, \
+                op_boxes, is_role, read_and_strip_file, drs_string_to_list
 
 
 def create_arg_parser():
@@ -20,27 +20,36 @@ def create_arg_parser():
     # Parameter that are import to set
     parser.add_argument('-i', "--input_file", default='', type=str, help="DRS input-file")
     parser.add_argument("-s", "--sentence_file", default='', type=str, help="Sentence file")
-    parser.add_argument("-e", "--extra_files", nargs="*", type=str, help="Extra files, we don't do anything but filter ill-formed from here as well.")
+    parser.add_argument("-e", "--extra_files", nargs="*", type=str,
+                        help="Extra files, we don't do anything but filter ill-formed from here")
     parser.add_argument("-c", "--casing", default='normal', choices=['normal', 'lower', 'feature'],
                         help="What do we do with casing? Default 'normal' means do nothing")
     parser.add_argument("-v", "--variables", default='rel', choices=['rel', 'abs', 'none'],
-                        help="How do we rewrite the variables, relatively (default), absolute or not at all?")
+                        help="How do we rewrite the variables, relatively, absolute or not at all?")
     parser.add_argument("-r", "--representation", default='char', choices=['char', 'word', 'char_word'],
-                        help="What is the representation of the source/target: characters (default), words or chars+words?")
+                        help="Representation of the source/target: chars, words or chars+words?")
     # Whether we want to remove ill-formed DRSs
-    # Only use this for training a model, not for dev test sets (though they should be well-formed generally0
-    parser.add_argument("-sig", "--sig_file", default='', type=str, help="Signature file for format checking")
-    parser.add_argument("-ri", "--remove_ill", action='store_true', help="Remove ill-formed DRSs from the set (need signature as well)")
+    # Only use this for training a model, not for dev test sets,
+    # though they should be well-formed generally
+    parser.add_argument("-sig", "--sig_file", default='', type=str,
+                        help="Signature file for format checking")
+    parser.add_argument("-ri", "--remove_ill", action='store_true',
+                        help="Remove ill-formed DRSs from the set (need signature as well)")
     # (Boolean) parameters that can influence the process
-    parser.add_argument("-so", "--sents_only", action='store_true', help="Only process the sentence file to character-level")
-    parser.add_argument("-do", "--drss_only", action='store_true', help="Only process DRS file to char-level")
-
+    parser.add_argument("-so", "--sents_only", action='store_true',
+                        help="Only process the sentence file to character-level")
+    parser.add_argument("-do", "--drss_only", action='store_true',
+                        help="Only process DRS file to char-level")
     # Parameters that can often be left at default
     parser.add_argument("-se", "--sep", default='|||', type=str, help="Space-separator used")
-    parser.add_argument("-cd", "--char_drs_ext", default='.char.tgt', type=str, help="Default extension for DRS in character format ")
-    parser.add_argument("-cs", "--char_sent_ext", default='.char.sent', type=str, help="Default extension for sentence in character format")
-    parser.add_argument("-vd", "--var_drs_ext", default='.var', type=str, help="Default extension for the human-readable variable format")
-    parser.add_argument("-va", "--valid_drs_ext", default='.valid', type=str, help="Default extension for all well-formed DRSs (if --remove_ill is used)")
+    parser.add_argument("-cd", "--char_drs_ext", default='.char.tgt', type=str,
+                        help="Default extension for DRS in character format ")
+    parser.add_argument("-cs", "--char_sent_ext", default='.char.sent', type=str,
+                        help="Default extension for sentence in character format")
+    parser.add_argument("-vd", "--var_drs_ext", default='.var', type=str,
+                        help="Default extension for the human-readable variable format")
+    parser.add_argument("-va", "--valid_drs_ext", default='.valid', type=str,
+                        help="Default extension for all well-formed DRSs (if --remove_ill is used)")
     args = parser.parse_args()
 
     if not args.sents_only and not args.input_file:
@@ -72,22 +81,27 @@ class PreprocessSentences:
            ^^^ tom loves ^^^ mary'''
         if self.casing == 'normal':
             return self.sentences
-        elif self.casing == 'lower':
+        if self.casing == 'lower':
             return [x.lower() for x in self.sentences]
-        elif self.casing == 'feature':
+        if self.casing == 'feature':
             # Add lowercase, but add a feature indicating that it was uppercase before
             if self.representation == "word":
-                return [" ".join([self.case_feature + ' ' + word.lower() if len([char for char in word if char.isupper()]) > 0 else word.lower() for word in sent.split()]) for sent in self.sentences]
-            else:
-                return ["".join([self.case_feature + char.lower() if char.isupper() else char for char in sent]) for sent in self.sentences]
+                return [" ".join([self.case_feature + ' ' + word.lower() if len([char for char in
+                       word if char.isupper()]) > 0 else word.lower() for word in sent.split()])
+                       for sent in self.sentences]
+            return ["".join([self.case_feature + char.lower() if char.isupper() else char for
+                    char in sent]) for sent in self.sentences]
+        raise ValueError("--casing should be normal, lower or feature")
 
     def char_tokenization(self, in_sents):
         '''Do character-level tokenization, i.e. change:
            Tom loves Mary to T o m + l o v e s + M a r y'''
         # Split tokens to char level and separate tokens by separation character
-        sents = [" ".join(" ".join(" ".join(x.split()).replace(' ', self.sep)).replace(" ".join(self.sep), self.sep).split()) for x in in_sents]
-        # We have to change back uppercase features that got split into individual characters in the previous step
-        return [" ".join(x.replace(self.split_case_feature, self.case_feature).split()) for x in sents]
+        sents = [" ".join(" ".join(" ".join(x.split()).replace(' ', self.sep))
+                 .replace(" ".join(self.sep), self.sep).split()) for x in in_sents]
+        # We have to change back uppercase features that got split into individual characters
+        return [" ".join(x.replace(self.split_case_feature, self.case_feature).split())
+                for x in sents]
 
     def char_word_level(self, sents):
         '''Format input in such a way that it contains both character and word-level information
@@ -98,22 +112,21 @@ class PreprocessSentences:
             new_str = []
             cur_word = ''
             for char in sent.split():
-                if char == self.sep: # word boundary, so add full word we have now
+                if char == self.sep:  # word boundary, so add full word we have now
                     new_str.append(cur_word)
-                    cur_word = '' # reset current word
+                    cur_word = ''  # reset current word
                 elif char not in self.features:
                     # Features regarding capitalization are not part of the word
                     cur_word += char
                 new_str.append(char)
             # Still have to add the last word
-            if cur_word: # Fix last punctuation if necessary
+            if cur_word:  # Fix last punctuation if necessary
                 if cur_word[-1].isalpha():
                     new_str.append(cur_word)
                 else:
                     new_str = new_str[0:-1] + [cur_word[0:-1]] + [self.sep] + [new_str[-1]]
             new_sents.append(" ".join(new_str))
         return new_sents
-
 
     def preprocess_sents(self):
         '''Preprocess the sentences, e.g. choose tokenization, choose casing method
@@ -129,7 +142,8 @@ class PreprocessSentences:
             sents = self.char_word_level(sents)
         # AllenNLP format doesn't like unfinished quotes, for some reason, fix here
         sents = self.fix_quotes(sents)
-        sents = [" ".join(sent.replace(self.case_feature, ' ' + self.case_feature + ' ').split()) for sent in sents]
+        sents = [" ".join(sent.replace(self.case_feature, ' ' + self.case_feature + ' ').split())
+                 for sent in sents]
         return sents
 
     def fix_quotes(self, sents):
@@ -182,12 +196,12 @@ class RewriteVariables:
     def get_disc_var_rel(self, var):
         '''Return new variable name, use order of introduction to get it'''
         if var not in self.var_order:
-            print ("WARNING: {0} not introduced (var_order: {1}), use default {2}0".format(var, self.var_order, self.var_id))
+            print("WARNING: {0} not introduced (var_order: {1}), use default {2}0"
+                  .format(var, self.var_order, self.var_id))
             return self.var_id + "0"
-        else:
-            ref_value = self.var_order.index(var)
-            value = (ref_value - self.cur_var) + 1
-            return self.var_id + str(value)
+        ref_value = self.var_order.index(var)
+        value = (ref_value - self.cur_var) + 1
+        return self.var_id + str(value)
 
     def get_disc_var_abs(self, key):
         '''Check if item is in dictionary, if so use that, else add to dict
@@ -226,19 +240,19 @@ class RewriteVariables:
         # REF is a special case, it introduces a variable for relative renaming
         if cur_clause[1] == 'REF' and self.rtype == "rel":
             self.new_clauses.append([first_var, cur_clause[1]])
-            self.cur_var += 1 # saw a new var, so increase cur_var
+            self.cur_var += 1  # saw a new var, so increase cur_var
         # item is in op_boxes, so second item is a box
         elif cur_clause[1] in op_boxes:
             second_var = self.get_box_var(cur_clause[2])
             self.new_clauses.append([first_var, cur_clause[1], second_var])
-        else: # Otherwise it is (or should be) a discourse variable
+        else:  # Otherwise it is (or should be) a discourse variable
             second_var = self.get_disc_var(cur_clause[2])
             self.new_clauses.append([first_var, cur_clause[1], second_var])
 
     def rewrite_length_four(self, cur_clause):
         '''Rewrite clauses of length 4, only rewrites, no introductions'''
         first_var = self.get_box_var(cur_clause[0])
-        second_var, third_var = cur_clause[2], cur_clause[3] #defaults
+        second_var, third_var = cur_clause[2], cur_clause[3]  # defaults
         # Only rewrite items that are not between quotes (so variables)
         if not between_quotes(cur_clause[2]):
             if cur_clause[1] in op_boxes:
@@ -301,9 +315,9 @@ def sanitize_variables(drs):
             if clause[2] in cur_refs:
                 # Already introduced this disc variable by a REF before
                 # So rewrite to a variable we have not seen, e.g. b1 REF t1 to b1 REF t100
-                # Save this information, so if we encounter t1 in box b1 again, we know to rewrite t1 to t100
+                # Save this info, so if we encounter t1 in box b1 again, we can rewrite t1 to t100
                 rewrite_as[(clause[0], clause[2])] = 'x' + str(count)
-                count += 1 # update count for when disc refs are introduced more than twice
+                count += 1  # update count for when disc refs are introduced more than twice
                 new_clauses.append([clause[0], clause[1], rewrite_as[(clause[0], clause[2])]])
             else:
                 # Save that we saw this REF, but since it's the first time just update
@@ -311,7 +325,7 @@ def sanitize_variables(drs):
                 new_clauses.append(clause)
         else:
             cur_clause = copy.deepcopy(clause)
-            # Loop over position 3 and possibly 4 to look for discourse variables that we might want to fix
+            # Loop over position 3 and posbly 4 to look for disc. variables we might want to fix
             for idx, val in enumerate(clause[2:]):
                 if (clause[0], val) in rewrite_as:
                     # Found box + variable in list of things we rewrite, do so in cur_clause
@@ -378,13 +392,15 @@ def rewrite_drss(drss, variable_type, representation, sep):
         rewritten_drs = RewriteVariables(drs, variable_type).rewrite_variables()
         var_drss.append([" ".join(x) for x in rewritten_drs])
         # Put in correct representation
-        processed_drs = word_level_drs(rewritten_drs, sep) if representation == 'word' else char_level_drs(rewritten_drs, sep)
+        processed_drs = word_level_drs(rewritten_drs, sep) if representation == 'word' \
+                        else char_level_drs(rewritten_drs, sep)
         # Insert special clause separation character
         rewritten_drss.append(" *** ".join(processed_drs))
     return rewritten_drss, var_drss
 
 
-def write_sentences_and_extra_files(sents, remove_idxs, remove_ill, extra_files, sentence_file, char_sent_ext):
+def write_sentences_and_extra_files(sents, remove_idxs, remove_ill, extra_files,
+                                    sentence_file, char_sent_ext):
     '''Filter extra files and sentenc by ill-formed, and write to file'''
     if remove_ill:
         sents = [s for idx, s in enumerate(sents) if idx not in remove_idxs]
@@ -395,13 +411,14 @@ def write_sentences_and_extra_files(sents, remove_idxs, remove_ill, extra_files,
     write_to_file(sents, sentence_file + char_sent_ext)
 
 
-if __name__ == "__main__":
+def main():
+    '''Main function of preprocesss'''
     args = create_arg_parser()
-
     remove_idxs = []
     # First do the sentences
     if not args.drss_only:
-        sents = PreprocessSentences(read_and_strip_file(args.sentence_file), args.casing, args.representation, args.sep).preprocess_sents()
+        sents = PreprocessSentences(read_and_strip_file(args.sentence_file), args.casing,
+                                    args.representation, args.sep).preprocess_sents()
 
     # Check if we do the DRS file as well
     if not args.sents_only:
@@ -425,4 +442,9 @@ if __name__ == "__main__":
     # Print sentences all the way at the end, because we might want to remove certain sents by idx
     # because their DRS was ill-formed (which we don't check until later). Do that check here
     if not args.drss_only:
-        write_sentences_and_extra_files(sents, remove_idxs, args.remove_ill, args.extra_files, args.sentence_file, args.char_sent_ext)
+        write_sentences_and_extra_files(sents, remove_idxs, args.remove_ill, args.extra_files,
+                                        args.sentence_file, args.char_sent_ext)
+
+
+if __name__ == "__main__":
+    main()

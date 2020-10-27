@@ -3,53 +3,67 @@
 
 '''
 Script that postprocesses DRS clauses produced by a neural seq2seq parser
-Example usage (python3): python postprocess.py -i INPUT_FILE -o OUTPUT_FILE -v rel -s clf_signature.yaml
+Example usage: python postprocess.py -i INPUT_FILE -o OUTPUT_FILE -v rel -s clf_signature.yaml
 '''
 
 import argparse
 import os
 import re
 from clf_referee import check_clf, get_signature
+from utils_counter import dummy_drs, spar_drs
 from uts import write_list_of_lists, op_boxes, between_quotes, is_concept, get_first_arg_boxes
 from uts import remove_by_first_arg_box, remove_comments, read_allennlp_json_predictions
-from utils_counter import dummy_drs, spar_drs
 
 
 def create_arg_parser():
     parser = argparse.ArgumentParser()
     # Input, output and signature files
-    parser.add_argument("-i", "--input_file", required=True, type=str, help="Input file with output of a (neural) DRS parser")
-    parser.add_argument("-o", "--output_file", required=True, type=str, help="Output file we write the restored DRSs to")
-    parser.add_argument("-s", "--sig_file", default='', type=str, help="Signature file for format checking")
+    parser.add_argument("-i", "--input_file", required=True, type=str,
+                        help="Input file with output of a (neural) DRS parser")
+    parser.add_argument("-o", "--output_file", required=True, type=str,
+                        help="Output file we write the restored DRSs to")
+    parser.add_argument("-s", "--sig_file", default='', type=str,
+                        help="Signature file for format checking")
     # Arguments that are important to set, has to match the preprocessing steps
     parser.add_argument("-v", "--var", default='rel', choices=['rel', 'abs', 'none'],
-                        help="How do we rewrite the variables, relatively (default), absolute or not necessary?")
+                        help="How do we rewrite the variables?")
     parser.add_argument("-se", "--sep", default='|||', type=str, help="Space-separator used")
-    parser.add_argument("-ns", "--no_sep", action="store_true", help="No space-separator used (word-based input)")
-    # For AllenNLP experiments these settings are important, vocab and specify that we have to read JSON
-    parser.add_argument("-j", "--json", action='store_true', help="Input file is in JSON format (AllenNLP)")
-    parser.add_argument("-voc", "--vocab", type=str, help="Vocab of AllenNLP experiment, only necessary when using --json as well")
+    parser.add_argument("-ns", "--no_sep", action="store_true",
+                        help="No space-separator used (word-based input)")
+    # For AllenNLP exps these settings are important, vocab and specify that we have to read JSON
+    parser.add_argument("-j", "--json", action='store_true',
+                        help="Input file is in JSON format (AllenNLP)")
+    parser.add_argument("-voc", "--vocab", type=str,
+                        help="Vocab of AllenNLP experiment, only necessary when using --json")
     parser.add_argument("-m", "--min_tokens", type=int, default=20,
-                        help="Minimum amount of tokens (only for AllenNLP exp with --json). If not enough tokens we take different beam answer")
-    # Perhaps you don't want to replace ill-formed by a dummy, use this argument then (either to not replace, or to give back a baseline DRS)
-    parser.add_argument("-n", "--no_referee", action="store_true", help="Don't do referee - just give back output")
-    parser.add_argument("-b", "--baseline", action='store_true', help="Add baseline DRS instead of dummy DRS when DRS is invalid")
-    # We can perform a number of (easy) fixes to either fix ill-formed DRSs, or to cut-off very long DRSs,
-    # or remove too frequent roles/operators/concepts, or add an existing word sense instead of strange one
+                        help="Minimum amount of tokens (only for AllenNLP exp with --json). \
+                              If not enough tokens we take different beam answer")
+    # Perhaps you don't want to replace ill-formed by a dummy, use this argument then
+    # either to not replace, or to give back a baseline DRS)
+    parser.add_argument("-n", "--no_referee", action="store_true",
+                        help="Don't do referee - just give back output")
+    parser.add_argument("-b", "--baseline", action='store_true',
+                        help="Add baseline DRS instead of dummy DRS when DRS is invalid")
+    # We can perform a number of (easy) fixes to either fix ill-formed DRSs, or to cut-off
+    # very long DRSs, or remove too frequent roles/operators/concepts,
+    # or add an existing word sense instead of strange one
     parser.add_argument("-f", "--fix", action='store_true',
-                        help="Try to fix DRSs for which referee returned 'subordinate relation has a loop' ")
-    parser.add_argument("-fd", "--fix_disc", action='store_true', help="Try to fix DRSs for which referee returned 'Boxes are disconnected' ")
+                        help="Try to fix DRSs with 'subordinate relation has a loop' erorr ")
+    parser.add_argument("-fd", "--fix_disc", action='store_true',
+                        help="Try to fix DRSs for which referee returned 'Boxes are disconnected' ")
     parser.add_argument("-fs", "--fix_senses", default='', type=str,
-                        help="If added, it's a file with a list of training set words + senses in this format: count word sense. We use it to fix word senses")
+                        help="If added, it's a file with a list of training set words + senses in \
+                              this format: count word sense. We use it to fix word senses")
     parser.add_argument("-rc", "--remove_concepts", type=int, default=0,
-                        help="Remove concepts that occur more often than X times (default 0 means no removal)")
+                        help="Remove concepts that occur > X times (0 means no removal)")
     parser.add_argument("-rr", "--remove_roles_op", type=int, default=0,
-                        help="Remove roles and operators that occur more often than X times (default 0 means no removal)")
+                        help="Remove roles and operators that occur > X times (0 means no removal)")
     parser.add_argument("-rcl", "--remove_clauses", type=int, default=0,
-                        help="Simply remove all clauses after this number (default 0 means no removal)")
+                        help="Simply remove all clauses after this number (0 means no removal)")
     args = parser.parse_args()
     # Validate the arguments
-    if (args.remove_concepts == 0 or args.remove_roles_op == 0) and (args.remove_concepts > 0 or args.remove_roles_op > 0):
+    if (args.remove_concepts == 0 or args.remove_roles_op == 0) \
+       and (args.remove_concepts > 0 or args.remove_roles_op > 0):
         raise ValueError("Either have --remove_concepts AND --remove_roles > 0, or have both at 0")
     if args.input_file == args.output_file:
         raise ValueError("Input and output file are the same")
@@ -66,28 +80,31 @@ class PostprocessValues:
         # unknown: number of clauses removed that contained the UNKNOWN token
         # remove: number of clauses removed because --remove_clauses was used
         # frequency-rolesop: number of clauses removed because --remove_roles_op was used
-        # frequency-name: number of clauses removed because --remove_concepts was used (includes names)
+        # frequency-name: number of clauses removed because --remove_concepts was used (incl names)
         # frequency-conc: number of clauses removed because --remove_concepts was used
-        # variables: number of times a variables made an impossible reference (e.g. @3 for the last var)
-        # wrong arity: number of times a clause had a wrong (ill-formed) arity and was therefore ignored
-        # no-sense: number of clauses that contained a concept, but no sense, insert default n.01 sense
+        # variables: # of times a variables made an impossible reference (e.g. @3 for last var)
+        # wrong arity: # of times a clause had a wrong (ill-formed) arity and was therefore ignored
+        # no-sense: # of clauses that contained a concept, but no sense, insert default n.01 sense
         # no-ref: disc var was not introduced, add REF
         # spurious-ref: disc var was introduced by REF but never used, remove REF clause
         # sense: number of senses we fixed when using --fix_senses
         # sub-loop: number of times we fixed the subordinate relation has a loop problem (--fix)
         # boxes disconnected: number of times we fixed the disconnected boxes problem (--fix_disc)
-        self.possible_repairs = ["unknown", "remove", "frequency-rolesop", "frequency-name", "double",
-                                 "frequency-conc", "variables", "wrong arity", "no-sense", "no-ref", "spurious-ref",
-                                 "sense", "sub loop", "boxes disconnected"]
+        self.possible_repairs = ["unknown", "remove", "frequency-rolesop", "frequency-name",
+                                 "double", "frequency-conc", "variables", "wrong arity", "no-sense",
+                                 "no-ref", "spurious-ref", "sense", "sub loop", "boxes disconnected"]
         self.dummies = ["dummies-pp", "dummies-ref"]
         self.pp_dict = {}
         for key in self.possible_repairs + self.dummies:
             self.pp_dict[key] = []
 
         # Other settings
-        self.senses = [x.split() for x in open(fix_senses, 'r')] if args.fix_senses and os.path.isfile(fix_senses) else None
-        self.signature = get_signature(sig_file) if sig_file and os.path.isfile(args.sig_file) else None
-        self.lines = read_allennlp_json_predictions(input_file, vocab, min_tokens) if do_json else [x.strip() for x in open(args.input_file, 'r')]
+        self.senses = [x.split() for x in open(fix_senses, 'r')] if args.fix_senses \
+                       and os.path.isfile(fix_senses) else None
+        self.signature = get_signature(sig_file) if sig_file and os.path.isfile(args.sig_file) \
+                         else None
+        self.lines = read_allennlp_json_predictions(input_file, vocab, min_tokens) \
+                     if do_json else [x.strip() for x in open(args.input_file, 'r')]
         self.rm_clauses = remove_clauses
         self.rm_roles_op = remove_roles_op
         self.rm_concepts = remove_concepts
@@ -105,10 +122,10 @@ class PostprocessValues:
 
     def print_stats(self):
         '''Print statistics over postprocessing fixes'''
-        print ("Number of fixes per type:\n")
+        print("Number of fixes per type:\n")
         for key in self.possible_repairs:
             print("{0}: {1}".format(key, len(self.pp_dict[key])))
-        print ("\nNumber of dummies per type:\n")
+        print("\nNumber of dummies per type:\n")
         for key in self.dummies:
             print("{0}: {1}".format(key, len(self.pp_dict[key])))
 
@@ -146,7 +163,8 @@ class RestoreVariables:
 
     def order_of_ref_introduction(self):
         '''Get the order in which REFs are introduced'''
-        return [self.disc_char + str(idx+1) for idx in range(len([1 for idx, x in enumerate(self.drs) if len(x.split()) > 1 and x.split()[1] == self.ref]))]
+        return [self.disc_char + str(idx+1) for idx in range(len([1 for idx,
+               x in enumerate(self.drs) if len(x.split()) > 1 and x.split()[1] == self.ref]))]
 
     def get_var_num(self, var):
         '''Strip @ from @-1 and @2 etc, return 0 if it fails'''
@@ -161,8 +179,8 @@ class RestoreVariables:
             item = self.disc_char + str(len(self.abs_disc_dict))
             self.abs_disc_dict[key] = item
             return item
-        else:
-            return self.abs_disc_dict[key]
+
+        return self.abs_disc_dict[key]
 
     def get_abs_var_box(self, key):
         '''Get absolute variable for box var'''
@@ -170,14 +188,14 @@ class RestoreVariables:
             item = self.box_char + str(len(self.abs_box_dict))
             self.abs_box_dict[key] = item
             return item
-        else:
-            return self.abs_box_dict[key]
+
+        return self.abs_box_dict[key]
 
     def get_variable(self, var, is_box):
         '''Helper function to get the right variable for absolute/relative restore'''
         if self.var_type == "rel":
             return self.get_rel_var(var, is_box)
-        elif is_box: # Always absolute here
+        if is_box:  # Always absolute here
             return self.get_abs_var_box(var)
         return self.get_abs_var_disc(var)
 
@@ -207,7 +225,7 @@ class RestoreVariables:
         # Get variable we are currently referring to
         try:
             second_var = cur_list[num]
-        except: # Num larger than length of list, take last item
+        except:  # Num larger than length of list, take last item
             self.pp_info.pp_dict["variables"].append(self.pp_info.cur_idx)
             second_var = cur_list[-1]
         return second_var
@@ -230,7 +248,7 @@ class RestoreVariables:
     def rewrite_length_four(self, cur_clause):
         '''Rewrite clauses of length four in relative manner'''
         first_var = self.get_variable(cur_clause[0], True)
-        second_var, third_var = cur_clause[2], cur_clause[3] # defaults
+        second_var, third_var = cur_clause[2], cur_clause[3]  # defaults
         # First do second variable, then do third variable
         if not between_quotes(cur_clause[2]):
             second_var = self.get_variable(cur_clause[2], cur_clause[1] in op_boxes)
@@ -241,19 +259,24 @@ class RestoreVariables:
         if is_concept(cur_clause[1]) and not between_quotes(cur_clause[2]):
             self.pp_info.pp_dict["no-sense"].append(self.pp_info.cur_idx)
             second_var = self.default_sense
-        # Add the final clause
-        self.new_clauses.append([first_var, cur_clause[1], second_var, third_var])
+        # If fourth item is not between quotes for name, add "tom"
+        if not between_quotes(cur_clause[3]) and cur_clause[1] == "Name":
+            pass
+            # third_var = '"tom"'
+        else:
+            # Add the final clause
+            self.new_clauses.append([first_var, cur_clause[1], second_var, third_var])
 
     def rewrite_variables(self):
         '''Rewrite the variables from relative/absolute naming to original naming'''
         for clause_string in self.drs:
             try:
                 cur_clause = clause_string.split()
-                if len(cur_clause) in [2, 3]: # Clause has 2 or 3 items
+                if len(cur_clause) in [2, 3]:  # Clause has 2 or 3 items
                     self.rewrite_length_two_three(cur_clause)
-                elif len(cur_clause) == 4: # Clause has 4 items
+                elif len(cur_clause) == 4:  # Clause has 4 items
                     self.rewrite_length_four(cur_clause)
-                else: # Clause has wrong length, ignore
+                else:  # Clause has wrong length, ignore
                     self.pp_info.pp_dict["wrong arity"].append(self.pp_info.cur_idx)
             except:
                 self.pp_info.pp_dict["variables"].append(self.pp_info.cur_idx)
@@ -274,9 +297,10 @@ def two_spaces(item, prev_item, sep):
 
 def replace_double_space(line, sep):
     '''If we accidentally output two spaces for a role, output the previous variable two times
-       This way the matching always goes wrong (so the mistake is punished), but we do have a valid DRS still'''
+       This way the matching always goes wrong (so the mistake is punished),
+       but we do have a valid DRS still'''
     new_list = []
-    if line.strip(): # Catch empty line
+    if line.strip():  # Catch empty line
         spl_line = line.split()
         # If first item is a space we just remove it
         if spl_line[0] == sep:
@@ -348,7 +372,7 @@ def remove_after_idx(clause_list, pp_info):
 
 
 def restore_clauses(line, pp_info):
-    '''Restore clauses from one-line format with placeholder characters to list of lists with clauses'''
+    '''Restore clauses from 1-line format with placeholder chars to list of lists with clauses'''
     # Sometimes the model outputs weird spaces, fix those here
     line = replace_space_with_concept(line, pp_info.sep)
     line = replace_double_space(line, pp_info.sep)
@@ -397,7 +421,8 @@ def get_disc_refs(drs):
                 boxes.append(cur_clause[0])
         else:
             for clause_idx in [2, 3]:
-                if cur_clause[clause_idx] not in disc_refs and is_disc_ref(cur_clause[1], cur_clause[clause_idx], clause_idx):
+                if cur_clause[clause_idx] not in disc_refs and is_disc_ref(cur_clause[1],
+                   cur_clause[clause_idx], clause_idx):
                     disc_refs.append(cur_clause[clause_idx])
                     boxes.append(cur_clause[0])
     return disc_refs, boxes
@@ -427,7 +452,7 @@ def remove_spurious_refs(clause_refs, disc_refs, drs, pp_info, do_print=False):
 
 def check_ref_clauses(drs, pp_info, do_print=True):
     '''Check if each discourse referent that is used has a REF clause'''
-    refs = [x[2] for x in drs if x[1] == 'REF']                # all discourse referents introduced by REF
+    refs = [x[2] for x in drs if x[1] == 'REF']  # all discourse referents introduced by REF
 
     # Save discourse referents found in other non-REF clauses
     disc_refs, disc_boxes = get_disc_refs(drs)
@@ -436,7 +461,7 @@ def check_ref_clauses(drs, pp_info, do_print=True):
     drs = add_missing_ref(refs, disc_refs, disc_boxes, drs, pp_info, do_print=do_print)
     drs = remove_spurious_refs(refs, disc_refs, drs, pp_info, do_print=do_print)
 
-    # Check if we didn't remove all clauses (can happen with some strange settings, i.e. sample data)
+    # Check if we didn't remove all clauses (can happen with strange settings, i.e. sample data)
     if not drs:
         if do_print:
             pp_info.pp_dict["dummies-pp"].append(pp_info.cur_idx)
@@ -553,8 +578,7 @@ def merge_boxes(clf, boxes):
                     new_item.append(item)
             new_clf.append(tuple(new_item))
         return new_clf
-    else:
-        return clf
+    return clf
 
 
 def solve_loops(clf, box, pp_info):
@@ -598,9 +622,8 @@ def solve_loops(clf, box, pp_info):
             # If nothing changed, avoid infinite loops by stopping here
             if new_clf == clf:
                 return False
-            else:
-                # Otherwise try this function again
-                new_clf = solve_loops(new_clf, box_num, pp_info)
+            # Otherwise try this function again
+            new_clf = solve_loops(new_clf, box_num, pp_info)
         # Different error, so approach didn't work, quit
         else:
             return False
@@ -618,7 +641,7 @@ def change_box_in_drs(drs, index, box_var):
     new_drs = []
     for idx, clause in enumerate(drs):
         if idx == index:
-            print ("Changing box", clause[0], "to", box_var)
+            print("Changing box", clause[0], "to", box_var)
             new_drs.append([box_var] + clause[1:])
         else:
             new_drs.append(clause)
@@ -626,7 +649,8 @@ def change_box_in_drs(drs, index, box_var):
 
 
 def solve_non_connected(drs, boxes1, boxes2, signature):
-    '''Try to solve sets of unconnected boxes by changing a discourse variable to a disc var present in a different box'''
+    '''Try to solve sets of unconnected boxes by changing a discourse variable
+       to a disc var present in a different box'''
     # Introduce variables in one of the other boxes and see if that helps
     for idx, clause in enumerate(drs):
         if clause[1] == "REF" and clause[0] in boxes1:
@@ -658,6 +682,10 @@ def extensive_format_check(drs, pp_info):
         return drs
     # DRS invalid, replace by dummy or try to fix
     except RuntimeError as err:
+        print(err)
+        for clause in drs:
+            print(clause)
+        print("\n\n")
         err_message = str(err)
         # Try to fix subordinate loops by just merging/removing the offending box
         if pp_info.fix and 'Subordinate relation has a loop' in err_message:
@@ -667,13 +695,14 @@ def extensive_format_check(drs, pp_info):
         elif pp_info.fix_disc and "Boxes are not connected" in err_message:
             err_cat = "boxes disconnected"
             boxes = re.findall('\{(.*?)\}', err_message)
-            fixed_drs = solve_non_connected(drs, boxes[0].replace(',', '').split(), boxes[1].replace(',', '').split(), pp_info.signature)
+            fixed_drs = solve_non_connected(drs, boxes[0].replace(',', '').split(),
+                                            boxes[1].replace(',', '').split(), pp_info.signature)
 
     # Only get here if DRS was invalid - if we don't have a fixed one, return dummy
     if fixed_drs:
         pp_info.pp_dict[err_cat].append(pp_info.cur_idx)
         return fixed_drs
-    elif pp_info.no_referee:
+    if pp_info.no_referee:
         # Don't want to do referee dummies, return initial DRS
         return drs
     pp_info.pp_dict["dummies-ref"].append(pp_info.cur_idx)
@@ -682,8 +711,10 @@ def extensive_format_check(drs, pp_info):
 
 def do_postprocess(args):
     '''Main function of the postprocessing'''
-    pp_info = PostprocessValues(args.fix_senses, args.sig_file, args.input_file, args.vocab, args.min_tokens, args.json, args.remove_clauses, \
-               args.remove_roles_op, args.remove_concepts, args.sep, args.no_sep, args.var, args.baseline, args.fix, args.fix_disc, args.no_referee)
+    pp_info = PostprocessValues(args.fix_senses, args.sig_file, args.input_file, args.vocab,
+                                args.min_tokens, args.json, args.remove_clauses,
+                                args.remove_roles_op, args.remove_concepts, args.sep, args.no_sep,
+                                args.var, args.baseline, args.fix, args.fix_disc, args.no_referee)
 
     drss = []
     # Each line is a DRS, loop over them here one-by-one
@@ -705,9 +736,9 @@ def do_postprocess(args):
         if pp_info.senses:
             drs = fix_word_senses(drs, pp_info)
 
-        # Now add default for DRSs that are still invalid by doing the more complicated semantic format check (referee)
-        #if not args.no_referee:
-        drs = extensive_format_check(drs, pp_info)
+        # Now add default for DRSs that are still invalid by doing semantic check with referee
+        if not args.no_referee:
+            drs = extensive_format_check(drs, pp_info)
 
         # Save final DRS
         drss.append([" ".join(c) for c in drs])
