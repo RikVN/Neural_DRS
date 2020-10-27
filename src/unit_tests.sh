@@ -135,6 +135,31 @@ test_pp_gold_silver(){
 	#python ${cur_dir}/DRS_parsing/evaluation/counter.py -f1 ${drs_file}.valid -f2 ${drs_file}.restore -g ${cur_dir}/DRS_parsing/evaluation/clf_signature.yaml -r 10
 }
 
+# Check that DRS jury and separate scripts still work
+test_drs_jury(){
+	# Test some different options of DRS jury
+	python src/drs_jury.py --folders output/pmb-3.0.0/en/dev/bert_only/ output/pmb-3.0.0/en/dev/bert_char_1enc/ --prefix output --working tst/unit/ --names bert_only bert_char_1enc -sf tst/unit/stats.csv
+	# More than two folders
+	python src/drs_jury.py --folders output/pmb-3.0.0/en/dev/bert_only/ output/pmb-3.0.0/en/dev/bert_char_1enc/ output/pmb-3.0.0/en/dev/bert_char_2enc/ --prefix output --working tst/unit/ --names bert_only bert_char_1enc bert_char_2enc -sf tst/unit/stats_3.csv
+	# Detailed analysis of indices
+	python src/drs_jury.py --folders output/pmb-3.0.0/en/dev/bert_only/ output/pmb-3.0.0/en/dev/bert_char_1enc/ --prefix output --working tst/unit/ --names bert_only bert_char_1enc -sf tst/unit/stats.csv -a 0 1 2
+	
+	# Create files with separate F-scores to do tests with
+	python DRS_parsing/evaluation/counter.py -f1 output/pmb-3.0.0/en/dev/bert_only/output1.txt -f2 pmb_exp_data_3.0.0/en/gold/dev.txt -g DRS_parsing/evaluation/clf_signature.yaml -ms_file tst/unit/bert_only/out.idv
+	python DRS_parsing/evaluation/counter.py -f1 output/pmb-3.0.0/en/dev/bert_char_1enc/output1.txt -f2 pmb_exp_data_3.0.0/en/gold/dev.txt -g DRS_parsing/evaluation/clf_signature.yaml -ms_file tst/unit/bert_char_1enc/out.idv
+	
+	# Separate tests of the semtag analysis
+	python src/semtag_analysis.py --semtag_file DRS_parsing/parsing/layer_data/gold/en/dev.conll --result_files tst/unit/bert_only/idv/output_idv0 tst/unit/bert_char_1enc/idv/output_idv0 --names bert_only bert_char_1enc -min 5 -m -c
+	python src/semtag_analysis.py --semtag_file DRS_parsing/parsing/layer_data/gold/en/dev.conll --result_files tst/unit/bert_only/out.idv tst/unit/bert_char_1enc/out.idv --names bert_only bert_char_1enc -min 5 -c
+	
+	# Separate test of the senlength plots
+	python src/senlen_plot.py --input_files tst/unit/bert_only/out.idv tst/unit/bert_char_1enc/out.idv --sentences DRS_parsing/data/pmb-3.0.0/gold/dev.txt.raw.tok --output_file tst/unit/plot.pdf --names "bert only" "bert + ch (1e)"
+	python src/senlen_plot.py --input_files tst/unit/bert_only/out.idv tst/unit/bert_char_1enc/out.idv --sentences DRS_parsing/data/pmb-3.0.0/gold/dev.txt.raw.tok --output_file tst/unit/plot.pdf --names "bert only" "bert + ch (1e)" -noc
+
+	# Separate test of approximate randomization
+	python src/approximate_randomization.py -f1 tst/unit/bert_only/out.idv -f2 tst/unit/bert_char_1enc/out.idv -r 1000
+}
+
 ############ MAIN ###############
 
 # Set up a small file to do parsing experiments with
@@ -143,16 +168,16 @@ SENT_FILE="${cur_dir}/test/test.txt.raw"
 printf "This is a test sentence.\nAlso give me a parse for this sentence.\n" > $SENT_FILE
 
 ## First test OpenNMT experiments
-test_opennmt_parse
-test_opennmt_train
+#test_opennmt_parse
+#test_opennmt_train
 
-### Now test Marian experiments
-test_marian_feature_extraction
-test_marian_parse_raw
-test_marian_train
-# This is commented out for 3.0.0 now, since Referee will error
-# You have to revert the DRS_parsing repo to v2.2.0 for this to work
-#test_fscores_marian
+## Now test Marian experiments
+#test_marian_feature_extraction
+#test_marian_parse_raw
+#test_marian_train
+## This is commented out for 3.0.0 now, since Referee will error
+## You have to revert the DRS_parsing repo to v2.2.0 for this to work
+##test_fscores_marian
 
 ## Test preprocess/postprocess for all data that is made available through the DRS_parsing/ repo
 ## There shouldn't be any errors
@@ -160,7 +185,9 @@ test_preprocess_postprocess
 
 ## Also compare for gold_plus_silver data if preprocessing + postprocessing results in F-score of virutally 1.0
 ## Use the most common setting, char + rel + feature
-test_pp_gold_silver
+#test_pp_gold_silver
 
+## Test DRS jury functions
+#test_drs_jury
 
 

@@ -3,22 +3,22 @@
 
 '''General utils'''
 
-from collections import defaultdict
 import sys
 import re
 import os
 import time
-from random import shuffle
 import json
-import codecs
 import subprocess
 
-### Settings
+# Settings
 
-op_boxes = ['ALTERNATION', 'ATTRIBUTION', 'BACKGROUND', 'COMMENTARY', 'CONDITION', 'CONSEQUENCE', 'CONTINUATION', 'CONTRAST', 'DIS', 'DUP', 'ELABORATION', 'EXPLANATION', 'IMP', 'INSTANCE', 'NARRATION', 'NEC', 'NECESSITY', 'NEGATION', 'NOT', 'PARALLEL', 'POS', 'POSSIBILITY', 'PRECONDITION', 'PRESUPPOSITION', 'RESULT', 'TOPIC']
+op_boxes = ['ALTERNATION', 'ATTRIBUTION', 'BACKGROUND', 'COMMENTARY', 'CONDITION', 'CONSEQUENCE',
+            'CONTINUATION', 'CONTRAST', 'DIS', 'DUP', 'ELABORATION', 'EXPLANATION', 'IMP',
+            'INSTANCE', 'NARRATION', 'NEC', 'NECESSITY', 'NEGATION', 'NOT', 'PARALLEL', 'POS',
+            'POSSIBILITY', 'PRECONDITION', 'PRESUPPOSITION', 'RESULT', 'TOPIC']
 
-### Functions
 
+# Functions
 def write_to_file(lst, out_file):
     '''Write list to file'''
     with open(out_file, "w") as out_f:
@@ -43,6 +43,17 @@ def write_list_of_lists(lst, out_file, extra_new_line=True):
     out_f.close()
 
 
+def write_list_of_lists_rstrip(lst, out_file, extra_new_line=True):
+    '''Write lists of lists to file'''
+    with open(out_file, "w") as out_f:
+        for sub_list in lst:
+            for item in sub_list:
+                out_f.write(item.rstrip() + '\n')
+            if extra_new_line:
+                out_f.write('\n')
+    out_f.close()
+
+
 def write_list_of_lists_of_lists(lst, out_file, extra_new_line=True):
     '''Write list of lists of lists to file'''
     with open(out_file, "w") as out_f:
@@ -57,22 +68,20 @@ def write_list_of_lists_of_lists(lst, out_file, extra_new_line=True):
     out_f.close()
 
 
-def pickle_object(l, out_file):
-    with open(out_file, "wb") as fp:
-        pickle.dump(l, fp)
-    fp.close()
-
-
-def unpickle_object(in_file):
-    with open(in_file, "rb") as fp:
-        l = pickle.load(fp)
-    fp.close()
-    return l
-
-
 def get_files_in_folder(folder):
     '''Gets all files in a folder'''
     return [f for f in os.listdir(folder) if os.path.isfile(os.path.join(folder, f))]
+
+
+def get_full_files_in_folder(folder):
+    '''Gets all files in a folder'''
+    return [os.path.join(folder, f) for f in os.listdir(folder)
+            if os.path.isfile(os.path.join(folder, f))]
+
+
+def get_filename(fil):
+    '''Get only the filename from full path filename'''
+    return fil.split('/')[-1]
 
 
 def average(l, round_by=4):
@@ -85,9 +94,23 @@ def average_list(in_list):
     return float(sum(in_list)) / float(len(in_list))
 
 
-def get_files_in_folder_by_ext(folder, ext):
-    '''Gets all files in current folder if they have certain extension'''
-    return [f for f in os.listdir(folder) if os.path.isfile(f) and f.endswith(ext)]
+def average_columns(data):
+    '''Average list of lists based on columns and return single list'''
+    return [sum(col) / float(len(col)) for col in zip(*data)]
+
+
+def average_difference(list1, list2, do_round=-1):
+    '''Take average difference (not absolute!) between two lists'''
+    assert len(list1) == len(list2)
+    diff = float(sum([score1 - score2 for score1, score2 in zip(list1, list2)])) / float(len(list1))
+    if do_round > -1:
+        return round(diff, do_round)
+    return diff
+
+
+def transpose_list(l):
+    '''Transpose list of lists'''
+    return list(map(list, zip(*l)))
 
 
 def get_drss(f, amr_input=False):
@@ -105,7 +128,7 @@ def get_drss(f, amr_input=False):
                 cur_drs.append(line.rstrip())
             else:
                 cur_drs.append(line.strip())
-    ## If we do not end with a newline we should add the DRS still
+    # If we do not end with a newline we should add the DRS still
     if cur_drs:
         all_drss.append(cur_drs)
 
@@ -116,13 +139,14 @@ def drs_string_to_list(drs):
     '''Change a DRS in string format (single list) to a list of lists
        Also remove comments from the DRS'''
     drs = [x for x in drs if x.strip() and not x.startswith('%')]
-    drs = [clause.split()[0:clause.split().index('%')] if '%' in clause.split() else clause.split() for clause in drs]
+    drs = [clause.split()[0:clause.split().index('%')] if '%' in clause.split()
+           else clause.split() for clause in drs]
     return drs
 
 
 def print_both(string, f):
     '''Function to print both screen and to file'''
-    print (string)
+    print(string)
     if f:
         f.write(string + '\n')
 
@@ -141,17 +165,8 @@ def get_files_by_ext(direc, ext):
 
 def get_files_in_folder_by_ext(folder, ext):
     '''Gets all files in current folder if they have certain extension'''
-    return [os.path.join(folder, f) for f in os.listdir(folder) if os.path.isfile(os.path.join(folder, f)) and f.endswith(ext)]
-
-
-def get_files_by_ext(direc, ext):
-    '''Function that traverses a directory and returns all files that match a certain extension'''
-    return_files = []
-    for root, dirs, files in os.walk(direc):
-        for f in files:
-            if f.endswith(ext):
-                return_files.append(os.path.join(root, f))
-    return return_files
+    return [os.path.join(folder, f) for f in os.listdir(folder)
+            if os.path.isfile(os.path.join(folder, f)) and f.endswith(ext)]
 
 
 def flatten_list_of_list(l):
@@ -166,11 +181,12 @@ def list_to_dict(l):
         d[item] = 1
     return d
 
+
 def print_drs(drs, remove_comments=True, extra_newline=True):
     '''Print a DRS (list of lists), remove lines that are comments as default'''
     for clause in drs:
         if clause.strip() and (not clause.strip().startswith('%') or not remove_comments):
-            print (clause.strip())
+            print(clause.strip())
     if extra_newline:
         print()
 
@@ -193,6 +209,7 @@ def json_by_line(input_file):
 
 
 def current_time():
+    '''Return current time'''
     return time.ctime()
 
 
@@ -204,6 +221,17 @@ def is_dummy(drs):
     return False
 
 
+def get_invalid_indices(drss_list):
+    '''Loop over list of list of DRSs, save list of indices of invalid ones'''
+    invalid = []
+    for drss in drss_list:
+        for idx, drs in enumerate(drss):
+            if idx not in invalid and is_dummy(drs):
+                invalid.append(idx)
+    sorted_invalid = sorted(invalid)
+    return sorted_invalid
+
+
 def get_direct_subfolders(a_dir):
     '''Get the direct subfolders of a certain folder (so not recursive)'''
     return [name for name in os.listdir(a_dir)
@@ -211,8 +239,9 @@ def get_direct_subfolders(a_dir):
 
 
 def get_part_doc(line):
-    part = re.findall(r'\p(\d\d)/', line)[0]
-    doc = re.findall(r'd(\d\d\d\d)/', line)[0]
+    '''Return the part and doc from a string (PMB function)'''
+    part = re.findall('/p(\d\d)/', line)[0]
+    doc = re.findall('/d(\d\d\d\d)/', line)[0]
     return part, doc
 
 
@@ -239,7 +268,8 @@ def is_operator(string):
 
 def is_role(string):
     '''Check if string is in the format of a role'''
-    return string[0].isupper() and any(x.islower() for x in string[1:]) and all(x.islower() or x.isupper() or x == '-' for x in string)
+    return string[0].isupper() and any(x.islower() for x in string[1:]) \
+           and all(x.islower() or x.isupper() or x == '-' for x in string)
 
 
 def all_lower(string):
@@ -254,7 +284,8 @@ def is_concept(string):
 
 def between_quotes(string):
     '''Return true if a value is between quotes'''
-    return (string.startswith('"') and string.endswith('"')) or (string.startswith("'") and string.endswith("'"))
+    return (string.startswith('"') and string.endswith('"')) or (string.startswith("'")
+            and string.endswith("'"))
 
 
 def is_punct(string):
@@ -270,6 +301,7 @@ def print_sorted_dict(d, reverse=True, maximum=0):
             print(w, d[w])
             counter += 1
 
+
 def error_if_not_exists(input_file):
     '''Raise error if file does not exist'''
     if not os.path.isfile(input_file):
@@ -282,6 +314,7 @@ def mkdir(dr):
 
 
 def delete_if_exists(path):
+    '''Delete a file if it exists, otherwise just pass'''
     try:
         os.unlink(path)
     except OSError:
@@ -289,18 +322,21 @@ def delete_if_exists(path):
 
 
 def count_lines_in_file(path):
+    '''Returns the number of lines in a file'''
     result = 0
     with open(path, 'r') as f:
-        for line in f:
+        for _ in f:
             result += 1
     return result
 
 
 def makedirs(path):
+    '''Create directory'''
     try:
         os.makedirs(path)
     except OSError:
         raise ValueError("Problem making dir")
+
 
 def copy_file(f1, f2):
     '''Copy file f1 to location f2'''
@@ -308,6 +344,7 @@ def copy_file(f1, f2):
 
 
 def is_non_zero_file(fpath):
+    '''File should not only exist but also have content'''
     return os.path.isfile(fpath) and os.path.getsize(fpath) > 0
 
 
@@ -319,10 +356,12 @@ def get_first_arg_boxes(clf):
             boxes.append(c[0])
     return boxes
 
+
 def remove_by_first_arg_box(clf, box):
     '''Remove all clauses that contain a certain box as first arg
        Might help solving subordinate relation loop problems'''
     return [x for x in clf if x[0] != box]
+
 
 def powerset(s):
     '''Given a set, return the powerset
@@ -353,26 +392,34 @@ def add_to_dict(d, key):
 def print_list(in_list, leading_newline=False, ending_newline=False, strip_line=True):
     '''Print each item in a list, with leading/ending newline or not'''
     if leading_newline:
-        print ()
+        print()
     for line in in_list:
         if strip_line:
-            print (line.strip())
+            print(line.strip())
         else:
-            print (line)
+            print(line)
     if ending_newline:
-        print ()
+        print()
+
 
 def num_common_elements(list1, list2):
     '''Return number of elements in list1 that are also in list2.'''
     return len(set(list1).intersection(list2))
 
+
 def sum_two_lists(list1, list2):
     '''Sum the contents of two lists and return'''
     return [a + b for a, b in zip(list1, list2)]
 
-def load_idv_scores(file_list):
-    '''Load al individual scores for all file in a list'''
-    return [[float(x.strip()) for x in open(in_file, 'r')] for in_file in file_list]
+
+def load_float_file(in_file):
+    '''Load individual scores for a file'''
+    return [float(x.strip()) for x in open(in_file, 'r')]
+
+
+def load_multi_int_file(in_file):
+    '''Load file with multiple ints on single lines, save as lists'''
+    return [[int(y) for y in x.strip().split()] for x in open(in_file, 'r')]
 
 
 def load_multi_idv_scores(file_list):
@@ -392,8 +439,8 @@ def floats_in_line(line, only_take_first=False):
         raise ValueError("No number found in line:", line)
     elif len(floats) == 1 or only_take_first:
         return float(floats[0])
-    else:
-        return [float(sc) for sc in floats]
+    return [float(sc) for sc in floats]
+
 
 def get_num_dummies(drss):
     '''Return the number of dummies for a list of DRSs'''
@@ -444,24 +491,93 @@ def remove_doubles_in_order(in_list):
     return new_list
 
 
+def nums_in_line(line):
+    '''Find all the numbers in a line'''
+    return re.findall(r'\d[\d\.]+', line)
+
+
+def is_num(string):
+    '''Check if something is a number'''
+    try:
+        float(string)
+        return True
+    except:
+        return False
+
+
+def avg_nums_in_line(lines, round_up):
+    '''Average all the numbers found in a list of lines and return that line'''
+    nums = []
+    # Get all the numbers
+    for line in lines:
+        nums.append([float(x) for x in nums_in_line(line)])
+    if not nums[0]:
+        # No numbers, just return one of the lines
+        return lines[0]
+    # Convert list of numbers to a list of avges
+    avges = []
+    for idx1 in range(len(nums[0])):
+        tmp_nums = []
+        for idx2 in range(len(nums)):
+            tmp_nums.append(nums[idx2][idx1])
+        avges.append(round(float(sum(tmp_nums)) / float(len(tmp_nums)), round_up))
+    # Loop over the original line and print the average in place of the number found
+    new_str = []
+    count = 0
+    for tok in lines[0].replace(',', ' , ').split():
+        if is_num(tok):
+            new_str.append(str(avges[count]))
+            count += 1
+        else:
+            new_str.append(tok)
+    return " ".join(new_str)
+
+
 def voc_to_tok(in_list, vocab):
     '''Convert list of indices to tokens, stop after @end@ token is predicted'''
     tokens = []
     end_idx = [idx for idx, y in enumerate(vocab) if y == "@end@"][0]
     for num in in_list:
         find_num = int(num) - 1
-        if find_num == end_idx: #found ending token
+        if find_num == end_idx:  # found ending token
             return tokens
         tokens.append(vocab[find_num])
     return tokens
+
+
+def read_matching_nonmatching_clauses(match_file):
+    '''From a Counter output file with matching clauses, read matched/unmatched in a list'''
+    lines = [x.strip() for x in load_sent_file(match_file) if x.strip()]
+    cur_list = []
+    match, non_match = [], []
+    add_match, add_non_match = False, False
+    for line in lines:
+        if line.startswith("## Matching clauses ##"):
+            add_match = True
+            add_non_match = False
+        elif line.startswith("## Non-matching clauses ##"):
+            add_match = False
+            add_non_match = True
+        elif line.startswith("## Clause information ##"):
+            # Save the current match/non-match and reset
+            if match or non_match:
+                cur_list.append([match, non_match])
+            match, non_match = [], []
+            add_match, add_non_match = False, False
+        # Otherwise we just add
+        elif add_match:
+            match.append(line)
+        elif add_non_match:
+            non_match.append(line)
+    return cur_list
 
 
 def read_allennlp_json_predictions(input_file, vocab, min_tokens):
     '''Read the json predictions of AllenNLP
        Bit tricky: if predictions for the winning beam are very short we take a later prediction and
        ignore the "winning" beam. Label smoothing can have this side effect that cuts the sequences
-       short otherwise. We need the vocab for that. Raise error if we did not specify a vocab to help us
-       remember this issue'''
+       short otherwise. We need the vocab for that.
+       Raise error if we did not specify a vocab to help us remember this issue'''
     vocab = read_and_strip_file(vocab)
     dict_lines = json_by_line(input_file)
     lines = []
