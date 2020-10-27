@@ -167,27 +167,27 @@ mkdir -p test
 SENT_FILE="${cur_dir}/test/test.txt.raw"
 printf "This is a test sentence.\nAlso give me a parse for this sentence.\n" > $SENT_FILE
 
-## First test OpenNMT experiments
-#test_opennmt_parse
-#test_opennmt_train
+# First test OpenNMT experiments
+test_opennmt_parse
+test_opennmt_train
 
-## Now test Marian experiments
-#test_marian_feature_extraction
-#test_marian_parse_raw
-#test_marian_train
-## This is commented out for 3.0.0 now, since Referee will error
-## You have to revert the DRS_parsing repo to v2.2.0 for this to work
-##test_fscores_marian
+# Now test Marian experiments
+test_marian_feature_extraction
+test_marian_parse_raw
+test_marian_train
+# This is commented out for 3.0.0 now, since Referee will error
+# You have to revert the DRS_parsing repo to v2.2.0 for this to work
+#test_fscores_marian
 
-## Test preprocess/postprocess for all data that is made available through the DRS_parsing/ repo
-## There shouldn't be any errors
+# Test preprocess/postprocess for all data that is made available through the DRS_parsing/ repo
+# There shouldn't be any errors
 test_preprocess_postprocess
 
-## Also compare for gold_plus_silver data if preprocessing + postprocessing results in F-score of virutally 1.0
-## Use the most common setting, char + rel + feature
-#test_pp_gold_silver
+# Also compare for gold_plus_silver data if preprocessing + postprocessing results in F-score of virutally 1.0
+# Use the most common setting, char + rel + feature
+test_pp_gold_silver
 
-## Test DRS jury functions
-#test_drs_jury
+# Test DRS jury functions
+test_drs_jury
 
 
