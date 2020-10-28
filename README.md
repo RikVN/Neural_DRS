@@ -1,6 +1,6 @@
 # Neural DRS parsing
 
-This folder contains scripts to use our neural seq2seq model to produce DRSs. It contains code to reproduce either our [TACL paper](https://www.mitpressjournals.org/doi/abs/10.1162/tacl_a_00241), our [IWCS paper](https://www.aclweb.org/anthology/W19-0504/) or our EMNLP paper. The models rely on [OpenNMT](http://opennmt.net/), [Marian](https://marian-nmt.github.io/) and [AllenNLP](https://allennlp.org/), respectively.
+This folder contains scripts to use our neural seq2seq model to produce DRSs. It contains code to reproduce either our [TACL paper](https://www.aclweb.org/anthology/Q18-1043.pdf), our [IWCS paper](https://www.aclweb.org/anthology/W19-0504/) or our EMNLP paper. The models rely on [OpenNMT](http://opennmt.net/), [Marian](https://marian-nmt.github.io/) and [AllenNLP](https://allennlp.org/), respectively.
 
 Information about reproducing the specific papers are in separate READMEs. This README helps in setting up all DRS parsing experiments.
 
@@ -27,7 +27,7 @@ I made a script ``setup.sh`` that takes care of this. Throughout the README I as
 ./src/setup.sh
 ```
 
-Make sure DRS_parsing/ and DRS_parsing/evaluation/ is on your $PYTHONPATH, e.g. like this:
+Make sure DRS_parsing/ and DRS_parsing/evaluation/ are on your $PYTHONPATH, e.g. like this:
 
 ```
 cur_dir=$(pwd)
@@ -39,7 +39,7 @@ You can find the data in data/ now. You can also download a [PMB release](http:/
 
 ### Testing your setup ###
 
-We want to be sure that all scripts that are independent of your (neural) parsing software work. This includes preprocessing, postprocessing, Counter and DRS jury. This command should succeed without errors:
+We want to be sure that all scripts that are independent of your (neural) parsing software work. This includes preprocessing, postprocessing, Counter, Referee and DRS jury. This command should succeed without errors:
 
 ```
 ./src/unit_tests.sh
@@ -47,7 +47,7 @@ We want to be sure that all scripts that are independent of your (neural) parsin
 
 ## DRS Jury ##
 
-Explanation coming soon, it's available in src/.
+Explanation coming soon, it's available [here](src/drs_jury.py).
 
 ## Running experiments ##
 
@@ -69,15 +69,17 @@ The [specific scores](Scores.md) are also available. If you want to add your sco
 
 ## Citation ##
 
-This directory is part of our [TACL](https://www.mitpressjournals.org/doi/abs/10.1162/tacl_a_00241), [IWCS paper](https://www.aclweb.org/anthology/W19-0504/) and EMNLP paper:
+This directory is part of our [TACL](https://www.aclweb.org/anthology/Q18-1043.pdf), [IWCS paper](https://www.aclweb.org/anthology/W19-0504/) and EMNLP paper:
 
-van Noord, R., Abzianidze, L., Toral, A., & Bos, J. (2018). **Exploring Neural Methods for Parsing Discourse Representation Structures.** *Transactions Of The Association For Computational Linguistics*, 6, 619-633
+Rik van Noord, Lasha Abzianidze, Antonio Toral and Johan Bos. **Exploring Neural Methods for Parsing Discourse Representation Structures.** TACL 2018 [\[PDF\]](https://www.aclweb.org/anthology/Q18-1043.pdf) [\[BibTex\]](https://www.aclweb.org/anthology/Q18-1043.bib)
 
-Rik van Noord, Antonio Toral and Johan Bos. (2019) **Linguistic Information in Neural Semantic Parsing with Multiple Encoders** IWCS 2019
+Rik van Noord, Antonio Toral and Johan Bos. **Linguistic Information in Neural Semantic Parsing with Multiple Encoders** IWCS 2019 [\[PDF\]](https://www.aclweb.org/anthology/W19-0504.pdf) [\[BibTex\]](https://www.aclweb.org/anthology/W19-0504.bib)
 
-If you use Counter, please cite our [LREC paper](https://arxiv.org/pdf/1802.08599.pdf):
+Rik van Noord, Antonio Toral and Johan Bos. (2020) **Character-level Representations Improve DRS-based Semantic Parsing Even in the Age of BERT** EMNLP 2020
 
-Rik van Noord, Lasha Abzianidze, Hessel Haagsma, and Johan Bos, 2018. **Evaluating scoped meaning representations**. *In Proceedings of the Eleventh International Conference on Language Resources and Evaluation (LREC 2018)*, Miyazaki, Japan
+If you use Counter, please cite our [LREC paper](https://www.aclweb.org/anthology/L18-1267.pdf):
+
+Rik van Noord, Lasha Abzianidze, Hessel Haagsma, and Johan Bos. **Evaluating scoped meaning representations**. LREC 2018 [\[PDF\]](https://www.aclweb.org/anthology/L18-1267.pdf) [\[BibTex\]](https://www.aclweb.org/anthology/L18-1267.bib)
 
 ## Acknowledgments
 
