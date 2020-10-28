@@ -17,15 +17,9 @@ This repository works with PMB release 3.0.0. If you want to work with 2.2.0 (or
 git checkout v2.2.0-final
 ```
 
-### Setup
+### Setup & Data
 
 First we will setup the datasets and the [DRS_parsing respository](https://github.com/RikVN/DRS_parsing), which is needed for evaluation.
-
-I made a script ``setup.sh`` that takes care of this. Throughout the README I assume you ran this.
-
-```
-./src/setup.sh
-```
 
 Make sure DRS_parsing/ and DRS_parsing/evaluation/ are on your $PYTHONPATH, e.g. like this:
 
@@ -35,7 +29,13 @@ export PYTHONPATH=${cur_dir}/DRS_parsing/:${PYTHONPATH}
 export PYTHONPATH=${cur_dir}/DRS_parsing/evaluation/:${PYTHONPATH}
 ```
 
-You can find the data in data/ now. You can also download a [PMB release](http://pmb.let.rug.nl/data.php) and construct the training data yourself.
+I made a script ``setup.sh`` that takes care of this. Throughout the README I assume you ran this.
+
+```
+./src/setup.sh
+```
+
+All data you need for running basic DRS parsing experiments you can now find in [data](data). You can potentially still download a [PMB release](http://pmb.let.rug.nl/data.php) and construct the training data yourself, but I'd advise not to unless you want to exploit more resources.
 
 ### Testing your setup ###
 
