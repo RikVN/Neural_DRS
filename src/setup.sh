@@ -12,6 +12,7 @@ cd ../
 
 # Create data folder, download files and unzip
 # Get the data
+mkdir -p data
 cd data/
 wget "https://pmb.let.rug.nl/releases/exp_data_2.2.0.zip"
 wget "https://pmb.let.rug.nl/releases/exp_data_3.0.0.zip"
