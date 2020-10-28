@@ -10,24 +10,42 @@ pip install scipy
 pip install matplotlib
 cd ../
 
-# Get the 3.0.0 data
-wget "https://pmb.let.rug.nl/releases/pmb_exp_data_3.0.0.zip"
-# PMB website is down, temporarily get the files from here
-#wget "http://www.let.rug.nl/rikvannoord/pmb_release/pmb_exp_data_3.0.0.zip"
-unzip pmb_exp_data_3.0.0.zip
+# Create data folder, download files and unzip
+# Get the data
+cd data/
+wget "https://pmb.let.rug.nl/releases/exp_data_2.2.0.zip"
+wget "https://pmb.let.rug.nl/releases/exp_data_3.0.0.zip"
+## Unzip and rename
+unzip exp_data_2.2.0.zip
+unzip exp_data_3.0.0.zip
+mv exp_data_2.2.0 2.2.0
+mv pmb_exp_data_3.0.0 3.0.0
+# Clean up zips
+rm exp_data_2.2.0.zip
+rm exp_data_3.0.0.zip
+cd ../
 
-# The files in the DRS_parsing repo only have gold and silver separately
-# Combine them to files with gold + silver to reproduce experiments
-# You can use similar scripts to do gold + bronze, gold + silver + bronze, etc
-for fol in DRS_parsing/data/pmb-2.1.0 DRS_parsing/data/pmb-2.2.0 pmb_exp_data_3.0.0/en/ ; do
-	cd $fol
-	mkdir -p gold_plus_silver
-	cat gold/train.txt silver/train.txt > gold_plus_silver/train.txt
-	cat gold/train.txt.raw silver/train.txt.raw > gold_plus_silver/train.txt.raw
-	# Also put the dev and test files there, but they are just gold
-	cp gold/dev.txt gold_plus_silver/dev.txt
-	cp gold/dev.txt.raw gold_plus_silver/dev.txt.raw
-	cp gold/test.txt gold_plus_silver/test.txt
-	cp gold/test.txt.raw gold_plus_silver/test.txt.raw
-	cd -
+# The files in the DRS_parsing repo only have gold, silver and bronze separately
+# Combine them to files with gold + silver, gold + silver + bronze, etc
+# There is no gold for non-English in 2.2.0, for 3.0.0 there is for German
+for fol in data/2.2.0 data/3.0.0/ ; do
+	for lang in en de it nl; do
+		cd ${fol}/${lang}/
+		# Silver + bronze (always)
+		mkdir -p silver_bronze
+		cat silver/train.txt bronze/train.txt > silver_bronze/train.txt
+		cat silver/train.txt.raw bronze/train.txt.raw > silver_bronze/train.txt.raw
+		# Do these combinations for English, or German 3.0.0
+		if [[ $lang = "en" || ( $lang = "de" && $fol = "data/3.0.0/" ) ]] ; then
+			# Gold + silver
+			mkdir -p gold_silver
+			cat gold/train.txt silver/train.txt > gold_silver/train.txt
+			cat gold/train.txt.raw silver/train.txt.raw > gold_silver/train.txt.raw
+			# Gold + silver + bronze
+			mkdir -p gold_silver_bronze
+			cat gold/train.txt silver/train.txt bronze/train.txt > gold_silver_bronze/train.txt
+			cat gold/train.txt.raw silver/train.txt.raw bronze/train.txt.raw > gold_silver_bronze/train.txt.raw
+		fi	
+		cd -
+	done	
 done
