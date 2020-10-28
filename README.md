@@ -29,7 +29,7 @@ export PYTHONPATH=${cur_dir}/DRS_parsing/:${PYTHONPATH}
 export PYTHONPATH=${cur_dir}/DRS_parsing/evaluation/:${PYTHONPATH}
 ```
 
-I made a script ``setup.sh`` that takes care of this. Throughout the README I assume you ran this.
+I made a script ``setup.sh`` that takes care of setting everything up. Throughout the README I assume you ran this.
 
 ```
 ./src/setup.sh
@@ -69,17 +69,28 @@ The [specific scores](Scores.md) are also available. If you want to add your sco
 
 ## Citation ##
 
-This repository contains code and documentation for three papers:
+This repository contains code and documentation for three semantic parsing papers.
+
+For OpenNMT and Referee, please cite:
 
 Rik van Noord, Lasha Abzianidze, Antonio Toral and Johan Bos. **Exploring Neural Methods for Parsing Discourse Representation Structures.** TACL 2018 [\[PDF\]](https://www.aclweb.org/anthology/Q18-1043.pdf) [\[BibTex\]](https://www.aclweb.org/anthology/Q18-1043.bib)
 
+For Marian and linguistic feature extraction, please cite:
+
 Rik van Noord, Antonio Toral and Johan Bos. **Linguistic Information in Neural Semantic Parsing with Multiple Encoders.** IWCS 2019 [\[PDF\]](https://www.aclweb.org/anthology/W19-0504.pdf) [\[BibTex\]](https://www.aclweb.org/anthology/W19-0504.bib)
+
+For AllenNLP and DRS Jury, please cite:
 
 Rik van Noord, Antonio Toral and Johan Bos. (2020) **Character-level Representations Improve DRS-based Semantic Parsing Even in the Age of BERT.** EMNLP 2020
 
-If you use Counter, please cite our [LREC paper](https://www.aclweb.org/anthology/L18-1267.pdf):
+If you use Counter, please cite our:
 
 Rik van Noord, Lasha Abzianidze, Hessel Haagsma, and Johan Bos. **Evaluating scoped meaning representations**. LREC 2018 [\[PDF\]](https://www.aclweb.org/anthology/L18-1267.pdf) [\[BibTex\]](https://www.aclweb.org/anthology/L18-1267.bib)
+
+If you use data from the PMB, please cite:
+
+Abzianidze, L., Bjerva, J., Evang, K., Haagsma, H., van Noord, R., Ludmann, P., Nguyen, D. & Bos, J **The Parallel Meaning Bank: Towards a Multilingual Corpus of Translations Annotated with Compositional Meaning Representations**, EACL 2017 [\[PDF\]](https://www.aclweb.org/anthology/E17-2039.pdf) [\[BibText\]](https://www.aclweb.org/anthology/E17-2039.bib)
+
 
 ## Acknowledgments
 
