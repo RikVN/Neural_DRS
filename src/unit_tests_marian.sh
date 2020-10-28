@@ -10,7 +10,7 @@ set -eu -o pipefail
 test_marian_parse_raw(){
 	printf "\n----------------------------------------------\n"
 	printf "Test Marian parsing from pretrained models from raw text\n"
-	./src/marian_scripts/parse_raw_text.sh config/marian/best_gold_silver.sh models/marian/best_gold_silver.npz ${SENT_FILE}.marian.best_gold_silver.seq.drs $SENT_FILE ${SENT_FILE}.clem
+	./src/marian_scripts/parse_raw_text.sh config/marian/best_gold_silver.sh models/marian/best_gold_silver.npz ${SENT_FILE}.marian.best_gold_silver.seq.drs $SENT_FILE ${SENT_FILE}.feat.clem
 }
 
 
@@ -36,8 +36,8 @@ test_marian_feature_extraction(){
 	# Begin with extracting all the linguistic features
 	./src/marian_scripts/extract_ling_features.sh $SENT_FILE
 	# Check if merging the features still works
-	python src/merge_tags.py -f ${SENT_FILE}.pos ${SENT_FILE}.dep ${SENT_FILE}.ccg ${SENT_FILE}.lem --char_exts .lem > ${SENT_FILE}.multi
-	python src/merge_tags.py -f ${SENT_FILE}.lem --char_exts .lem > ${SENT_FILE}.clem
+	python src/merge_tags.py -f ${SENT_FILE}.feat.pos ${SENT_FILE}.feat.dep ${SENT_FILE}.feat.ccg ${SENT_FILE}.feat.lem --char_exts .feat.lem > ${SENT_FILE}.multi
+	python src/merge_tags.py -f ${SENT_FILE}.feat.lem --char_exts .feat.lem > ${SENT_FILE}.feat.clem
 }
 
 ############ MAIN ###############
