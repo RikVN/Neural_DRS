@@ -69,13 +69,13 @@ The [specific scores](Scores.md) are also available. If you want to add your sco
 
 ## Citation ##
 
-This directory is part of our [TACL](https://www.aclweb.org/anthology/Q18-1043.pdf), [IWCS paper](https://www.aclweb.org/anthology/W19-0504/) and EMNLP paper:
+This repository contains code and documentation for three papers:
 
 Rik van Noord, Lasha Abzianidze, Antonio Toral and Johan Bos. **Exploring Neural Methods for Parsing Discourse Representation Structures.** TACL 2018 [\[PDF\]](https://www.aclweb.org/anthology/Q18-1043.pdf) [\[BibTex\]](https://www.aclweb.org/anthology/Q18-1043.bib)
 
-Rik van Noord, Antonio Toral and Johan Bos. **Linguistic Information in Neural Semantic Parsing with Multiple Encoders** IWCS 2019 [\[PDF\]](https://www.aclweb.org/anthology/W19-0504.pdf) [\[BibTex\]](https://www.aclweb.org/anthology/W19-0504.bib)
+Rik van Noord, Antonio Toral and Johan Bos. **Linguistic Information in Neural Semantic Parsing with Multiple Encoders.** IWCS 2019 [\[PDF\]](https://www.aclweb.org/anthology/W19-0504.pdf) [\[BibTex\]](https://www.aclweb.org/anthology/W19-0504.bib)
 
-Rik van Noord, Antonio Toral and Johan Bos. (2020) **Character-level Representations Improve DRS-based Semantic Parsing Even in the Age of BERT** EMNLP 2020
+Rik van Noord, Antonio Toral and Johan Bos. (2020) **Character-level Representations Improve DRS-based Semantic Parsing Even in the Age of BERT.** EMNLP 2020
 
 If you use Counter, please cite our [LREC paper](https://www.aclweb.org/anthology/L18-1267.pdf):
 
