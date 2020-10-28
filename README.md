@@ -61,7 +61,7 @@ For each of the three papers, I have written separate READMEs. Please find the l
 
 If you're only interested in the output of our parser(s), please check the **output/** folder.  We have added parser output for release 2.1.0, 2.2.0 and 3.0.0. Marian en AllenNLP (BERT) scores are averaged over 5 runs of the system.
 
-### PMB 2.1.0 ###
+### PMB 2.1.0 - English ###
 
 | Parser | Dev	|
 | ------- | ------- |
@@ -76,12 +76,12 @@ If you're only interested in the output of our parser(s), please check the **out
 
 The baseline parsers SPAR and amr2drs are available in the [DRS_parsing repository](https://github.com/RikVN/DRS_parsing).
 
-### PMB 2.2.0 ###
+### PMB 2.2.0 - English ###
 
 This includes results from [this paper](https://www.aclweb.org/anthology/W19-0504/) (Marian) and the latest EMNLP paper (AllenNLP). It includes systems that use BERT, and combine BERT and characters, and a system that employs semtags.
 
 | Parser				      | Dev	| Test |
-| ------- | ------- | ------- | ------- |
+| ------- | ------- | ------- |
 | BERT + char + semtags (two encs) | 85.5 | 87.7 |
 | BERT + char (two encoders)  |  85.6 | 88.1 |
 | BERT + char (one encoders)  | 86.1 | 88.3 |
@@ -94,7 +94,7 @@ This includes results from [this paper](https://www.aclweb.org/anthology/W19-050
 | SPAR                        | 40.0 | 40.8 |
 
 
-### PMB 3.0.0 ###
+### PMB 3.0.0 - English ###
 
 Similar models as for 2.2.0. Boxer is trained using a better role labeler, which explains the increase in performance.
 
@@ -116,7 +116,7 @@ Similar models as for 2.2.0. Boxer is trained using a better role labeler, which
 We also have scores for German, Italian and Dutch DRS parsing.
 
 | Parser				      | de-dev	| de-test | it-dev	| it-test | nl-dev	| nl-test |
-| ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- |
+| ------- | ------- | ------- | ------- | ------- | ------- | ------- |
 | BERT + char (two encoders)  | 69.8 | 71.8 | 74.0 | 77.1 | 65.9 | 65.7 |
 | BERT + char (one encoder)  | 69.3 | 70.8 | 73.8 | 76.3 | 66.3 | 65.2 |
 | BERT-only                   | 66.6 | 69.0 | 71.9 | 73.3 | 66.0 | 63.7 |
@@ -126,7 +126,7 @@ We also have scores for German, Italian and Dutch DRS parsing.
 
 
 | Parser				      | de-dev	| de-test | it-dev	| it-test | nl-dev	| nl-test |
-| ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- |
+| ------- | ------- | ------- | ------- | ------- | ------- | ------- |
 | BERT + char (two encoders)  | 82.4 | 82.0 | 80.2 | 80.5 | 71.8 | 71.2 |
 | BERT + char (one encoder)   | 81.9 | 81.3 | 79.2 | 80.5 | 71.6 | 71.8 |
 | BERT-only                   | 80.2 | 79.5 | 77.4 | 79.0 | 71.4 | 71.2 |
