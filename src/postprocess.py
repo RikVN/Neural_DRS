@@ -682,10 +682,6 @@ def extensive_format_check(drs, pp_info):
         return drs
     # DRS invalid, replace by dummy or try to fix
     except RuntimeError as err:
-        print(err)
-        for clause in drs:
-            print(clause)
-        print("\n\n")
         err_message = str(err)
         # Try to fix subordinate loops by just merging/removing the offending box
         if pp_info.fix and 'Subordinate relation has a loop' in err_message:
