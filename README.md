@@ -47,7 +47,23 @@ We want to be sure that all scripts that are independent of your (neural) parsin
 
 ## DRS Jury ##
 
-Explanation coming soon, it's available [here](src/drs_jury.py).
+I created a script to give a better overview of your DRS parsing system, called [DRS Jury](src/drs_jury.py). It has the same capabilities as Counter, and includes the following extensions:
+
+* Averaging over multiple output files (recommended)
+* Comparing different experiments across a number of scores
+* Individual scores per clause type (e.g. F-score on just predicting "Agent")
+* F-score over sentence-length plots
+* Statistical tests between two experiments
+* Semantic tag analysis (e.g. how well do we score on negation)
+* Listing the hardest documents per experiment
+* Listing the relatively easiest/hardest documents compared to the other experiment
+* Individual analysis of these documents, with example output per document
+
+Details on how to run are specified in this [README](DRS_jury.md). Example run command:
+
+```
+python src/drs_jury.py --folders output/pmb-3.0.0/en/dev/bert_only/ output/pmb-3.0.0/en/dev/bert_char_1enc/ --prefix output --working tst/unit/ --names bert_only bert_char_1enc
+```
 
 ## Running experiments ##
 
@@ -91,6 +107,7 @@ If you use data from the PMB, please cite:
 
 * Abzianidze, L., Bjerva, J., Evang, K., Haagsma, H., van Noord, R., Ludmann, P., Nguyen, D. & Bos, J. **The Parallel Meaning Bank: Towards a Multilingual Corpus of Translations Annotated with Compositional Meaning Representations**, EACL 2017 [\[PDF\]](https://www.aclweb.org/anthology/E17-2039.pdf) [\[BibTex\]](https://www.aclweb.org/anthology/E17-2039.bib)
 
+We also keep a list of all papers related to DRS parsing [here](https://pmb.let.rug.nl/publications.php). Let us know if you want your paper included.
 
 ## Acknowledgments
 
