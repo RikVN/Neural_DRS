@@ -62,9 +62,7 @@ I created a script to give a better overview of your DRS parsing system, called 
 Details on how to run are specified in this [README](DRS_jury.md). Example run command:
 
 ```
-python src/drs_jury.py --folders output/pmb-3.0.0/en/dev/bert_only/ 
-output/pmb-3.0.0/en/dev/bert_char_1enc/ --prefix output --working 
-tst/unit/ --names bert_only bert_char_1enc
+python src/drs_jury.py --folders output/pmb-3.0.0/en/dev/bert_only/ output/pmb-3.0.0/en/dev/bert_char_1enc/ --prefix output --working tst/unit/ --names bert_only bert_char_1enc
 ```
 
 ## Running experiments ##
