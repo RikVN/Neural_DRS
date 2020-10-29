@@ -52,6 +52,7 @@ I created a script to give a better overview of your DRS parsing system, called 
 * Averaging over multiple output files (recommended)
 * Comparing different experiments across a number of scores
 * Individual scores per clause type (e.g. F-score on just predicting "Agent")
+* Analysis of performance on infrequent word senses
 * F-score over sentence-length plots
 * Statistical tests between two experiments
 * Semantic tag analysis (e.g. how well do we score on negation)
