@@ -78,7 +78,7 @@ def create_arg_parser():
                         help="Minimum number of times a certain sen-length should occur")
     parser.add_argument("-mi", "--min_sen_len", default=3, type=int,
                         help="Minimum sentence length that we want to plot")
-    parser.add_argument("-o", "--output_file", default='', type=str,
+    parser.add_argument("-pl", "--plot_file", default='', type=str,
                         help="Location of sentence length plot (default args.w + senlen_plot.pdf)")
     # Arguments for how to show the output
     parser.add_argument("-sgn", "--significant", default=3, type=int,
@@ -852,8 +852,8 @@ def do_specific_comparison(args, exp_list, all_items):
                                    exp_list[0].out_drss, exp_list[1].out_drss, args.counter,
                                    args.sig_file, args.analyse_indices, names)
         # Analysis for which exp2 > exp1
-        individual_clause_analysis(sorted_diffs, analysis_dir, gold_drss, sentences,
-                                   exp_list[1].out_drss, exp_list[0].out_drss, args.counter,
+        individual_clause_analysis(sorted_diffs[::-1], analysis_dir, gold_drss, sentences,
+                                   exp_list[0].out_drss, exp_list[1].out_drss, args.counter,
                                    args.sig_file, args.analyse_indices, names)
 
 
@@ -913,7 +913,7 @@ def main():
             print(line)
 
     # Print a sentence length plot. This is what we need the tokenized input for
-    output_file = args.output_file if args.output_file else args.working + 'senlen_plot.pdf'
+    output_file = args.output_file if args.plot_file else args.working + 'senlen_plot.pdf'
     create_senlen_plot([res.avg_idv_fscores for res in exp_list], args.tokenized_sentences,
                        args.min_occurrence, args.min_sen_len, output_file, names)
 
