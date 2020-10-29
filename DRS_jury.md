@@ -87,7 +87,28 @@ Of course you don't have to report all these scores. It's just to give a more de
 
 ### Comparing clause scores ###
 
+When comparing two experiments, the script offers a method to automatically list the clauses for which performance differed the most between experiments. The clauses should occur at least 10 times in the gold standard, as to flood the results with infrequent concepts. It returns 5 (alter with --ret) of these clauses, like this:
 
+<pre>
+Clauses for which bert_only > bert_char_1enc has the most difference:
+
+Clause        	Gold inst 	bert_only 	bert_char_1enc 	Diff  
+ClockTime     	13        	0.774     	0.592          	0.182 
+location.n.01 	15        	0.91      	0.823          	0.087 
+Colour        	13        	0.944     	0.882          	0.062 
+Creator       	17        	0.775     	0.732          	0.043 
+Topic         	18        	0.659     	0.617          	0.042 
+
+Clauses for which bert_char_1enc > bert_only has the most difference:
+
+Clause        	Gold inst 	bert_only 	bert_char_1enc 	Diff   
+YearOfCentury 	12        	0.621     	0.764          	-0.143 
+Causer        	11        	0.415     	0.553          	-0.138 
+desire.v.01   	10        	0.788     	0.909          	-0.121 
+Result        	22        	0.72      	0.797          	-0.077 
+Manner        	15        	0.641     	0.713          	-0.072 
+</pre>
+ 
 
 ### Infrequent sense analysis ###
 
@@ -99,6 +120,7 @@ Combined    215         0.549       0.576
 be.v.02     30          0.817       0.841
 be.v.01     20          0.639       0.659
 have.v.02   8           0.667       0.603
+...
 </pre>
 
 ### Semantic tag analysis ###
@@ -108,12 +130,12 @@ For this to work, you need to have specified --layer_data. This expects the semt
 First, it gives scores per subset of sentences that contain a single semtag:
 
 <pre>
-Tag 	Docs 	bert_only 	bert_char_1enc 
-NIL 	786  	87.9      	88.5           
-CON 	513  	86.5      	87.0           
-PRO 	401  	88.9      	89.2           
-REL 	287  	86.4      	86.5           
-NOW 	275  	88.2      	88.8           
+Tag 	Docs 	bert_only 	bert_char_1enc
+NIL 	786  	87.9      	88.5
+CON 	513  	86.5      	87.0
+PRO 	401  	88.9      	89.2
+REL 	287  	86.4      	86.5
+NOW 	275  	88.2      	88.8
 EPS 	268  	88.3      	88.9
 ....
 </pre>
@@ -121,22 +143,23 @@ EPS 	268  	88.3      	88.9
 Then, it gives scores for the subset of sentences that contain at least a single semtag out of list of semtags that represent a certain (semantic) phenomenon. Details can be found in our EMNLP paper.
 
 <pre>
-Exp            	Docs 	bert_only 	bert_char_1enc 
-All            	885  	87.6      	88.1           
-Modal          	100  	86.9      	86.8           
-  Negation     	77   	89.5      	89.4           
-  Possibility  	23   	78.4      	79.0           
-  Necessity    	9    	78.8      	78.3           
-Logic          	209  	85.6      	86.3           
+Exp            	Docs 	bert_only 	bert_char_1enc
+All            	885  	87.6      	88.1
+Modal          	100  	86.9      	86.8
+  Negation     	77   	89.5      	89.4
+  Possibility  	23   	78.4      	79.0
+  Necessity    	9    	78.8      	78.3
+Logic          	209  	85.6      	86.3
 Pronouns       	497  	88.2      	88.5
+...
 </pre>
 
 A more general analysis can be found in this [README](Semtag.md). You can define your own experiments in [src/semtag_analysis.py](src/semtag_analysis.py).
 
 ### Sentence length plot ###
 
-It's also interesting to see how well models do on longer sentences. The script automatically generates a sentence length plot. If you ran setup.sh, you can find the plot in 
-[tst/unit/senlen_plot.pdf](tst/unit/senlen_plot.pdf). These parameters are of interest:
+It's also interesting to see how well models do on longer sentences. The script automatically generates a sentence length plot. If you ran setup.sh, you can find the plot in
+tst/unit/senlen_plot.pdf. These parameters are of interest:
 
 * -t, --tokenized_sentences Important: tokenized sentences of gold output, default PMB 3.0.0 dev
 * -m, --min_occurrence Minimum number of times a certain sen-length should occur (default 8)
@@ -169,7 +192,7 @@ Then, the script gives the 5 (alter with --ret) hardest documents for each exper
 
 ### Relatively easy/hard documents ###
 
-If you compare two experiments, the script also returns the 5 (alter with --ret) documents that are relative easy/hard for the first experiment. This looks like this, index, F-score, sentence:
+If you compare two experiments, the script also returns the 5 (alter with --ret) documents that are relative easy/hard for the first experiment. This looks like this (index, F-score, sentence):
 
 <pre>
 Sentences for which exp1 has most positive difference with exp2:
@@ -192,7 +215,7 @@ Sentences for which exp1 has most negative difference with exp2:
 The previous lines did not gives us that much information about what the model did, exactly. You probably want to get a bit more insight in what the models output, exactly, and how that compared to the gold standard. You can specify this by using the -a, --analyse_indices parameter. For example, -a 0 1 2 will give these detailed results for the easiest **and** hardest documents. It outputs the gold standard, example output for exp1, example output for exp2 and a detailed overview of matching clauses:
 
 <pre>
-Detailed scores for largest diff DRS 0 (idx 541) - avged over 5 files                
+Detailed scores for largest diff DRS 0 (idx 541) - avged over 5 files
 Sentence: He devoted his life to his company.
 
 Gold DRS:
@@ -224,13 +247,13 @@ b1 Time x1 x2
 b1 devote "v.01" x1
 ....
 
-Clause                	Gold inst 	bert_only 	bert_char_1enc 
-PRESUPPOSITION        	3         	0.857     	0.364          
-Owner                 	2         	0.462     	0.333          
-TPR                   	1         	1.0       	0.75           
-Agent                 	1         	1.0       	0.75           
-Theme                 	1         	0.909     	0.75           
-Time                  	1         	1.0       	0.75           
+Clause                	Gold inst 	bert_only 	bert_char_1enc
+PRESUPPOSITION        	3         	0.857     	0.364
+Owner                 	2         	0.462     	0.333
+TPR                   	1         	1.0       	0.75
+Agent                 	1         	1.0       	0.75
+Theme                 	1         	0.909     	0.75
+Time                  	1         	1.0       	0.75
 Goal                  	1         	1.0       	0.333
 .....
 </pre>
