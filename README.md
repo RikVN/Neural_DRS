@@ -45,6 +45,14 @@ We want to be sure that all scripts that are independent of your (neural) parsin
 ./src/unit_tests.sh
 ```
 
+## Running experiments ##
+
+For each of the three papers, I have written separate READMEs. Please find the links below:
+
+* [TACL paper with OpenNMT](OpenNMT.md)
+* [IWCS paper with Marian](Marian.md)
+* EMNLP paper with AllenNLP (coming soon)
+
 ## DRS Jury ##
 
 I created a script to give a better overview of your DRS parsing system, called [DRS Jury](DRS_jury.md). It has the same capabilities as Counter, and includes the following extensions:
@@ -65,14 +73,6 @@ Details on how to run are specified in this [README](DRS_jury.md). Example run c
 ```
 python src/drs_jury.py --folders output/pmb-3.0.0/en/dev/bert_only/ output/pmb-3.0.0/en/dev/bert_char_1enc/ --prefix output -de .txt --working tst/unit/ --names bert_only bert_char_1enc
 ```
-
-## Running experiments ##
-
-For each of the three papers, I have written separate READMEs. Please find the links below:
-
-* [TACL paper with OpenNMT](OpenNMT.md)
-* [IWCS paper with Marian](Marian.md)
-* EMNLP paper with AllenNLP (coming soon)
 
 ## Semtag analysis ##
 
