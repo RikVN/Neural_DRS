@@ -47,7 +47,7 @@ We want to be sure that all scripts that are independent of your (neural) parsin
 
 ## DRS Jury ##
 
-I created a script to give a better overview of your DRS parsing system, called [DRS Jury](src/drs_jury.py). It has the same capabilities as Counter, and includes the following extensions:
+I created a script to give a better overview of your DRS parsing system, called [DRS Jury](DRS_jury.md). It has the same capabilities as Counter, and includes the following extensions:
 
 * Averaging over multiple output files (recommended)
 * Comparing different experiments across a number of scores
@@ -63,7 +63,7 @@ I created a script to give a better overview of your DRS parsing system, called 
 Details on how to run are specified in this [README](DRS_jury.md). Example run command:
 
 ```
-python src/drs_jury.py --folders output/pmb-3.0.0/en/dev/bert_only/ output/pmb-3.0.0/en/dev/bert_char_1enc/ --prefix output --working tst/unit/ --names bert_only bert_char_1enc
+python src/drs_jury.py --folders output/pmb-3.0.0/en/dev/bert_only/ output/pmb-3.0.0/en/dev/bert_char_1enc/ --prefix output -de .txt --working tst/unit/ --names bert_only bert_char_1enc
 ```
 
 ## Running experiments ##
@@ -73,6 +73,27 @@ For each of the three papers, I have written separate READMEs. Please find the l
 * [TACL paper with OpenNMT](OpenNMT.md)
 * [IWCS paper with Marian](Marian.md)
 * EMNLP paper with AllenNLP (coming soon)
+
+## Semtag analysis ##
+
+In our most recent paper we introduced the idea of analysis by [semtags](https://www.aclweb.org/anthology/W17-6901.pdf). The evaluation tool semtag_analysis.py gives a score for a number of semantic/linguistic phenomena, which are selected based on which semtags the sentence contains. An example score on PMB 3.0.0 dev looks like this:
+
+<pre>
+Exp            	Docs 	bert_only 	bert_char_1enc 
+All            	885  	0.876     	0.881          
+Modal          	100  	0.869     	0.868          
+  Negation     	77   	0.895     	0.895          
+  Possibility  	23   	0.784     	0.790          
+  Necessity    	9    	0.788     	0.783          
+Logic          	209  	0.856     	0.863          
+Pronouns       	497  	0.882     	0.885          
+Attributes     	513  	0.873     	0.879          
+Comparatives   	21   	0.785     	0.825          
+Named Entities 	320  	0.875     	0.878          
+Numerals       	66   	0.822     	0.838 
+</pre>
+
+This works for DRS parsing, but is potentially applicable to all NLP tasks that have a sentence as input, with a single score per sentence. For a more detailed explanation of the process and instructions on how to setup and run, see this [README](Semtags.md).
 
 ## Scores & Output ##
 

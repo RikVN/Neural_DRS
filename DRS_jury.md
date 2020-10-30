@@ -41,7 +41,7 @@ There are a few options that you can often leave to the default:
 An example of calling DRS Jury, for which the defaults are correct:
 
 ```
-python src/drs_jury.py --folders output/pmb-3.0.0/en/dev/bert_only/ output/pmb-3.0.0/en/dev/bert_char_1enc/ --prefix output --working tst/unit/ --names bert_only bert_char_1enc
+python src/drs_jury.py --folders output/pmb-3.0.0/en/dev/bert_only/ output/pmb-3.0.0/en/dev/bert_char_1enc/ --prefix output -de .txt --working tst/unit/ --names bert_only bert_char_1enc
 ```
 
 This will compare the output of two of our experiments, between the BERT-only model and the model that used BERT plus characters in one encoder.
@@ -130,31 +130,31 @@ For this to work, you need to have specified --layer_data. This expects the semt
 First, it gives scores per subset of sentences that contain a single semtag:
 
 <pre>
-Tag 	Docs 	bert_only 	bert_char_1enc
-NIL 	786  	87.9      	88.5
-CON 	513  	86.5      	87.0
-PRO 	401  	88.9      	89.2
-REL 	287  	86.4      	86.5
-NOW 	275  	88.2      	88.8
-EPS 	268  	88.3      	88.9
+Tag 	Docs 	bert_only 	bert_char_1enc 
+NIL 	786  	0.879     	0.885          
+CON 	513  	0.865     	0.870          
+PRO 	401  	0.889     	0.893          
+REL 	287  	0.864     	0.865          
+NOW 	275  	0.882     	0.888          
+EPS 	268  	0.883     	0.889
 ....
 </pre>
 
 Then, it gives scores for the subset of sentences that contain at least a single semtag out of list of semtags that represent a certain (semantic) phenomenon. Details can be found in our EMNLP paper.
 
 <pre>
-Exp            	Docs 	bert_only 	bert_char_1enc
-All            	885  	87.6      	88.1
-Modal          	100  	86.9      	86.8
-  Negation     	77   	89.5      	89.4
-  Possibility  	23   	78.4      	79.0
-  Necessity    	9    	78.8      	78.3
-Logic          	209  	85.6      	86.3
-Pronouns       	497  	88.2      	88.5
+Exp            	Docs 	bert_only 	bert_char_1enc 
+All            	885  	0.876     	0.881          
+Modal          	100  	0.869     	0.868          
+  Negation     	77   	0.895     	0.895          
+  Possibility  	23   	0.784     	0.790          
+  Necessity    	9    	0.788     	0.783          
+Logic          	209  	0.856     	0.863          
+Pronouns       	497  	0.882     	0.885
 ...
 </pre>
 
-A more general analysis can be found in this [README](Semtag.md). You can define your own experiments in [src/semtag_analysis.py](src/semtag_analysis.py).
+A more general analysis can be found in this [README](Semtags.md). You can define your own experiments in [src/semtag_analysis.py](src/semtag_analysis.py).
 
 ### Sentence length plot ###
 
