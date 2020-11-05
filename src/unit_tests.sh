@@ -74,11 +74,11 @@ test_pp_gold_silver(){
 # Check that DRS jury and separate scripts still work
 test_drs_jury(){
 	# Test some different options of DRS jury
-	python src/drs_jury.py --folders output/pmb-3.0.0/en/dev/bert_only/ output/pmb-3.0.0/en/dev/bert_char_1enc/ --prefix output --working tst/unit/ --names bert_only bert_char_1enc -sf tst/unit/stats.csv
+	python src/drs_jury.py --folders output/pmb-3.0.0/en/dev/bert_only/ output/pmb-3.0.0/en/dev/bert_char_1enc/ --prefix output -de .txt --working tst/unit/ --names bert_only bert_char_1enc -sf tst/unit/stats.csv
 	# More than two folders
-	python src/drs_jury.py --folders output/pmb-3.0.0/en/dev/bert_only/ output/pmb-3.0.0/en/dev/bert_char_1enc/ output/pmb-3.0.0/en/dev/bert_char_2enc/ --prefix output --working tst/unit/ --names bert_only bert_char_1enc bert_char_2enc -sf tst/unit/stats_3.csv
+	python src/drs_jury.py --folders output/pmb-3.0.0/en/dev/bert_only/ output/pmb-3.0.0/en/dev/bert_char_1enc/ output/pmb-3.0.0/en/dev/bert_char_2enc/ --prefix output -de .txt --working tst/unit/ --names bert_only bert_char_1enc bert_char_2enc -sf tst/unit/stats_3.csv
 	# Detailed analysis of indices
-	python src/drs_jury.py --folders output/pmb-3.0.0/en/dev/bert_only/ output/pmb-3.0.0/en/dev/bert_char_1enc/ --prefix output --working tst/unit/ --names bert_only bert_char_1enc -sf tst/unit/stats.csv -a 0 1 2
+	python src/drs_jury.py --folders output/pmb-3.0.0/en/dev/bert_only/ output/pmb-3.0.0/en/dev/bert_char_1enc/ --prefix output -de .txt --working tst/unit/ --names bert_only bert_char_1enc -sf tst/unit/stats.csv -a 0 1 2
 	
 	# Create files with separate F-scores to do tests with
 	python DRS_parsing/evaluation/counter.py -f1 output/pmb-3.0.0/en/dev/bert_only/output1.txt -f2 data/3.0.0/en/gold/dev.txt -g DRS_parsing/evaluation/clf_signature.yaml -ms_file tst/unit/bert_only/out.idv
