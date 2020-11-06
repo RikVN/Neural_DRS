@@ -47,7 +47,7 @@ We want to be sure that all scripts that are independent of your (neural) parsin
 
 ## Running experiments ##
 
-For each of the three papers, I have written separate READMEs. Please find the links below:
+For each of the three Neural DRS parsing papers, I have written separate READMEs. They explain how to reproduce our work, use our best parser and run your own experiments. Please find the links below:
 
 * [TACL paper with OpenNMT](OpenNMT.md)
 * [IWCS paper with Marian](Marian.md)
@@ -101,10 +101,6 @@ If you're only interested in the output of our parser(s), please check the [outp
 
 The [specific scores](Scores.md) are also available. If you want to add your scores to the table, consider doing a pull request.
 
-## Author
-
-* **Rik van Noord** - PhD-student at University of Groningen - [Personal website](http://www.rikvannoord.nl)
-
 ## Citation ##
 
 This repository contains code and documentation for three semantic parsing papers.
@@ -130,6 +126,10 @@ If you use data from the PMB, please cite:
 * Abzianidze, L., Bjerva, J., Evang, K., Haagsma, H., van Noord, R., Ludmann, P., Nguyen, D. & Bos, J. **The Parallel Meaning Bank: Towards a Multilingual Corpus of Translations Annotated with Compositional Meaning Representations**, EACL 2017 [\[PDF\]](https://www.aclweb.org/anthology/E17-2039.pdf) [\[BibTex\]](https://www.aclweb.org/anthology/E17-2039.bib)
 
 We also keep a list of all papers related to DRS parsing [here](https://pmb.let.rug.nl/publications.php). Let us know if you want your paper included.
+
+## Author
+
+* **Rik van Noord** - PhD-student at University of Groningen - [Personal website](http://www.rikvannoord.nl)
 
 ## Acknowledgments
 
