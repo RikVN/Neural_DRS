@@ -29,6 +29,13 @@ export PYTHONPATH=${cur_dir}/DRS_parsing/:${PYTHONPATH}
 export PYTHONPATH=${cur_dir}/DRS_parsing/evaluation/:${PYTHONPATH}
 ```
 
+I strongly advise to create a conda environment for this repository:
+
+```
+conda create -n ndrs python=3.6
+conda activate ndrs
+```
+
 I made a script ``setup.sh`` that takes care of setting everything up. Throughout the README I assume you ran this.
 
 ```
