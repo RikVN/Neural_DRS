@@ -35,7 +35,7 @@ I made a script ``setup.sh`` that takes care of setting everything up. Throughou
 ./src/setup.sh
 ```
 
-All data you need for running basic DRS parsing experiments you can now find in [data](data). You can potentially still download a [PMB release](http://pmb.let.rug.nl/data.php) and construct the training data yourself, but I'd advise not to unless you want to exploit more resources.
+**Important:** all data you need for running basic DRS parsing experiments you can now find in [data](data). You can potentially still download a [PMB release](http://pmb.let.rug.nl/data.php) and construct the training data yourself, but I'd advise not to unless you want to exploit more resources.
 
 ### Testing your setup ###
 
@@ -51,7 +51,7 @@ For each of the three papers, I have written separate READMEs. Please find the l
 
 * [TACL paper with OpenNMT](OpenNMT.md)
 * [IWCS paper with Marian](Marian.md)
-* EMNLP paper with AllenNLP (coming soon)
+* [EMNLP paper with AllenNLP](AllenNLP.md)
 
 ## DRS Jury ##
 
