@@ -59,12 +59,12 @@ The pipeline script does the following things:
 Let's see if we can train a small and simple BERT seq2seq model:
 
 ```
-./src/allennlp_scripts/pipeline.sh config/allennlp/en/bert.json experiments/allennlp/bert/ normal en
+./src/allennlp_scripts/pipeline.sh config/allennlp/en/bert.json experiments/allennlp/en/bert/ normal en
 ```
 
 Output, model and evaluation files are available in the experiment folder. We only trained for two epochs, so the results will not be great, of course.
 
-You might get an error that says that there is no GPU available, even though you are using one. You might have to re-install pytorch for the correct CUDA version you are using (9.2 in my case). The numpy uninstall/install might not be necessary, but it was for me (see [here](https://stackoverflow.com/questions/54715835/numpy-is-installed-but-still-getting-error) as well)
+You might get an error that says that there is no GPU available, even though you are using one. You might have to re-install pytorch for the correct CUDA version you are using (9.2 in my case). The numpy uninstall/install might not be necessary, but it was for me (see [here](https://stackoverflow.com/questions/54715835/numpy-is-installed-but-still-getting-error) as well).
 
 ```
 conda uninstall pytorch
@@ -78,15 +78,15 @@ pip install dataclasses
 You can also use a more complex model that uses characters, in either one or two encoders:
 
 ```
-./src/allennlp_scripts/pipeline.sh config/allennlp/en/bert_char_1enc.json experiments/allennlp/bert_char_1enc/ normal en
+./src/allennlp_scripts/pipeline.sh config/allennlp/en/bert_char_1enc.json experiments/allennlp/en/bert_char_1enc/ normal en
 
-./src/allennlp_scripts/pipeline.sh config/allennlp/en/bert_char_2enc.json experiments/allennlp/bert_char_2enc/ normal en
+./src/allennlp_scripts/pipeline.sh config/allennlp/en/bert_char_2enc.json experiments/allennlp/en/bert_char_2enc/ normal en
 ```
 
 Finally, I've provided a config file that exploits [semantic tags](https://www.aclweb.org/anthology/W17-6901.pdf). This call works with the example data as I've added the output of a semantic tagger on the gold data to the DRS_parsing repo. However, for your own experiments you might want to tag sentences with a semantic tagger. An explanation on how to do this is available in [this README](Semtags.md).
 
 ```
-./src/allennlp_scripts/pipeline.sh config/allennlp/en/bert_char_sem.json experiments/allennlp/bert_char_sem/ normal en
+./src/allennlp_scripts/pipeline.sh config/allennlp/en/bert_char_sem.json experiments/allennlp/en/bert_char_sem/ normal en
 ```
 
 ### Fine-tuning ###
@@ -94,10 +94,10 @@ Finally, I've provided a config file that exploits [semantic tags](https://www.a
 In our experiments, we pre-train on gold + silver data and then fine-tune on only the gold data. The pipeline can take care of this. I assume you just trained the bert_char_sem model. As an example, we will now fine-tune on it for 1 epoch:
 
 ```
-./src/allennlp_scripts/pipeline.sh config/allennlp/en/bert_char_sem_fine.json experiments/allennlp/bert_char_sem/ fine en
+./src/allennlp_scripts/pipeline.sh config/allennlp/en/bert_char_sem_fine.json experiments/allennlp/en/bert_char_sem/ fine en
 ```
 
-Note that I specified the bert_char_sem folder, not a new folder! You can find the fine-tuned results (automatically over 5 runs, not 1), in experiments/allennlp/bert_char_sem/run1/fine-tuned/.
+Note that I specified the bert_char_sem folder, not a new folder! You can find the fine-tuned results (automatically over 5 runs, not 1), in experiments/allennlp/en/bert_char_sem/run1/fine-tuned/.
 
 ## Non-English languages ##
 
