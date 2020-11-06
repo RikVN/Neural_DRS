@@ -64,15 +64,14 @@ Let's see if we can train a small and simple BERT seq2seq model:
 
 Output, model and evaluation files are available in the experiment folder. We only trained for two epochs, so the results will not be great, of course.
 
-You might get an error that says that there is no GPU available, even though you are using one. You might have to re-install pytorch for the correct CUDA version you are using (9.2 in my case). The numpy uninstall/install might not be necessary, but it was for me (see [here](https://stackoverflow.com/questions/54715835/numpy-is-installed-but-still-getting-error) as well).
+You might get an error that says that there is no GPU available, even though you are using one. You might have to re-install pytorch for the correct CUDA version you are using (9.2 in my case). The numpy uninstall/install might not be necessary, but it was for me (see [here](https://stackoverflow.com/questions/54715835/numpy-is-installed-but-still-getting-error) as well). I don't really understand why the double install of pytorch is necessary, but otherwise I got errors:
 
 ```
-conda uninstall pytorch
+conda install pytorch torchvision cudatoolkit=9.2 -c pytorch
 conda install pytorch==1.3.1 torchvision cudatoolkit=9.2 -c pytorch
 pip uninstall numpy
 pip uninstall numpy
 pip install numpy
-pip install dataclasses
 ```
 
 You can also use a more complex model that uses characters, in either one or two encoders:
