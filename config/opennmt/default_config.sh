@@ -16,9 +16,15 @@
 
 ###### IMPORTANT TO SET THESE ######
 
-GIT_HOME=""	# where the Git Neural_DRS repository is located
-ONMT_HOME="${GIT_HOME}/OpenNMT/"		# where OpenNMT is located
-gpuid="-gpuid 1" 						# Use -gpuid 1 if training from GPU, otherwise 0 for cpu
+# Hacky method to set the folder, you can also comment the three lines below out
+# and set the folder like this:
+# GIT_HOME="/your/folders/here/Neural_DRS/"
+cd ../
+GIT_HOME="$(pwd)/"  # where the Git Neural_DRS repository is located
+cd OpenNMT
+
+ONMT_HOME="${GIT_HOME}/OpenNMT/"        # where OpenNMT is located
+gpuid="-gpuid 1"                        # Use -gpuid 1 if training from GPU, otherwise 0 for cpu
 sig_file="${GIT_HOME}DRS_parsing/evaluation/clf_signature.yaml" # signature file for clf_referee, check if correct location
 
 # File from which to train pre-trained embeddings. When recreating our experiments, you can download these embeddings here:
@@ -48,8 +54,8 @@ dropout="0.2"
 dropout_input=""           #boolean, use as -dropout_input (default false)
 dropout_words="0"          #dropout probability applied to the source sequence (default 0)
 dropout_type="naive"       #dropout type, options naive (default) or variational
-residual=""           	   #boolean, add residual connections between recurrent layers (default empty is false)
-bridge="copy"         	   #define how to pass encoder states to the decoder. With copy, the encoder and decoder must have the same number of layers. Accepted: copy, dense, dense_nonlinear, none; default: copy
+residual=""                #boolean, add residual connections between recurrent layers (default empty is false)
+bridge="copy"              #define how to pass encoder states to the decoder. With copy, the encoder and decoder must have the same number of layers. Accepted: copy, dense, dense_nonlinear, none; default: copy
 encoder_type="brnn"        #accepted: rnn, brnn, dbrnn, pdbrnn, gnmt, cnn; default: rnn
 attention="global"         #none or global (default)
 max_pos="1000"             #maximum value for positional indexes (default 50)
@@ -58,26 +64,26 @@ global_attention="general" #accepted: general, dot, concat; default: general
 #Trainer/optimizer options
 report_every="100"             #default 50
 validation_metric="perplexity" #accepted: perplexity, loss, bleu, ter, dlratio; default: perplexity
-max_batch_size="12" 		   #default 64
-optim="sgd" 				   #optimizer, accepted: sgd, adagrad, adadelta, adam
+max_batch_size="12"            #default 64
+optim="sgd"                    #optimizer, accepted: sgd, adagrad, adadelta, adam
 learning_rate="0.7"            #Initial learning rate. If adagrad or adam is used, then this is the global learning rate. Recommended settings are: sgd = 1, adagrad = 0.1, adam = 0.0002.
 max_grad_norm="5"              #Default 5. Clip the gradients L2-norm to this value. Set to 0 to disable.
 learning_rate_decay="0.7"      #Default 0.7
 start_decay_at="9"             #In "default" decay mode, start decay after this epoch.
-train_from=""				   #Add this if we want to train from a checkpoint (use -train_from FOLDER and -continue as well)
+train_from=""                  #Add this if we want to train from a checkpoint (use -train_from FOLDER and -continue as well)
 
 # Parameter settings for testing
 batch_size_test="12"        #batch size test
 beam_size="10"
-max_sent_length="1000"		#default 250
-replace_unk="-replace_unk" 	#boolean, default empty
-n_best="1" 					#If > 1, it will also output an n-best list of decoded sentences.
+max_sent_length="1000"      #default 250
+replace_unk="-replace_unk"  #boolean, default empty
+n_best="1"                  #If > 1, it will also output an n-best list of decoded sentences.
 length_norm="0.90"
-coverage_norm="0"			#Coverage normalization coefficient (beta). An extra coverage term multiplied by beta is added to hypotheses scores. If is set to 0 (default), no coverage normalization.
-eos_norm="0"				#End of sentence normalization coefficient (gamma). If set to 0 (default 0), no EOS normalization.
-log_level="WARNING" 		#accepted: DEBUG, INFO, WARNING, ERROR, NONE; default: INFO
+coverage_norm="0"           #Coverage normalization coefficient (beta). An extra coverage term multiplied by beta is added to hypotheses scores. If is set to 0 (default), no coverage normalization.
+eos_norm="0"                #End of sentence normalization coefficient (gamma). If set to 0 (default 0), no EOS normalization.
+log_level="WARNING"         #accepted: DEBUG, INFO, WARNING, ERROR, NONE; default: INFO
 
-# Create script names already here 
+# Create script names already here
 
 SRCPATH="${GIT_HOME}src/"
 

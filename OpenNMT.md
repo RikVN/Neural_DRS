@@ -18,9 +18,9 @@ If you want to use an ensemble during parsing for OpenNMT, you will have to chec
 
 ## Configuration
 
-In config/opennmt/default_config.sh we store the default settings for preprocessing, training and parsing. All shell scripts read from there. **You will have to set the correct paths yourself.** The scripts need to know where the current repo is located, and perhaps other locations are also different on your machine.
+In config/opennmt/default_config.sh we store the default settings for preprocessing, training and parsing. All shell scripts read from there. You should not have to change anything if you use our recommended setup, but please check if the file location make sense on your machine.
 
-If you do not have access to GPU, you'll have to change the gpuid setting as well (all my experiments are on GPU, not sure if it will work).
+If you do not have access to GPU, you'll have to change the gpuid setting as well (all my experiments are on GPU, not sure if it will work on CPU).
 
 ### Testing your setup ###
 
@@ -52,7 +52,7 @@ For all the models there, $SENT_FILE should not be tokenized, and then put in ch
 python src/preprocess.py -s $SENT_FILE -c feature -r char --sents_only
 ```
 
-Then do the parsing. If you specify multiple models, it will automatically be an ensemble, **but this might get out of GPU memory for longer, non-PMB input**. The config file to use for both the models is config/opennmt/parse_best_config.sh. Note that this config-file can only be used for parsing, not training. 
+Then do the parsing. If you specify multiple models, it will automatically be an ensemble, **but this might get out of GPU memory for longer, non-PMB input**. The config file to use for both the models is config/opennmt/parse_best_config.sh. Note that this config-file can only be used for parsing, not training.
 
 Make sure to check default_config.sh and parse_best_config.sh to make sure your local folders are set correctly. Then, run the parser like this:
 
