@@ -1,6 +1,6 @@
 # AllenNLP experiments #
 
-This documents outlines how run neural DRS parsing experiments using AllenNLP (and BERT). Details can be found in our EMNLP paper.
+This document outlines how to run neural DRS parsing experiments using AllenNLP (and BERT). Details can be found in our EMNLP paper.
 
 ## Setting up ##
 
