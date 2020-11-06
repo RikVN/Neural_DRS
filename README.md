@@ -117,7 +117,7 @@ For Marian and linguistic feature extraction, please cite:
 
 * Rik van Noord, Antonio Toral and Johan Bos. **Linguistic Information in Neural Semantic Parsing with Multiple Encoders.** IWCS 2019 [\[PDF\]](https://www.aclweb.org/anthology/W19-0504.pdf) [\[BibTex\]](https://www.aclweb.org/anthology/W19-0504.bib)
 
-For AllenNLP and DRS Jury, please cite:
+For AllenNLP (BERT), Semantic tag analysis and DRS Jury, please cite:
 
 * Rik van Noord, Antonio Toral and Johan Bos. (2020) **Character-level Representations Improve DRS-based Semantic Parsing Even in the Age of BERT.** EMNLP 2020
 
@@ -133,4 +133,4 @@ We also keep a list of all papers related to DRS parsing [here](https://pmb.let.
 
 ## Acknowledgments
 
-* Thanks to all members of the [Parallel Meaning Bank](http://pmb.let.rug.nl)
+* Thanks to my co-authors Antonio, Hessel, Johan and Lasha, and all members of the [Parallel Meaning Bank](http://pmb.let.rug.nl)
