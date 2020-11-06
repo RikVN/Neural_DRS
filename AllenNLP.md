@@ -138,8 +138,3 @@ You can run similar models for Italian and Dutch by adjusting the config files a
 You can adjust the config files to run your own experiments. Use the preprocessing scripts (see examples above) to put the data in the correct format. For DRS parsing, you probably want to use silver data as well, for example.
 
 The added config files are examples. Please change the data files, number of epochs and max number of decoding steps in your own experiments! Specific configuration files from all our experiments as outlined in our paper are available upon request.
-
-### Remember
-
-Restore all configs to settings in README
-Restore 5 runs for fine-tuning
