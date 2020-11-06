@@ -21,7 +21,7 @@ git checkout v2.2.0-final
 
 First we will setup the datasets and the [DRS_parsing respository](https://github.com/RikVN/DRS_parsing), which is needed for evaluation.
 
-Make sure DRS_parsing/ and DRS_parsing/evaluation/ are on your $PYTHONPATH, e.g. like this:
+Make sure DRS_parsing/ and DRS_parsing/evaluation/ are on your $PYTHONPATH (though they are yet to be created), e.g. like this:
 
 ```
 cur_dir=$(pwd)
