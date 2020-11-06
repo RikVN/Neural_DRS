@@ -133,6 +133,16 @@ You can run similar models for Italian and Dutch by adjusting the config files a
 
 **Note**: if you run a character-level model, go to src/allennlp_scripts/settings.sh and change the values of no_sep and MIN_TOKENS as indicated.
 
+## Testing your setup ##
+
+You don't have to run all the individual commands above if you want to test if everything works (preprocessing, training, evaluation, etc), just run this:
+
+```
+./src/unit_tests_allennlp.sh
+```
+
+All the experiments can take over an hour, but you should get semi-decent output.
+
 ## Running your own experiments ##
 
 You can adjust the config files to run your own experiments. Use the preprocessing scripts (see examples above) to put the data in the correct format. For DRS parsing, you probably want to use silver data as well, for example.
