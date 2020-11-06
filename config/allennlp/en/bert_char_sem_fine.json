@@ -1,0 +1,167 @@
+{
+    "random_seed" : std.extVar("CUR_SEED"), 
+    "pytorch_seed" : std.extVar("CUR_SEED"),
+    "numpy_seed" : std.extVar("CUR_SEED"),
+    "dataset_reader": {
+        "type": "seq2seq",
+		"source_tokenizer": {
+            "type": "word",
+            "word_splitter": {
+                "type": "feature_just_spaces",
+            },
+            "char_word_splitter": {
+                "type": "just_spaces",
+            },
+        },
+        "target_tokenizer": {
+            "type": "word",
+            "word_splitter": {
+                "type": "just_spaces"
+            }
+        },
+        "source_token_indexers": {
+            "bert": {
+                "type": "bert-pretrained",
+                "pretrained_model": "bert-base-uncased",
+                "use_starting_offsets": true
+            },
+            "sem": {
+                "type": "pos_tag",
+                "coarse_tags": false,
+                "namespace": "sem",
+            },
+        },
+        "char_token_indexers": {
+			"char": {
+                "type": "single_id",
+                "namespace": "char"
+            }
+        },
+        "target_token_indexers": {
+            "target": {
+                "type": "single_id",
+                "namespace": "target"
+            }
+        },
+         "source_max_tokens": 125,
+         "target_max_tokens": 1160,
+    },
+    "train_data_path": "DRS_parsing/data/pmb-3.0.0/gold/train.alp",
+    "validation_data_path": "DRS_parsing/data/pmb-3.0.0/gold/dev.alp",
+    "train_data_path_char": "DRS_parsing/data/pmb-3.0.0/gold/train.txt.raw.char.sent",
+    "validation_data_path_char": "DRS_parsing/data/pmb-3.0.0/gold/dev.txt.raw.char.sent",
+    "train_data_path_sem": "DRS_parsing/data/pmb-3.0.0/tagged/train.txt.sem",
+    "validation_data_path_sem": "DRS_parsing/data/pmb-3.0.0/tagged/dev.txt.sem",
+    "model": {
+        "type": "composed_seq2seq",
+        "source_text_embedder": {
+            "type": "basic",
+            "token_embedders": {
+                "bert": {
+                    "type": "bert-pretrained",
+                    "pretrained_model": "bert-base-uncased",
+                    "requires_grad": false
+                },
+                "sem": {
+                    "type": "embedding",
+                    "embedding_dim": 200,
+                    "trainable": true,
+                    "max_norm": 3,
+                    "norm_type": 2,
+                    "scale_grad_by_freq": false,
+                    "sparse": false,
+                    "vocab_namespace": "sem"
+                },
+            },
+            "allow_unmatched_keys": true,
+            "embedder_to_indexer_map": {
+            "bert": ["bert", "bert-offsets"],
+            "sem": ["sem"],
+			},
+        },
+        "char_text_embedder": {
+            "type": "basic",
+            "token_embedders": {
+                "char": {
+                    "type": "embedding",
+                    "embedding_dim": 400,
+                    "trainable": true,
+                    "max_norm": 3,
+                    "norm_type": 2,
+                    "scale_grad_by_freq": false,
+                    "sparse": false,
+                    "vocab_namespace": "char"
+                },
+            },
+        },
+        "encoder": {
+            "type": "lstm",
+            "input_size": 968,
+            "hidden_size": 400,
+            "num_layers": 1,
+            "bidirectional": true,
+            "batch_first": true
+        },
+        "encoder_feat": {
+            "type": "lstm",
+            "input_size": 400,
+            "hidden_size": 400,
+            "num_layers": 1,
+            "bidirectional": true,
+            "batch_first": true
+        },
+        "decoder": {
+            "type": "auto_regressive_seq_decoder",
+            "target_namespace": "target",
+            "decoder_net": {
+                "type": "marian_lstm_cell",
+                "decoding_dim": 800,
+                "target_embedding_dim": 300,
+                "attention": {
+                    "type": "dot_product",
+                    "normalize": true
+                },
+                "bidirectional_input": false,
+                "extra_lstm": true,
+            },
+            "max_decoding_steps": 300,
+            "target_embedder": {
+                "embedding_dim": 300,
+                "pretrained_file": "emb/glove.840B.300d.pmb.txt",
+                "vocab_namespace": "target",
+                "trainable": true,
+                "max_norm": 3,
+                "norm_type": 2,
+                "scale_grad_by_freq": false,
+                "sparse": false   
+            },
+            "label_smoothing_ratio": 0,
+            "beam_size": 10,
+            "scheduled_sampling_ratio": 0.2,
+            "double_enc": true,
+        }
+    },
+    "iterator": {
+        "type": "basic",
+        "batch_size": 48
+    },
+    "trainer": {
+        "optimizer": {
+            "type": "adam",
+            "lr": 0.001
+        },
+        "patience": 15,
+        "num_epochs": 2,
+        "num_serialized_models_to_keep": -1,
+        "grad_norm": 0.9,
+        "cuda_device": 0,
+        "val_after_epoch": 10
+    },
+    "vocabulary": {
+        "min_count": {
+            "target": 3,
+            "char": 5,
+            "sem": 5,
+        }
+    }
+}

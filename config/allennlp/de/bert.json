@@ -1,0 +1,111 @@
+{
+    "random_seed" : std.extVar("CUR_SEED"),
+    "pytorch_seed" : std.extVar("CUR_SEED"),
+    "numpy_seed" : std.extVar("CUR_SEED"),
+    "dataset_reader": {
+        "type": "seq2seq",
+        "source_tokenizer": {
+            "type": "word",
+            "word_splitter": {
+                "type": "spacy",
+                "language": "de_core_news_sm",
+            },
+        },
+        "target_tokenizer": {
+            "type": "word",
+            "word_splitter": {
+                "type": "just_spaces"
+            }
+        },
+        "source_token_indexers": {
+            "bert": {
+                "type": "bert-pretrained",
+                "pretrained_model": "bert-base-multilingual-uncased",
+                "use_starting_offsets": true
+            }
+        },
+        "target_token_indexers": {
+            "target": {
+                "type": "single_id",
+                "namespace": "target"
+            }
+        },
+        "source_max_tokens": 125,
+        "target_max_tokens": 1160,
+    },
+    "train_data_path": "data/3.0.0/de/gold/train.alp",
+    "validation_data_path": "data/3.0.0/de/gold/dev.alp",
+    "model": {
+        "type": "composed_seq2seq",
+        "source_text_embedder": {
+            "type": "basic",
+            "token_embedders": {
+                "bert": {
+                    "type": "bert-pretrained",
+                    "pretrained_model": "bert-base-multilingual-uncased",
+                    "requires_grad": false
+                }
+            },
+            "allow_unmatched_keys": true,
+            "embedder_to_indexer_map": {
+            "bert": ["bert", "bert-offsets"],
+            },
+        },
+        "encoder": {
+            "type": "lstm",
+            "input_size": 768,
+            "hidden_size": 400,
+            "num_layers": 1,
+            "bidirectional": true,
+            "batch_first": true
+        },
+        "decoder": {
+            "type": "auto_regressive_seq_decoder",
+            "target_namespace": "target",
+            "decoder_net": {
+                "type": "averaged_lstm_cell",
+                "decoding_dim": 800,
+                "target_embedding_dim": 300,
+                "attention": {
+                    "type": "dot_product",
+                    "normalize": true
+                },
+                "bidirectional_input": false
+            },
+            "max_decoding_steps": 300,
+            "target_embedder": {
+                "embedding_dim": 300,
+                "vocab_namespace": "target",
+                "trainable": true,
+                "max_norm": 3,
+                "norm_type": 2,
+                "scale_grad_by_freq": false,
+                "sparse": false
+            },
+            "label_smoothing_ratio": 0,
+            "beam_size": 10,
+            "scheduled_sampling_ratio": 0.2,
+        }
+    },
+    "iterator": {
+        "type": "basic",
+        "batch_size": 48
+    },
+    "trainer": {
+        "optimizer": {
+            "type": "adam",
+            "lr": 0.001
+        },
+        "patience": 15,
+        "num_epochs": 5,
+        "num_serialized_models_to_keep": -1,
+        "grad_norm": 0.9,
+        "cuda_device": 0,
+        "val_after_epoch": 10
+    },
+    "vocabulary": {
+        "min_count": {
+            "target": 3
+        }
+    }
+}
