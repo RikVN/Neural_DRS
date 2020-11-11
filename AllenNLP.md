@@ -98,7 +98,7 @@ In our experiments, we pre-train on gold + silver data and then fine-tune on onl
 
 Note that I specified the bert_char_sem folder, not a new folder! You can find the fine-tuned results (automatically over 5 runs, not 1), in experiments/allennlp/en/bert_char_sem/run1/fine-tuned/.
 
-## Non-English languages ##
+## Languages other than English ##
 
 It is also possible to train a model on non-English languages. I have added example configs for German experiments, training models for char-only, BERT-only, BERT + char (1enc) and BERT + char (2enc).
 

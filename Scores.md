@@ -1,6 +1,6 @@
 # Scores on DRS parsing #
 
-Here, we list the scores of our models on DRS parsing for English, German, Italian and Dutch, for PMB releases 2.1.0, 2.2.0 and 3.0.0.
+Here, we list the scores of our models on DRS parsing for English, German, Italian and Dutch, for PMB releases 2.1.0, 2.2.0 and 3.0.0. The scores are F-scores calculated by [Counter](https://www.aclweb.org/anthology/L18-1267.pdf). For more detailed evaluation, please see [DRS Jury](DRS_jury.md).
 
 ## PMB 2.1.0 - English ##
 
@@ -15,11 +15,11 @@ Here, we list the scores of our models on DRS parsing for English, German, Itali
 | SIM-SPAR                    | 56.8 |
 | SPAR                        | 39.7 |
 
-The baseline parsers SPAR and amr2drs are available in the [DRS_parsing repository](https://github.com/RikVN/DRS_parsing).
+The baseline parsers SPAR and amr2drs are available in the [DRS_parsing repository](https://github.com/RikVN/DRS_parsing). ONMT models are described in [this paper](https://www.aclweb.org/anthology/Q18-1043.pdf).
 
 ## PMB 2.2.0 - English ##
 
-This includes results from [this paper](https://www.aclweb.org/anthology/W19-0504/) (Marian) and the latest EMNLP paper (AllenNLP). It includes systems that use BERT, and combine BERT and characters, and a system that employs semtags. Note that Marian and AllenNLP (BERT) scores are averaged over 5 runs of the system.
+This includes results from [this paper](https://www.aclweb.org/anthology/W19-0504/) (Marian) and the latest [EMNLP paper](https://www.aclweb.org/anthology/2020.emnlp-main.371.pdf) (AllenNLP). It includes systems that use BERT, and combine BERT and characters, and a system that employs semtags. Note that Marian and AllenNLP (BERT) scores are averaged over 5 runs of the system.
 
 | Parser				      | Dev	| Test |
 | ------- | ------- | ------- |
