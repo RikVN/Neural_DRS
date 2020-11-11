@@ -1,6 +1,6 @@
 # Semtag analysis #
 
-In our EMNLP paper, we introduced the idea of analysis by [semtags](https://www.aclweb.org/anthology/W17-6901.pdf). Based on the semtags in a sentence, we can select subsets of sentences that contain a certain semantic or linguistic phenomena. This allows us to compare model performance across these phenomea, giving us more insight in their respective qualities. 
+In our [EMNLP paper](https://www.aclweb.org/anthology/2020.emnlp-main.371.pdf), we introduced the idea of analysis by [semtags](https://www.aclweb.org/anthology/W17-6901.pdf). Based on the semtags in a sentence, we can select subsets of sentences that contain a certain semantic or linguistic phenomena. This allows us to compare model performance across these phenomea, giving us more insight in their respective qualities. 
 
 We experimented on DRS parsing, but this works for any NLP task that has a sentence as input and a single score per sentence as output!
 

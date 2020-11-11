@@ -1,6 +1,6 @@
 # DRS Jury #
 
-DRS Jury is a DRS parsing evaluation tool that has the same capabilities as Counter, plus a lot more:
+DRS Jury is a DRS parsing evaluation tool (introduced in [this paper](https://www.aclweb.org/anthology/2020.emnlp-main.371.pdf)) that has the same capabilities as [Counter](https://www.aclweb.org/anthology/L18-1267.pdf), plus a lot more:
 
 * Averaging over multiple output files (recommended to do this)
 * Comparing different experiments easily
@@ -140,7 +140,7 @@ EPS 	268  	0.883     	0.889
 ....
 </pre>
 
-Then, it gives scores for the subset of sentences that contain at least a single semtag out of list of semtags that represent a certain (semantic) phenomenon. Details can be found in our EMNLP paper.
+Then, it gives scores for the subset of sentences that contain at least a single semtag out of list of semtags that represent a certain (semantic) phenomenon. Details can be found in our [EMNLP paper](https://www.aclweb.org/anthology/2020.emnlp-main.371.pdf).
 
 <pre>
 Exp            	Docs 	bert_only 	bert_char_1enc 

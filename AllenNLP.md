@@ -1,6 +1,6 @@
 # AllenNLP experiments #
 
-This document outlines how to run neural DRS parsing experiments using AllenNLP (and BERT). Details can be found in our EMNLP paper.
+This document outlines how to run neural DRS parsing experiments using AllenNLP (and BERT). Details can be found in our [EMNLP paper](https://www.aclweb.org/anthology/2020.emnlp-main.371.pdf).
 
 ## Setting up ##
 
@@ -54,7 +54,7 @@ The pipeline script does the following things:
 * Train a model based on the config file
 * Use trained model to predict output for files specified config file
 * Postprocess the predicted output, replace ill-formed with dummies
-* Run Counter to compare the postprocessed output with the gold standard
+* Run [Counter](https://www.aclweb.org/anthology/L18-1267.pdf) to compare the postprocessed output with the gold standard
 
 Let's see if we can train a small and simple BERT seq2seq model:
 

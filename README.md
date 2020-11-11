@@ -1,6 +1,6 @@
 # Neural DRS parsing
 
-This folder contains scripts to use our neural seq2seq model to produce DRSs. It contains code to reproduce either our [TACL paper](https://www.aclweb.org/anthology/Q18-1043.pdf), our [IWCS paper](https://www.aclweb.org/anthology/W19-0504/) or our EMNLP paper. The models rely on [OpenNMT](http://opennmt.net/), [Marian](https://marian-nmt.github.io/) and [AllenNLP](https://allennlp.org/), respectively.
+This folder contains scripts to use our neural seq2seq model to produce DRSs. It contains code to reproduce either our [TACL paper](https://www.aclweb.org/anthology/Q18-1043.pdf), our [IWCS paper](https://www.aclweb.org/anthology/W19-0504/) or our [EMNLP paper](https://www.aclweb.org/anthology/2020.emnlp-main.371.pdf). The models rely on [OpenNMT](http://opennmt.net/), [Marian](https://marian-nmt.github.io/) and [AllenNLP](https://allennlp.org/), respectively.
 
 Information about reproducing the specific papers are in separate READMEs. This README helps in setting up all DRS parsing experiments.
 
@@ -83,7 +83,7 @@ python src/drs_jury.py --folders output/pmb-3.0.0/en/dev/bert_only/ output/pmb-3
 
 ## Semtag analysis ##
 
-In our most recent paper we introduced the idea of analysis by [semtags](https://www.aclweb.org/anthology/W17-6901.pdf). The evaluation tool semtag_analysis.py gives a score for a number of semantic/linguistic phenomena, which are selected based on which semtags the sentence contains. An example score on PMB 3.0.0 dev looks like this:
+In our most recent [paper](https://www.aclweb.org/anthology/2020.emnlp-main.371.pdf) we introduced the idea of analysis by [semtags](https://www.aclweb.org/anthology/W17-6901.pdf). The evaluation tool semtag_analysis.py gives a score for a number of semantic/linguistic phenomena, which are selected based on which semtags the sentence contains. An example score on PMB 3.0.0 dev looks like this:
 
 <pre>
 Exp            	Docs 	bert_only 	bert_char_1enc 
@@ -122,7 +122,7 @@ For Marian and linguistic feature extraction, please cite:
 
 For AllenNLP (BERT), Semantic tag analysis and DRS Jury, please cite:
 
-* Rik van Noord, Antonio Toral and Johan Bos. (2020) **Character-level Representations Improve DRS-based Semantic Parsing Even in the Age of BERT.** EMNLP 2020
+* Rik van Noord, Antonio Toral and Johan Bos. (2020) **Character-level Representations Improve DRS-based Semantic Parsing Even in the Age of BERT.** EMNLP 2020 [\[PDF\]](https://www.aclweb.org/anthology/2020.emnlp-main.371.pdf) [\[BibTex\]](https://www.aclweb.org/anthology/2020.emnlp-main.371.bib)
 
 If you use Counter, please cite:
 
