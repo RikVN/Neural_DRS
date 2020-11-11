@@ -1,6 +1,6 @@
 # Scores on DRS parsing #
 
-Here, we list the scores of our models on DRS parsing for English, German, Italian and Dutch, for PMB releases 2.1.0, 2.2.0 and 3.0.0. The scores are F-scores calculated by [Counter](https://www.aclweb.org/anthology/L18-1267.pdf). For more detailed evaluation, please see [DRS Jury](DRS_jury.md).
+Here, we list the scores of our models on DRS parsing for English, German, Italian and Dutch, for PMB releases 2.1.0, 2.2.0 and 3.0.0. The scores are F-scores calculated by [Counter](https://www.aclweb.org/anthology/L18-1267.pdf). If you want to do a more detailed evaluation, please see [DRS Jury](DRS_jury.md).
 
 ## PMB 2.1.0 - English ##
 
