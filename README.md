@@ -62,7 +62,7 @@ For each of the three Neural DRS parsing papers, I have written separate READMEs
 
 ## DRS Jury ##
 
-I created a script to give a better overview of your DRS parsing system, called [DRS Jury](DRS_jury.md). It has the same capabilities as Counter, and includes the following extensions:
+I created a script to give a better overview of your DRS parsing system, called [DRS Jury](DRS_jury.md). It has the same capabilities as [Counter](https://www.aclweb.org/anthology/L18-1267.pdf), and includes the following extensions:
 
 * Averaging over multiple output files (recommended)
 * Comparing different experiments across a number of scores
