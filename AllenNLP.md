@@ -13,6 +13,16 @@ git checkout DRS
 pip install --editable . ; cd ../
 ```
 
+We also need to get the GloVe target embeddings (filtered for DRS parsing):
+
+```
+mkdir -p emb; cd emb
+wget "http://www.let.rug.nl/rikvannoord/embeddings/glove_pmb.zip"
+unzip glove_pmb.zip; rm glove_pmb.zip;  cd ../
+```
+
+If you only want to parse your raw texts with our best model, [skip ahead](#parsing-raw-text).
+
 ## Pre-processing ##
 
 We now preprocess the sentences and DRSs to our preferred representation and in a format that AllenNLP can handle. For convenience we work with the data in DRS_parsing/data/pmb-3.0.0/, but we could of course use the larger data sets in data/.
@@ -33,14 +43,6 @@ AllenNLP expects the source and target side-by-side on a single line with a tab 
 
 ```
 for type in train dev test; do while IFS= read -r line1 && IFS= read -r line2 <&3; do   echo -e "${line1}\t${line2}"; done < DRS_parsing/data/pmb-3.0.0/gold/${type}.txt.raw.tok  3< DRS_parsing/data/pmb-3.0.0/gold/${type}.txt.tgt > DRS_parsing/data/pmb-3.0.0/gold/${type}.alp ; done
-```
-
-We also need to get the GloVe target embeddings (filtered for DRS parsing):
-
-```
-mkdir -p emb; cd emb
-wget "http://www.let.rug.nl/rikvannoord/embeddings/glove_pmb.zip"
-unzip glove_pmb.zip; rm glove_pmb.zip;  cd ../
 ```
 
 ## Running small experiments ##
@@ -140,10 +142,29 @@ You don't have to run all the individual commands above if you want to test if e
 ./src/unit_tests_allennlp.sh
 ```
 
-All the experiments can take over an hour, but you should get semi-decent output.
+Running all the experiments can take over an hour, but you should get semi-decent output.
 
 ## Running your own experiments ##
 
 You can adjust the config files to run your own experiments. Use the preprocessing scripts (see examples above) to put the data in the correct format. For DRS parsing, you probably want to use silver data as well, for example.
 
 The added config files are examples. Please change the data files, number of epochs and max number of decoding steps in your own experiments! Specific configuration files from all our experiments as outlined in our paper are available upon request.
+
+## Parsing raw text ##
+
+The easiest way to parse raw text is using the model that uses BERT + characters in one encoder. First, download the model:
+
+```
+mkdir -p models/allennlp/
+curl -o models/allennlp/bert_char_1enc.tar.gz http://www.let.rug.nl/rikvannoord/DRS/EMNLP/models/bert_char_1enc.tar.gz
+```
+
+Then just call the parsing script with the raw file, model and target vocab (available in vocabs/allennlp/). It will do post-processing and replace ill-formed DRSs by dummies, though you could change this by adding "--no_referee" to the $PP_PY call in the parse script.
+
+```
+./src/allennlp_scripts/parse.sh $SENT_FILE models/allennlp/bert_char_1enc.tar.gz vocabs/allennlp/tgt_bert_char_1enc.txt
+```
+
+The output file with DRSs is available in ${SENT_FILE}.drs.out.
+
+Some notes: I limited the input to 50 tokens during training so the model also fits in 12GB GPU memory. The accuracy on the dev set was the same as reported in the [EMNLP paper](https://www.aclweb.org/anthology/2020.emnlp-main.371.pdf) (88.1), but if you try very long documents, it might be better to train your own system.
