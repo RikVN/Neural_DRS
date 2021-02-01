@@ -36,7 +36,7 @@ for type in train dev test; do python src/preprocess.py --input_file DRS_parsing
 We want to add character-level information in two encoders, so we also preprocess the sentences to character-level:
 
 ```
-for type in train dev test; do python src/preprocess.py --sentence_file DRS_parsing/data/pmb-3.0.0/gold/dev.txt.raw -r char -cs .char.sent --sents_only -c feature ; done
+for type in train dev test; do python src/preprocess.py --sentence_file DRS_parsing/data/pmb-3.0.0/gold/${type}.txt.raw -r char -cs .char.sent --sents_only -c feature ; done
 ```
 
 AllenNLP expects the source and target side-by-side on a single line with a tab separating them:
