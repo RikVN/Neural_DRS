@@ -73,6 +73,10 @@ test_pp_gold_silver(){
 
 # Check that DRS jury and separate scripts still work
 test_drs_jury(){
+	mkdir -p output/pmb-3.0.0/en/dev/bert_only/
+	mkdir -p output/pmb-3.0.0/en/dev/bert_char_1enc/
+	mkdir -p output/pmb-3.0.0/en/dev/bert_char_2enc/
+
 	# Test some different options of DRS jury
 	python src/drs_jury.py --folders output/pmb-3.0.0/en/dev/bert_only/ output/pmb-3.0.0/en/dev/bert_char_1enc/ --prefix output -de .txt --working tst/unit/ --names bert_only bert_char_1enc -sf tst/unit/stats.csv
 	# More than two folders
