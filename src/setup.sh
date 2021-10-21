@@ -4,6 +4,7 @@ set -eu -o pipefail
 # Get the DRS parsing repo with the scripts (Counter) and data
 git clone https://github.com/RikVN/DRS_parsing
 cd DRS_parsing
+git checkout v.3.0.0
 
 pip install -r requirements.txt
 pip install scipy
