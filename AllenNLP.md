@@ -1,6 +1,8 @@
 # AllenNLP experiments #
 
-This document outlines how to run neural DRS parsing experiments using AllenNLP (and BERT). Details can be found in our [EMNLP paper](https://www.aclweb.org/anthology/2020.emnlp-main.371.pdf).
+This document outlines how to run neural DRS parsing experiments using AllenNLP (and BERT). Details can be found in our [EMNLP paper](https://www.aclweb.org/anthology/2020.emnlp-main.371.pdf). 
+
+At the end, we also outline how you can train a baseline BERT system on the SBN notation of PMB release 4.0.0.
 
 ## Setting up ##
 

@@ -60,6 +60,8 @@ For each of the three Neural DRS parsing papers, I have written separate READMEs
 * [IWCS paper with Marian](Marian.md)
 * [EMNLP paper with AllenNLP](AllenNLP.md)
 
+If you are interested in running experiments on the SBN notation of release 4.0.0, there are instructions on how to train a baseline model [here](https://github.com/RikVN/Neural_DRS/blob/master/AllenNLP.md#sbn-experiments).
+
 ## DRS Jury ##
 
 I created a script to give a better overview of your DRS parsing system, called [DRS Jury](DRS_jury.md). It has the same capabilities as [Counter](https://www.aclweb.org/anthology/L18-1267.pdf), and includes the following extensions:
