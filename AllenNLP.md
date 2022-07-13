@@ -76,6 +76,14 @@ pip uninstall numpy
 pip install numpy
 ```
 
+You also might get an error that says something like ``Expected dtype int64 for index`` during beam search. That's due to a version mismatch of AllenNLP and pytorch. Just update our AllenNLP branch like this:
+
+```
+cd allennlp
+git checkout fix
+cd ../
+```
+
 You can also use a more complex model that uses characters, in either one or two encoders:
 
 ```
@@ -168,3 +176,82 @@ Then just call the parsing script with the raw file, model and target vocab (ava
 The output file with DRSs is available in ${SENT_FILE}.drs.out.
 
 Some notes: I limited the input to 50 tokens during training so the model also fits in 12GB GPU memory. The accuracy on the dev set was the same as reported in the [EMNLP paper](https://www.aclweb.org/anthology/2020.emnlp-main.371.pdf) (88.1), but if you try very long documents, it might be better to train your own system.
+
+## SBN experiments ##
+
+It's also possible to parse texts with a baseline BERT model trained on the SBN representation that is present for PMB release 4.0.0.
+
+**This assumes you have:**
+
+* Followed the installation and setup instructions in [Neural_DRS](https://github.com/RikVN/Neural_DRS/)
+* Installed the AllenNLP system and software as described above
+
+### Training SBN system ###
+
+First, get the 4.0.0 data to train a system:
+
+```
+cd data
+wget https://pmb.let.rug.nl/releases/exp_data_4.0.0.zip
+mv exp_data_4.0.0 4.0.0 ; rm exp_data_4.0.0.zip
+```
+
+Then create a gold + silver file for training (could also include bronze if you want):
+
+```
+mkdir -p 4.0.0/en/gold_silver
+cat 4.0.0/en/gold/train.txt.raw 4.0.0/en/silver/train.txt.raw > 4.0.0/en/gold_silver/train.txt.raw
+cat 4.0.0/en/gold/train.txt.sbn 4.0.0/en/silver/train.txt.sbn > 4.0.0/en/gold_silver/train.txt.sbn
+cd ../
+```
+
+Preprocess SBN files to correct format:
+
+```
+for type in train dev test; do python src/sbn_preprocess.py -s data/4.0.0/en/gold/${type}.txt.sbn -r data/4.0.0/en/gold/${type}.txt.raw ; done
+python src/sbn_preprocess.py -s data/4.0.0/en/gold_silver/train.txt.sbn -r data/4.0.0/en/gold_silver/train.txt.raw
+```
+
+Then put them in the AllenNLP format we use together with the raw text:
+
+```
+for type in train dev test; do paste -d"\t" data/4.0.0/en/gold/${type}.txt.raw.keep data/4.0.0/en/gold/${type}.txt.sbn.one > data/4.0.0/en/gold/${type}.alp ; done
+paste -d"\t" data/4.0.0/en/gold_silver/train.txt.raw.keep data/4.0.0/en/gold_silver/train.txt.sbn.one > data/4.0.0/en/gold_silver/train.alp
+```
+
+Now we can actually train a system. We train our system by first pre-training on gold + silver data, after which we finetune on just the gold data. We can use the config file ``config/allennlp/en/sbn.json``, which trains a BERT model.
+
+First run the training on the gold + silver data. Specify the config file, folder where to save the experiments, whether we do pre-training or finetuning (pre/fine) and the language:
+
+```
+./src/allennlp_scripts/sbn_pipeline.sh config/allennlp/en/sbn.json experiments/allennlp/en/sbn/ pre en
+```
+
+Then fine-tune the system on just the gold data for a few epochs. We can use the config file ``config/allennlp/en/sbn_fine.json`` for that.
+
+```
+./src/allennlp_scripts/sbn_pipeline.sh config/allennlp/en/sbn_fine.json experiments/allennlp/en/sbn/ fine en
+```
+
+You can find the output file of the dev set in ``experiments/allennlp/en/sbn_test/run1/fine-tuned/run1/output/``. See below how you can parse your own file with your trained model.
+
+There is no evaluation system yet for the SBN representation.
+
+### Parsing with SBN system ###
+
+We will now parse a file with our SBN-based BERT system. If you do not want to train a system, you can download our system (model and vocab) that we trained above like this:
+
+```
+wget https://www.let.rug.nl/rikvannoord/sbn_model/model.tar.gz
+wget https://www.let.rug.nl/rikvannoord/sbn_model/target.txt
+```
+
+The parsing script takes as input a file with the raw sentences for which you want a DRS. No tokenization or any other preprocessing needed, just simply the raw texts.
+
+Then feed this file together with the model and the vocabulary to the script. Needs to run on GPU.
+
+```
+./src/allennlp_scripts/sbn_parse.sh $RAW_FILE model.tar.gz target.txt
+```
+
+You will find the output in ${RAW_FILE}.out.
