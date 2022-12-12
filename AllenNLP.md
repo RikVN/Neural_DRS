@@ -195,6 +195,7 @@ First, get the 4.0.0 data to train a system:
 ```
 cd data
 wget https://pmb.let.rug.nl/releases/exp_data_4.0.0.zip
+unzip exp_data_4.0.0.zip
 mv exp_data_4.0.0 4.0.0 ; rm exp_data_4.0.0.zip
 ```
 
