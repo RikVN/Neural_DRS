@@ -1,0 +1,45 @@
+FROM python:slim-buster
+
+RUN apt-get update \
+ && apt-get upgrade -y \
+ && apt-get install -y --no-install-recommends git \
+ && apt-get install -y wget \
+ && apt-get install -y unzip
+
+RUN pip install --upgrade pip
+
+## Create data folder, download files and unzip
+## Get the data
+WORKDIR /app/data
+
+COPY data/tok .
+
+RUN wget "https://pmb.let.rug.nl/releases/exp_data_2.2.0.zip"
+RUN wget "https://pmb.let.rug.nl/releases/exp_data_3.0.0.zip"
+
+### Unzip and rename
+RUN unzip exp_data_2.2.0.zip
+RUN unzip exp_data_3.0.0.zip
+RUN mv exp_data_2.2.0 2.2.0
+RUN mv pmb_exp_data_3.0.0 3.0.0
+## Clean up zips
+RUN rm exp_data_2.2.0.zip
+RUN rm exp_data_3.0.0.zip
+
+WORKDIR /app
+
+COPY ./src ./src
+COPY ./output ./output
+
+# Get the DRS parsing repo with the scripts (Counter) and data
+RUN git clone https://github.com/RikVN/DRS_parsing
+RUN cd DRS_parsing \
+ && git checkout v.3.0.0 \
+ && pip install 'numpy==1.24.3' 'psutil>=5.6.6' 'PyYAML==5.4' \
+ && pip install scipy matplotlib
+
+RUN src/setup_training_data.sh
+
+ENV PYTHONPATH=DRS_parsing/:DRS_parsing/evaluation/:$PYTHONPATH
+
+ENTRYPOINT ["/bin/bash"]

@@ -9,6 +9,9 @@ set -eu -o pipefail
 cur_dir=$(pwd)
 export PYTHONPATH=${cur_dir}/DRS_parsing/evaluation/:${PYTHONPATH}
 
+out_bert_only=output/pmb-3.0.0/en/dev/bert_only/
+out_bert_1enc=output/pmb-3.0.0/en/dev/bert_char_1enc/
+out_bert_2enc=output/pmb-3.0.0/en/dev/bert_char_2enc/
 
 # Test the preprocessing and immediately postprocessing of all PMB data files
 # Everything should work without any errors
@@ -17,7 +20,7 @@ test_preprocess_postprocess(){
 	printf "\n----------------------------------------------\n"
 	printf "Test preprocessing and immediately postprocessing for all possibilities and data sets\n"
 	# Set data folder
-	data=${cur_dir}/DRS_parsing/data/
+	data=${cur_dir}/DRS_parsing/data
 	# Loop over the latest release and train/dev/test sets
 	for data_set in pmb-3.0.0; do
 		for set in train dev test; do
@@ -73,20 +76,22 @@ test_pp_gold_silver(){
 
 # Check that DRS jury and separate scripts still work
 test_drs_jury(){
-	mkdir -p output/pmb-3.0.0/en/dev/bert_only/
-	mkdir -p output/pmb-3.0.0/en/dev/bert_char_1enc/
-	mkdir -p output/pmb-3.0.0/en/dev/bert_char_2enc/
+	printf "\n----------------------------------------------\n"
+	printf "Test DRS jury \n"
+	mkdir -p $out_bert_only
+	mkdir -p $out_bert_1enc
+	mkdir -p $out_bert_2enc
 
 	# Test some different options of DRS jury
-	python src/drs_jury.py --folders output/pmb-3.0.0/en/dev/bert_only/ output/pmb-3.0.0/en/dev/bert_char_1enc/ --prefix output -de .txt --working tst/unit/ --names bert_only bert_char_1enc -sf tst/unit/stats.csv
+	python src/drs_jury.py --folders ${out_bert_only} ${out_bert_1enc} --prefix output -de .txt --working tst/unit/ --names bert_only bert_char_1enc -sf tst/unit/stats.csv
 	# More than two folders
-	python src/drs_jury.py --folders output/pmb-3.0.0/en/dev/bert_only/ output/pmb-3.0.0/en/dev/bert_char_1enc/ output/pmb-3.0.0/en/dev/bert_char_2enc/ --prefix output -de .txt --working tst/unit/ --names bert_only bert_char_1enc bert_char_2enc -sf tst/unit/stats_3.csv
+	python src/drs_jury.py --folders ${out_bert_only} ${out_bert_1enc} ${out_bert_2enc} --prefix output -de .txt --working tst/unit/ --names bert_only bert_char_1enc bert_char_2enc -sf tst/unit/stats_3.csv
 	# Detailed analysis of indices
-	python src/drs_jury.py --folders output/pmb-3.0.0/en/dev/bert_only/ output/pmb-3.0.0/en/dev/bert_char_1enc/ --prefix output -de .txt --working tst/unit/ --names bert_only bert_char_1enc -sf tst/unit/stats.csv -a 0 1 2
+	python src/drs_jury.py --folders ${out_bert_only} ${out_bert_1enc} --prefix output -de .txt --working tst/unit/ --names bert_only bert_char_1enc -sf tst/unit/stats.csv -a 0 1 2
 	
 	# Create files with separate F-scores to do tests with
-	python DRS_parsing/evaluation/counter.py -f1 output/pmb-3.0.0/en/dev/bert_only/output1.txt -f2 data/3.0.0/en/gold/dev.txt -g DRS_parsing/evaluation/clf_signature.yaml -ms_file tst/unit/bert_only/out.idv
-	python DRS_parsing/evaluation/counter.py -f1 output/pmb-3.0.0/en/dev/bert_char_1enc/output1.txt -f2 data/3.0.0/en/gold/dev.txt -g DRS_parsing/evaluation/clf_signature.yaml -ms_file tst/unit/bert_char_1enc/out.idv
+	python DRS_parsing/evaluation/counter.py -f1 ${out_bert_only}output1.txt -f2 data/3.0.0/en/gold/dev.txt -g DRS_parsing/evaluation/clf_signature.yaml -ms_file tst/unit/bert_only/out.idv
+	python DRS_parsing/evaluation/counter.py -f1 ${out_bert_1enc}output1.txt -f2 data/3.0.0/en/gold/dev.txt -g DRS_parsing/evaluation/clf_signature.yaml -ms_file tst/unit/bert_char_1enc/out.idv
 	
 	# Separate tests of the semtag analysis
 	python src/semtag_analysis.py --semtag_file DRS_parsing/parsing/layer_data/gold/en/dev.conll --result_files tst/unit/bert_only/idv/output_idv0 tst/unit/bert_char_1enc/idv/output_idv0 --names bert_only bert_char_1enc -min 5 -m -c
@@ -113,4 +118,4 @@ test_pp_gold_silver
 # Test DRS jury
 test_drs_jury
 
-
+printf "\n------------------ DONE ----------------------\n"

@@ -1,0 +1,37 @@
+*.py[cod]
+*.egg-info
+*.eggs
+.ipynb_checkpoints
+
+build
+dist
+.cache
+__pycache__
+
+htmlcov
+.coverage
+coverage.xml
+.pytest_cache
+
+# ide
+.idea
+.eclipse
+.vscode
+*.swo
+*.swp
+
+# Mac
+.DS_Store
+
+# pyenv
+.python_version
+
+# virtualenvs
+.venv
+venv
+
+# Project specific
+DRS_parsing
+/emb
+/experiments
+/tst

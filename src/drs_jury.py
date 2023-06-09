@@ -244,7 +244,7 @@ class Results:
         # Loop over out_files and run counter if necessary
         new_files = []
         for idx, out_file in enumerate(self.output_files):
-            new_file = "{0}/{1}_{2}{3}".format(new_folder, self.prefix, ident, idx)
+            new_file = os.path.join(new_folder, f'{self.prefix}_{ident}{idx}')
             if not os.path.isfile(new_file):
                 # Hacky fix for having new file info only here
                 extra_args = self.extra_args_dict[ident].replace('$NEW_FILE', new_file)
